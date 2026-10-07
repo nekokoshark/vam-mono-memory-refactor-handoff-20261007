@@ -1,0 +1,62 @@
+[
+  {
+    "argv": [
+      "C:\\Users\\Administrator\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "F:\\vam1.22.0.12\\\u5de5\u4f5c\u533a\\mono_interior_commit_lifecycle_20261007\\run_case.py",
+      "MODIFIED",
+      "idle"
+    ],
+    "input": {
+      "mode": "MODIFIED",
+      "test": "idle"
+    },
+    "stdout": "ISOLATED_PASS mode=MODIFIED scenario=idle livePinnedAliasReuse=verified gameCalls=0 gameWrites=0\n",
+    "stderr": "",
+    "exitStatus": 0
+  },
+  {
+    "argv": [
+      "C:\\Users\\Administrator\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "F:\\vam1.22.0.12\\\u5de5\u4f5c\u533a\\mono_interior_commit_lifecycle_20261007\\run_case.py",
+      "MODIFIED",
+      "quick"
+    ],
+    "input": {
+      "mode": "MODIFIED",
+      "test": "quick"
+    },
+    "stdout": "ISOLATED_PASS mode=MODIFIED scenario=quick livePinnedAliasReuse=verified gameCalls=0 gameWrites=0\n",
+    "stderr": "",
+    "exitStatus": 0
+  },
+  {
+    "argv": [
+      "C:\\Users\\Administrator\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "F:\\vam1.22.0.12\\\u5de5\u4f5c\u533a\\mono_interior_commit_lifecycle_20261007\\run_case.py",
+      "MODIFIED",
+      "stress"
+    ],
+    "input": {
+      "mode": "MODIFIED",
+      "test": "stress"
+    },
+    "stdout": "ISOLATED_PASS mode=MODIFIED scenario=stress livePinnedAliasReuse=verified gameCalls=0 gameWrites=0\n",
+    "stderr": "",
+    "exitStatus": 0
+  },
+  {
+    "argv": [
+      "C:\\Users\\Administrator\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "F:\\vam1.22.0.12\\\u5de5\u4f5c\u533a\\mono_interior_commit_lifecycle_20261007\\run_case.py",
+      "MODIFIED",
+      "lifecycle"
+    ],
+    "input": {
+      "mode": "MODIFIED",
+      "test": "lifecycle"
+    },
+    "stdout": "",
+    "stderr": "Traceback (most recent call last):\n  File \"F:\\vam1.22.0.12\\\u5bb8\u30e4\u7d94\u9356\u7bedmono_interior_commit_lifecycle_20261007\\run_case.py\", line 26, in <module>\n    main()\n  File \"F:\\vam1.22.0.12\\\u5bb8\u30e4\u7d94\u9356\u7bedmono_interior_commit_lifecycle_20261007\\run_case.py\", line 22, in main\n    suite.main()\n  File \"F:\\vam1.22.0.12\\\u5bb8\u30e4\u7d94\u9356\u7bedmono_warm_pages_20261006\\run_case.py\", line 32, in main\n    lifecycle.main(mode, failure=kind == \"failure\")\n  File \"F:\\vam1.22.0.12\\\u5bb8\u30e4\u7d94\u9356\u7bedmono_allocator_lifecycle_20261006\\lifecycle.py\", line 170, in main\n    assert avoided > 64*1024**2, avoided\n           ^^^^^^^^^^^^^^^^^^^^\nAssertionError: 0\n",
+    "exitStatus": 1
+  }
+]

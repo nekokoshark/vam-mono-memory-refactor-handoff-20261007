@@ -1,0 +1,16 @@
+{
+  "path": "F:\\vam1.22.0.12\\Mono_Warm_Reuse_Lifecycle_20261007.zip",
+  "sha256": "184498207a0a0faeb6c6b6b98c10d94a08431c64c8ce24037ba2ec3274429bfa",
+  "bytes": 2371140,
+  "crcVerified": true,
+  "members": 36,
+  "reopenedArtifacts": [
+    "MODIFIED_FILE.dll",
+    "DIFF_FILE.patch",
+    "VERIFICATION.txt",
+    "ROLLBACK.sh"
+  ],
+  "coldInstalled": true,
+  "installedSHA256": "d4685c71704ef7f222feebfb93851d7f3b6d354998c2e6bc8347268e047c7b3d",
+  "gameStarted": false
+}

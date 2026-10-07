@@ -1,0 +1,156 @@
+--- mono_reclaim_cohorts_20261006/reclaim_controller.c
++++ mono_free_span_lifecycle_20261006/reclaim_controller.c
+@@ -61,6 +61,14 @@
+     u64 max_chain_pages;
+     u64 last_pending_pages;
+     u64 uniform_chains;
++    u64 merge_mixed_pairs;
++    u64 merge_budget_vetoes;
++    u64 merge_remap_bytes;
++    u64 merge_decommit_bytes;
++    u64 merge_avoided_remap_bytes;
++    u64 merge_header_rejects;
++    u64 last_merge_committed_before;
++    u64 last_merge_committed_after;
+ } ReclaimState;
+ 
+ typedef FreeHeader* (*FindHeader)(u64 block);
+@@ -81,6 +89,7 @@
+ #define UNMAP_RVA 0x15eb8c
+ #define REMAP_RVA 0x15ec50
+ #define MERGE_RVA 0x15fd18
++#define UNMAP_GAP_RVA 0x15ed10
+ #define INSTALL_HEADER_RVA 0x15f12c
+ #define REMOVE_HEADER_RVA 0x15f298
+ #define REMOVE_FREE_RVA 0x15fa24
+@@ -326,6 +335,91 @@
+         && block + h->bytes > block;
+ }
+ 
++/* Coalescing storage is one budgeted transaction, not a size-based remap
++ * followed by a separate retirement. Keep native list traversal/order, header
++ * removal, map invalidation, and VM bookkeeping; only veto a native remap that
++ * would make committed whole-free storage exceed the existing reserve.
++ */
++__declspec(noinline) static u64 merge_with_budget(u8* base, ReclaimState* state,
++                                                u64 committed, u64 marker)
++{
++    u64* lists = (u64*)(base + FREE_LIST_RVA);
++    FindHeader find = (FindHeader)(base + FIND_HEADER_RVA);
++    RemoveFree remove = (RemoveFree)(base + REMOVE_FREE_RVA);
++    RemoveHeader remove_header = (RemoveHeader)(base + REMOVE_HEADER_RVA);
++    AddFree add = (AddFree)(base + ADD_FREE_RVA);
++    Unmap unmap = (Unmap)(base + UNMAP_RVA);
++    Unmap remap = (Unmap)(base + REMAP_RVA);
++    typedef void (*UnmapGap)(u64, u64, u64, u64);
++    UnmapGap gap = (UnmapGap)(base + UNMAP_GAP_RVA);
++    int bucket;
++    state->last_merge_committed_before = committed;
++    for (bucket = 0; bucket < BUCKETS; ++bucket) {
++        u64 block = lists[bucket];
++        while (block) {
++            FreeHeader* left = find(block);
++            u64 successor = block + left->bytes;
++            FreeHeader* right = find(successor);
++            int left_cold, right_cold;
++            if ((u64)right <= 4096 || right->free_marker != marker) {
++                block = left->next;
++                continue;
++            }
++            if (!valid(right, marker, successor) || left->bytes + right->bytes >= MAX_BYTES
++                || successor + right->bytes <= successor) {
++                state->merge_header_rejects++;
++                block = left->next;
++                continue;
++            }
++            left_cold = (left->flags & 2) != 0;
++            right_cold = (right->flags & 2) != 0;
++            if (left_cold && right_cold) {
++                gap(block, left->bytes, successor, right->bytes);
++            } else if (left_cold != right_cold) {
++                u64 cold_bytes = left_cold ? left->bytes : right->bytes;
++                u64 warm_bytes = left_cold ? right->bytes : left->bytes;
++                u64 cold_block = left_cold ? block : successor;
++                u64 warm_block = left_cold ? successor : block;
++                int native_warm = left_cold ? left->bytes <= right->bytes
++                                           : left->bytes > right->bytes;
++                int keep_warm = native_warm && committed <= state->reserve_bytes
++                    && cold_bytes <= state->reserve_bytes - committed;
++                u64 before = *(u64*)(base + UNMAPPED_RVA);
++                state->merge_mixed_pairs++;
++                if (keep_warm) {
++                    remap(cold_block, cold_bytes);
++                    state->merge_remap_bytes += before - *(u64*)(base + UNMAPPED_RVA);
++                    committed += cold_bytes;
++                    left->flags &= (u8)~2;
++                    if (left_cold) left->reclaimed = right->reclaimed;
++                } else {
++                    unmap(warm_block, warm_bytes);
++                    state->merge_decommit_bytes += *(u64*)(base + UNMAPPED_RVA) - before;
++                    committed -= warm_bytes;
++                    left->flags |= 2;
++                    if (native_warm) {
++                        state->merge_budget_vetoes++;
++                        state->merge_avoided_remap_bytes += cold_bytes;
++                    }
++                }
++            }
++            /* Both warm: freehblk normally already coalesces them. No VM state
++             * transition is needed if a valid pair reaches this inventory.
++             */
++            remove(left, bucket);
++            remove(right, -1);
++            left->bytes += right->bytes;
++            remove_header(successor);
++            add(block, left);
++            state->merged_blocks++;
++            /* Match native ascending bucket traversal and restart after merge. */
++            block = lists[bucket];
++        }
++    }
++    state->last_merge_committed_after = committed;
++    return committed;
++}
++
+ /* Preserve warm reusable storage. Retire aged blocks first, large blocks before
+  * small blocks; only the excess can retire fresh blocks. This replaces fixed GC
+  * age admission with one explicit committed-storage budget, not a live-heap cap.
+@@ -365,12 +459,18 @@
+         }
+     }
+     state->collections++;
+-    /* Sweep already detached empty pages. Merge their mapped/unmapped spans
+-     * before budgeting retirement, using the original metadata and VM routines.
++    /* All free headers were checked before mutation. At the audited 4-KiB
++     * granularity, mapped/cold boundaries coincide with actual OS pages.
++     * Other page sizes retain the original native coalescer and its gap logic.
+      */
+-    {
++    if (page_size == 4096) {
++        u64 merged_before = state->merged_blocks;
++        committed = merge_with_budget(base, state, committed, marker);
++        count -= state->merged_blocks - merged_before;
++        state->merge_calls++;
++    } else {
+         NoArgs merge = (NoArgs)(base + MERGE_RVA);
+-        u64 before = count, after = 0;
++        u64 before = count;
+         merge();
+         state->merge_calls++;
+         count = committed = 0;
+@@ -378,13 +478,12 @@
+             u64 block = lists[bucket];
+             while (block) {
+                 FreeHeader* h = find_header(block);
+-                ++after;
++                count++;
+                 if (!(h->flags & 2)) committed += pages(block, h->bytes, page_size);
+                 block = h->next;
+             }
+         }
+-        count = after;
+-        state->merged_blocks += before - after;
++        state->merged_blocks += before - count;
+     }
+     state->scanned_blocks += count;
+     state->last_scanned = count;

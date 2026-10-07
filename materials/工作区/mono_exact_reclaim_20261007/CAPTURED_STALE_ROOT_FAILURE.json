@@ -1,0 +1,150 @@
+{
+  "command": [
+    "C:\\Users\\Administrator\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+    "F:\\vam1.22.0.12\\\u5de5\u4f5c\u533a\\mono_exact_reclaim_20261007\\diagnose_roots.py",
+    "EXACT",
+    "control"
+  ],
+  "input": {
+    "runtime": "EXACT",
+    "rootControl": "control",
+    "originalGCs": 3
+  },
+  "stdout": "ROOT_STACK_SCAN weakAlive=True staticNonNull=False stackMatches=7\nROOT_STACK_SCAN weakAlive=True staticNonNull=False stackMatches=4\nROOT_STACK_SCAN weakAlive=True staticNonNull=False stackMatches=4\nDIAGNOSTIC_HOOK_RESTORED originalCall=True gameTouched=False\n",
+  "stderr": "Traceback (most recent call last):\n  File \"F:\\vam1.22.0.12\\\u5bb8\u30e4\u7d94\u9356\u7bedmono_exact_reclaim_20261007\\diagnose_roots.py\", line 94, in <module>\n    m.main(\"MODIFIED\")\n  File \"F:\\vam1.22.0.12\\\u5bb8\u30e4\u7d94\u9356\u7bedmono_interior_commit_lifecycle_20261007\\lifecycle_test.py\", line 233, in main\nAssertionError: 0\n",
+  "exitStatus": 1,
+  "rootStatus": [
+    {
+      "stage": "GC1",
+      "staticNonNull": false,
+      "weakAlive": true,
+      "pushCalls": 2,
+      "stackBytes": 6952,
+      "stackMatches": 7,
+      "rejectedRanges": 0,
+      "matches": [
+        {
+          "tid": 65580,
+          "slotHidden": 18446743816114344223,
+          "targetOffset": 0,
+          "startHidden": 18446743816114346079
+        },
+        {
+          "tid": 65580,
+          "slotHidden": 18446743816114343959,
+          "targetOffset": 0,
+          "startHidden": 18446743816114346079
+        },
+        {
+          "tid": 65580,
+          "slotHidden": 18446743816114343647,
+          "targetOffset": 2,
+          "startHidden": 18446743816114346079
+        },
+        {
+          "tid": 65580,
+          "slotHidden": 18446743816114343223,
+          "targetOffset": 0,
+          "startHidden": 18446743816114346079
+        },
+        {
+          "tid": 65580,
+          "slotHidden": 18446743816114343031,
+          "targetOffset": 0,
+          "startHidden": 18446743816114346079
+        },
+        {
+          "tid": 65580,
+          "slotHidden": 18446743816114342967,
+          "targetOffset": 2,
+          "startHidden": 18446743816114346079
+        },
+        {
+          "tid": 65580,
+          "slotHidden": 18446743816114342863,
+          "targetOffset": 2,
+          "startHidden": 18446743816114346079
+        }
+      ]
+    },
+    {
+      "stage": "GC2",
+      "staticNonNull": false,
+      "weakAlive": true,
+      "pushCalls": 2,
+      "stackBytes": 6888,
+      "stackMatches": 4,
+      "rejectedRanges": 0,
+      "matches": [
+        {
+          "tid": 65580,
+          "slotHidden": 18446743816114343879,
+          "targetOffset": 1,
+          "startHidden": 18446743816114346015
+        },
+        {
+          "tid": 65580,
+          "slotHidden": 18446743816114343247,
+          "targetOffset": 1,
+          "startHidden": 18446743816114346015
+        },
+        {
+          "tid": 65580,
+          "slotHidden": 18446743816114342967,
+          "targetOffset": 1,
+          "startHidden": 18446743816114346015
+        },
+        {
+          "tid": 65580,
+          "slotHidden": 18446743816114342863,
+          "targetOffset": 2,
+          "startHidden": 18446743816114346015
+        }
+      ]
+    },
+    {
+      "stage": "GC3",
+      "staticNonNull": false,
+      "weakAlive": true,
+      "pushCalls": 2,
+      "stackBytes": 6888,
+      "stackMatches": 4,
+      "rejectedRanges": 0,
+      "matches": [
+        {
+          "tid": 65580,
+          "slotHidden": 18446743816114345279,
+          "targetOffset": 14,
+          "startHidden": 18446743816114346015
+        },
+        {
+          "tid": 65580,
+          "slotHidden": 18446743816114343247,
+          "targetOffset": 1,
+          "startHidden": 18446743816114346015
+        },
+        {
+          "tid": 65580,
+          "slotHidden": 18446743816114342967,
+          "targetOffset": 1,
+          "startHidden": 18446743816114346015
+        },
+        {
+          "tid": 65580,
+          "slotHidden": 18446743816114342863,
+          "targetOffset": 2,
+          "startHidden": 18446743816114346015
+        }
+      ]
+    }
+  ],
+  "scope": "Controlled initial C root; subsequent original GC2/GC3 have no explicit root but scan residual main-thread words. Not the earlier uninstrumented incident or live game attribution.",
+  "rootProbeSHA256": "25ebca6321d3bfd99076d665390b3676250fd84ec6bb7a0960e9f6f24776ce7f",
+  "rootProbeSourceSHA256": "2efa776955b3032c9c626bc2d8e1be17c134c34dea5edcaa66bd7262d1e82774",
+  "rootClearIL": [
+    "0x109e mov rax, qword ptr [rsp + 0x30]",
+    "0x10a8 mov qword ptr [rsp + 0x30], 0",
+    "0x10b1 add rsp, 0x28",
+    "0x10b5 ret"
+  ]
+}

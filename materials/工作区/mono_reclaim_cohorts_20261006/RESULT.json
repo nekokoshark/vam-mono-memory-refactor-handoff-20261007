@@ -1,0 +1,100 @@
+{
+  "changedBranch": "order_reclaim: global admission -> independent kind/size validation",
+  "changedFields": "page_bound=registered object heap/4096; first32 state words preserved; append11 words",
+  "preserved": "marking, object identity, TLS/locks, blacklist, original growth, section limit4096, warm64KiB, reserve256MiB",
+  "baselineSHA256": "1c023c2516d002f5762bb5bd9636cbaa4b46ab421bfa396b874539ed9f668fa1",
+  "modifiedSHA256": "16aaf4bdf3fa0eaf8a02347ff5304ef0d6bcad5ce7d4e265674c1d4da31de808",
+  "paths": {
+    "MODIFIED_FILE": "F:\\vam1.22.0.12\\工作区\\mono_reclaim_cohorts_20261006\\MODIFIED_FILE.dll",
+    "DIFF_FILE": "F:\\vam1.22.0.12\\工作区\\mono_reclaim_cohorts_20261006\\DIFF_FILE.patch",
+    "VERIFICATION": "F:\\vam1.22.0.12\\工作区\\mono_reclaim_cohorts_20261006\\VERIFICATION.txt",
+    "ROLLBACK": "F:\\vam1.22.0.12\\工作区\\mono_reclaim_cohorts_20261006\\ROLLBACK.sh"
+  },
+  "certification": [
+    {
+      "mode": "BASELINE",
+      "command": "powershell -NoProfile -File CERTIFY.ps1 -Mode BASELINE",
+      "workingDirectory": "F:\\vam1.22.0.12\\工作区\\mono_reclaim_cohorts_20261006",
+      "input": {
+        "cases": 9,
+        "runtime": "isolated-original-Mono"
+      },
+      "stdout": "BASELINE_PASS cases=9",
+      "nestedOutput": "ISOLATED_PASS mode=BASELINE scenario=idle livePinnedAliasReuse=verified gameCalls=0 gameWrites=0\nISOLATED_PASS mode=BASELINE scenario=quick livePinnedAliasReuse=verified gameCalls=0 gameWrites=0\nISOLATED_PASS mode=BASELINE scenario=stress livePinnedAliasReuse=verified gameCalls=0 gameWrites=0\nLIFECYCLE_PASS mode=BASELINE cells=1048576 refill=262144 prefix=300MiB inventory=closed pinned=verified gameCalls=0 gameWrites=0\nFAILURE_PASS mode=BASELINE originalOOM=caught limit=restored recovery=verified gameCalls=0 gameWrites=0\nSECTIONS_PASS mode=BASELINE retained=50000 limit=4096 data=verified growth=original\nWARM_PAGES_PASS mode=BASELINE cells=524288 coldRemaps=10931 allocationMs=789.862 sections=unchanged VM=closed aliases=verified gameCalls=0\nCOHORT_PASS mode=BASELINE pendingPages=1108240 independentInversions=6142 globalRejects=1 rootedAliases=verified gameCalls=0 gameWrites=0\nISOLATION_PASS mode=BASELINE faults=size+marks+cycle invalidChain=unchanged unrelatedChain=native-fallback nativeState=restored gameCalls=0 gameWrites=0\nVALIDATION_PASS mode=BASELINE runtime=3 lifecycle=1 OOM=1 sections=1 warm=1 oversized=1 isolation=1 gameModified=False",
+      "exitStatus": 0
+    },
+    {
+      "mode": "MODIFIED",
+      "command": "powershell -NoProfile -File CERTIFY.ps1 -Mode MODIFIED",
+      "workingDirectory": "F:\\vam1.22.0.12\\工作区\\mono_reclaim_cohorts_20261006",
+      "input": {
+        "cases": 9,
+        "runtime": "isolated-original-Mono"
+      },
+      "stdout": "MODIFIED_PASS cases=9",
+      "nestedOutput": "ISOLATED_PASS mode=MODIFIED scenario=idle livePinnedAliasReuse=verified gameCalls=0 gameWrites=0\nISOLATED_PASS mode=MODIFIED scenario=quick livePinnedAliasReuse=verified gameCalls=0 gameWrites=0\nISOLATED_PASS mode=MODIFIED scenario=stress livePinnedAliasReuse=verified gameCalls=0 gameWrites=0\nLIFECYCLE_PASS mode=MODIFIED cells=1048576 refill=262144 prefix=300MiB inventory=closed pinned=verified gameCalls=0 gameWrites=0\nFAILURE_PASS mode=MODIFIED originalOOM=caught limit=restored recovery=verified gameCalls=0 gameWrites=0\nSECTIONS_PASS mode=MODIFIED retained=50000 limit=4096 data=verified growth=original\nWARM_PAGES_PASS mode=MODIFIED cells=524288 coldRemaps=10931 allocationMs=825.865 sections=unchanged VM=closed aliases=verified gameCalls=0\nCOHORT_PASS mode=MODIFIED pendingPages=1108240 independentInversions=0 globalRejects=0 rootedAliases=verified gameCalls=0 gameWrites=0\nISOLATION_PASS mode=MODIFIED faults=size+marks+cycle invalidChain=unchanged unrelatedChain=sorted nativeState=restored gameCalls=0 gameWrites=0\nVALIDATION_PASS mode=MODIFIED runtime=3 lifecycle=1 OOM=1 sections=1 warm=1 oversized=1 isolation=1 gameModified=False",
+      "exitStatus": 0
+    },
+    {
+      "mode": "ROLLBACK",
+      "command": "powershell -NoProfile -File CERTIFY.ps1 -Mode ROLLBACK",
+      "workingDirectory": "F:\\vam1.22.0.12\\工作区\\mono_reclaim_cohorts_20261006",
+      "input": {
+        "cases": 9,
+        "runtime": "isolated-original-Mono"
+      },
+      "stdout": "ROLLBACK_PASS cases=9",
+      "nestedOutput": "ROLLBACK_HASH_PASS baseline=1C-restored candidate=retained gameModified=False\nISOLATED_PASS mode=ROLLBACK scenario=idle livePinnedAliasReuse=verified gameCalls=0 gameWrites=0\nISOLATED_PASS mode=ROLLBACK scenario=quick livePinnedAliasReuse=verified gameCalls=0 gameWrites=0\nISOLATED_PASS mode=ROLLBACK scenario=stress livePinnedAliasReuse=verified gameCalls=0 gameWrites=0\nLIFECYCLE_PASS mode=ROLLBACK cells=1048576 refill=262144 prefix=300MiB inventory=closed pinned=verified gameCalls=0 gameWrites=0\nFAILURE_PASS mode=ROLLBACK originalOOM=caught limit=restored recovery=verified gameCalls=0 gameWrites=0\nSECTIONS_PASS mode=ROLLBACK retained=50000 limit=4096 data=verified growth=original\nWARM_PAGES_PASS mode=ROLLBACK cells=524288 coldRemaps=10931 allocationMs=744.987 sections=unchanged VM=closed aliases=verified gameCalls=0\nCOHORT_PASS mode=ROLLBACK pendingPages=1108240 independentInversions=6142 globalRejects=1 rootedAliases=verified gameCalls=0 gameWrites=0\nISOLATION_PASS mode=ROLLBACK faults=size+marks+cycle invalidChain=unchanged unrelatedChain=native-fallback nativeState=restored gameCalls=0 gameWrites=0\nVALIDATION_PASS mode=ROLLBACK runtime=3 lifecycle=1 OOM=1 sections=1 warm=1 oversized=1 isolation=1 gameModified=False",
+      "exitStatus": 0
+    }
+  ],
+  "independentRegression": {
+    "BASELINE": {
+      "pendingPages": 1108240,
+      "invalidHeaders": 0,
+      "independentInversions": 6142,
+      "rejects": 1,
+      "gcMs": 45.27800006326288,
+      "heapBytes": 4605861888,
+      "sections": 276
+    },
+    "MODIFIED": {
+      "pendingPages": 1108240,
+      "invalidHeaders": 0,
+      "independentInversions": 0,
+      "rejects": 0,
+      "gcMs": 59.33690001256764,
+      "heapBytes": 4605861888,
+      "sections": 276
+    },
+    "ROLLBACK": {
+      "pendingPages": 1108240,
+      "invalidHeaders": 0,
+      "independentInversions": 6142,
+      "rejects": 1,
+      "gcMs": 44.5239000255242,
+      "heapBytes": 4605861888,
+      "sections": 276
+    }
+  },
+  "copyRollback": "1C hash and original global-reject/native-fallback behavior restored",
+  "gameDiskModified": true,
+  "gameMemoryWrites": 0,
+  "gameMethodCalls": 0,
+  "deployed": true,
+  "installVerified": {
+    "installedSHA256": "16aaf4bdf3fa0eaf8a02347ff5304ef0d6bcad5ce7d4e265674c1d4da31de808",
+    "snapshotFiles": 81,
+    "changedMembers": [
+      "Mono/EmbedRuntime/mono.dll"
+    ],
+    "gameProcesses": 0,
+    "appDLLSHA256": "300d8335a2faedd473a09a0cb27c28df519413ffadf6c4e555f6a3b673278da8",
+    "baselineRestore": "install.ps1 -Mode Restore",
+    "snapshotVerified": true
+  },
+  "gameBenefitBytes": null,
+  "attribution": "global-cap defect demonstrated in isolated real Mono; current game rejection cause remains unconfirmed",
+  "timing": "single helper observations, not stable acceleration or game performance",
+  "captureStatus": "syntax checked; candidate-specific live capture awaits natural startup"
+}

@@ -1,0 +1,55 @@
+[
+  {
+    "argv": [
+      "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\cl.exe",
+      "/nologo",
+      "/c",
+      "/O2",
+      "/GS-",
+      "/Zl",
+      "/W4",
+      "/WX",
+      "/Brepro",
+      "/Fopending_probe.obj",
+      "pending_probe.c"
+    ],
+    "stdout": "pending_probe.c\n",
+    "stderr": "",
+    "exitStatus": 0
+  },
+  {
+    "argv": [
+      "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\link.exe",
+      "/nologo",
+      "/dll",
+      "/noentry",
+      "/nodefaultlib",
+      "/machine:x64",
+      "/dynamicbase",
+      "/nxcompat",
+      "/Brepro",
+      "/out:pending_probe.dll",
+      "pending_probe.obj"
+    ],
+    "stdout": "   Creating library pending_probe.lib and object pending_probe.exp\n",
+    "stderr": "",
+    "exitStatus": 0
+  },
+  {
+    "argv": [
+      "C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\csc.exe",
+      "/nologo",
+      "/noconfig",
+      "/nostdlib+",
+      "/optimize+",
+      "/target:library",
+      "/out:PendingCohort.dll",
+      "/reference:F:\\vam1.22.0.12\\VaM_Data\\Managed\\mscorlib.dll",
+      "PendingCohort.cs",
+      "F:\\vam1.22.0.12\\\u5de5\u4f5c\u533a\\mono_allocator_lifecycle_20261006\\LifecycleSample.cs"
+    ],
+    "stdout": "",
+    "stderr": "",
+    "exitStatus": 0
+  }
+]

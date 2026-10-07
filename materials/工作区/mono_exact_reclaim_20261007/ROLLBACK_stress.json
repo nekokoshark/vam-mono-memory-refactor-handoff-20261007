@@ -1,0 +1,212 @@
+{
+  "mode": "ROLLBACK",
+  "scenario": "stress",
+  "pid": 15320,
+  "loadedMono": "F:\\vam1.22.0.12\\\u5de5\u4f5c\u533a\\mono_exact_reclaim_20261007\\rollback_copy\\mono.dll",
+  "loadedSHA256": "d4685c71704ef7f222feebfb93851d7f3b6d354998c2e6bc8347268e047c7b3d",
+  "rows": [
+    {
+      "stage": "Prepare",
+      "output": "PREPARE live=33554432 temporary=536870912 touchedEveryPage=True",
+      "elapsedMs": 117.24489997141063,
+      "counters": {
+        "gc_count": 9,
+        "heap": 1125638144,
+        "free": 554786816,
+        "unmapped": 243150848
+      },
+      "process": {
+        "privateUsageBytes": 911794176,
+        "workingSetBytes": 607174656
+      },
+      "controller": null,
+      "vm": {
+        "gcOSRoots": 79,
+        "monoCommittedBytes": 885432320,
+        "monoReservedBytes": 243150848,
+        "regionCount": 137
+      }
+    },
+    {
+      "stage": "Drop",
+      "output": "DROP temporaryRoot=null",
+      "elapsedMs": 0.328300055116415,
+      "counters": {
+        "gc_count": 9,
+        "heap": 1125638144,
+        "free": 554782720,
+        "unmapped": 243150848
+      },
+      "process": {
+        "privateUsageBytes": 911962112,
+        "workingSetBytes": 607387648
+      },
+      "controller": null,
+      "vm": {
+        "gcOSRoots": 79,
+        "monoCommittedBytes": 885432320,
+        "monoReservedBytes": 243150848,
+        "regionCount": 137
+      }
+    },
+    {
+      "stage": "Concurrent",
+      "output": "CONCURRENT_OK workers=4 rounds=32 pinnedLive=verified",
+      "elapsedMs": 497.59939999785274,
+      "counters": {
+        "gc_count": 25,
+        "heap": 1125638144,
+        "free": 1023926272,
+        "unmapped": 787529728
+      },
+      "process": {
+        "privateUsageBytes": 368640000,
+        "workingSetBytes": 256978944
+      },
+      "controller": null,
+      "vm": {
+        "gcOSRoots": 79,
+        "monoCommittedBytes": 341053440,
+        "monoReservedBytes": 787529728,
+        "regionCount": 138
+      }
+    },
+    {
+      "stage": "Concurrent.GC",
+      "output": "CHECK_LIVE_OK retiredContainerAlive=False",
+      "elapsedMs": 2.590400050394237,
+      "counters": {
+        "gc_count": 26,
+        "heap": 1125638144,
+        "free": 1091903488,
+        "unmapped": 840060928
+      },
+      "process": {
+        "privateUsageBytes": 316436480,
+        "workingSetBytes": 204816384
+      },
+      "controller": null,
+      "vm": {
+        "gcOSRoots": 79,
+        "monoCommittedBytes": 288522240,
+        "monoReservedBytes": 840060928,
+        "regionCount": 134
+      }
+    },
+    {
+      "stage": "Mixed",
+      "output": "MIXED_OK rounds=8 arrays=strings+references+bytes+indices aliases=preserved",
+      "elapsedMs": 24.08520004246384,
+      "counters": {
+        "gc_count": 34,
+        "heap": 1125638144,
+        "free": 1081102336,
+        "unmapped": 818905088
+      },
+      "process": {
+        "privateUsageBytes": 337915904,
+        "workingSetBytes": 226439168
+      },
+      "controller": null,
+      "vm": {
+        "gcOSRoots": 80,
+        "monoCommittedBytes": 309944320,
+        "monoReservedBytes": 818905088,
+        "regionCount": 135
+      }
+    },
+    {
+      "stage": "Fragmented",
+      "output": "FRAGMENTED_OK rounds=4 liveSmall=8192 liveLarge=4096 pinnedLive=verified",
+      "elapsedMs": 56.351999985054135,
+      "counters": {
+        "gc_count": 38,
+        "heap": 1125638144,
+        "free": 1053069312,
+        "unmapped": 801198080
+      },
+      "process": {
+        "privateUsageBytes": 356446208,
+        "workingSetBytes": 271720448
+      },
+      "controller": null,
+      "vm": {
+        "gcOSRoots": 85,
+        "monoCommittedBytes": 328982528,
+        "monoReservedBytes": 801198080,
+        "regionCount": 139
+      }
+    },
+    {
+      "stage": "Exceptions",
+      "output": "EXCEPTIONS_OK dispose=25000 exceptions=250 pinnedLive=verified",
+      "elapsedMs": 21.134400041773915,
+      "counters": {
+        "gc_count": 63,
+        "heap": 1125638144,
+        "free": 1091850240,
+        "unmapped": 840060928
+      },
+      "process": {
+        "privateUsageBytes": 317497344,
+        "workingSetBytes": 249225216
+      },
+      "controller": null,
+      "vm": {
+        "gcOSRoots": 85,
+        "monoCommittedBytes": 290119680,
+        "monoReservedBytes": 840060928,
+        "regionCount": 140
+      }
+    },
+    {
+      "stage": "Final.GC",
+      "output": "CHECK_LIVE_OK retiredContainerAlive=False",
+      "elapsedMs": 0.5684000207111239,
+      "counters": {
+        "gc_count": 64,
+        "heap": 1125638144,
+        "free": 1091891200,
+        "unmapped": 840060928
+      },
+      "process": {
+        "privateUsageBytes": 318091264,
+        "workingSetBytes": 249724928
+      },
+      "controller": null,
+      "vm": {
+        "gcOSRoots": 85,
+        "monoCommittedBytes": 290119680,
+        "monoReservedBytes": 840060928,
+        "regionCount": 140
+      }
+    },
+    {
+      "stage": "ReuseAfterStress",
+      "output": "REUSE_OK liveAndNewPages=verified",
+      "elapsedMs": 89.14000005461276,
+      "counters": {
+        "gc_count": 66,
+        "heap": 1125638144,
+        "free": 554758144,
+        "unmapped": 428818432
+      },
+      "process": {
+        "privateUsageBytes": 729366528,
+        "workingSetBytes": 661127168
+      },
+      "controller": null,
+      "vm": {
+        "gcOSRoots": 85,
+        "monoCommittedBytes": 701362176,
+        "monoReservedBytes": 428818432,
+        "regionCount": 189
+      }
+    }
+  ],
+  "liveBytes": 33554432,
+  "temporaryBytes": 536870912,
+  "testProcessOnly": true,
+  "gameCalls": 0,
+  "gameWrites": 0
+}

@@ -1,0 +1,2551 @@
+{
+  "mode": "ROLLBACK",
+  "runtimeSHA256": "1c023c2516d002f5762bb5bd9636cbaa4b46ab421bfa396b874539ed9f668fa1",
+  "memoryAvailableBefore": 40611528704,
+  "rows": [
+    {
+      "stage": "BeforeGC",
+      "output": "ORIGINAL_MONO_ALLOCATIONS_COMPLETED",
+      "elapsedMs": 0,
+      "probeMs": 0.048900023102760315,
+      "pendingPages": 0,
+      "invalid": 0,
+      "chains": [],
+      "state": {
+        "magic": 3553986980739171143,
+        "reserveBytes": 268435456,
+        "collections": 1,
+        "scannedBlocks": 1,
+        "freeBefore": 262144,
+        "freeAfter": 262144,
+        "decommittedBytes": 0,
+        "decommittedBlocks": 0,
+        "rejected": 0,
+        "lastGC": 1,
+        "lastReturned": 0,
+        "lastScanned": 1,
+        "sortRuns": 1,
+        "sortPages": 0,
+        "sortLists": 0,
+        "sortChangedLists": 0,
+        "mergeCalls": 1,
+        "mergedBlocks": 0,
+        "remapCalls": 0,
+        "remapFullBytes": 0,
+        "remapPrefixBytes": 0,
+        "remapAvoidedBytes": 0,
+        "splitPrefixes": 0,
+        "growthCalls": 275,
+        "growthOriginalBlocks": 1124414,
+        "growthActualBlocks": 1124414,
+        "pendingBlock": 0,
+        "pendingFull": 0,
+        "pendingBytes": 0,
+        "warmBatches": 0,
+        "warmBytes": 0,
+        "warmExtraBytes": 0
+      },
+      "heap": 4605861888,
+      "sections": 276
+    },
+    {
+      "stage": "SparseGC",
+      "output": "ORIGINAL_MONO_GC_COMPLETED",
+      "elapsedMs": 44.5239000255242,
+      "probeMs": 23.949599941261113,
+      "pendingPages": 1108240,
+      "invalid": 0,
+      "chains": [
+        {
+          "kind": 0,
+          "size": 2,
+          "pages": 1,
+          "inversions": 0,
+          "invalid": 0,
+          "reason": 0,
+          "bands": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "kind": 0,
+          "size": 3,
+          "pages": 1,
+          "inversions": 0,
+          "invalid": 0,
+          "reason": 0,
+          "bands": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "kind": 0,
+          "size": 4,
+          "pages": 8193,
+          "inversions": 6142,
+          "invalid": 0,
+          "reason": 0,
+          "bands": [
+            2046,
+            2048,
+            0,
+            2049,
+            1,
+            2049,
+            0,
+            0
+          ]
+        },
+        {
+          "kind": 0,
+          "size": 5,
+          "pages": 1,
+          "inversions": 0,
+          "invalid": 0,
+          "reason": 0,
+          "bands": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "kind": 0,
+          "size": 6,
+          "pages": 1,
+          "inversions": 0,
+          "invalid": 0,
+          "reason": 0,
+          "bands": [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "kind": 0,
+          "size": 7,
+          "pages": 1,
+          "inversions": 0,
+          "invalid": 0,
+          "reason": 0,
+          "bands": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "kind": 0,
+          "size": 8,
+          "pages": 1,
+          "inversions": 0,
+          "invalid": 0,
+          "reason": 0,
+          "bands": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "kind": 0,
+          "size": 10,
+          "pages": 1,
+          "inversions": 0,
+          "invalid": 0,
+          "reason": 0,
+          "bands": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "kind": 0,
+          "size": 12,
+          "pages": 1,
+          "inversions": 0,
+          "invalid": 0,
+          "reason": 0,
+          "bands": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "kind": 0,
+          "size": 14,
+          "pages": 1,
+          "inversions": 0,
+          "invalid": 0,
+          "reason": 0,
+          "bands": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "kind": 0,
+          "size": 16,
+          "pages": 1,
+          "inversions": 0,
+          "invalid": 0,
+          "reason": 0,
+          "bands": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "kind": 0,
+          "size": 20,
+          "pages": 1,
+          "inversions": 0,
+          "invalid": 0,
+          "reason": 0,
+          "bands": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "kind": 0,
+          "size": 24,
+          "pages": 1,
+          "inversions": 0,
+          "invalid": 0,
+          "reason": 0,
+          "bands": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "kind": 0,
+          "size": 256,
+          "pages": 1100000,
+          "inversions": 0,
+          "invalid": 0,
+          "reason": 0,
+          "bands": [
+            0,
+            0,
+            0,
+            0,
+            1100000,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "kind": 1,
+          "size": 2,
+          "pages": 1,
+          "inversions": 0,
+          "invalid": 0,
+          "reason": 0,
+          "bands": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "kind": 1,
+          "size": 3,
+          "pages": 2,
+          "inversions": 1,
+          "invalid": 0,
+          "reason": 0,
+          "bands": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "kind": 1,
+          "size": 4,
+          "pages": 1,
+          "inversions": 0,
+          "invalid": 0,
+          "reason": 0,
+          "bands": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "kind": 1,
+          "size": 5,
+          "pages": 1,
+          "inversions": 0,
+          "invalid": 0,
+          "reason": 0,
+          "bands": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "kind": 1,
+          "size": 6,
+          "pages": 1,
+          "inversions": 0,
+          "invalid": 0,
+          "reason": 0,
+          "bands": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "kind": 1,
+          "size": 8,
+          "pages": 1,
+          "inversions": 0,
+          "invalid": 0,
+          "reason": 0,
+          "bands": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "kind": 1,
+          "size": 10,
+          "pages": 1,
+          "inversions": 0,
+          "invalid": 0,
+          "reason": 0,
+          "bands": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "kind": 1,
+          "size": 12,
+          "pages": 1,
+          "inversions": 0,
+          "invalid": 0,
+          "reason": 0,
+          "bands": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "kind": 1,
+          "size": 14,
+          "pages": 1,
+          "inversions": 0,
+          "invalid": 0,
+          "reason": 0,
+          "bands": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "kind": 1,
+          "size": 16,
+          "pages": 1,
+          "inversions": 0,
+          "invalid": 0,
+          "reason": 0,
+          "bands": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "kind": 1,
+          "size": 20,
+          "pages": 1,
+          "inversions": 0,
+          "invalid": 0,
+          "reason": 0,
+          "bands": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "kind": 1,
+          "size": 32,
+          "pages": 1,
+          "inversions": 0,
+          "invalid": 0,
+          "reason": 0,
+          "bands": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "kind": 1,
+          "size": 46,
+          "pages": 1,
+          "inversions": 0,
+          "invalid": 0,
+          "reason": 0,
+          "bands": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ]
+        },
+        {
+          "kind": 1,
+          "size": 56,
+          "pages": 1,
+          "inversions": 0,
+          "invalid": 0,
+          "reason": 0,
+          "bands": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "kind": 1,
+          "size": 85,
+          "pages": 1,
+          "inversions": 0,
+          "invalid": 0,
+          "reason": 0,
+          "bands": [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "kind": 1,
+          "size": 128,
+          "pages": 1,
+          "inversions": 0,
+          "invalid": 0,
+          "reason": 0,
+          "bands": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "kind": 4,
+          "size": 4,
+          "pages": 1,
+          "inversions": 0,
+          "invalid": 0,
+          "reason": 0,
+          "bands": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "kind": 4,
+          "size": 5,
+          "pages": 1,
+          "inversions": 0,
+          "invalid": 0,
+          "reason": 0,
+          "bands": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "kind": 4,
+          "size": 8,
+          "pages": 1,
+          "inversions": 0,
+          "invalid": 0,
+          "reason": 0,
+          "bands": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "kind": 4,
+          "size": 12,
+          "pages": 1,
+          "inversions": 0,
+          "invalid": 0,
+          "reason": 0,
+          "bands": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "kind": 4,
+          "size": 14,
+          "pages": 1,
+          "inversions": 0,
+          "invalid": 0,
+          "reason": 0,
+          "bands": [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "kind": 4,
+          "size": 20,
+          "pages": 1,
+          "inversions": 0,
+          "invalid": 0,
+          "reason": 0,
+          "bands": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "kind": 4,
+          "size": 24,
+          "pages": 1,
+          "inversions": 0,
+          "invalid": 0,
+          "reason": 0,
+          "bands": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "kind": 4,
+          "size": 28,
+          "pages": 1,
+          "inversions": 0,
+          "invalid": 0,
+          "reason": 0,
+          "bands": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "kind": 6,
+          "size": 2,
+          "pages": 1,
+          "inversions": 0,
+          "invalid": 0,
+          "reason": 0,
+          "bands": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "kind": 6,
+          "size": 3,
+          "pages": 1,
+          "inversions": 0,
+          "invalid": 0,
+          "reason": 0,
+          "bands": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "kind": 6,
+          "size": 5,
+          "pages": 1,
+          "inversions": 0,
+          "invalid": 0,
+          "reason": 0,
+          "bands": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "kind": 6,
+          "size": 6,
+          "pages": 1,
+          "inversions": 0,
+          "invalid": 0,
+          "reason": 0,
+          "bands": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "kind": 6,
+          "size": 7,
+          "pages": 1,
+          "inversions": 0,
+          "invalid": 0,
+          "reason": 0,
+          "bands": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "kind": 6,
+          "size": 8,
+          "pages": 1,
+          "inversions": 0,
+          "invalid": 0,
+          "reason": 0,
+          "bands": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "kind": 6,
+          "size": 10,
+          "pages": 1,
+          "inversions": 0,
+          "invalid": 0,
+          "reason": 0,
+          "bands": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "kind": 6,
+          "size": 12,
+          "pages": 1,
+          "inversions": 0,
+          "invalid": 0,
+          "reason": 0,
+          "bands": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "kind": 6,
+          "size": 28,
+          "pages": 1,
+          "inversions": 0,
+          "invalid": 0,
+          "reason": 0,
+          "bands": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "kind": 6,
+          "size": 85,
+          "pages": 1,
+          "inversions": 0,
+          "invalid": 0,
+          "reason": 0,
+          "bands": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "state": {
+        "magic": 3553986980739171143,
+        "reserveBytes": 268435456,
+        "collections": 2,
+        "scannedBlocks": 8,
+        "freeBefore": 44126208,
+        "freeAfter": 44126208,
+        "decommittedBytes": 0,
+        "decommittedBlocks": 0,
+        "rejected": 1,
+        "lastGC": 2,
+        "lastReturned": 0,
+        "lastScanned": 7,
+        "sortRuns": 1,
+        "sortPages": 0,
+        "sortLists": 0,
+        "sortChangedLists": 0,
+        "mergeCalls": 2,
+        "mergedBlocks": 0,
+        "remapCalls": 0,
+        "remapFullBytes": 0,
+        "remapPrefixBytes": 0,
+        "remapAvoidedBytes": 0,
+        "splitPrefixes": 0,
+        "growthCalls": 275,
+        "growthOriginalBlocks": 1124414,
+        "growthActualBlocks": 1124414,
+        "pendingBlock": 0,
+        "pendingFull": 0,
+        "pendingBytes": 0,
+        "warmBatches": 0,
+        "warmBytes": 0,
+        "warmExtraBytes": 0
+      },
+      "heap": 4605861888,
+      "sections": 276
+    },
+    {
+      "stage": "LifecycleSample.RefillCells",
+      "output": "CELLS_OK aliases=preserved roots=297087 refill=262144",
+      "elapsedMs": 7.72520003374666,
+      "probeMs": 23.44050002284348,
+      "pendingPages": 1105369,
+      "invalid": 0,
+      "chains": [
+        {
+          "kind": 0,
+          "size": 2,
+          "pages": 1,
+          "inversions": 0,
+          "invalid": 0,
+          "reason": 0,
+          "bands": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "kind": 0,
+          "size": 4,
+          "pages": 5335,
+          "inversions": 3999,
+          "invalid": 0,
+          "reason": 0,
+          "bands": [
+            1331,
+            1334,
+            0,
+            1335,
+            0,
+            1335,
+            0,
+            0
+          ]
+        },
+        {
+          "kind": 0,
+          "size": 7,
+          "pages": 1,
+          "inversions": 0,
+          "invalid": 0,
+          "reason": 0,
+          "bands": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "kind": 0,
+          "size": 8,
+          "pages": 1,
+          "inversions": 0,
+          "invalid": 0,
+          "reason": 0,
+          "bands": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "kind": 0,
+          "size": 10,
+          "pages": 1,
+          "inversions": 0,
+          "invalid": 0,
+          "reason": 0,
+          "bands": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "kind": 0,
+          "size": 14,
+          "pages": 1,
+          "inversions": 0,
+          "invalid": 0,
+          "reason": 0,
+          "bands": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "kind": 0,
+          "size": 24,
+          "pages": 1,
+          "inversions": 0,
+          "invalid": 0,
+          "reason": 0,
+          "bands": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "kind": 0,
+          "size": 256,
+          "pages": 1100000,
+          "inversions": 0,
+          "invalid": 0,
+          "reason": 0,
+          "bands": [
+            0,
+            0,
+            0,
+            0,
+            1100000,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "kind": 1,
+          "size": 2,
+          "pages": 1,
+          "inversions": 0,
+          "invalid": 0,
+          "reason": 0,
+          "bands": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "kind": 1,
+          "size": 3,
+          "pages": 1,
+          "inversions": 0,
+          "invalid": 0,
+          "reason": 0,
+          "bands": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "kind": 1,
+          "size": 4,
+          "pages": 1,
+          "inversions": 0,
+          "invalid": 0,
+          "reason": 0,
+          "bands": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "kind": 1,
+          "size": 5,
+          "pages": 1,
+          "inversions": 0,
+          "invalid": 0,
+          "reason": 0,
+          "bands": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "kind": 1,
+          "size": 8,
+          "pages": 1,
+          "inversions": 0,
+          "invalid": 0,
+          "reason": 0,
+          "bands": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "kind": 1,
+          "size": 12,
+          "pages": 1,
+          "inversions": 0,
+          "invalid": 0,
+          "reason": 0,
+          "bands": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "kind": 1,
+          "size": 14,
+          "pages": 1,
+          "inversions": 0,
+          "invalid": 0,
+          "reason": 0,
+          "bands": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "kind": 1,
+          "size": 16,
+          "pages": 1,
+          "inversions": 0,
+          "invalid": 0,
+          "reason": 0,
+          "bands": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "kind": 1,
+          "size": 20,
+          "pages": 1,
+          "inversions": 0,
+          "invalid": 0,
+          "reason": 0,
+          "bands": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "kind": 1,
+          "size": 32,
+          "pages": 1,
+          "inversions": 0,
+          "invalid": 0,
+          "reason": 0,
+          "bands": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "kind": 1,
+          "size": 56,
+          "pages": 1,
+          "inversions": 0,
+          "invalid": 0,
+          "reason": 0,
+          "bands": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "kind": 1,
+          "size": 85,
+          "pages": 1,
+          "inversions": 0,
+          "invalid": 0,
+          "reason": 0,
+          "bands": [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "kind": 4,
+          "size": 5,
+          "pages": 1,
+          "inversions": 0,
+          "invalid": 0,
+          "reason": 0,
+          "bands": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "kind": 4,
+          "size": 8,
+          "pages": 1,
+          "inversions": 0,
+          "invalid": 0,
+          "reason": 0,
+          "bands": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "kind": 4,
+          "size": 12,
+          "pages": 1,
+          "inversions": 0,
+          "invalid": 0,
+          "reason": 0,
+          "bands": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "kind": 4,
+          "size": 20,
+          "pages": 1,
+          "inversions": 0,
+          "invalid": 0,
+          "reason": 0,
+          "bands": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "kind": 4,
+          "size": 24,
+          "pages": 1,
+          "inversions": 0,
+          "invalid": 0,
+          "reason": 0,
+          "bands": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "kind": 4,
+          "size": 28,
+          "pages": 1,
+          "inversions": 0,
+          "invalid": 0,
+          "reason": 0,
+          "bands": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "kind": 6,
+          "size": 2,
+          "pages": 1,
+          "inversions": 0,
+          "invalid": 0,
+          "reason": 0,
+          "bands": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "kind": 6,
+          "size": 3,
+          "pages": 1,
+          "inversions": 0,
+          "invalid": 0,
+          "reason": 0,
+          "bands": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "kind": 6,
+          "size": 5,
+          "pages": 1,
+          "inversions": 0,
+          "invalid": 0,
+          "reason": 0,
+          "bands": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "kind": 6,
+          "size": 6,
+          "pages": 1,
+          "inversions": 0,
+          "invalid": 0,
+          "reason": 0,
+          "bands": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "kind": 6,
+          "size": 7,
+          "pages": 1,
+          "inversions": 0,
+          "invalid": 0,
+          "reason": 0,
+          "bands": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "kind": 6,
+          "size": 8,
+          "pages": 1,
+          "inversions": 0,
+          "invalid": 0,
+          "reason": 0,
+          "bands": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "kind": 6,
+          "size": 10,
+          "pages": 1,
+          "inversions": 0,
+          "invalid": 0,
+          "reason": 0,
+          "bands": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "kind": 6,
+          "size": 12,
+          "pages": 1,
+          "inversions": 0,
+          "invalid": 0,
+          "reason": 0,
+          "bands": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "kind": 6,
+          "size": 28,
+          "pages": 1,
+          "inversions": 0,
+          "invalid": 0,
+          "reason": 0,
+          "bands": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "kind": 6,
+          "size": 85,
+          "pages": 1,
+          "inversions": 0,
+          "invalid": 0,
+          "reason": 0,
+          "bands": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "state": {
+        "magic": 3553986980739171143,
+        "reserveBytes": 268435456,
+        "collections": 2,
+        "scannedBlocks": 8,
+        "freeBefore": 44126208,
+        "freeAfter": 44126208,
+        "decommittedBytes": 0,
+        "decommittedBlocks": 0,
+        "rejected": 1,
+        "lastGC": 2,
+        "lastReturned": 0,
+        "lastScanned": 7,
+        "sortRuns": 1,
+        "sortPages": 0,
+        "sortLists": 0,
+        "sortChangedLists": 0,
+        "mergeCalls": 2,
+        "mergedBlocks": 0,
+        "remapCalls": 0,
+        "remapFullBytes": 0,
+        "remapPrefixBytes": 0,
+        "remapAvoidedBytes": 0,
+        "splitPrefixes": 0,
+        "growthCalls": 275,
+        "growthOriginalBlocks": 1124414,
+        "growthActualBlocks": 1124414,
+        "pendingBlock": 0,
+        "pendingFull": 0,
+        "pendingBytes": 0,
+        "warmBatches": 0,
+        "warmBytes": 0,
+        "warmExtraBytes": 0
+      },
+      "heap": 4605861888,
+      "sections": 276
+    },
+    {
+      "stage": "Released",
+      "output": "ROOTS_RELEASED_ORIGINAL_GC_COMPLETED",
+      "elapsedMs": 0,
+      "probeMs": 0.09029998909682035,
+      "pendingPages": 49,
+      "invalid": 0,
+      "chains": [
+        {
+          "kind": 0,
+          "size": 2,
+          "pages": 1,
+          "inversions": 0,
+          "invalid": 0,
+          "reason": 0,
+          "bands": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "kind": 0,
+          "size": 3,
+          "pages": 1,
+          "inversions": 0,
+          "invalid": 0,
+          "reason": 0,
+          "bands": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "kind": 0,
+          "size": 4,
+          "pages": 2,
+          "inversions": 0,
+          "invalid": 0,
+          "reason": 0,
+          "bands": [
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "kind": 0,
+          "size": 5,
+          "pages": 1,
+          "inversions": 0,
+          "invalid": 0,
+          "reason": 0,
+          "bands": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "kind": 0,
+          "size": 6,
+          "pages": 1,
+          "inversions": 0,
+          "invalid": 0,
+          "reason": 0,
+          "bands": [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "kind": 0,
+          "size": 7,
+          "pages": 1,
+          "inversions": 0,
+          "invalid": 0,
+          "reason": 0,
+          "bands": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "kind": 0,
+          "size": 8,
+          "pages": 1,
+          "inversions": 0,
+          "invalid": 0,
+          "reason": 0,
+          "bands": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "kind": 0,
+          "size": 10,
+          "pages": 1,
+          "inversions": 0,
+          "invalid": 0,
+          "reason": 0,
+          "bands": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "kind": 0,
+          "size": 12,
+          "pages": 1,
+          "inversions": 0,
+          "invalid": 0,
+          "reason": 0,
+          "bands": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "kind": 0,
+          "size": 14,
+          "pages": 1,
+          "inversions": 0,
+          "invalid": 0,
+          "reason": 0,
+          "bands": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "kind": 0,
+          "size": 16,
+          "pages": 1,
+          "inversions": 0,
+          "invalid": 0,
+          "reason": 0,
+          "bands": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "kind": 0,
+          "size": 20,
+          "pages": 1,
+          "inversions": 0,
+          "invalid": 0,
+          "reason": 0,
+          "bands": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "kind": 0,
+          "size": 24,
+          "pages": 1,
+          "inversions": 0,
+          "invalid": 0,
+          "reason": 0,
+          "bands": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "kind": 1,
+          "size": 2,
+          "pages": 1,
+          "inversions": 0,
+          "invalid": 0,
+          "reason": 0,
+          "bands": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "kind": 1,
+          "size": 3,
+          "pages": 2,
+          "inversions": 0,
+          "invalid": 0,
+          "reason": 0,
+          "bands": [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "kind": 1,
+          "size": 4,
+          "pages": 1,
+          "inversions": 0,
+          "invalid": 0,
+          "reason": 0,
+          "bands": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "kind": 1,
+          "size": 5,
+          "pages": 1,
+          "inversions": 0,
+          "invalid": 0,
+          "reason": 0,
+          "bands": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "kind": 1,
+          "size": 6,
+          "pages": 1,
+          "inversions": 0,
+          "invalid": 0,
+          "reason": 0,
+          "bands": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "kind": 1,
+          "size": 8,
+          "pages": 1,
+          "inversions": 0,
+          "invalid": 0,
+          "reason": 0,
+          "bands": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "kind": 1,
+          "size": 10,
+          "pages": 1,
+          "inversions": 0,
+          "invalid": 0,
+          "reason": 0,
+          "bands": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "kind": 1,
+          "size": 12,
+          "pages": 1,
+          "inversions": 0,
+          "invalid": 0,
+          "reason": 0,
+          "bands": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "kind": 1,
+          "size": 14,
+          "pages": 1,
+          "inversions": 0,
+          "invalid": 0,
+          "reason": 0,
+          "bands": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "kind": 1,
+          "size": 16,
+          "pages": 1,
+          "inversions": 0,
+          "invalid": 0,
+          "reason": 0,
+          "bands": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "kind": 1,
+          "size": 20,
+          "pages": 1,
+          "inversions": 0,
+          "invalid": 0,
+          "reason": 0,
+          "bands": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "kind": 1,
+          "size": 32,
+          "pages": 1,
+          "inversions": 0,
+          "invalid": 0,
+          "reason": 0,
+          "bands": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "kind": 1,
+          "size": 46,
+          "pages": 1,
+          "inversions": 0,
+          "invalid": 0,
+          "reason": 0,
+          "bands": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "kind": 1,
+          "size": 56,
+          "pages": 1,
+          "inversions": 0,
+          "invalid": 0,
+          "reason": 0,
+          "bands": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "kind": 1,
+          "size": 85,
+          "pages": 1,
+          "inversions": 0,
+          "invalid": 0,
+          "reason": 0,
+          "bands": [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "kind": 1,
+          "size": 128,
+          "pages": 1,
+          "inversions": 0,
+          "invalid": 0,
+          "reason": 0,
+          "bands": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "kind": 4,
+          "size": 4,
+          "pages": 1,
+          "inversions": 0,
+          "invalid": 0,
+          "reason": 0,
+          "bands": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "kind": 4,
+          "size": 5,
+          "pages": 1,
+          "inversions": 0,
+          "invalid": 0,
+          "reason": 0,
+          "bands": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "kind": 4,
+          "size": 8,
+          "pages": 1,
+          "inversions": 0,
+          "invalid": 0,
+          "reason": 0,
+          "bands": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "kind": 4,
+          "size": 12,
+          "pages": 1,
+          "inversions": 0,
+          "invalid": 0,
+          "reason": 0,
+          "bands": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "kind": 4,
+          "size": 14,
+          "pages": 1,
+          "inversions": 0,
+          "invalid": 0,
+          "reason": 0,
+          "bands": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "kind": 4,
+          "size": 20,
+          "pages": 1,
+          "inversions": 0,
+          "invalid": 0,
+          "reason": 0,
+          "bands": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "kind": 4,
+          "size": 24,
+          "pages": 1,
+          "inversions": 0,
+          "invalid": 0,
+          "reason": 0,
+          "bands": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "kind": 4,
+          "size": 28,
+          "pages": 1,
+          "inversions": 0,
+          "invalid": 0,
+          "reason": 0,
+          "bands": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "kind": 6,
+          "size": 2,
+          "pages": 1,
+          "inversions": 0,
+          "invalid": 0,
+          "reason": 0,
+          "bands": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "kind": 6,
+          "size": 3,
+          "pages": 1,
+          "inversions": 0,
+          "invalid": 0,
+          "reason": 0,
+          "bands": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "kind": 6,
+          "size": 5,
+          "pages": 1,
+          "inversions": 0,
+          "invalid": 0,
+          "reason": 0,
+          "bands": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "kind": 6,
+          "size": 6,
+          "pages": 1,
+          "inversions": 0,
+          "invalid": 0,
+          "reason": 0,
+          "bands": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "kind": 6,
+          "size": 7,
+          "pages": 1,
+          "inversions": 0,
+          "invalid": 0,
+          "reason": 0,
+          "bands": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "kind": 6,
+          "size": 8,
+          "pages": 1,
+          "inversions": 0,
+          "invalid": 0,
+          "reason": 0,
+          "bands": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "kind": 6,
+          "size": 10,
+          "pages": 1,
+          "inversions": 0,
+          "invalid": 0,
+          "reason": 0,
+          "bands": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "kind": 6,
+          "size": 12,
+          "pages": 1,
+          "inversions": 0,
+          "invalid": 0,
+          "reason": 0,
+          "bands": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "kind": 6,
+          "size": 28,
+          "pages": 1,
+          "inversions": 0,
+          "invalid": 0,
+          "reason": 0,
+          "bands": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "kind": 6,
+          "size": 85,
+          "pages": 1,
+          "inversions": 0,
+          "invalid": 0,
+          "reason": 0,
+          "bands": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "state": {
+        "magic": 3553986980739171143,
+        "reserveBytes": 268435456,
+        "collections": 3,
+        "scannedBlocks": 288,
+        "freeBefore": 4605640704,
+        "freeAfter": 253005824,
+        "decommittedBytes": 4352634880,
+        "decommittedBlocks": 262,
+        "rejected": 1,
+        "lastGC": 3,
+        "lastReturned": 4352634880,
+        "lastScanned": 280,
+        "sortRuns": 2,
+        "sortPages": 49,
+        "sortLists": 2,
+        "sortChangedLists": 1,
+        "mergeCalls": 3,
+        "mergedBlocks": 0,
+        "remapCalls": 0,
+        "remapFullBytes": 0,
+        "remapPrefixBytes": 0,
+        "remapAvoidedBytes": 0,
+        "splitPrefixes": 0,
+        "growthCalls": 275,
+        "growthOriginalBlocks": 1124414,
+        "growthActualBlocks": 1124414,
+        "pendingBlock": 0,
+        "pendingFull": 0,
+        "pendingBytes": 0,
+        "warmBatches": 0,
+        "warmBytes": 0,
+        "warmExtraBytes": 0
+      },
+      "heap": 4605861888,
+      "sections": 276
+    }
+  ],
+  "gameCalls": 0,
+  "gameWrites": 0,
+  "measuredVaMSavingsBytes": null
+}

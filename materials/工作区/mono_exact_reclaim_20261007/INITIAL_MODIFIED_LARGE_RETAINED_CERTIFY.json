@@ -1,0 +1,12 @@
+﻿{
+    "mode":  "MODIFIED",
+    "command":  "powershell -NoProfile -File CERTIFY.ps1 -Mode MODIFIED",
+    "workingDirectory":  "F:\\vam1.22.0.12\\工作区\\mono_exact_reclaim_20261007",
+    "input":  {
+                  "cases":  14,
+                  "runtime":  "isolated-original-Mono"
+              },
+    "stdout":  "FAILED",
+    "nestedOutput":  "ISOLATED_PASS mode=MODIFIED scenario=idle livePinnedAliasReuse=verified gameCalls=0 gameWrites=0\nISOLATED_PASS mode=MODIFIED scenario=quick livePinnedAliasReuse=verified gameCalls=0 gameWrites=0\nISOLATED_PASS mode=MODIFIED scenario=stress livePinnedAliasReuse=verified gameCalls=0 gameWrites=0\n\nTraceback (most recent call last):\n  File \"F:\\vam1.22.0.12\\宸ヤ綔鍖篭mono_exact_reclaim_20261007\\run_case.py\", line 45, in \u003cmodule\u003e\n    main(*sys.argv[1:3])\n  File \"F:\\vam1.22.0.12\\宸ヤ綔鍖篭mono_exact_reclaim_20261007\\run_case.py\", line 41, in main\n    module.main(mode, kind)\n  File \"F:\\vam1.22.0.12\\宸ヤ綔鍖篭mono_reuse_lifecycle_20261007\\run_case.py\", line 41, in main\n    load(PRIOR / \"lifecycle_test.py\").main(mode, failure=kind == \"failure\")\n  File \"F:\\vam1.22.0.12\\宸ヤ綔鍖篭mono_interior_commit_lifecycle_20261007\\lifecycle_test.py\", line 171, in main\n    assert avoided \u003e 64*1024**2, avoided\n           ^^^^^^^^^^^^^^^^^^^^\nAssertionError: 0\n",
+    "exitStatus":  1
+}

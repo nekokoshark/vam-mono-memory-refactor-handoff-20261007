@@ -1,0 +1,29 @@
+﻿[
+    {
+        "command":  "powershell -NoProfile -File install.ps1 -Mode Install -TestCopy",
+        "input":  {
+                      "testCopy":  true,
+                      "mode":  "Install"
+                  },
+        "stdout":  "INSTALL_PASS mode=Install testCopy=True sha256=b7c1f56dd38fb70b6ee7e66f3dd65dd86f7a10e832006a5e5a2c3837928974b2 runtimeModified=False",
+        "exitStatus":  0
+    },
+    {
+        "command":  "powershell -NoProfile -File install.ps1 -Mode Restore -TestCopy",
+        "input":  {
+                      "testCopy":  true,
+                      "mode":  "Restore"
+                  },
+        "stdout":  "INSTALL_PASS mode=Restore testCopy=True sha256=16aaf4bdf3fa0eaf8a02347ff5304ef0d6bcad5ce7d4e265674c1d4da31de808 runtimeModified=False",
+        "exitStatus":  0
+    },
+    {
+        "command":  "powershell -NoProfile -File install.ps1 -Mode Check -TestCopy",
+        "input":  {
+                      "testCopy":  true,
+                      "mode":  "Check"
+                  },
+        "stdout":  "INSTALL_READY gameRunning=False diskModified=False",
+        "exitStatus":  0
+    }
+]

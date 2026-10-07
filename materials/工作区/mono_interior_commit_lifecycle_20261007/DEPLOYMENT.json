@@ -1,0 +1,10 @@
+﻿{
+    "state":  "disk-installed-snapshot-verified",
+    "mode":  "Install",
+    "target":  "F:\\vam1.22.0.12\\Mono\\EmbedRuntime\\mono.dll",
+    "testCopy":  false,
+    "sha256":  "a1a8f07d43aab8542247b18d0109a49508ff1489c0aba6b9c9ce1133f4392496",
+    "detail":  "Next natural game start uses this file",
+    "runtimeModified":  false,
+    "utc":  "2026-10-06T16:46:14.6577608Z"
+}

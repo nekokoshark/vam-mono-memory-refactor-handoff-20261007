@@ -1,0 +1,84 @@
+--- D4685C71/reclaim_controller.c
++++ exact/reclaim_controller.c
+@@ -82,6 +82,13 @@
+     u64 warm_seed_scans;
+     /* Non-owning GC-hidden addresses: hints must not pin a later allocation. */
+     u64 warm_hints[32];
++    u64 exact_sort_runs;
++    u64 exact_sort_pages;
++    u64 exact_sort_head_changes;
++    /* Only GC-locked sorting uses this fixed workspace. Hidden addresses are
++     * cleared before a chain commits; the workspace owns no heap objects. */
++    u64 exact_heads[513];
++    u64 exact_tails[513];
+ } ReclaimState;
+ 
+ typedef FreeHeader* (*FindHeader)(u64 block);
+@@ -162,6 +169,7 @@
+         return;
+     }
+     state->sort_runs++;
++    state->exact_sort_runs++;
+     /* Each (kind,size) chain is its own validation/commit unit. The registered
+      * object heap bounds its page count, including cold reserved sections.
+      * This is not a larger fixed cap: no valid chain can contain more pages than
+@@ -177,9 +185,9 @@
+         if (!pending) continue;
+         for (size = 1; size <= 256; ++size) {
+             u64 block = pending[size], old = block, count = 0, reason = 0;
+-            u64 joined = 0, minimum = 8, maximum = 0;
+-            volatile u64 heads[8];
+-            volatile u64 tails[8];
++            u64 joined = 0, minimum = 513, maximum = 0;
++            volatile u64* heads = state->exact_heads;
++            volatile u64* tails = state->exact_tails;
+             int band;
+             if (!block) continue;
+             state->chain_scans++;
+@@ -195,8 +203,7 @@
+                 if (h->flags & 2) { reason = 6; break; }
+                 marks = marked(h);
+                 if (marks > 512 / size) { reason = 7; break; }
+-                density = marks * 8 / (512 / size);
+-                if (density > 7) density = 7;
++                density = marks;
+                 if (density < minimum) minimum = density;
+                 if (density > maximum) maximum = density;
+                 ++count;
+@@ -207,24 +214,26 @@
+             if (reason) { reject_chain(state, kind, size, reason); continue; }
+             state->sort_pages += count;
+             state->last_pending_pages += count;
+-            /* Uniform-density chains already satisfy the ordering contract. */
++            /* Uniform exact-mark-count chains already satisfy the ordering contract. */
+             if (minimum == maximum) { state->uniform_chains++; continue; }
+             block = old;
+-            for (band = 0; band < 8; ++band) { heads[band] = 0; tails[band] = 0; }
++            for (band = 0; band <= 512; ++band) { heads[band] = 0; tails[band] = 0; }
+             while (block) {
+                 FreeHeader* h = find(block);
+                 u64 next = h->next;
+-                band = (int)(marked(h) * 8 / (512 / size));
+-                if (band > 7) band = 7;
++                band = (int)marked(h);
+                 h->next = 0;
+-                if (tails[band]) find(tails[band])->next = block;
+-                else heads[band] = block;
+-                tails[band] = block;
++                if (tails[band]) find(~tails[band])->next = block;
++                else heads[band] = ~block;
++                tails[band] = ~block;
+                 block = next;
+             }
+-            for (band = 0; band < 8; ++band) {
+-                if (heads[band]) { find(tails[band])->next = joined; joined = heads[band]; }
+-            }
++            for (band = 0; band <= 512; ++band) {
++                if (heads[band]) { find(~tails[band])->next = joined; joined = ~heads[band]; }
++                heads[band] = tails[band] = 0;
++            }
++            state->exact_sort_pages += count;
++            state->exact_sort_head_changes += joined != old;
+             pending[size] = joined;
+             state->sort_lists++;
+             state->sort_changed_lists += joined != old;

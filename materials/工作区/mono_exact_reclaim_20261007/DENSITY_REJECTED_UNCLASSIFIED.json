@@ -1,0 +1,12 @@
+{
+  "pid": 6052,
+  "status": "rejected",
+  "sampledPages": null,
+  "gameCalls": 0,
+  "gameWrites": 0,
+  "coverage": "At most 128 leading pending pages per (kind,size); last GC marks, not current live roots.",
+  "reason": "",
+  "readCalls": 11189,
+  "readBytes": 616812,
+  "seconds": 0.40600000007543713
+}

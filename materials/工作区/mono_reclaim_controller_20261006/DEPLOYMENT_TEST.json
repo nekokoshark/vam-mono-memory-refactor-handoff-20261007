@@ -1,0 +1,10 @@
+﻿{
+    "state":  "disk-installed",
+    "mode":  "Restore",
+    "target":  "F:\\vam1.22.0.12\\工作区\\mono_reclaim_controller_20261006\\deployment_test\\mono.dll",
+    "testCopy":  true,
+    "sha256":  "cd7ab354a43faf18479c3a2d1f57d2d068769b8a490338942f6c510e8b02242d",
+    "detail":  "Original remains in BASELINE.dll; candidate remains changed",
+    "runtimeModified":  false,
+    "utc":  "2026-10-06T04:55:18.2651894Z"
+}

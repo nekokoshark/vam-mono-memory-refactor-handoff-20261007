@@ -1,0 +1,10 @@
+﻿{
+    "state":  "ready",
+    "mode":  "Check",
+    "target":  "F:\\vam1.22.0.12\\工作区\\mono_free_span_lifecycle_20261006\\deployment_test\\mono.dll",
+    "testCopy":  true,
+    "sha256":  "16aaf4bdf3fa0eaf8a02347ff5304ef0d6bcad5ce7d4e265674c1d4da31de808",
+    "detail":  "Read-only check",
+    "runtimeModified":  false,
+    "utc":  "2026-10-06T09:16:17.2678051Z"
+}

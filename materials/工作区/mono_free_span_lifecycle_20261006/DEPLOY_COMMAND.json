@@ -1,0 +1,10 @@
+﻿{
+    "command":  "powershell -NoProfile -File install.ps1 -Mode Install",
+    "workingDirectory":  "F:\\vam1.22.0.12\\工作区\\mono_free_span_lifecycle_20261006",
+    "input":  {
+                  "testCopy":  false,
+                  "normalExitConfirmed":  true
+              },
+    "stdout":  "SNAPSHOT PASS: 81 files copied and hash-verified; game files read-only\nINSTALL_PASS mode=Install testCopy=False sha256=b7c1f56dd38fb70b6ee7e66f3dd65dd86f7a10e832006a5e5a2c3837928974b2 runtimeModified=False",
+    "exitStatus":  0
+}

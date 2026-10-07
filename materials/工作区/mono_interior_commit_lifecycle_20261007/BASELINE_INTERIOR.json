@@ -1,0 +1,815 @@
+{
+  "mode": "BASELINE",
+  "runtimeSHA256": "b7c1f56dd38fb70b6ee7e66f3dd65dd86f7a10e832006a5e5a2c3837928974b2",
+  "rows": [
+    {
+      "cycle": 0,
+      "label": "cold-small",
+      "need": 4096,
+      "leadBytes": 4096,
+      "total": 536870912,
+      "commitBytes": 536870912,
+      "before": {
+        "committed": 0,
+        "reserved": 536870912
+      },
+      "after": {
+        "committed": 536870912,
+        "reserved": 0
+      },
+      "VMcalls": [
+        {
+          "op": "commit",
+          "address": 2377264398336,
+          "bytes": 536870912,
+          "flags": 4096,
+          "success": true
+        }
+      ],
+      "globalVM": {
+        "gcOSRoots": 18,
+        "monoCommittedBytes": 604020736,
+        "monoReservedBytes": 946176,
+        "regionCount": 22
+      }
+    },
+    {
+      "cycle": 0,
+      "label": "cold-large",
+      "need": 2097152,
+      "leadBytes": 8192,
+      "total": 536870912,
+      "commitBytes": 536870912,
+      "before": {
+        "committed": 0,
+        "reserved": 536870912
+      },
+      "after": {
+        "committed": 536870912,
+        "reserved": 0
+      },
+      "VMcalls": [
+        {
+          "op": "commit",
+          "address": 2377264398336,
+          "bytes": 536870912,
+          "flags": 4096,
+          "success": true
+        }
+      ],
+      "globalVM": {
+        "gcOSRoots": 18,
+        "monoCommittedBytes": 604020736,
+        "monoReservedBytes": 946176,
+        "regionCount": 22
+      }
+    },
+    {
+      "cycle": 0,
+      "label": "cold-nine-pages",
+      "need": 65536,
+      "leadBytes": 36864,
+      "total": 536870912,
+      "commitBytes": 536870912,
+      "before": {
+        "committed": 0,
+        "reserved": 536870912
+      },
+      "after": {
+        "committed": 536870912,
+        "reserved": 0
+      },
+      "VMcalls": [
+        {
+          "op": "commit",
+          "address": 2377264398336,
+          "bytes": 536870912,
+          "flags": 4096,
+          "success": true
+        }
+      ],
+      "globalVM": {
+        "gcOSRoots": 18,
+        "monoCommittedBytes": 604020736,
+        "monoReservedBytes": 946176,
+        "regionCount": 22
+      }
+    },
+    {
+      "cycle": 0,
+      "label": "cold-exact-right",
+      "need": 536866816,
+      "leadBytes": 4096,
+      "total": 536870912,
+      "commitBytes": 536870912,
+      "before": {
+        "committed": 0,
+        "reserved": 536870912
+      },
+      "after": {
+        "committed": 536870912,
+        "reserved": 0
+      },
+      "VMcalls": [
+        {
+          "op": "commit",
+          "address": 2377264398336,
+          "bytes": 536870912,
+          "flags": 4096,
+          "success": true
+        }
+      ],
+      "globalVM": {
+        "gcOSRoots": 22,
+        "monoCommittedBytes": 605085696,
+        "monoReservedBytes": 946176,
+        "regionCount": 26
+      }
+    },
+    {
+      "cycle": 0,
+      "label": "mapped-interior",
+      "need": 65536,
+      "leadBytes": 8192,
+      "total": 536870912,
+      "commitBytes": 0,
+      "before": {
+        "committed": 536870912,
+        "reserved": 0
+      },
+      "after": {
+        "committed": 536870912,
+        "reserved": 0
+      },
+      "VMcalls": [],
+      "globalVM": {
+        "gcOSRoots": 22,
+        "monoCommittedBytes": 605085696,
+        "monoReservedBytes": 946176,
+        "regionCount": 26
+      }
+    },
+    {
+      "cycle": 0,
+      "label": "cold-noninterior",
+      "need": 4096,
+      "leadBytes": 0,
+      "total": 536870912,
+      "commitBytes": 65536,
+      "before": {
+        "committed": 0,
+        "reserved": 536870912
+      },
+      "after": {
+        "committed": 65536,
+        "reserved": 536805376
+      },
+      "VMcalls": [
+        {
+          "op": "commit",
+          "address": 2377264398336,
+          "bytes": 65536,
+          "flags": 4096,
+          "success": true
+        }
+      ],
+      "globalVM": {
+        "gcOSRoots": 22,
+        "monoCommittedBytes": 68280320,
+        "monoReservedBytes": 537751552,
+        "regionCount": 28
+      }
+    },
+    {
+      "cycle": 0,
+      "label": "atomic-blacklist-bypass",
+      "need": 4096,
+      "leadBytes": 0,
+      "total": 536870912,
+      "commitBytes": 65536,
+      "before": {
+        "committed": 0,
+        "reserved": 536870912
+      },
+      "after": {
+        "committed": 65536,
+        "reserved": 536805376
+      },
+      "VMcalls": [
+        {
+          "op": "commit",
+          "address": 2377264398336,
+          "bytes": 65536,
+          "flags": 4096,
+          "success": true
+        }
+      ],
+      "globalVM": {
+        "gcOSRoots": 22,
+        "monoCommittedBytes": 68280320,
+        "monoReservedBytes": 537751552,
+        "regionCount": 28
+      }
+    },
+    {
+      "cycle": 0,
+      "label": "original-header-failure",
+      "need": 4096,
+      "leadBytes": 0,
+      "total": 536870912,
+      "commitBytes": 536870912,
+      "before": {
+        "committed": 0,
+        "reserved": 536870912
+      },
+      "after": {
+        "committed": 536870912,
+        "reserved": 0
+      },
+      "VMcalls": [
+        {
+          "op": "commit",
+          "address": 2377264398336,
+          "bytes": 536870912,
+          "flags": 4096,
+          "success": true
+        }
+      ],
+      "originalNullResult": true,
+      "fixtureListRestored": true
+    },
+    {
+      "cycle": 0,
+      "label": "invalid-context-fallback",
+      "need": 4096,
+      "leadBytes": 4096,
+      "total": 536870912,
+      "commitBytes": 536870912,
+      "before": {
+        "committed": 0,
+        "reserved": 536870912
+      },
+      "after": {
+        "committed": 536870912,
+        "reserved": 0
+      },
+      "VMcalls": [
+        {
+          "op": "commit",
+          "address": 2377264398336,
+          "bytes": 536870912,
+          "flags": 4096,
+          "success": true
+        }
+      ],
+      "globalVM": {
+        "gcOSRoots": 22,
+        "monoCommittedBytes": 605085696,
+        "monoReservedBytes": 946176,
+        "regionCount": 26
+      }
+    },
+    {
+      "cycle": 1,
+      "label": "cold-small",
+      "need": 4096,
+      "leadBytes": 4096,
+      "total": 536870912,
+      "commitBytes": 536870912,
+      "before": {
+        "committed": 0,
+        "reserved": 536870912
+      },
+      "after": {
+        "committed": 536870912,
+        "reserved": 0
+      },
+      "VMcalls": [
+        {
+          "op": "commit",
+          "address": 2377264398336,
+          "bytes": 536870912,
+          "flags": 4096,
+          "success": true
+        }
+      ],
+      "globalVM": {
+        "gcOSRoots": 22,
+        "monoCommittedBytes": 605085696,
+        "monoReservedBytes": 946176,
+        "regionCount": 26
+      }
+    },
+    {
+      "cycle": 1,
+      "label": "cold-large",
+      "need": 2097152,
+      "leadBytes": 8192,
+      "total": 536870912,
+      "commitBytes": 536870912,
+      "before": {
+        "committed": 0,
+        "reserved": 536870912
+      },
+      "after": {
+        "committed": 536870912,
+        "reserved": 0
+      },
+      "VMcalls": [
+        {
+          "op": "commit",
+          "address": 2377264398336,
+          "bytes": 536870912,
+          "flags": 4096,
+          "success": true
+        }
+      ],
+      "globalVM": {
+        "gcOSRoots": 22,
+        "monoCommittedBytes": 605085696,
+        "monoReservedBytes": 946176,
+        "regionCount": 26
+      }
+    },
+    {
+      "cycle": 1,
+      "label": "cold-nine-pages",
+      "need": 65536,
+      "leadBytes": 36864,
+      "total": 536870912,
+      "commitBytes": 536870912,
+      "before": {
+        "committed": 0,
+        "reserved": 536870912
+      },
+      "after": {
+        "committed": 536870912,
+        "reserved": 0
+      },
+      "VMcalls": [
+        {
+          "op": "commit",
+          "address": 2377264398336,
+          "bytes": 536870912,
+          "flags": 4096,
+          "success": true
+        }
+      ],
+      "globalVM": {
+        "gcOSRoots": 22,
+        "monoCommittedBytes": 605085696,
+        "monoReservedBytes": 946176,
+        "regionCount": 26
+      }
+    },
+    {
+      "cycle": 1,
+      "label": "cold-exact-right",
+      "need": 536866816,
+      "leadBytes": 4096,
+      "total": 536870912,
+      "commitBytes": 536870912,
+      "before": {
+        "committed": 0,
+        "reserved": 536870912
+      },
+      "after": {
+        "committed": 536870912,
+        "reserved": 0
+      },
+      "VMcalls": [
+        {
+          "op": "commit",
+          "address": 2377264398336,
+          "bytes": 536870912,
+          "flags": 4096,
+          "success": true
+        }
+      ],
+      "globalVM": {
+        "gcOSRoots": 22,
+        "monoCommittedBytes": 605085696,
+        "monoReservedBytes": 946176,
+        "regionCount": 26
+      }
+    },
+    {
+      "cycle": 1,
+      "label": "mapped-interior",
+      "need": 65536,
+      "leadBytes": 8192,
+      "total": 536870912,
+      "commitBytes": 0,
+      "before": {
+        "committed": 536870912,
+        "reserved": 0
+      },
+      "after": {
+        "committed": 536870912,
+        "reserved": 0
+      },
+      "VMcalls": [],
+      "globalVM": {
+        "gcOSRoots": 22,
+        "monoCommittedBytes": 605085696,
+        "monoReservedBytes": 946176,
+        "regionCount": 26
+      }
+    },
+    {
+      "cycle": 1,
+      "label": "cold-noninterior",
+      "need": 4096,
+      "leadBytes": 0,
+      "total": 536870912,
+      "commitBytes": 65536,
+      "before": {
+        "committed": 0,
+        "reserved": 536870912
+      },
+      "after": {
+        "committed": 65536,
+        "reserved": 536805376
+      },
+      "VMcalls": [
+        {
+          "op": "commit",
+          "address": 2377264398336,
+          "bytes": 65536,
+          "flags": 4096,
+          "success": true
+        }
+      ],
+      "globalVM": {
+        "gcOSRoots": 22,
+        "monoCommittedBytes": 68280320,
+        "monoReservedBytes": 537751552,
+        "regionCount": 28
+      }
+    },
+    {
+      "cycle": 1,
+      "label": "atomic-blacklist-bypass",
+      "need": 4096,
+      "leadBytes": 0,
+      "total": 536870912,
+      "commitBytes": 65536,
+      "before": {
+        "committed": 0,
+        "reserved": 536870912
+      },
+      "after": {
+        "committed": 65536,
+        "reserved": 536805376
+      },
+      "VMcalls": [
+        {
+          "op": "commit",
+          "address": 2377264398336,
+          "bytes": 65536,
+          "flags": 4096,
+          "success": true
+        }
+      ],
+      "globalVM": {
+        "gcOSRoots": 22,
+        "monoCommittedBytes": 68280320,
+        "monoReservedBytes": 537751552,
+        "regionCount": 28
+      }
+    },
+    {
+      "cycle": 1,
+      "label": "original-header-failure",
+      "need": 4096,
+      "leadBytes": 0,
+      "total": 536870912,
+      "commitBytes": 536870912,
+      "before": {
+        "committed": 0,
+        "reserved": 536870912
+      },
+      "after": {
+        "committed": 536870912,
+        "reserved": 0
+      },
+      "VMcalls": [
+        {
+          "op": "commit",
+          "address": 2377264398336,
+          "bytes": 536870912,
+          "flags": 4096,
+          "success": true
+        }
+      ],
+      "originalNullResult": true,
+      "fixtureListRestored": true
+    },
+    {
+      "cycle": 1,
+      "label": "invalid-context-fallback",
+      "need": 4096,
+      "leadBytes": 4096,
+      "total": 536870912,
+      "commitBytes": 536870912,
+      "before": {
+        "committed": 0,
+        "reserved": 536870912
+      },
+      "after": {
+        "committed": 536870912,
+        "reserved": 0
+      },
+      "VMcalls": [
+        {
+          "op": "commit",
+          "address": 2377264398336,
+          "bytes": 536870912,
+          "flags": 4096,
+          "success": true
+        }
+      ],
+      "globalVM": {
+        "gcOSRoots": 22,
+        "monoCommittedBytes": 605085696,
+        "monoReservedBytes": 946176,
+        "regionCount": 26
+      }
+    },
+    {
+      "cycle": 2,
+      "label": "cold-small",
+      "need": 4096,
+      "leadBytes": 4096,
+      "total": 536870912,
+      "commitBytes": 536870912,
+      "before": {
+        "committed": 0,
+        "reserved": 536870912
+      },
+      "after": {
+        "committed": 536870912,
+        "reserved": 0
+      },
+      "VMcalls": [
+        {
+          "op": "commit",
+          "address": 2377264398336,
+          "bytes": 536870912,
+          "flags": 4096,
+          "success": true
+        }
+      ],
+      "globalVM": {
+        "gcOSRoots": 22,
+        "monoCommittedBytes": 605085696,
+        "monoReservedBytes": 946176,
+        "regionCount": 26
+      }
+    },
+    {
+      "cycle": 2,
+      "label": "cold-large",
+      "need": 2097152,
+      "leadBytes": 8192,
+      "total": 536870912,
+      "commitBytes": 536870912,
+      "before": {
+        "committed": 0,
+        "reserved": 536870912
+      },
+      "after": {
+        "committed": 536870912,
+        "reserved": 0
+      },
+      "VMcalls": [
+        {
+          "op": "commit",
+          "address": 2377264398336,
+          "bytes": 536870912,
+          "flags": 4096,
+          "success": true
+        }
+      ],
+      "globalVM": {
+        "gcOSRoots": 22,
+        "monoCommittedBytes": 605085696,
+        "monoReservedBytes": 946176,
+        "regionCount": 26
+      }
+    },
+    {
+      "cycle": 2,
+      "label": "cold-nine-pages",
+      "need": 65536,
+      "leadBytes": 36864,
+      "total": 536870912,
+      "commitBytes": 536870912,
+      "before": {
+        "committed": 0,
+        "reserved": 536870912
+      },
+      "after": {
+        "committed": 536870912,
+        "reserved": 0
+      },
+      "VMcalls": [
+        {
+          "op": "commit",
+          "address": 2377264398336,
+          "bytes": 536870912,
+          "flags": 4096,
+          "success": true
+        }
+      ],
+      "globalVM": {
+        "gcOSRoots": 22,
+        "monoCommittedBytes": 605085696,
+        "monoReservedBytes": 946176,
+        "regionCount": 26
+      }
+    },
+    {
+      "cycle": 2,
+      "label": "cold-exact-right",
+      "need": 536866816,
+      "leadBytes": 4096,
+      "total": 536870912,
+      "commitBytes": 536870912,
+      "before": {
+        "committed": 0,
+        "reserved": 536870912
+      },
+      "after": {
+        "committed": 536870912,
+        "reserved": 0
+      },
+      "VMcalls": [
+        {
+          "op": "commit",
+          "address": 2377264398336,
+          "bytes": 536870912,
+          "flags": 4096,
+          "success": true
+        }
+      ],
+      "globalVM": {
+        "gcOSRoots": 22,
+        "monoCommittedBytes": 605085696,
+        "monoReservedBytes": 946176,
+        "regionCount": 26
+      }
+    },
+    {
+      "cycle": 2,
+      "label": "mapped-interior",
+      "need": 65536,
+      "leadBytes": 8192,
+      "total": 536870912,
+      "commitBytes": 0,
+      "before": {
+        "committed": 536870912,
+        "reserved": 0
+      },
+      "after": {
+        "committed": 536870912,
+        "reserved": 0
+      },
+      "VMcalls": [],
+      "globalVM": {
+        "gcOSRoots": 22,
+        "monoCommittedBytes": 605085696,
+        "monoReservedBytes": 946176,
+        "regionCount": 26
+      }
+    },
+    {
+      "cycle": 2,
+      "label": "cold-noninterior",
+      "need": 4096,
+      "leadBytes": 0,
+      "total": 536870912,
+      "commitBytes": 65536,
+      "before": {
+        "committed": 0,
+        "reserved": 536870912
+      },
+      "after": {
+        "committed": 65536,
+        "reserved": 536805376
+      },
+      "VMcalls": [
+        {
+          "op": "commit",
+          "address": 2377264398336,
+          "bytes": 65536,
+          "flags": 4096,
+          "success": true
+        }
+      ],
+      "globalVM": {
+        "gcOSRoots": 22,
+        "monoCommittedBytes": 68280320,
+        "monoReservedBytes": 537751552,
+        "regionCount": 28
+      }
+    },
+    {
+      "cycle": 2,
+      "label": "atomic-blacklist-bypass",
+      "need": 4096,
+      "leadBytes": 0,
+      "total": 536870912,
+      "commitBytes": 65536,
+      "before": {
+        "committed": 0,
+        "reserved": 536870912
+      },
+      "after": {
+        "committed": 65536,
+        "reserved": 536805376
+      },
+      "VMcalls": [
+        {
+          "op": "commit",
+          "address": 2377264398336,
+          "bytes": 65536,
+          "flags": 4096,
+          "success": true
+        }
+      ],
+      "globalVM": {
+        "gcOSRoots": 22,
+        "monoCommittedBytes": 68280320,
+        "monoReservedBytes": 537751552,
+        "regionCount": 28
+      }
+    },
+    {
+      "cycle": 2,
+      "label": "original-header-failure",
+      "need": 4096,
+      "leadBytes": 0,
+      "total": 536870912,
+      "commitBytes": 536870912,
+      "before": {
+        "committed": 0,
+        "reserved": 536870912
+      },
+      "after": {
+        "committed": 536870912,
+        "reserved": 0
+      },
+      "VMcalls": [
+        {
+          "op": "commit",
+          "address": 2377264398336,
+          "bytes": 536870912,
+          "flags": 4096,
+          "success": true
+        }
+      ],
+      "originalNullResult": true,
+      "fixtureListRestored": true
+    },
+    {
+      "cycle": 2,
+      "label": "invalid-context-fallback",
+      "need": 4096,
+      "leadBytes": 4096,
+      "total": 536870912,
+      "commitBytes": 536870912,
+      "before": {
+        "committed": 0,
+        "reserved": 536870912
+      },
+      "after": {
+        "committed": 536870912,
+        "reserved": 0
+      },
+      "VMcalls": [
+        {
+          "op": "commit",
+          "address": 2377264398336,
+          "bytes": 536870912,
+          "flags": 4096,
+          "success": true
+        }
+      ],
+      "globalVM": {
+        "gcOSRoots": 22,
+        "monoCommittedBytes": 605085696,
+        "monoReservedBytes": 946176,
+        "regionCount": 26
+      }
+    }
+  ],
+  "blacklistsRestored": true,
+  "originalIATRestored": true,
+  "originalInstallHeaderRestored": true,
+  "liveAliasesVerified": true,
+  "allocationAndBlacklisting": "original-GC_allochblk_nth",
+  "gameCalls": 0,
+  "gameWrites": 0,
+  "gameBenefitBytes": null
+}

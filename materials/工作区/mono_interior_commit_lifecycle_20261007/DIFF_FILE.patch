@@ -1,0 +1,233 @@
+--- prior/reclaim_controller.c
++++ mono_interior_commit_lifecycle_20261007/reclaim_controller.c
+@@ -1,6 +1,6 @@
+ /* Linked allocation/reclamation policies for the audited Unity Mono ABI.
+  * Original marking, object layout, maximum heap, locks and OS allocator remain.
+- * Five original callsites enter these policies under the original allocator lock.
++ * Six original callsites enter these policies under the original allocator lock.
+  */
+ typedef unsigned char u8;
+ typedef unsigned short u16;
+@@ -69,6 +69,11 @@
+     u64 merge_header_rejects;
+     u64 last_merge_committed_before;
+     u64 last_merge_committed_after;
++    u64 interior_split_calls;
++    u64 interior_cold_splits;
++    u64 interior_full_bytes;
++    u64 interior_deferred_bytes;
++    u64 interior_fallbacks;
+ } ReclaimState;
+ 
+ typedef FreeHeader* (*FindHeader)(u64 block);
+@@ -220,8 +225,8 @@
+ }
+ 
+ /* This call site is followed immediately by take_prefix under the same original
+- * allocator lock. Interior/blacklisted splits keep the original full remap.
+- * No partially mapped header is ever published on a free list.
++ * allocator lock. Interior splits first preserve both cold headers, then use
++ * this same demand-remap transaction. No unlocked partial state is exposed.
+  */
+ __declspec(dllexport) void remember_remap(u64 block, u64 full, u64 need,
+                                         u8* base, ReclaimState* state)
+@@ -302,6 +307,54 @@
+         state->remap_prefix_bytes += full;
+     }
+     return original(block, h, need, bucket);
++}
++
++/* Only the original allocator's accepted interior split enters this adapter.
++ * Its preceding full-remap/flag-clear pair is removed at that exact callsite.
++ * SplitBlock is metadata-only: preserve its list/map/age operations once, keep
++ * both resulting spans cold, then let the common remember/take path commit the
++ * actual accepted interval. The original allocator lock covers the transaction.
++ * Unknown state takes the native full-remap + flag-clear + split path.
++ */
++__declspec(dllexport) void split_cold_extent(u64 block, FreeHeader* left,
++        u64 cut, FreeHeader* right, int bucket, u8* base, ReclaimState* state)
++{
++    typedef void (*SplitBlock)(u64, FreeHeader*, u64, FreeHeader*, int);
++    SplitBlock original = (SplitBlock)(base + 0x15ff50);
++    int cold = (left->flags & 2) != 0;
++    state->interior_split_calls++;
++    if (cold) {
++        FindHeader find = (FindHeader)(base + FIND_HEADER_RVA);
++        u64 full = left->bytes;
++        u64 lead = cut - block;
++        int admitted = state->magic == MAGIC
++            && *(u64*)(base + PAGE_SIZE_RVA) == 4096
++            && bucket >= 0 && bucket < BUCKETS && left != right
++            && !(block & 4095) && !(cut & 4095)
++            && full && !(full & 4095) && full < MAX_BYTES
++            && cut > block && lead < full && block + full > block
++            && left == find(block) && right == find(cut)
++            && left->free_marker == *(u64*)(base + FREE_MARKER_RVA);
++        if (admitted) {
++            original(block, left, cut, right, bucket);
++            /* Native SplitBlock initializes right->flags to zero. Restore only
++             * its cold bit; leave all other original header fields untouched.
++             * Left's original cold bit survived the metadata split unchanged.
++             */
++            right->flags |= 2;
++            state->interior_cold_splits++;
++            state->interior_full_bytes += full;
++            state->interior_deferred_bytes += lead;
++            return;
++        }
++        {
++            Unmap remap = (Unmap)(base + REMAP_RVA);
++            remap(block, full);
++            left->flags &= (u8)~2;
++            state->interior_fallbacks++;
++        }
++    }
++    original(block, left, cut, right, bucket);
+ }
+ 
+ /* Preserve both original expansion batches exactly. The section table is finite
+--- prior/build_native.py
++++ mono_interior_commit_lifecycle_20261007/build_native.py
+@@ -55,7 +55,7 @@
+     assert not image.OPTIONAL_HEADER.DATA_DIRECTORY[1].Size, "Controller must have no imports"
+     assert not image.OPTIONAL_HEADER.DATA_DIRECTORY[5].Size, "Controller must be position independent"
+     exports = {e.name.decode(): e.address for e in image.DIRECTORY_ENTRY_EXPORT.symbols}
+-    assert set(exports) == {"reclaim_controller", "remember_remap", "take_prefix", "grow_on_demand"}
++    assert set(exports) == {"reclaim_controller", "remember_remap", "take_prefix", "grow_on_demand", "split_cold_extent"}
+     code = next(s for s in image.sections if s.Name.rstrip(b"\0") == b".text")
+     other = [s for s in image.sections if s is not code]
+     assert all(s.Name.rstrip(b"\0") in (b".rdata", b".data", b".pdata") for s in other)
+@@ -79,9 +79,9 @@
+     data_rva = min(s.VirtualAddress for s in other) + delta
+     # Four ABI thunks: two leaf tailcalls and two stack-argument calls.
+     stubs = {"reclaim_controller": stub_rva, "grow_on_demand": stub_rva + 32,
+-             "remember_remap": stub_rva + 64, "take_prefix": stub_rva + 112}
+-    assert stub_rva + 160 < data_rva
+-    text.extend(b"\0" * max(0, stub_offset + 160 - len(text)))
++             "remember_remap": stub_rva + 64, "take_prefix": stub_rva + 112, "split_cold_extent": stub_rva + 160}
++    assert stub_rva + 208 < data_rva
++    text.extend(b"\0" * max(0, stub_offset + 208 - len(text)))
+ 
+     # Keep donor relative code/data distances. No new absolute pointers/relocs.
+     payload_end = max(s.VirtualAddress + max(s.Misc_VirtualSize, s.SizeOfRawData) for s in other) + delta
+@@ -108,9 +108,11 @@
+     thunk_unwind_rva = align(state_rva + state_size, 4)
+     for name, size in (("remember_remap", 36), ("take_prefix", 38)):
+         new_rows.append((stubs[name], stubs[name] + size, thunk_unwind_rva))
++    split_unwind_rva = thunk_unwind_rva + 8
++    new_rows.append((stubs["split_cold_extent"], stubs["split_cold_extent"] + 46, split_unwind_rva))
+     rows = sorted(old_rows + new_rows)
+     assert all(a[0] < a[1] <= b[0] for a, b in zip(rows, rows[1:])), "Overlapping unwind ranges"
+-    table_rva = thunk_unwind_rva + 8
++    table_rva = thunk_unwind_rva + 16
+     table = b"".join(struct.pack("<III", *row) for row in rows)
+     data = bytearray(table_rva + len(table) - data_rva)
+     for s in other:
+@@ -121,6 +123,7 @@
+     struct.pack_into(f"<{state_words}Q", data, state_rva - data_rva,
+                      0x31524C5443524347, 256 * 1024**2, *([0] * (state_words - 2)))
+     data[thunk_unwind_rva-data_rva:thunk_unwind_rva-data_rva+8] = bytes.fromhex("0104010004620000")
++    data[split_unwind_rva-data_rva:split_unwind_rva-data_rva+8] = bytes.fromhex("0104010004820000")
+     data[table_rva-data_rva:] = table
+     # Leaf thunk: establish module base/context without changing stack or ABI.
+     stub = (b"\x48\x8d\x0d" + struct.pack("<i", -(stub_rva + 7)) +
+@@ -148,6 +151,15 @@
+             bytes.fromhex("4883c438c3"))
+     assert len(stub) == 38
+     text[take-new_rva:take-new_rva+len(stub)] = stub
++    split = stubs["split_cold_extent"]
++    # Entry arg5 is [entry RSP+40]; after SUB RSP,72 it is [RSP+112].
++    # Copy arg5, append base/state as args6/7, keep RCX/RDX/R8/R9 unchanged.
++    stub = (bytes.fromhex("4883ec488b44247089442420488d05") + rel(split+19, 0) +
++            bytes.fromhex("4889442428488d05") + rel(split+31, state_rva) +
++            bytes.fromhex("4889442430e8") + rel(split+41, exports["split_cold_extent"]+delta) +
++            bytes.fromhex("4883c448c3"))
++    assert len(stub) == 46
++    text[split-new_rva:split-new_rva+len(stub)] = stub
+     assert len(text) <= data_rva - new_rva
+ 
+     candidate = bytearray(original)
+@@ -155,11 +167,16 @@
+              (0x1603B6, 0x15EC50, "remember_remap"),
+              (0x1603CB, 0x15FECC, "take_prefix"),
+              (0x158890, 0x1580E8, "grow_on_demand"),
+-             (0x15889C, 0x1580E8, "grow_on_demand")]
++             (0x15889C, 0x1580E8, "grow_on_demand"),
++             (0x160219, 0x15FF50, "split_cold_extent")]
+     for site, old_target, name in sites:
+         call_offset = pe.get_offset_from_rva(site)
+         assert pe.get_data(site, 5) == b"\xe8" + rel(site+5, old_target)
+         candidate[call_offset:call_offset+5] = b"\xe8" + rel(site+5, stubs[name])
++    edit_rva = 0x1601F7
++    assert pe.get_data(edit_rva,9) == bytes.fromhex("e854eaffff806329fd")
++    edit_offset = pe.get_offset_from_rva(edit_rva)
++    candidate[edit_offset:edit_offset+9] = b"\x90"*9
+     headers = pe.sections[-1].get_file_offset() + 40
+     assert headers + 80 <= pe.OPTIONAL_HEADER.SizeOfHeaders
+     assert not any(candidate[headers:headers+80]), "No spare PE section headers"
+@@ -201,7 +218,8 @@
+              "callSites": [{"rva": site, "originalTarget": old, "stubRVA": stubs[name],
+                             "name": name} for site, old, name in sites],
+              "exports": {name: value+delta for name, value in exports.items()},
+-             "stubs": stubs, "thunkUnwindRVA": thunk_unwind_rva,
++             "stubs": stubs, "thunkUnwindRVA": thunk_unwind_rva, "splitUnwindRVA": split_unwind_rva,
++             "staticEdits": [{"rva":edit_rva,"original":"e854eaffff806329fd","modified":"90"*9}],
+              "gameCalls": 0, "deploymentRecord": "DEPLOYMENT.json",
+              "growthPolicy": "original speculative/fallback batch arguments unchanged",
+              "replacesRejectedSHA256": "f3f46bba95a099cf6a20971aa6da0eded497f7b5c71b48653ec35b76bebb310a"}
+@@ -215,7 +233,7 @@
+              "/nostdlib+", "/optimize+", "/target:library", "/out:LifecycleSample.dll",
+              "/reference:" + str(ROOT / "VaM_Data/Managed/mscorlib.dll"), "LifecycleSample.cs"], records)
+     (HERE / "BUILD.json").write_text(json.dumps(records, indent=2) + "\n", encoding="utf-8")
+-    print("BUILD_PASS controller=native-C callsites=5 importsAdded=0 unwind=preserved sections=RX+RW growth=original policies=sort+merge+prefix+retire")
++    print("BUILD_PASS controller=native-C callsites=6 importsAdded=0 unwind=preserved sections=RX+RW growth=original policies=sort+merge+prefix+retire")
+ 
+ 
+ if __name__ == "__main__":
+--- prior/verify_native.py
++++ mono_interior_commit_lifecycle_20261007/verify_native.py
+@@ -22,12 +22,16 @@
+     old, new = pefile.PE(data=a), pefile.PE(data=b)
+     changed = []
+     offsets = [old.get_offset_from_rva(row["rva"]) for row in patch["callSites"]]
++    edit_offsets = [(old.get_offset_from_rva(e["rva"]),len(bytes.fromhex(e["original"]))) for e in patch["staticEdits"]]
++    for e in patch["staticEdits"]:
++        assert old.get_data(e["rva"],len(bytes.fromhex(e["original"]))).hex() == e["original"]
++        assert new.get_data(e["rva"],len(bytes.fromhex(e["modified"]))).hex() == e["modified"]
+     for s in old.sections:
+         start, end = s.PointerToRawData, s.PointerToRawData + s.SizeOfRawData
+         differences = [i for i in range(start, end) if a[i] != b[i]]
+-        assert all(any(calloff <= i < calloff + 5 for calloff in offsets) for i in differences)
++        assert all(any(calloff <= i < calloff + 5 for calloff in offsets) or any(start <= i < start+count for start,count in edit_offsets) for i in differences)
+         changed.extend(differences)
+-    assert changed and len(changed) <= 25
++    assert changed and len(changed) <= 39
+     for index in (0, 1, 2, 5, 6, 9, 10, 12, 13, 14):
+         x, y = old.OPTIONAL_HEADER.DATA_DIRECTORY[index], new.OPTIONAL_HEADER.DATA_DIRECTORY[index]
+         assert (x.VirtualAddress, x.Size) == (y.VirtualAddress, y.Size)
+@@ -55,7 +59,8 @@
+         assert call.mnemonic == "call" and call.operands[0].imm == row["stubRVA"]
+     for name, size, expected in (("grow_on_demand", 22, ["mov", "lea", "lea", "jmp"]),
+             ("remember_remap", 36, ["sub", "mov", "lea", "lea", "mov", "call", "add", "ret"]),
+-            ("take_prefix", 38, ["sub", "lea", "mov", "lea", "mov", "call", "add", "ret"])):
++            ("take_prefix", 38, ["sub", "lea", "mov", "lea", "mov", "call", "add", "ret"]),
++            ("split_cold_extent",46,["sub","mov","mov","lea","mov","lea","mov","call","add","ret"])):
+         instructions = list(md.disasm(new.get_data(patch["stubs"][name], size), patch["stubs"][name]))
+         assert [i.mnemonic for i in instructions] == expected
+         target = instructions[-1] if name == "grow_on_demand" else instructions[-3]
+@@ -89,7 +94,14 @@
+         collectorAndOSAllocatorsUnchanged=True, newUnwindEntries=patch["newUnwindEntries"],
+         chainedUnwindRebased=chains, wxAdded=False), indent=2) + "\n", encoding="utf-8")
+     assert new.get_data(patch["thunkUnwindRVA"], 8) == bytes.fromhex("0104010004620000")
+-    print(f"STRUCTURE_PASS exports=unchanged imports=unchanged WX=none callsites=5 unwind={patch['newUnwindEntries']} chains={chains}")
++    assert new.get_data(patch["splitUnwindRVA"],8) == bytes.fromhex("0104010004820000")
++    split = list(md.disasm(new.get_data(patch["stubs"]["split_cold_extent"],46),patch["stubs"]["split_cold_extent"]))
++    assert split[0].op_str == "rsp, 0x48"
++    assert split[1].op_str == "eax, dword ptr [rsp + 0x70]"
++    assert split[2].op_str == "dword ptr [rsp + 0x20], eax"
++    assert split[4].op_str == "qword ptr [rsp + 0x28], rax"
++    assert split[6].op_str == "qword ptr [rsp + 0x30], rax"
++    print(f"STRUCTURE_PASS exports=unchanged imports=unchanged WX=none callsites=6 unwind={patch['newUnwindEntries']} chains={chains}")
+ 
+ 
+ if __name__ == "__main__":

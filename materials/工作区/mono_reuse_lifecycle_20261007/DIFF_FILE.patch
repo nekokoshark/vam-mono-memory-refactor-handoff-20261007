@@ -1,0 +1,172 @@
+--- A1/reclaim_controller.c
++++ candidate/reclaim_controller.c
+@@ -1,6 +1,6 @@
+ /* Linked allocation/reclamation policies for the audited Unity Mono ABI.
+  * Original marking, object layout, maximum heap, locks and OS allocator remain.
+- * Six original callsites enter these policies under the original allocator lock.
++ * Seven original callsites enter these policies under the original allocator lock.
+  */
+ typedef unsigned char u8;
+ typedef unsigned short u16;
+@@ -74,6 +74,14 @@
+     u64 interior_full_bytes;
+     u64 interior_deferred_bytes;
+     u64 interior_fallbacks;
++    u64 warm_lookup_calls;
++    u64 warm_lookup_hits;
++    u64 warm_lookup_stale;
++    u64 warm_lookup_misses;
++    u64 warm_lookup_native_fallbacks;
++    u64 warm_seed_scans;
++    /* Non-owning GC-hidden addresses: hints must not pin a later allocation. */
++    u64 warm_hints[32];
+ } ReclaimState;
+ 
+ typedef FreeHeader* (*FindHeader)(u64 block);
+@@ -224,6 +232,118 @@
+     }
+ }
+ 
++/* A hint is not a second free list or an owner. Original header/links,
++ * VM flags and the allocator lock are authoritative on every use. All hint
++ * slots use complemented addresses, as conservative-GC hidden pointers do.
++ */
++static void remember_warm(u8* base, ReclaimState* state, u64 block)
++{
++    FindHeader find = (FindHeader)(base + FIND_HEADER_RVA);
++    FreeHeader* h;
++    u64 count;
++    if (!block || (block & 4095)) return;
++    h = find(block);
++    if ((u64)h <= 4096 || h->free_marker != *(u64*)(base + FREE_MARKER_RVA)
++        || (h->flags & 2) || !h->bytes || (h->bytes & 4095)) return;
++    count = h->bytes / 4096;
++    if (count <= 32) state->warm_hints[count - 1] = ~block;
++}
++
++/* GC_new_hblk already executes after original lazy reclaim failed and under
++ * the original allocator lock. Try one non-owning hint per exact-size bucket,
++ * not a heap scan. The original nth allocator still performs ALL blacklist,
++ * collection-pressure, splitting, map/header and free-byte operations.
++ */
++__declspec(dllexport) u64 reuse_small(u64 size, int kind, unsigned flags,
++                                    u8* base, ReclaimState* state)
++{
++    typedef u64 (*Allocate)(u64, int, unsigned);
++    typedef u64 (*AllocateNth)(u64, int, u8, int);
++    typedef u64 (*Blacklisted)(u64, u64);
++    Allocate original = (Allocate)(base + 0x16060c);
++    AllocateNth nth = (AllocateNth)(base + 0x160004);
++    Blacklisted blacklisted = (Blacklisted)(base + 0x1618ac);
++    FindHeader find = (FindHeader)(base + FIND_HEADER_RVA);
++    RemoveFree remove = (RemoveFree)(base + REMOVE_FREE_RVA);
++    AddFree add = (AddFree)(base + ADD_FREE_RVA);
++    u64* lists = (u64*)(base + FREE_LIST_RVA);
++    int bucket;
++    if (state->magic != MAGIC || *(u64*)(base + PAGE_SIZE_RVA) != 4096
++        || !size || size > 256 || flags || kind < 0
++        || kind >= *(int*)(base + KIND_COUNT_RVA) || (kind & ~1) == 2)
++        return original(size, kind, flags);
++    state->warm_lookup_calls++;
++    for (bucket = 1; bucket <= 32; ++bucket) {
++        u64 hidden = state->warm_hints[bucket - 1], block, bytes, result;
++        FreeHeader* h;
++        if (!hidden) continue;
++        /* Clear before any native allocation can repurpose this address. */
++        state->warm_hints[bucket - 1] = 0;
++        block = ~hidden;
++        h = find(block);
++        if ((u64)h <= 4096 || (block & 4095)
++            || h->free_marker != *(u64*)(base + FREE_MARKER_RVA)
++            || (h->flags & 2) || h->bytes != (u64)bucket * 4096) {
++            state->warm_lookup_stale++;
++            continue;
++        }
++        /* A matching size/marker alone does not prove current membership. */
++        if ((h->previous ? ((u64)find(h->previous) <= 4096
++                || find(h->previous)->next != block) : lists[bucket] != block)
++            || (h->next && ((u64)find(h->next) <= 4096
++                || find(h->next)->previous != block))) {
++            state->warm_lookup_stale++;
++            continue;
++        }
++        bytes = h->bytes;
++        /* A one-page normal hint has no possible interior fallback. Retain the
++         * native blacklist decision, and do not let this hint divert a usable
++         * larger warm hint into a cold allocation in the same one-page bin.
++         */
++        if (kind != 0 && bucket == 1 && blacklisted(block, 4096)) continue;
++        if (lists[bucket] != block) {
++            remove(h, bucket);
++            add(block, h);
++        }
++        result = nth(size, kind, (u8)flags, bucket);
++        if (result) {
++            if (result >= block && result - block <= bytes - 4096)
++                state->warm_lookup_hits++;
++            else state->warm_lookup_native_fallbacks++;
++            /* An original interior split can leave a valid warm leading part. */
++            remember_warm(base, state, block);
++            remember_warm(base, state, result + 4096);
++            return result;
++        }
++    }
++    state->warm_lookup_misses++;
++    return original(size, kind, flags);
++}
++
++/* At most 8192 header visits at the completed retirement boundary. Failure to
++ * find a hint only leaves the original allocation path; it grants no release.
++ */
++static void seed_warm(u8* base, ReclaimState* state)
++{
++    u64* lists = (u64*)(base + FREE_LIST_RVA);
++    FindHeader find = (FindHeader)(base + FIND_HEADER_RVA);
++    int bucket;
++    for (bucket = 1; bucket <= 32; ++bucket) {
++        u64 block = lists[bucket], visited = 0;
++        state->warm_hints[bucket - 1] = 0;
++        while (block && visited++ < 256) {
++            FreeHeader* h = find(block);
++            state->warm_seed_scans++;
++            if ((u64)h <= 4096) break;
++            if (!(h->flags & 2)) {
++                remember_warm(base, state, block);
++                break;
++            }
++            block = h->next;
++        }
++    }
++}
++
+ /* This call site is followed immediately by take_prefix under the same original
+  * allocator lock. Interior splits first preserve both cold headers, then use
+  * this same demand-remap transaction. No unlocked partial state is exposed.
+@@ -297,6 +417,7 @@
+                 state->remap_prefix_bytes += warm;
+                 state->remap_avoided_bytes += full - warm;
+                 state->split_prefixes++;
++                remember_warm(base, state, block + need);
+                 return block;
+             }
+         } else state->rejected++;
+@@ -306,7 +427,11 @@
+         remap(pending, full);
+         state->remap_prefix_bytes += full;
+     }
+-    return original(block, h, need, bucket);
++    {
++        u64 result = original(block, h, need, bucket);
++        if (result) remember_warm(base, state, result + need);
++        return result;
++    }
+ }
+ 
+ /* Only the original allocator's accepted interior split enters this adapter.
+@@ -579,4 +704,5 @@
+         state->last_returned = after > unmapped_at_entry ? after - unmapped_at_entry : 0;
+     }
+     state->whole_free_committed_after = committed;
+-}
++    seed_warm(base, state);
++}

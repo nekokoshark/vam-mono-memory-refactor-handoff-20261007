@@ -1,0 +1,12 @@
+﻿{
+    "mode":  "ROLLBACK",
+    "command":  "powershell -NoProfile -File CERTIFY.ps1 -Mode ROLLBACK",
+    "workingDirectory":  "F:\\vam1.22.0.12\\工作区\\mono_interior_commit_lifecycle_20261007",
+    "input":  {
+                  "cases":  12,
+                  "runtime":  "isolated-original-Mono"
+              },
+    "stdout":  "ROLLBACK_PASS cases=12",
+    "nestedOutput":  "ROLLBACK_HASH_PASS baseline=B7C1F56D-restored candidate=retained gameModified=False\nISOLATED_PASS mode=ROLLBACK scenario=idle livePinnedAliasReuse=verified gameCalls=0 gameWrites=0\nISOLATED_PASS mode=ROLLBACK scenario=quick livePinnedAliasReuse=verified gameCalls=0 gameWrites=0\nISOLATED_PASS mode=ROLLBACK scenario=stress livePinnedAliasReuse=verified gameCalls=0 gameWrites=0\nLIFECYCLE_PASS mode=ROLLBACK cells=1048576 refill=262144 prefix=300MiB inventory=closed pinned=verified gameCalls=0 gameWrites=0\nFAILURE_PASS mode=ROLLBACK originalOOM=caught limit=restored recovery=verified gameCalls=0 gameWrites=0\nSECTIONS_PASS mode=ROLLBACK retained=50000 limit=4096 data=verified growth=original\nWARM_PAGES_PASS mode=ROLLBACK cells=524288 coldRemaps=10931 allocationMs=828.745 sections=unchanged VM=closed aliases=verified gameCalls=0\nCOHORT_PASS mode=ROLLBACK pendingPages=1108240 independentInversions=0 globalRejects=0 rootedAliases=verified gameCalls=0 gameWrites=0\nISOLATION_PASS mode=ROLLBACK faults=size+marks+cycle invalidChain=unchanged unrelatedChain=sorted nativeState=restored gameCalls=0 gameWrites=0\nSPAN_PASS mode=ROLLBACK cases=27 avoidableCommitBytes=0 coalesced=True VM=closed sections=unchanged live=verified IAT=restored\nINTERIOR_PASS mode=ROLLBACK cases=27 ordinaryCommitBytes=4831838208 placement=original VM=closed blacklists=restored live=verified\nABI_PASS mode=ROLLBACK unwindCases=6 stack=restored return=restored loader=registered\nVALIDATION_PASS mode=ROLLBACK runtime=3 lifecycle=1 OOM=1 sections=1 warm=1 oversized=1 isolation=1 spans=1 interior=1 ABI=1 gameModified=False",
+    "exitStatus":  0
+}

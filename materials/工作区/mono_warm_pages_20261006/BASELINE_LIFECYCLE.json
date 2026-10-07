@@ -1,0 +1,451 @@
+{
+  "mode": "BASELINE",
+  "runtimeSHA256": "d89ccf26fd75b354244f7225b978667c215d54681a2565df624ac59fb6ac323e",
+  "rows": [
+    {
+      "stage": "PrepareCells",
+      "output": "CELLS_PREPARED count=1048576 pages=8193 roots=296850",
+      "elapsedMs": 81.57709997612983,
+      "controller": null,
+      "counters": {
+        "gc_count": 6,
+        "heap": 65925120,
+        "free": 11149312,
+        "unmapped": 0
+      },
+      "vm": {
+        "gcOSRoots": 17,
+        "monoCommittedBytes": 68091904,
+        "monoReservedBytes": 0,
+        "regionCount": 17
+      },
+      "inventory": {
+        "blocks": 3,
+        "freeBytes": 11149312,
+        "unmappedBytes": 0
+      }
+    },
+    {
+      "stage": "DropCells",
+      "output": "CELLS_DROPPED originals=null",
+      "elapsedMs": 0.24740002118051052,
+      "controller": null,
+      "counters": {
+        "gc_count": 6,
+        "heap": 65925120,
+        "free": 11149312,
+        "unmapped": 0
+      },
+      "vm": {
+        "gcOSRoots": 17,
+        "monoCommittedBytes": 68091904,
+        "monoReservedBytes": 0,
+        "regionCount": 17
+      },
+      "inventory": {
+        "blocks": 3,
+        "freeBytes": 11149312,
+        "unmappedBytes": 0
+      }
+    },
+    {
+      "stage": "SparseGC",
+      "output": "ORIGINAL_MONO_GC_COMPLETED",
+      "elapsedMs": 1.5345999272540212,
+      "controller": null,
+      "counters": {
+        "gc_count": 7,
+        "heap": 65925120,
+        "free": 27402240,
+        "unmapped": 0
+      },
+      "vm": {
+        "gcOSRoots": 17,
+        "monoCommittedBytes": 68091904,
+        "monoReservedBytes": 0,
+        "regionCount": 17
+      },
+      "inventory": {
+        "blocks": 5,
+        "freeBytes": 27402240,
+        "unmappedBytes": 0
+      }
+    },
+    {
+      "stage": "CheckCells",
+      "output": "CELLS_OK aliases=preserved roots=296850 refill=0",
+      "elapsedMs": 3.044000011868775,
+      "controller": null,
+      "counters": {
+        "gc_count": 7,
+        "heap": 65925120,
+        "free": 27402240,
+        "unmapped": 0
+      },
+      "vm": {
+        "gcOSRoots": 17,
+        "monoCommittedBytes": 68091904,
+        "monoReservedBytes": 0,
+        "regionCount": 17
+      },
+      "inventory": {
+        "blocks": 5,
+        "freeBytes": 27402240,
+        "unmappedBytes": 0
+      }
+    },
+    {
+      "stage": "RefillCells",
+      "output": "CELLS_OK aliases=preserved roots=296850 refill=262144",
+      "elapsedMs": 9.193300036713481,
+      "controller": null,
+      "counters": {
+        "gc_count": 7,
+        "heap": 65925120,
+        "free": 25300992,
+        "unmapped": 0
+      },
+      "vm": {
+        "gcOSRoots": 17,
+        "monoCommittedBytes": 68091904,
+        "monoReservedBytes": 0,
+        "regionCount": 17
+      },
+      "inventory": {
+        "blocks": 5,
+        "freeBytes": 25300992,
+        "unmappedBytes": 0
+      }
+    },
+    {
+      "stage": "RefillGC",
+      "output": "ORIGINAL_MONO_GC_COMPLETED",
+      "elapsedMs": 2.0140999695286155,
+      "controller": null,
+      "counters": {
+        "gc_count": 8,
+        "heap": 65925120,
+        "free": 25300992,
+        "unmapped": 0
+      },
+      "vm": {
+        "gcOSRoots": 17,
+        "monoCommittedBytes": 68091904,
+        "monoReservedBytes": 0,
+        "regionCount": 17
+      },
+      "inventory": {
+        "blocks": 5,
+        "freeBytes": 25300992,
+        "unmappedBytes": 0
+      }
+    },
+    {
+      "stage": "CheckCells",
+      "output": "CELLS_OK aliases=preserved roots=296850 refill=262144",
+      "elapsedMs": 2.7721000369638205,
+      "controller": null,
+      "counters": {
+        "gc_count": 8,
+        "heap": 65925120,
+        "free": 25300992,
+        "unmapped": 0
+      },
+      "vm": {
+        "gcOSRoots": 17,
+        "monoCommittedBytes": 68091904,
+        "monoReservedBytes": 0,
+        "regionCount": 17
+      },
+      "inventory": {
+        "blocks": 5,
+        "freeBytes": 25300992,
+        "unmappedBytes": 0
+      }
+    },
+    {
+      "stage": "DropCellRoots",
+      "output": "CELL_ROOTS_DROPPED roots=null aliases=null",
+      "elapsedMs": 0.39930001366883516,
+      "controller": null,
+      "counters": {
+        "gc_count": 8,
+        "heap": 65925120,
+        "free": 25300992,
+        "unmapped": 0
+      },
+      "vm": {
+        "gcOSRoots": 17,
+        "monoCommittedBytes": 68091904,
+        "monoReservedBytes": 0,
+        "regionCount": 17
+      },
+      "inventory": {
+        "blocks": 5,
+        "freeBytes": 25300992,
+        "unmappedBytes": 0
+      }
+    },
+    {
+      "stage": "CellsReleasedGC",
+      "output": "ORIGINAL_MONO_GC_COMPLETED",
+      "elapsedMs": 0.3630999708548188,
+      "controller": null,
+      "counters": {
+        "gc_count": 9,
+        "heap": 65925120,
+        "free": 65703936,
+        "unmapped": 0
+      },
+      "vm": {
+        "gcOSRoots": 17,
+        "monoCommittedBytes": 68091904,
+        "monoReservedBytes": 0,
+        "regionCount": 17
+      },
+      "inventory": {
+        "blocks": 11,
+        "freeBytes": 65703936,
+        "unmappedBytes": 0
+      }
+    },
+    {
+      "stage": "PrepareLarge",
+      "output": "LARGE_PREPARED bytes=805306368 pageTouched=True",
+      "elapsedMs": 166.36390006169677,
+      "controller": null,
+      "counters": {
+        "gc_count": 9,
+        "heap": 871759872,
+        "free": 66228224,
+        "unmapped": 0
+      },
+      "vm": {
+        "gcOSRoots": 24,
+        "monoCommittedBytes": 875528192,
+        "monoReservedBytes": 0,
+        "regionCount": 24
+      },
+      "inventory": {
+        "blocks": 12,
+        "freeBytes": 66228224,
+        "unmappedBytes": 0
+      }
+    },
+    {
+      "stage": "DropLarge",
+      "output": "LARGE_DROPPED root=null",
+      "elapsedMs": 0.3370000049471855,
+      "controller": null,
+      "counters": {
+        "gc_count": 9,
+        "heap": 871759872,
+        "free": 66228224,
+        "unmapped": 0
+      },
+      "vm": {
+        "gcOSRoots": 24,
+        "monoCommittedBytes": 875528192,
+        "monoReservedBytes": 0,
+        "regionCount": 24
+      },
+      "inventory": {
+        "blocks": 12,
+        "freeBytes": 66228224,
+        "unmappedBytes": 0
+      }
+    },
+    {
+      "stage": "LargeFreeGC1",
+      "output": "ORIGINAL_MONO_GC_COMPLETED",
+      "elapsedMs": 36.04859998449683,
+      "controller": null,
+      "counters": {
+        "gc_count": 10,
+        "heap": 871759872,
+        "free": 871538688,
+        "unmapped": 805896192
+      },
+      "vm": {
+        "gcOSRoots": 24,
+        "monoCommittedBytes": 69632000,
+        "monoReservedBytes": 805896192,
+        "regionCount": 27
+      },
+      "inventory": {
+        "blocks": 12,
+        "freeBytes": 871538688,
+        "unmappedBytes": 805896192
+      }
+    },
+    {
+      "stage": "LargeFreeGC2",
+      "output": "ORIGINAL_MONO_GC_COMPLETED",
+      "elapsedMs": 0.6542999763041735,
+      "controller": null,
+      "counters": {
+        "gc_count": 11,
+        "heap": 871759872,
+        "free": 871538688,
+        "unmapped": 805896192
+      },
+      "vm": {
+        "gcOSRoots": 24,
+        "monoCommittedBytes": 69632000,
+        "monoReservedBytes": 805896192,
+        "regionCount": 27
+      },
+      "inventory": {
+        "blocks": 12,
+        "freeBytes": 871538688,
+        "unmappedBytes": 805896192
+      }
+    },
+    {
+      "stage": "LargeFreeGC3",
+      "output": "ORIGINAL_MONO_GC_COMPLETED",
+      "elapsedMs": 0.5758999614045024,
+      "controller": null,
+      "counters": {
+        "gc_count": 12,
+        "heap": 871759872,
+        "free": 871538688,
+        "unmapped": 805896192
+      },
+      "vm": {
+        "gcOSRoots": 24,
+        "monoCommittedBytes": 69632000,
+        "monoReservedBytes": 805896192,
+        "regionCount": 27
+      },
+      "inventory": {
+        "blocks": 12,
+        "freeBytes": 871538688,
+        "unmappedBytes": 805896192
+      }
+    },
+    {
+      "stage": "ReplaceLarge",
+      "output": "PREFIX_OK bytes=314572800 pinnedAddress=preserved pixels=verified",
+      "elapsedMs": 66.08449993655086,
+      "controller": null,
+      "counters": {
+        "gc_count": 12,
+        "heap": 871759872,
+        "free": 556961792,
+        "unmapped": 491319296
+      },
+      "vm": {
+        "gcOSRoots": 24,
+        "monoCommittedBytes": 384208896,
+        "monoReservedBytes": 491319296,
+        "regionCount": 28
+      },
+      "inventory": {
+        "blocks": 12,
+        "freeBytes": 556961792,
+        "unmappedBytes": 491319296
+      }
+    },
+    {
+      "stage": "PinnedPrefixGC",
+      "output": "ORIGINAL_MONO_GC_COMPLETED",
+      "elapsedMs": 0.4920000210404396,
+      "controller": null,
+      "counters": {
+        "gc_count": 13,
+        "heap": 871759872,
+        "free": 556961792,
+        "unmapped": 491319296
+      },
+      "vm": {
+        "gcOSRoots": 24,
+        "monoCommittedBytes": 384208896,
+        "monoReservedBytes": 491319296,
+        "regionCount": 28
+      },
+      "inventory": {
+        "blocks": 12,
+        "freeBytes": 556961792,
+        "unmappedBytes": 491319296
+      }
+    },
+    {
+      "stage": "CheckLarge",
+      "output": "PREFIX_OK bytes=314572800 pinnedAddress=preserved pixels=verified",
+      "elapsedMs": 0.5898000672459602,
+      "controller": null,
+      "counters": {
+        "gc_count": 13,
+        "heap": 871759872,
+        "free": 556961792,
+        "unmapped": 491319296
+      },
+      "vm": {
+        "gcOSRoots": 24,
+        "monoCommittedBytes": 384208896,
+        "monoReservedBytes": 491319296,
+        "regionCount": 28
+      },
+      "inventory": {
+        "blocks": 12,
+        "freeBytes": 556961792,
+        "unmappedBytes": 491319296
+      }
+    },
+    {
+      "stage": "DropReplacement",
+      "output": "PREFIX_DROPPED pin=freed root=null",
+      "elapsedMs": 0.3378000110387802,
+      "controller": null,
+      "counters": {
+        "gc_count": 13,
+        "heap": 871759872,
+        "free": 556961792,
+        "unmapped": 491319296
+      },
+      "vm": {
+        "gcOSRoots": 24,
+        "monoCommittedBytes": 384208896,
+        "monoReservedBytes": 491319296,
+        "regionCount": 28
+      },
+      "inventory": {
+        "blocks": 12,
+        "freeBytes": 556961792,
+        "unmappedBytes": 491319296
+      }
+    },
+    {
+      "stage": "PrefixReleasedGC",
+      "output": "ORIGINAL_MONO_GC_COMPLETED",
+      "elapsedMs": 13.743599993176758,
+      "controller": null,
+      "counters": {
+        "gc_count": 14,
+        "heap": 871759872,
+        "free": 871538688,
+        "unmapped": 805896192
+      },
+      "vm": {
+        "gcOSRoots": 24,
+        "monoCommittedBytes": 69632000,
+        "monoReservedBytes": 805896192,
+        "regionCount": 27
+      },
+      "inventory": {
+        "blocks": 12,
+        "freeBytes": 871538688,
+        "unmappedBytes": 805896192
+      }
+    }
+  ],
+  "pendingOrder": {
+    "pages": 8240,
+    "lists": 47,
+    "inversions": 0
+  },
+  "gameCalls": 0,
+  "gameWrites": 0,
+  "measuredVaMSavingsBytes": null
+}

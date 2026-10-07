@@ -1,0 +1,197 @@
+[
+  {
+    "argv": [
+      "C:\\Users\\Administrator\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "F:\\vam1.22.0.12\\\u5de5\u4f5c\u533a\\mono_reuse_lifecycle_20261007\\run_case.py",
+      "BASELINE",
+      "idle"
+    ],
+    "input": {
+      "mode": "BASELINE",
+      "test": "idle"
+    },
+    "stdout": "ISOLATED_PASS mode=BASELINE scenario=idle livePinnedAliasReuse=verified gameCalls=0 gameWrites=0\n",
+    "stderr": "",
+    "exitStatus": 0
+  },
+  {
+    "argv": [
+      "C:\\Users\\Administrator\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "F:\\vam1.22.0.12\\\u5de5\u4f5c\u533a\\mono_reuse_lifecycle_20261007\\run_case.py",
+      "BASELINE",
+      "quick"
+    ],
+    "input": {
+      "mode": "BASELINE",
+      "test": "quick"
+    },
+    "stdout": "ISOLATED_PASS mode=BASELINE scenario=quick livePinnedAliasReuse=verified gameCalls=0 gameWrites=0\n",
+    "stderr": "",
+    "exitStatus": 0
+  },
+  {
+    "argv": [
+      "C:\\Users\\Administrator\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "F:\\vam1.22.0.12\\\u5de5\u4f5c\u533a\\mono_reuse_lifecycle_20261007\\run_case.py",
+      "BASELINE",
+      "stress"
+    ],
+    "input": {
+      "mode": "BASELINE",
+      "test": "stress"
+    },
+    "stdout": "ISOLATED_PASS mode=BASELINE scenario=stress livePinnedAliasReuse=verified gameCalls=0 gameWrites=0\n",
+    "stderr": "",
+    "exitStatus": 0
+  },
+  {
+    "argv": [
+      "C:\\Users\\Administrator\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "F:\\vam1.22.0.12\\\u5de5\u4f5c\u533a\\mono_reuse_lifecycle_20261007\\run_case.py",
+      "BASELINE",
+      "lifecycle"
+    ],
+    "input": {
+      "mode": "BASELINE",
+      "test": "lifecycle"
+    },
+    "stdout": "LIFECYCLE_PASS mode=BASELINE cells=1048576 refill=262144 prefix=300MiB inventory=closed pinned=verified gameCalls=0 gameWrites=0\n",
+    "stderr": "",
+    "exitStatus": 0
+  },
+  {
+    "argv": [
+      "C:\\Users\\Administrator\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "F:\\vam1.22.0.12\\\u5de5\u4f5c\u533a\\mono_reuse_lifecycle_20261007\\run_case.py",
+      "BASELINE",
+      "failure"
+    ],
+    "input": {
+      "mode": "BASELINE",
+      "test": "failure"
+    },
+    "stdout": "FAILURE_PASS mode=BASELINE originalOOM=caught limit=restored recovery=verified gameCalls=0 gameWrites=0\n",
+    "stderr": "",
+    "exitStatus": 0
+  },
+  {
+    "argv": [
+      "C:\\Users\\Administrator\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "F:\\vam1.22.0.12\\\u5de5\u4f5c\u533a\\mono_reuse_lifecycle_20261007\\run_case.py",
+      "BASELINE",
+      "sections"
+    ],
+    "input": {
+      "mode": "BASELINE",
+      "test": "sections"
+    },
+    "stdout": "SECTIONS_PASS mode=BASELINE retained=50000 limit=4096 data=verified growth=original\n",
+    "stderr": "",
+    "exitStatus": 0
+  },
+  {
+    "argv": [
+      "C:\\Users\\Administrator\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "F:\\vam1.22.0.12\\\u5de5\u4f5c\u533a\\mono_reuse_lifecycle_20261007\\run_case.py",
+      "BASELINE",
+      "warm"
+    ],
+    "input": {
+      "mode": "BASELINE",
+      "test": "warm"
+    },
+    "stdout": "WARM_PAGES_PASS mode=BASELINE cells=524288 coldRemaps=10931 allocationMs=908.612 sections=unchanged VM=closed aliases=verified gameCalls=0\n",
+    "stderr": "",
+    "exitStatus": 0
+  },
+  {
+    "argv": [
+      "C:\\Users\\Administrator\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "F:\\vam1.22.0.12\\\u5de5\u4f5c\u533a\\mono_reuse_lifecycle_20261007\\run_case.py",
+      "BASELINE",
+      "reuse"
+    ],
+    "input": {
+      "mode": "BASELINE",
+      "test": "reuse"
+    },
+    "stdout": "REUSE_PASS mode=BASELINE cases=5 normalCommitBytes=65536 blacklistCommitBytes=65536 heap=unchanged sections=unchanged aliases=verified VM=closed\n",
+    "stderr": "",
+    "exitStatus": 0
+  },
+  {
+    "argv": [
+      "C:\\Users\\Administrator\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "F:\\vam1.22.0.12\\\u5de5\u4f5c\u533a\\mono_reuse_lifecycle_20261007\\run_case.py",
+      "BASELINE",
+      "cohort"
+    ],
+    "input": {
+      "mode": "BASELINE",
+      "test": "cohort"
+    },
+    "stdout": "COHORT_PASS mode=BASELINE pendingPages=1108240 independentInversions=0 globalRejects=0 rootedAliases=verified gameCalls=0 gameWrites=0\n",
+    "stderr": "",
+    "exitStatus": 0
+  },
+  {
+    "argv": [
+      "C:\\Users\\Administrator\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "F:\\vam1.22.0.12\\\u5de5\u4f5c\u533a\\mono_reuse_lifecycle_20261007\\run_case.py",
+      "BASELINE",
+      "isolation"
+    ],
+    "input": {
+      "mode": "BASELINE",
+      "test": "isolation"
+    },
+    "stdout": "ISOLATION_PASS mode=BASELINE faults=size+marks+cycle invalidChain=unchanged unrelatedChain=sorted nativeState=restored gameCalls=0 gameWrites=0\n",
+    "stderr": "",
+    "exitStatus": 0
+  },
+  {
+    "argv": [
+      "C:\\Users\\Administrator\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "F:\\vam1.22.0.12\\\u5de5\u4f5c\u533a\\mono_reuse_lifecycle_20261007\\run_case.py",
+      "BASELINE",
+      "spans"
+    ],
+    "input": {
+      "mode": "BASELINE",
+      "test": "spans"
+    },
+    "stdout": "SPAN_PASS mode=BASELINE cases=27 avoidableCommitBytes=0 coalesced=True VM=closed sections=unchanged live=verified IAT=restored\n",
+    "stderr": "",
+    "exitStatus": 0
+  },
+  {
+    "argv": [
+      "C:\\Users\\Administrator\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "F:\\vam1.22.0.12\\\u5de5\u4f5c\u533a\\mono_reuse_lifecycle_20261007\\run_case.py",
+      "BASELINE",
+      "interior"
+    ],
+    "input": {
+      "mode": "BASELINE",
+      "test": "interior"
+    },
+    "stdout": "INTERIOR_PASS mode=BASELINE cases=27 ordinaryCommitBytes=6684672 placement=original VM=closed blacklists=restored live=verified\n",
+    "stderr": "",
+    "exitStatus": 0
+  },
+  {
+    "argv": [
+      "C:\\Users\\Administrator\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "F:\\vam1.22.0.12\\\u5de5\u4f5c\u533a\\mono_reuse_lifecycle_20261007\\run_case.py",
+      "BASELINE",
+      "ABI"
+    ],
+    "input": {
+      "mode": "BASELINE",
+      "test": "ABI"
+    },
+    "stdout": "ABI_PASS mode=BASELINE unwindCases=9 stack=restored return=restored loader=registered\n",
+    "stderr": "",
+    "exitStatus": 0
+  }
+]

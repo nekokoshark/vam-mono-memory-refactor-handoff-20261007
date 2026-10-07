@@ -1,0 +1,122 @@
+[
+  {
+    "argv": [
+      "C:\\Users\\Administrator\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "F:\\vam1.22.0.12\\\u5de5\u4f5c\u533a\\mono_exact_reclaim_20261007\\run_case.py",
+      "BASELINE",
+      "idle"
+    ],
+    "input": {
+      "mode": "BASELINE",
+      "test": "idle"
+    },
+    "stdout": "ISOLATED_PASS mode=BASELINE scenario=idle livePinnedAliasReuse=verified gameCalls=0 gameWrites=0\n",
+    "stderr": "",
+    "exitStatus": 0
+  },
+  {
+    "argv": [
+      "C:\\Users\\Administrator\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "F:\\vam1.22.0.12\\\u5de5\u4f5c\u533a\\mono_exact_reclaim_20261007\\run_case.py",
+      "BASELINE",
+      "quick"
+    ],
+    "input": {
+      "mode": "BASELINE",
+      "test": "quick"
+    },
+    "stdout": "ISOLATED_PASS mode=BASELINE scenario=quick livePinnedAliasReuse=verified gameCalls=0 gameWrites=0\n",
+    "stderr": "",
+    "exitStatus": 0
+  },
+  {
+    "argv": [
+      "C:\\Users\\Administrator\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "F:\\vam1.22.0.12\\\u5de5\u4f5c\u533a\\mono_exact_reclaim_20261007\\run_case.py",
+      "BASELINE",
+      "stress"
+    ],
+    "input": {
+      "mode": "BASELINE",
+      "test": "stress"
+    },
+    "stdout": "ISOLATED_PASS mode=BASELINE scenario=stress livePinnedAliasReuse=verified gameCalls=0 gameWrites=0\n",
+    "stderr": "",
+    "exitStatus": 0
+  },
+  {
+    "argv": [
+      "C:\\Users\\Administrator\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "F:\\vam1.22.0.12\\\u5de5\u4f5c\u533a\\mono_exact_reclaim_20261007\\run_case.py",
+      "BASELINE",
+      "lifecycle"
+    ],
+    "input": {
+      "mode": "BASELINE",
+      "test": "lifecycle"
+    },
+    "stdout": "LIFECYCLE_PASS mode=BASELINE cells=1048576 refill=262144 prefix=300MiB inventory=closed pinned=verified gameCalls=0 gameWrites=0\n",
+    "stderr": "",
+    "exitStatus": 0
+  },
+  {
+    "argv": [
+      "C:\\Users\\Administrator\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "F:\\vam1.22.0.12\\\u5de5\u4f5c\u533a\\mono_exact_reclaim_20261007\\run_case.py",
+      "BASELINE",
+      "failure"
+    ],
+    "input": {
+      "mode": "BASELINE",
+      "test": "failure"
+    },
+    "stdout": "FAILURE_PASS mode=BASELINE originalOOM=caught limit=restored recovery=verified gameCalls=0 gameWrites=0\n",
+    "stderr": "",
+    "exitStatus": 0
+  },
+  {
+    "argv": [
+      "C:\\Users\\Administrator\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "F:\\vam1.22.0.12\\\u5de5\u4f5c\u533a\\mono_exact_reclaim_20261007\\run_case.py",
+      "BASELINE",
+      "sections"
+    ],
+    "input": {
+      "mode": "BASELINE",
+      "test": "sections"
+    },
+    "stdout": "SECTIONS_PASS mode=BASELINE retained=50000 limit=4096 data=verified growth=original\n",
+    "stderr": "",
+    "exitStatus": 0
+  },
+  {
+    "argv": [
+      "C:\\Users\\Administrator\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "F:\\vam1.22.0.12\\\u5de5\u4f5c\u533a\\mono_exact_reclaim_20261007\\run_case.py",
+      "BASELINE",
+      "warm"
+    ],
+    "input": {
+      "mode": "BASELINE",
+      "test": "warm"
+    },
+    "stdout": "WARM_PAGES_PASS mode=BASELINE cells=524288 coldRemaps=10923 allocationMs=850.759 sections=unchanged VM=closed aliases=verified gameCalls=0\n",
+    "stderr": "",
+    "exitStatus": 0
+  },
+  {
+    "argv": [
+      "C:\\Users\\Administrator\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "F:\\vam1.22.0.12\\\u5de5\u4f5c\u533a\\mono_exact_reclaim_20261007\\run_case.py",
+      "BASELINE",
+      "reuse"
+    ],
+    "input": {
+      "mode": "BASELINE",
+      "test": "reuse"
+    },
+    "stdout": "",
+    "stderr": "Traceback (most recent call last):\n  File \"F:\\vam1.22.0.12\\\u5bb8\u30e4\u7d94\u9356\u7bedmono_exact_reclaim_20261007\\run_case.py\", line 33, in <module>\n    main(*sys.argv[1:3])\n  File \"F:\\vam1.22.0.12\\\u5bb8\u30e4\u7d94\u9356\u7bedmono_exact_reclaim_20261007\\run_case.py\", line 29, in main\n    module.main(mode, kind)\n  File \"F:\\vam1.22.0.12\\\u5bb8\u30e4\u7d94\u9356\u7bedmono_reuse_lifecycle_20261007\\run_case.py\", line 76, in main\n    load(HERE / \"test_reuse.py\").main(mode)\n  File \"F:\\vam1.22.0.12\\\u5bb8\u30e4\u7d94\u9356\u7bedmono_exact_reclaim_20261007\\test_reuse.py\", line 205, in main\n    assert commits == expected_bytes, (label, commits, expected_bytes, allocated)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: ('normal', 0, 65536, [2588112977920, 2588112982016, 2588112986112, 2588112990208, 2588112994304, 2588112998400, 2588113002496, 2588113006592, 2588113010688, 2588113014784, 2588113018880, 2588113022976, 2588113027072, 2588113031168, 2588113035264, 2588113039360])\n",
+    "exitStatus": 1
+  }
+]

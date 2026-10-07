@@ -1,0 +1,39 @@
+{
+  "date": "2026-10-07",
+  "repository": "nekokoshark/vam-mono-memory-refactor-handoff-20261007",
+  "visibility": "private",
+  "productionMonoSHA256": "d4685c71704ef7f222feebfb93851d7f3b6d354998c2e6bc8347268e047c7b3d",
+  "productionVaMMemorySHA256": "300d8335a2faedd473a09a0cb27c28df519413ffadf6c4e555f6a3b673278da8",
+  "candidateMonoSHA256": "427aab71b5b751507ee8165869baeee6ca2a021c852691a942bc971967a1ce35",
+  "candidateApproved": false,
+  "productionChanged": false,
+  "sourceDirectories": [
+    "mono_exact_reclaim_20261007",
+    "mono_reuse_lifecycle_20261007",
+    "mono_interior_commit_lifecycle_20261007",
+    "mono_allocator_lifecycle_20261006",
+    "mono_warm_pages_20261006",
+    "mono_free_span_lifecycle_20261006",
+    "mono_reclaim_cohorts_20261006",
+    "mono_reclaim_controller_20261006",
+    "mono_unmap_20260930",
+    "allocator_growth_pair_20261006"
+  ],
+  "entry": "PROMPT.md",
+  "originalFailure": "materials/工作区/mono_exact_reclaim_20261007/INITIAL_MODIFIED_LARGE_RETAINED_TRACE.json",
+  "capturedControlledFailure": "materials/工作区/mono_exact_reclaim_20261007/CAPTURED_STALE_ROOT_FAILURE.json",
+  "nativeFixture": "materials/工作区/mono_allocator_lifecycle_20261006/LifecycleSample.cs",
+  "nativeAssertions": "materials/工作区/mono_interior_commit_lifecycle_20261007/lifecycle_test.py",
+  "requirements": [
+    "Windows x64",
+    "64-bit Python",
+    "MSVC 14.44.35207 for rebuilding",
+    "csc against supplied mscorlib for rebuilding helpers"
+  ],
+  "missingEnvironment": [
+    "Python interpreter installation",
+    "MSVC/Windows SDK installation"
+  ],
+  "contextOnly": "VaM.Memory deployed DLL/config + memory_modules source snapshot; not a claim of a complete standalone VaM.Memory rebuild kit",
+  "noGameFilesChanged": true
+}

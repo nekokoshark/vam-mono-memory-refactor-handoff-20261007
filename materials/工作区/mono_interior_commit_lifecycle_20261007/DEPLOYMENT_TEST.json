@@ -1,0 +1,10 @@
+﻿{
+    "state":  "disk-installed",
+    "mode":  "Restore",
+    "target":  "F:\\vam1.22.0.12\\工作区\\mono_interior_commit_lifecycle_20261007\\deployment_test\\mono.dll",
+    "testCopy":  true,
+    "sha256":  "b7c1f56dd38fb70b6ee7e66f3dd65dd86f7a10e832006a5e5a2c3837928974b2",
+    "detail":  "Original remains in BASELINE.dll; candidate remains changed",
+    "runtimeModified":  false,
+    "utc":  "2026-10-06T16:43:04.1965177Z"
+}

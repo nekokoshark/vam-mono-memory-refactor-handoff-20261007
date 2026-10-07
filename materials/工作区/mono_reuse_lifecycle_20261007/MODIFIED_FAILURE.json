@@ -1,0 +1,166 @@
+{
+  "mode": "MODIFIED",
+  "rows": [
+    {
+      "stage": "AllocationFailure",
+      "output": "OOM_OK originalException=caught",
+      "elapsedMs": 2.71869997959584,
+      "controller": {
+        "magic": 3553986980739171143,
+        "reserveBytes": 268435456,
+        "collections": 1,
+        "scannedBlocks": 1,
+        "freeBefore": 262144,
+        "freeAfter": 262144,
+        "decommittedBytes": 0,
+        "decommittedBlocks": 0,
+        "rejected": 0,
+        "lastGC": 1,
+        "lastReturned": 0,
+        "lastScanned": 1,
+        "sortRuns": 1,
+        "sortPages": 0,
+        "sortLists": 0,
+        "sortChangedLists": 0,
+        "mergeCalls": 1,
+        "mergedBlocks": 0,
+        "remapCalls": 0,
+        "remapFullBytes": 0,
+        "remapPrefixBytes": 0,
+        "remapAvoidedBytes": 0,
+        "splitPrefixes": 0,
+        "growthCalls": 2,
+        "growthOriginalBlocks": 32898,
+        "growthActualBlocks": 32898,
+        "pendingBlock": 0,
+        "pendingFull": 0,
+        "pendingBytes": 0
+      },
+      "counters": {
+        "gc_count": 1,
+        "heap": 262144,
+        "free": 114688,
+        "unmapped": 0
+      },
+      "vm": {
+        "gcOSRoots": 5,
+        "monoCommittedBytes": 1331200,
+        "monoReservedBytes": 0,
+        "regionCount": 5
+      },
+      "inventory": {
+        "blocks": 1,
+        "freeBytes": 114688,
+        "unmappedBytes": 0
+      }
+    },
+    {
+      "stage": "AfterFailure",
+      "output": "AFTER_OOM_OK allocation=restored data=verified",
+      "elapsedMs": 0.7485999958589673,
+      "controller": {
+        "magic": 3553986980739171143,
+        "reserveBytes": 268435456,
+        "collections": 2,
+        "scannedBlocks": 2,
+        "freeBefore": 114688,
+        "freeAfter": 114688,
+        "decommittedBytes": 0,
+        "decommittedBlocks": 0,
+        "rejected": 0,
+        "lastGC": 2,
+        "lastReturned": 0,
+        "lastScanned": 1,
+        "sortRuns": 2,
+        "sortPages": 31,
+        "sortLists": 0,
+        "sortChangedLists": 0,
+        "mergeCalls": 2,
+        "mergedBlocks": 0,
+        "remapCalls": 0,
+        "remapFullBytes": 0,
+        "remapPrefixBytes": 0,
+        "remapAvoidedBytes": 0,
+        "splitPrefixes": 0,
+        "growthCalls": 3,
+        "growthOriginalBlocks": 33176,
+        "growthActualBlocks": 33176,
+        "pendingBlock": 0,
+        "pendingFull": 0,
+        "pendingBytes": 0
+      },
+      "counters": {
+        "gc_count": 2,
+        "heap": 1400832,
+        "free": 200704,
+        "unmapped": 0
+      },
+      "vm": {
+        "gcOSRoots": 6,
+        "monoCommittedBytes": 2473984,
+        "monoReservedBytes": 0,
+        "regionCount": 6
+      },
+      "inventory": {
+        "blocks": 2,
+        "freeBytes": 200704,
+        "unmappedBytes": 0
+      }
+    },
+    {
+      "stage": "AfterFailureGC",
+      "output": "ORIGINAL_MONO_GC_COMPLETED",
+      "elapsedMs": 0.06550003308802843,
+      "controller": {
+        "magic": 3553986980739171143,
+        "reserveBytes": 268435456,
+        "collections": 3,
+        "scannedBlocks": 4,
+        "freeBefore": 1253376,
+        "freeAfter": 1253376,
+        "decommittedBytes": 0,
+        "decommittedBlocks": 0,
+        "rejected": 0,
+        "lastGC": 3,
+        "lastReturned": 0,
+        "lastScanned": 2,
+        "sortRuns": 3,
+        "sortPages": 62,
+        "sortLists": 0,
+        "sortChangedLists": 0,
+        "mergeCalls": 3,
+        "mergedBlocks": 0,
+        "remapCalls": 0,
+        "remapFullBytes": 0,
+        "remapPrefixBytes": 0,
+        "remapAvoidedBytes": 0,
+        "splitPrefixes": 0,
+        "growthCalls": 3,
+        "growthOriginalBlocks": 33176,
+        "growthActualBlocks": 33176,
+        "pendingBlock": 0,
+        "pendingFull": 0,
+        "pendingBytes": 0
+      },
+      "counters": {
+        "gc_count": 3,
+        "heap": 1400832,
+        "free": 1253376,
+        "unmapped": 0
+      },
+      "vm": {
+        "gcOSRoots": 6,
+        "monoCommittedBytes": 2473984,
+        "monoReservedBytes": 0,
+        "regionCount": 6
+      },
+      "inventory": {
+        "blocks": 2,
+        "freeBytes": 1253376,
+        "unmappedBytes": 0
+      }
+    }
+  ],
+  "gameCalls": 0,
+  "gameWrites": 0
+}

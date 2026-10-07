@@ -1,0 +1,22 @@
+{
+  "argv": [
+    "powershell.exe",
+    "-NoProfile",
+    "-ExecutionPolicy",
+    "Bypass",
+    "-File",
+    "F:\\vam1.22.0.12\\\u5de5\u4f5c\u533a\\mono_warm_pages_20261006\\install.ps1",
+    "-Mode",
+    "Install"
+  ],
+  "cwd": "F:\\vam1.22.0.12\\\u5de5\u4f5c\u533a\\mono_warm_pages_20261006",
+  "input": {
+    "mode": "Install",
+    "testCopy": false,
+    "baselineSHA256": "d89ccf26fd75b354244f7225b978667c215d54681a2565df624ac59fb6ac323e",
+    "candidateSHA256": "1c023c2516d002f5762bb5bd9636cbaa4b46ab421bfa396b874539ed9f668fa1"
+  },
+  "stdout": "SNAPSHOT PASS: 81 files copied and hash-verified; game files read-only\r\nINSTALL_PASS mode=Install testCopy=False sha256=1c023c2516d002f5762bb5bd9636cbaa4b46ab421bfa396b874539ed9f668fa1 runtimeModified=False\r\n",
+  "stderr": "",
+  "exitStatus": 0
+}

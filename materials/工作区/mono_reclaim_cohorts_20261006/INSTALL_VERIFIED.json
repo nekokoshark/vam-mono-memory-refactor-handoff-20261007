@@ -1,0 +1,11 @@
+﻿{
+    "installedSHA256":  "16aaf4bdf3fa0eaf8a02347ff5304ef0d6bcad5ce7d4e265674c1d4da31de808",
+    "snapshotFiles":  81,
+    "changedMembers":  [
+                           "Mono/EmbedRuntime/mono.dll"
+                       ],
+    "gameProcesses":  0,
+    "appDLLSHA256":  "300d8335a2faedd473a09a0cb27c28df519413ffadf6c4e555f6a3b673278da8",
+    "baselineRestore":  "install.ps1 -Mode Restore",
+    "snapshotVerified":  true
+}

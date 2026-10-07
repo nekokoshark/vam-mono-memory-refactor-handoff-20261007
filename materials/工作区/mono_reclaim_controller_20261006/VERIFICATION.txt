@@ -1,0 +1,62 @@
+Mono whole-free-block reclamation controller: native source refactor
+Changed branch: finish_collection RVA 0x157ec4 -> native reclaim_controller; legacy scanner retained but bypassed.
+Changed fields: ReclaimState.reserve_bytes, whole_free_committed_before/after, decommitted_bytes/blocks.
+BASELINE SHA256 cd7ab354a43faf18479c3a2d1f57d2d068769b8a490338942f6c510e8b02242d
+MODIFIED SHA256 85db66a50b8b142eff610764d587724f3cb3fa99c437628ccfaca0ced468b2d1
+Original collectors/roots/layout/pinning/allocator/OS decommit-remap unchanged. No extra game GC.
+256 MiB limits whole-free committed reserve at GC completion, NOT total live heap/RAM.
+Array/string/reference/pin and interleaved live-page tests use the original embedded Mono.
+GC OS-table Windows VM commitment deltas equal native unmapped deltas exactly.
+PrivateUsage includes independent Python/loader changes; not equated to Mono deltas.
+No Unity/VR or real-game memory benefit is claimed by these isolated tests.
+
+FOUR ARTIFACTS:
+F:\vam1.22.0.12\工作区\mono_reclaim_controller_20261006\MODIFIED_FILE.dll
+F:\vam1.22.0.12\工作区\mono_reclaim_controller_20261006\DIFF_FILE.patch
+F:\vam1.22.0.12\工作区\mono_reclaim_controller_20261006\VERIFICATION.txt
+F:\vam1.22.0.12\工作区\mono_reclaim_controller_20261006\ROLLBACK.sh
+
+ENV PYTHONPATH=F:\vam1.22.0.12\tools\pydeps
+ENV PYTHON_BIN=C:\Users\Administrator\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe
+ENV PYTHONDONTWRITEBYTECODE=1
+ENV PYTHONIOENCODING=utf-8
+
+STRUCTURE COMMAND: C:\Users\Administrator\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe F:\vam1.22.0.12\工作区\mono_reclaim_controller_20261006\verify.py
+CWD: F:\vam1.22.0.12\工作区\mono_reclaim_controller_20261006
+INPUT: 32 MiB pinned/live; 512 MiB page-touched temporary; quick reuse; 4x32 concurrent; mixed/fragmented arrays; 25000 Dispose
+LITERAL STDOUT:
+STRUCTURE_PASS exports=unchanged imports=unchanged allocator=original unwind=4+3 WX=none callsites=1
+LITERAL STDERR: ''
+EXIT STATUS: 0
+
+BASELINE COMMAND: C:\Users\Administrator\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe F:\vam1.22.0.12\工作区\mono_reclaim_controller_20261006\test_suite.py BASELINE
+CWD: F:\vam1.22.0.12\工作区\mono_reclaim_controller_20261006
+INPUT: 32 MiB pinned/live; 512 MiB page-touched temporary; quick reuse; 4x32 concurrent; mixed/fragmented arrays; 25000 Dispose
+LITERAL STDOUT:
+RUNTIME_PASS mode=BASELINE scenarios=3 repeats=2 firstLargeReturn=3 livePinnedAliasReuse=verified concurrent=4x32 mixed=8 fragmented=4 dispose=25000 gameCalls=0 gameWrites=0
+LITERAL STDERR: ''
+EXIT STATUS: 0
+
+MODIFIED COMMAND: C:\Users\Administrator\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe F:\vam1.22.0.12\工作区\mono_reclaim_controller_20261006\test_suite.py MODIFIED
+CWD: F:\vam1.22.0.12\工作区\mono_reclaim_controller_20261006
+INPUT: 32 MiB pinned/live; 512 MiB page-touched temporary; quick reuse; 4x32 concurrent; mixed/fragmented arrays; 25000 Dispose
+LITERAL STDOUT:
+RUNTIME_PASS mode=MODIFIED scenarios=3 repeats=2 firstLargeReturn=1 livePinnedAliasReuse=verified concurrent=4x32 mixed=8 fragmented=4 dispose=25000 gameCalls=0 gameWrites=0
+LITERAL STDERR: ''
+EXIT STATUS: 0
+
+ROLLBACK COMMAND: "C:\Program Files\Git\bin\bash.exe" ./ROLLBACK.sh
+CWD: F:\vam1.22.0.12\工作区\mono_reclaim_controller_20261006
+INPUT: 32 MiB pinned/live; 512 MiB page-touched temporary; quick reuse; 4x32 concurrent; mixed/fragmented arrays; 25000 Dispose
+LITERAL STDOUT:
+ROLLBACK_HASH_PASS baseline=restored candidate=retained gameModified=False
+RUNTIME_PASS mode=ROLLBACK scenarios=3 repeats=1 firstLargeReturn=3 livePinnedAliasReuse=verified concurrent=4x32 mixed=8 fragmented=4 dispose=25000 gameCalls=0 gameWrites=0
+LITERAL STDERR: ''
+EXIT STATUS: 0
+
+ROLLBACK: independent copy restored exact baseline SHA; original age-1 path returns at third test GC; changed candidate remains.
+Production restore (after game exits): powershell.exe -NoProfile -ExecutionPolicy Bypass -File install.ps1 -Mode Restore
+COMPARISON: {"baselineActualOSCommitDropsBytes": [788733952, 788733952], "baselineFirstLargeReturn": 3, "baselineGC1Milliseconds": [0.5988000193610787, 0.5946999881416559], "baselineQuickMedianMs": 107.20780002884567, "candidateReserveBytes": 268435456, "measuredGameSavingsBytes": null, "modifiedActualOSCommitDropsBytes": [597028864, 580153344], "modifiedFirstLargeReturn": 1, "modifiedGC1Milliseconds": [14.636200037784874, 11.314400006085634], "modifiedQuickMedianMs": 77.51889992505312, "rollbackFirstLargeReturn": 3}
+DEPLOYMENT: {"state": "ready", "mode": "Check", "target": "F:\\vam1.22.0.12\\Mono\\EmbedRuntime\\mono.dll", "testCopy": false, "sha256": "cd7ab354a43faf18479c3a2d1f57d2d068769b8a490338942f6c510e8b02242d", "detail": "Read-only check", "runtimeModified": false, "utc": "2026-10-06T04:55:18.7220952Z"}
+
+USER CORRECTION: small-object allocation/reuse, post-sweep block coalescing, heap-expansion decisions remain original; full linked refactor incomplete. Production not deployed; original SHA remains.

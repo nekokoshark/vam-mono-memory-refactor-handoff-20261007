@@ -1,0 +1,82 @@
+Mono allocation/reclamation policy-layer refactor. Not a replacement marking collector.
+Changed branches: GC finish; normal unmapped-block remap/split; both speculative/fallback growth callsites.
+Small-object pending reclaim chains: stable descending eight marked-density bands; uncollectable kinds 2/3 retained.
+Whole-free mapped/unmapped spans: original merge moved into GC completion before 256MiB reserve retirement.
+Normal prefix allocation: native tail header/list bookkeeping, remap only requested prefix; interior blacklist split unchanged.
+Growth regression correction: speculative and fallback expansion batches now passed unchanged; numeric observation only. Section table remains 4096 entries; lastReturned is the positive net unmap across merge+retirement.
+Original collection trigger, roots, object sizes/addresses, pinning, sweep/clear, TLS lists, locks, blacklist, maximum heap and failure paths retained.
+No added explicit game GC, working-set trimming, game start/stop or scene/preset actions. Automatic GC timing can change with heap capacity.
+baseline SHA256 cd7ab354a43faf18479c3a2d1f57d2d068769b8a490338942f6c510e8b02242d
+modified SHA256 d89ccf26fd75b354244f7225b978667c215d54681a2565df624ac59fb6ac323e
+Five original CALLs redirected; RX/RW sections and compiler/thunk unwind added; signing directory cleared.
+RVA 0x157ec4: original 0x15fc90 -> reclaim_controller stub 0x2f8bf0
+RVA 0x1603b6: original 0x15ec50 -> remember_remap stub 0x2f8c30
+RVA 0x1603cb: original 0x15fecc -> take_prefix stub 0x2f8c60
+RVA 0x158890: original 0x1580e8 -> grow_on_demand stub 0x2f8c10
+RVA 0x15889c: original 0x1580e8 -> grow_on_demand stub 0x2f8c10
+
+Changed fields: numeric sort/merge/remap/growth counters and synchronous pending prefix receipt; 29x8 bytes.
+Only allocator-owned free spans retire; no active-page compaction or resource/quality change.
+Four paths:
+F:\vam1.22.0.12\工作区\mono_allocator_lifecycle_20261006\MODIFIED_FILE.dll
+F:\vam1.22.0.12\工作区\mono_allocator_lifecycle_20261006\DIFF_FILE.patch
+F:\vam1.22.0.12\工作区\mono_allocator_lifecycle_20261006\VERIFICATION.txt
+F:\vam1.22.0.12\工作区\mono_allocator_lifecycle_20261006\ROLLBACK.sh
+
+STRUCTURE COMMAND: C:\Users\Administrator\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe verify.py
+CWD: F:\vam1.22.0.12\工作区\mono_allocator_lifecycle_20261006
+INPUT: 32MiB pinned + 512MiB temporary; concurrency 4x32; mixed/fragmented/25000 Dispose; 1048576 cells + 262144 refill; 768MiB->300MiB; original OOM; 8192x8KiB holes -> 50000x16KiB retained (4096 section cap)
+STDIN: ''
+LITERAL OUTPUT:
+STRUCTURE_PASS exports=unchanged imports=unchanged WX=none callsites=5 unwind=15 chains=8
+STDERR: ''
+EXIT STATUS: 0
+
+REJECTED COMMAND: C:\Users\Administrator\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe sections.py REJECTED
+CWD: F:\vam1.22.0.12\工作区\mono_allocator_lifecycle_20261006
+INPUT: 32MiB pinned + 512MiB temporary; concurrency 4x32; mixed/fragmented/25000 Dispose; 1048576 cells + 262144 refill; 768MiB->300MiB; original OOM; 8192x8KiB holes -> 50000x16KiB retained (4096 section cap)
+STDIN: ''
+LITERAL OUTPUT:
+REGRESSION_REPRODUCED mode=REJECTED retained=46336 sections=3914 limit=4096 stoppedBeforeFatal=True data=verified
+STDERR: ''
+EXIT STATUS: 0
+
+BASELINE COMMAND: powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\validate.ps1 BASELINE
+CWD: F:\vam1.22.0.12\工作区\mono_allocator_lifecycle_20261006
+INPUT: 32MiB pinned + 512MiB temporary; concurrency 4x32; mixed/fragmented/25000 Dispose; 1048576 cells + 262144 refill; 768MiB->300MiB; original OOM; 8192x8KiB holes -> 50000x16KiB retained (4096 section cap)
+STDIN: ''
+LITERAL OUTPUT:
+VALIDATION_PASS mode=BASELINE runtime=3x2 lifecycle=1 OOM=1 sections=1
+STDERR: ''
+EXIT STATUS: 0
+
+MODIFIED COMMAND: powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\validate.ps1 MODIFIED
+CWD: F:\vam1.22.0.12\工作区\mono_allocator_lifecycle_20261006
+INPUT: 32MiB pinned + 512MiB temporary; concurrency 4x32; mixed/fragmented/25000 Dispose; 1048576 cells + 262144 refill; 768MiB->300MiB; original OOM; 8192x8KiB holes -> 50000x16KiB retained (4096 section cap)
+STDIN: ''
+LITERAL OUTPUT:
+VALIDATION_PASS mode=MODIFIED runtime=3x2 lifecycle=1 OOM=1 sections=1
+STDERR: ''
+EXIT STATUS: 0
+
+ROLLBACK COMMAND: "C:\Program Files\Git\bin\bash.exe" ./ROLLBACK.sh
+CWD: F:\vam1.22.0.12\工作区\mono_allocator_lifecycle_20261006
+INPUT: 32MiB pinned + 512MiB temporary; concurrency 4x32; mixed/fragmented/25000 Dispose; 1048576 cells + 262144 refill; 768MiB->300MiB; original OOM; 8192x8KiB holes -> 50000x16KiB retained (4096 section cap)
+STDIN: ''
+LITERAL OUTPUT:
+ROLLBACK_HASH_PASS baseline=restored candidate=retained gameModified=False
+VALIDATION_PASS mode=ROLLBACK runtime=3x1 lifecycle=1 OOM=1 sections=1
+STDERR: ''
+EXIT STATUS: 0
+
+ROLLBACK: independent copy restored baseline SHA exactly; original allocation, GC-age and full-remap behavior restored; candidate remains changed.
+Rejected F3F46BBA reproduced section pressure in real Mono; isolated test stops before native fatal limit. No game section count was captured.
+Isolated Windows VM commitment and native unmapped deltas are paired. Not a Unity/VR or real-game memory benefit.
+COMPARISON: {"BASELINE": {"controller": null, "pendingOrder": {"inversions": 6142, "lists": 47, "pages": 8240}, "prefixHeapIncreaseBytes": 315101184, "prefixOSCommitIncreaseBytes": 315637760, "quickReuseMedianMs": 108.65535004995763, "refillMilliseconds": 8.05860001128167, "retainedSectionTestPayloads": 50000, "sectionTestFinalCount": 82, "sparseGCMilliseconds": 1.240300014615059}, "MODIFIED": {"controller": {"collections": 14, "decommittedBlocks": 2, "decommittedBytes": 805896192, "freeAfter": 65642496, "freeBefore": 65642496, "growthActualBlocks": 212768, "growthCalls": 9, "growthOriginalBlocks": 212768, "lastGC": 14, "lastReturned": 314576896, "lastScanned": 12, "magic": 3553986980739171143, "mergeCalls": 14, "mergedBlocks": 1, "pendingBlock": 0, "pendingBytes": 0, "pendingFull": 0, "rejected": 0, "remapAvoidedBytes": 491257856, "remapCalls": 1, "remapFullBytes": 805834752, "remapPrefixBytes": 314576896, "reserveBytes": 268435456, "scannedBlocks": 90, "sortChangedLists": 10, "sortLists": 16, "sortPages": 12831, "sortRuns": 14, "splitPrefixes": 1}, "pendingOrder": {"inversions": 0, "lists": 47, "pages": 8240}, "prefixHeapIncreaseBytes": 0, "prefixOSCommitIncreaseBytes": 314576896, "quickReuseMedianMs": 88.26914994278923, "refillMilliseconds": 8.105700020678341, "retainedSectionTestPayloads": 50000, "sectionTestFinalCount": 82, "sparseGCMilliseconds": 1.4862999087199569}, "ROLLBACK": {"controller": null, "pendingOrder": {"inversions": 6142, "lists": 47, "pages": 8240}, "prefixHeapIncreaseBytes": 0, "prefixOSCommitIncreaseBytes": 805834752, "quickReuseMedianMs": 110.31530000036582, "refillMilliseconds": 7.405600044876337, "retainedSectionTestPayloads": 50000, "sectionTestFinalCount": 82, "sparseGCMilliseconds": 1.0227999882772565}, "measuredVaMSavingsBytes": null}
+
+DEPLOYMENT: {"state": "disk-installed-snapshot-verified", "mode": "Install", "target": "F:\\vam1.22.0.12\\Mono\\EmbedRuntime\\mono.dll", "testCopy": false, "sha256": "d89ccf26fd75b354244f7225b978667c215d54681a2565df624ac59fb6ac323e", "detail": "Next natural game start uses this file", "runtimeModified": false, "utc": "2026-10-06T05:59:33.1474949Z"}
+INSTALL COMMAND (game root): powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\工作区\mono_allocator_lifecycle_20261006\install.ps1 -Mode Install
+LITERAL OUTPUT: SNAPSHOT PASS: 81 files copied and hash-verified; game files read-only
+LITERAL OUTPUT: INSTALL_PASS mode=Install testCopy=False sha256=d89ccf26fd75b354244f7225b978667c215d54681a2565df624ac59fb6ac323e runtimeModified=False
+EXIT STATUS: 0
+Production and snapshot reopened SHA verified; application memory DLL 1.5.0 unchanged. Next natural startup uses the new file; game behavior/resident convergence unmeasured.

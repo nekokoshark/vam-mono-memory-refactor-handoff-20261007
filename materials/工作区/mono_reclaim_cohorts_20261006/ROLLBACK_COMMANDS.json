@@ -1,0 +1,135 @@
+[
+  {
+    "argv": [
+      "C:\\Users\\Administrator\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "F:\\vam1.22.0.12\\\u5de5\u4f5c\u533a\\mono_reclaim_cohorts_20261006\\run_case.py",
+      "ROLLBACK",
+      "idle"
+    ],
+    "input": {
+      "mode": "ROLLBACK",
+      "test": "idle"
+    },
+    "stdout": "ISOLATED_PASS mode=ROLLBACK scenario=idle livePinnedAliasReuse=verified gameCalls=0 gameWrites=0\n",
+    "stderr": "",
+    "exitStatus": 0
+  },
+  {
+    "argv": [
+      "C:\\Users\\Administrator\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "F:\\vam1.22.0.12\\\u5de5\u4f5c\u533a\\mono_reclaim_cohorts_20261006\\run_case.py",
+      "ROLLBACK",
+      "quick"
+    ],
+    "input": {
+      "mode": "ROLLBACK",
+      "test": "quick"
+    },
+    "stdout": "ISOLATED_PASS mode=ROLLBACK scenario=quick livePinnedAliasReuse=verified gameCalls=0 gameWrites=0\n",
+    "stderr": "",
+    "exitStatus": 0
+  },
+  {
+    "argv": [
+      "C:\\Users\\Administrator\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "F:\\vam1.22.0.12\\\u5de5\u4f5c\u533a\\mono_reclaim_cohorts_20261006\\run_case.py",
+      "ROLLBACK",
+      "stress"
+    ],
+    "input": {
+      "mode": "ROLLBACK",
+      "test": "stress"
+    },
+    "stdout": "ISOLATED_PASS mode=ROLLBACK scenario=stress livePinnedAliasReuse=verified gameCalls=0 gameWrites=0\n",
+    "stderr": "",
+    "exitStatus": 0
+  },
+  {
+    "argv": [
+      "C:\\Users\\Administrator\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "F:\\vam1.22.0.12\\\u5de5\u4f5c\u533a\\mono_reclaim_cohorts_20261006\\run_case.py",
+      "ROLLBACK",
+      "lifecycle"
+    ],
+    "input": {
+      "mode": "ROLLBACK",
+      "test": "lifecycle"
+    },
+    "stdout": "LIFECYCLE_PASS mode=ROLLBACK cells=1048576 refill=262144 prefix=300MiB inventory=closed pinned=verified gameCalls=0 gameWrites=0\n",
+    "stderr": "",
+    "exitStatus": 0
+  },
+  {
+    "argv": [
+      "C:\\Users\\Administrator\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "F:\\vam1.22.0.12\\\u5de5\u4f5c\u533a\\mono_reclaim_cohorts_20261006\\run_case.py",
+      "ROLLBACK",
+      "failure"
+    ],
+    "input": {
+      "mode": "ROLLBACK",
+      "test": "failure"
+    },
+    "stdout": "FAILURE_PASS mode=ROLLBACK originalOOM=caught limit=restored recovery=verified gameCalls=0 gameWrites=0\n",
+    "stderr": "",
+    "exitStatus": 0
+  },
+  {
+    "argv": [
+      "C:\\Users\\Administrator\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "F:\\vam1.22.0.12\\\u5de5\u4f5c\u533a\\mono_reclaim_cohorts_20261006\\run_case.py",
+      "ROLLBACK",
+      "sections"
+    ],
+    "input": {
+      "mode": "ROLLBACK",
+      "test": "sections"
+    },
+    "stdout": "SECTIONS_PASS mode=ROLLBACK retained=50000 limit=4096 data=verified growth=original\n",
+    "stderr": "",
+    "exitStatus": 0
+  },
+  {
+    "argv": [
+      "C:\\Users\\Administrator\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "F:\\vam1.22.0.12\\\u5de5\u4f5c\u533a\\mono_reclaim_cohorts_20261006\\run_case.py",
+      "ROLLBACK",
+      "warm"
+    ],
+    "input": {
+      "mode": "ROLLBACK",
+      "test": "warm"
+    },
+    "stdout": "WARM_PAGES_PASS mode=ROLLBACK cells=524288 coldRemaps=10931 allocationMs=744.987 sections=unchanged VM=closed aliases=verified gameCalls=0\n",
+    "stderr": "",
+    "exitStatus": 0
+  },
+  {
+    "argv": [
+      "C:\\Users\\Administrator\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "F:\\vam1.22.0.12\\\u5de5\u4f5c\u533a\\mono_reclaim_cohorts_20261006\\cohort_test.py",
+      "ROLLBACK"
+    ],
+    "input": {
+      "mode": "ROLLBACK",
+      "test": "cohort_test.py"
+    },
+    "stdout": "COHORT_PASS mode=ROLLBACK pendingPages=1108240 independentInversions=6142 globalRejects=1 rootedAliases=verified gameCalls=0 gameWrites=0\n",
+    "stderr": "",
+    "exitStatus": 0
+  },
+  {
+    "argv": [
+      "C:\\Users\\Administrator\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "F:\\vam1.22.0.12\\\u5de5\u4f5c\u533a\\mono_reclaim_cohorts_20261006\\isolation_test.py",
+      "ROLLBACK"
+    ],
+    "input": {
+      "mode": "ROLLBACK",
+      "test": "isolation_test.py"
+    },
+    "stdout": "ISOLATION_PASS mode=ROLLBACK faults=size+marks+cycle invalidChain=unchanged unrelatedChain=native-fallback nativeState=restored gameCalls=0 gameWrites=0\n",
+    "stderr": "",
+    "exitStatus": 0
+  }
+]

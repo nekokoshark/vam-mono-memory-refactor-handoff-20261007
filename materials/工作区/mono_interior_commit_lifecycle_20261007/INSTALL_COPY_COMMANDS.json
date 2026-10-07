@@ -1,0 +1,38 @@
+[
+  {
+    "argv": [
+      "powershell",
+      "-NoProfile",
+      "-File",
+      "F:\\vam1.22.0.12\\\u5de5\u4f5c\u533a\\mono_interior_commit_lifecycle_20261007\\install.ps1",
+      "-Mode",
+      "Install",
+      "-TestCopy"
+    ],
+    "input": {
+      "mode": "Install",
+      "TestCopy": true
+    },
+    "stdout": "INSTALL_PASS mode=Install testCopy=True sha256=a1a8f07d43aab8542247b18d0109a49508ff1489c0aba6b9c9ce1133f4392496 runtimeModified=False\n",
+    "stderr": "",
+    "exitStatus": 0
+  },
+  {
+    "argv": [
+      "powershell",
+      "-NoProfile",
+      "-File",
+      "F:\\vam1.22.0.12\\\u5de5\u4f5c\u533a\\mono_interior_commit_lifecycle_20261007\\install.ps1",
+      "-Mode",
+      "Restore",
+      "-TestCopy"
+    ],
+    "input": {
+      "mode": "Restore",
+      "TestCopy": true
+    },
+    "stdout": "INSTALL_PASS mode=Restore testCopy=True sha256=b7c1f56dd38fb70b6ee7e66f3dd65dd86f7a10e832006a5e5a2c3837928974b2 runtimeModified=False\n",
+    "stderr": "",
+    "exitStatus": 0
+  }
+]

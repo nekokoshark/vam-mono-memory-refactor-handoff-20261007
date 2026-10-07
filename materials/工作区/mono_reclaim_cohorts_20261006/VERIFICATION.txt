@@ -1,0 +1,50 @@
+Changed branch: order_reclaim: global admission -> independent kind/size validation
+Changed fields: page_bound=registered object heap/4096; first32 state words preserved; append11 words
+Preserved: marking, object identity, TLS/locks, blacklist, original growth, section limit4096, warm64KiB, reserve256MiB
+BASELINE_SHA256=1c023c2516d002f5762bb5bd9636cbaa4b46ab421bfa396b874539ed9f668fa1
+MODIFIED_SHA256=16aaf4bdf3fa0eaf8a02347ff5304ef0d6bcad5ce7d4e265674c1d4da31de808
+MODIFIED_FILE=F:\vam1.22.0.12\工作区\mono_reclaim_cohorts_20261006\MODIFIED_FILE.dll
+DIFF_FILE=F:\vam1.22.0.12\工作区\mono_reclaim_cohorts_20261006\DIFF_FILE.patch
+VERIFICATION=F:\vam1.22.0.12\工作区\mono_reclaim_cohorts_20261006\VERIFICATION.txt
+ROLLBACK=F:\vam1.22.0.12\工作区\mono_reclaim_cohorts_20261006\ROLLBACK.sh
+
+BASELINE
+cwd=F:\vam1.22.0.12\工作区\mono_reclaim_cohorts_20261006
+command=powershell -NoProfile -File CERTIFY.ps1 -Mode BASELINE
+input={"cases": 9, "runtime": "isolated-original-Mono"}
+stdout(literal)=BASELINE_PASS cases=9
+exitStatus=0
+
+MODIFIED
+cwd=F:\vam1.22.0.12\工作区\mono_reclaim_cohorts_20261006
+command=powershell -NoProfile -File CERTIFY.ps1 -Mode MODIFIED
+input={"cases": 9, "runtime": "isolated-original-Mono"}
+stdout(literal)=MODIFIED_PASS cases=9
+exitStatus=0
+
+ROLLBACK
+cwd=F:\vam1.22.0.12\工作区\mono_reclaim_cohorts_20261006
+command=powershell -NoProfile -File CERTIFY.ps1 -Mode ROLLBACK
+input={"cases": 9, "runtime": "isolated-original-Mono"}
+stdout(literal)=ROLLBACK_PASS cases=9
+exitStatus=0
+
+Restored: independent copy retains original 1C global-reject/native-fallback behavior; candidate remains changed.
+Nine cases/arm: idle, quick, stress, lifecycle, original OOM, fragmented sections, warm pages, >1M pending pages, size/mark/cycle isolation.
+Fault injections are confined to a private helper; native state is restored before managed execution resumes.
+Whole-free merge/retirement, remap prefix, original expansion batches and 4096 section limit remain unchanged.
+Independent regression: {"BASELINE": {"pendingPages": 1108240, "invalidHeaders": 0, "independentInversions": 6142, "rejects": 1, "gcMs": 45.27800006326288, "heapBytes": 4605861888, "sections": 276}, "MODIFIED": {"pendingPages": 1108240, "invalidHeaders": 0, "independentInversions": 0, "rejects": 0, "gcMs": 59.33690001256764, "heapBytes": 4605861888, "sections": 276}, "ROLLBACK": {"pendingPages": 1108240, "invalidHeaders": 0, "independentInversions": 6142, "rejects": 1, "gcMs": 44.5239000255242, "heapBytes": 4605861888, "sections": 276}}
+No heap-growth/physical-memory benefit is established: fixture refills do not expand the heap in either arm.
+The observed game rejection count lacks a cause; this defect is not an attribution of the game's GiB slope.
+Application DLL1.5.0 unchanged; no game start/stop/GC/WS trim/process-memory writes.
+Cold installed after user normal exit; 81 snapshot members verified, only Mono changed. Natural startup/benefit not yet verified.
+Allocator reference: https://hboehm.info/gc/gcdescr.html (context only; native ABI comes from the audited local DLL).
+
+COLD_INSTALL
+command=powershell -NoProfile -File F:\vam1.22.0.12\工作区\mono_reclaim_cohorts_20261006\install.ps1 -Mode Install
+input={"userNormalExit": true, "TestCopy": false, "Mode": "Install"}
+stdout(literal):
+SNAPSHOT PASS: 81 files copied and hash-verified; game files read-only
+INSTALL_PASS mode=Install testCopy=False sha256=16aaf4bdf3fa0eaf8a02347ff5304ef0d6bcad5ce7d4e265674c1d4da31de808 runtimeModified=False
+exitStatus=0
+installedSHA256=16aaf4bdf3fa0eaf8a02347ff5304ef0d6bcad5ce7d4e265674c1d4da31de808

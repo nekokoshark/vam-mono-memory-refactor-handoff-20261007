@@ -1,0 +1,176 @@
+{
+  "baselineGameObservation": {
+    "pid": 66908,
+    "sortRuns": 127,
+    "rejected": 0,
+    "lastPendingPages": 1595373,
+    "role": "diagnostic-not-first-ready"
+  },
+  "changedBranch": "whole-free merge: independent size decision -> reserve-aware coalescing",
+  "changedFields": "native mixed mapped/cold state; first43 controller words preserved; append8 counters",
+  "preserved": "collector, objects/addresses/content, TLS/locks, blacklist, OOM, native growth, section cap4096, warm64KiB, reserve256MiB",
+  "baselineSHA256": "16aaf4bdf3fa0eaf8a02347ff5304ef0d6bcad5ce7d4e265674c1d4da31de808",
+  "modifiedSHA256": "b7c1f56dd38fb70b6ee7e66f3dd65dd86f7a10e832006a5e5a2c3837928974b2",
+  "paths": {
+    "MODIFIED_FILE": "F:\\vam1.22.0.12\\工作区\\mono_free_span_lifecycle_20261006\\MODIFIED_FILE.dll",
+    "DIFF_FILE": "F:\\vam1.22.0.12\\工作区\\mono_free_span_lifecycle_20261006\\DIFF_FILE.patch",
+    "VERIFICATION": "F:\\vam1.22.0.12\\工作区\\mono_free_span_lifecycle_20261006\\VERIFICATION.txt",
+    "ROLLBACK": "F:\\vam1.22.0.12\\工作区\\mono_free_span_lifecycle_20261006\\ROLLBACK.sh"
+  },
+  "certification": [
+    {
+      "mode": "BASELINE",
+      "command": "powershell -NoProfile -File CERTIFY.ps1 -Mode BASELINE",
+      "workingDirectory": "F:\\vam1.22.0.12\\工作区\\mono_free_span_lifecycle_20261006",
+      "input": {
+        "cases": 10,
+        "runtime": "isolated-original-Mono"
+      },
+      "stdout": "BASELINE_PASS cases=10",
+      "nestedOutput": "ISOLATED_PASS mode=BASELINE scenario=idle livePinnedAliasReuse=verified gameCalls=0 gameWrites=0\nISOLATED_PASS mode=BASELINE scenario=quick livePinnedAliasReuse=verified gameCalls=0 gameWrites=0\nISOLATED_PASS mode=BASELINE scenario=stress livePinnedAliasReuse=verified gameCalls=0 gameWrites=0\nLIFECYCLE_PASS mode=BASELINE cells=1048576 refill=262144 prefix=300MiB inventory=closed pinned=verified gameCalls=0 gameWrites=0\nFAILURE_PASS mode=BASELINE originalOOM=caught limit=restored recovery=verified gameCalls=0 gameWrites=0\nSECTIONS_PASS mode=BASELINE retained=50000 limit=4096 data=verified growth=original\nWARM_PAGES_PASS mode=BASELINE cells=524288 coldRemaps=10931 allocationMs=785.222 sections=unchanged VM=closed aliases=verified gameCalls=0\nCOHORT_PASS mode=BASELINE pendingPages=1108240 independentInversions=0 globalRejects=0 rootedAliases=verified gameCalls=0 gameWrites=0\nISOLATION_PASS mode=BASELINE faults=size+marks+cycle invalidChain=unchanged unrelatedChain=sorted nativeState=restored gameCalls=0 gameWrites=0\nSPAN_PASS mode=BASELINE cases=27 avoidableCommitBytes=805306368 coalesced=True VM=closed sections=unchanged live=verified IAT=restored\nVALIDATION_PASS mode=BASELINE runtime=3 lifecycle=1 OOM=1 sections=1 warm=1 oversized=1 isolation=1 spans=1 gameModified=False",
+      "exitStatus": 0
+    },
+    {
+      "mode": "MODIFIED",
+      "command": "powershell -NoProfile -File CERTIFY.ps1 -Mode MODIFIED",
+      "workingDirectory": "F:\\vam1.22.0.12\\工作区\\mono_free_span_lifecycle_20261006",
+      "input": {
+        "cases": 10,
+        "runtime": "isolated-original-Mono"
+      },
+      "stdout": "MODIFIED_PASS cases=10",
+      "nestedOutput": "ISOLATED_PASS mode=MODIFIED scenario=idle livePinnedAliasReuse=verified gameCalls=0 gameWrites=0\nISOLATED_PASS mode=MODIFIED scenario=quick livePinnedAliasReuse=verified gameCalls=0 gameWrites=0\nISOLATED_PASS mode=MODIFIED scenario=stress livePinnedAliasReuse=verified gameCalls=0 gameWrites=0\nLIFECYCLE_PASS mode=MODIFIED cells=1048576 refill=262144 prefix=300MiB inventory=closed pinned=verified gameCalls=0 gameWrites=0\nFAILURE_PASS mode=MODIFIED originalOOM=caught limit=restored recovery=verified gameCalls=0 gameWrites=0\nSECTIONS_PASS mode=MODIFIED retained=50000 limit=4096 data=verified growth=original\nWARM_PAGES_PASS mode=MODIFIED cells=524288 coldRemaps=10931 allocationMs=769.540 sections=unchanged VM=closed aliases=verified gameCalls=0\nCOHORT_PASS mode=MODIFIED pendingPages=1108240 independentInversions=0 globalRejects=0 rootedAliases=verified gameCalls=0 gameWrites=0\nISOLATION_PASS mode=MODIFIED faults=size+marks+cycle invalidChain=unchanged unrelatedChain=sorted nativeState=restored gameCalls=0 gameWrites=0\nSPAN_PASS mode=MODIFIED cases=27 avoidableCommitBytes=0 coalesced=True VM=closed sections=unchanged live=verified IAT=restored\nVALIDATION_PASS mode=MODIFIED runtime=3 lifecycle=1 OOM=1 sections=1 warm=1 oversized=1 isolation=1 spans=1 gameModified=False",
+      "exitStatus": 0
+    },
+    {
+      "mode": "ROLLBACK",
+      "command": "powershell -NoProfile -File CERTIFY.ps1 -Mode ROLLBACK",
+      "workingDirectory": "F:\\vam1.22.0.12\\工作区\\mono_free_span_lifecycle_20261006",
+      "input": {
+        "cases": 10,
+        "runtime": "isolated-original-Mono"
+      },
+      "stdout": "ROLLBACK_PASS cases=10",
+      "nestedOutput": "ROLLBACK_HASH_PASS baseline=16AAF-restored candidate=retained gameModified=False\nISOLATED_PASS mode=ROLLBACK scenario=idle livePinnedAliasReuse=verified gameCalls=0 gameWrites=0\nISOLATED_PASS mode=ROLLBACK scenario=quick livePinnedAliasReuse=verified gameCalls=0 gameWrites=0\nISOLATED_PASS mode=ROLLBACK scenario=stress livePinnedAliasReuse=verified gameCalls=0 gameWrites=0\nLIFECYCLE_PASS mode=ROLLBACK cells=1048576 refill=262144 prefix=300MiB inventory=closed pinned=verified gameCalls=0 gameWrites=0\nFAILURE_PASS mode=ROLLBACK originalOOM=caught limit=restored recovery=verified gameCalls=0 gameWrites=0\nSECTIONS_PASS mode=ROLLBACK retained=50000 limit=4096 data=verified growth=original\nWARM_PAGES_PASS mode=ROLLBACK cells=524288 coldRemaps=10931 allocationMs=742.137 sections=unchanged VM=closed aliases=verified gameCalls=0\nCOHORT_PASS mode=ROLLBACK pendingPages=1108240 independentInversions=0 globalRejects=0 rootedAliases=verified gameCalls=0 gameWrites=0\nISOLATION_PASS mode=ROLLBACK faults=size+marks+cycle invalidChain=unchanged unrelatedChain=sorted nativeState=restored gameCalls=0 gameWrites=0\nSPAN_PASS mode=ROLLBACK cases=27 avoidableCommitBytes=805306368 coalesced=True VM=closed sections=unchanged live=verified IAT=restored\nVALIDATION_PASS mode=ROLLBACK runtime=3 lifecycle=1 OOM=1 sections=1 warm=1 oversized=1 isolation=1 spans=1 gameModified=False",
+      "exitStatus": 0
+    }
+  ],
+  "overBudgetRepeatedCommitBytes": {
+    "BASELINE": 805306368,
+    "MODIFIED": 0,
+    "ROLLBACK": 805306368
+  },
+  "smallPageRegression": {
+    "BASELINE": {
+      "remaps": 10931,
+      "milliseconds": 785.221999976784
+    },
+    "MODIFIED": {
+      "remaps": 10931,
+      "milliseconds": 769.5395000046119
+    },
+    "ROLLBACK": {
+      "remaps": 10931,
+      "milliseconds": 742.136700078845
+    }
+  },
+  "installed": {
+    "installedSHA256": "b7c1f56dd38fb70b6ee7e66f3dd65dd86f7a10e832006a5e5a2c3837928974b2",
+    "snapshotVerified": true,
+    "snapshotFiles": 81,
+    "changedMembers": [
+      "Mono/EmbedRuntime/mono.dll"
+    ],
+    "appDLLSHA256": "300d8335a2faedd473a09a0cb27c28df519413ffadf6c4e555f6a3b673278da8",
+    "runtimeStartedByAgent": false,
+    "previousSnapshotHashes": {
+      "Mono/EmbedRuntime/mono.dll": "16aaf4bdf3fa0eaf8a02347ff5304ef0d6bcad5ce7d4e265674c1d4da31de808",
+      "VaM (OpenVR).bat": "354aa99aac6baf9f9cbb03c4b5cd646c53c1158f62e78aab7117e0c4c047066c",
+      "VaM (OpenVR+OFXR).bat": "62eb628b402be50f70d3c1fbe25df263c7685efe6cdcdf45c8a630ef896e4e4c",
+      "VaM (Desktop Mode).bat": "60b3347702d3aa7b4a129b5c1f52bd5cff4dc111d6a44cca4354dbe2df5c5e4a",
+      "doorstop_config.ini": "b65ddae2c7d4a5d502f2555f6454390b92b6a34a80b4b57f6fe64cc74890815e",
+      "opencomposite.ini": "47e2ac24892dccf4a42826cc635059329d90d172548a4fc3b5e2ec9fab70a8b6",
+      "vrperfkit_RSF.yml": "0be2749d6c736bbfb8abd9f9e9e6d0ab526261170f1ec2852f8a4b2bbafdb344",
+      "BepInEx/config/OFXR/OFXR_V068.manifest.json": "81758cb734978c5d6d509cdfe753522fc06388014bfe5b77706319ab9b35c696",
+      "BepInEx/config/local.vam.quest3-trigger-ui.cfg": "5295996ca7f96b981d327b9b9c34747f2bfa83330dafe42354c939331f206188",
+      "BepInEx/config/uncleburrito.vamdlssnr.cfg": "37a88412c787bf222bdc5cf0de56aa07044ef96d43ddaf2b185ec6a3e63442aa",
+      "BepInEx/plugins/VaMMemory/VaM.Memory.dll": "300d8335a2faedd473a09a0cb27c28df519413ffadf6c4e555f6a3b673278da8",
+      "BepInEx/config/vam.memory.cfg": "6f3b5c78bc2e058752deb19b8d7952f00c930069b24005ec2716f6aec1bb5eb7",
+      "BepInEx/plugins/Quest3TriggerUI/Quest3TriggerUI.HotLoader.dll": "0b116ab9c876998883e82d3e838d2993f29f8cd63e404f00bdb70e06c67e7e99",
+      "BepInEx/plugins/Quest3TriggerUI/Quest3TriggerUI.payload.dll.disabled": "65c2662961bfda4ff99ca70f43e0ebf35f230f4923aba0314be1c9c80b521ec6",
+      "BepInEx/plugins/Quest3TriggerUI/bc7_pending_convert.ps1": "391b3e4bf44a273ef200638bb24137fb6cdac2da77d047bb2c9cd15a2696a91c",
+      "BepInEx/plugins/Quest3TriggerUI/Bc7Compat.exe": "cd842a9be9fdada6e0f15bdd60c9d3ef69918da611fa2e632fd6db5196026105",
+      "BepInEx/plugins/Quest3TriggerUI/pinyin_dict.txt": "fdeda443ce9f21044d697455ba4b07e1b6a1b7d34b818c83b61fd052ea963eea",
+      "BepInEx/plugins/Quest3TriggerUI/pinyin_initials.txt": "ecf0283578dc0ef98c532a5a04a82367cb41f213e40fc0b3fd90d1230d6ecc37",
+      "BepInEx/plugins/Quest3TriggerUI/pinyin_fuzzy.txt": "2e3fe618e2bb371cfffaed65318fed5b9fd60ec2e42932cf076a9bfaf926680d",
+      "BepInEx/plugins/Quest3TriggerUI/pinyin_syllables.txt": "4b16b34bce2c184ce09199edcdbc3c9c3b65fdc67833ba15ce29ef70774f4635",
+      "BepInEx/plugins/PostMagicEventBridge/PostMagicEventBridge.dll": "84302f918f7b2820840cc08473203e734bdb7136026a6d06bd0ebcebe92c45df",
+      "BepInEx/plugins/VamDlssNr/VamDlssNrPlugin.dll": "0e4c1d271f31c5b39ff574bb09436ab72a7df59081248ec2701f9d0bdd01c294",
+      "BepInEx/plugins/VamDlssNr/nvngx.dll/VamDlssNr.dll": "03e04618f90264d2df600cf792eadcec766fe078e3161c7023a7aeb36e8a0437",
+      "BepInEx/plugins/VamDlssNr/vamdlssnr": "127f574465a7bd38b49157e3cbdd4d8d52862149288d2ab2b1f38ce70195ae3a",
+      "BepInEx/plugins/VamDlssNr/build-id.txt": "fd9d9d27ce4a2c2cc4a9e30204462b019bdcc8261ef6d1ff830aa0c6f2f1aad5",
+      "VaM_Data/Plugins/openvr_api.dll": "d0bd5c02751986040fb3bceec4b8a40928d4f3502c7c4419fef3864b670fea02",
+      "dxgi.dll": "cc705da2c36cbbad6d051d447734632810f804b84b1386bea2b9db3d959215a8",
+      "winhttp.dll": "ef255435c75b1cd108b8a8b2418f7cb5706bc323f487c83dc732b4f91103d0c3",
+      "AddonPackages/___VarsLink___/everlaster.TittyMagic.70.var": "5df5aeba748ae80ac9572043e4db573dfca9be25108a8a815795da24e3dbccec",
+      "AddonPackages/___VarsLink___/everlaster.TittyMagic.4.var": "74d5af12805a218b478a6765c9e14ff51b049e12d7492dc4b7b8987b3cc6a49f",
+      "AddonPackages/___VarsLink___/everlaster.TittyMagic.5.var": "83b0404260a30f1cd33be078af0b0bd46293dc77c3a2e6e49eeeb5bbe13bfece",
+      "AddonPackages/___VarsLink___/everlaster.TittyMagic.6.var": "a28f0ea96a28c8e146d962a764fbec70adf1f380b97b03dd97cbc8242f945482",
+      "AddonPackages/___VarsLink___/everlaster.TittyMagic.7.var": "0eebfdb24c0cf93d31c2a236fd9b7d7dfd7a8443b7193bf3c0261f1457b3b33b",
+      "AddonPackages/___VarsLink___/everlaster.TittyMagic.8.var": "3523adf81799fd458995905b388ec3dc0ca885ac183f48fb5a382a7d1c7bf826",
+      "AddonPackages/___VarsLink___/everlaster.TittyMagic.9.var": "7307403e93fa29fb34dd1a1061246a7b713a43bb4ba1a3844c8f37d23a3166e0",
+      "AddonPackages/___VarsLink___/everlaster.TittyMagic.14.var": "ff28e6a2887f773f7a6471f2b7307a34ede22dd6cecb05fc1b5092496745eb26",
+      "AddonPackages/___VarsLink___/everlaster.TittyMagic.16.var": "a98796a86ed94c1f253cc0c622bbc1950d25bcbd22b79734a07c24b927d4d57a",
+      "AddonPackages/___VarsLink___/everlaster.TittyMagic.17.var": "9c5d9f7f7b25616c570e516daabd8184c602f2e2dbac4c7664a9924d09522632",
+      "AddonPackages/___VarsLink___/everlaster.TittyMagic.24.var": "616bac6dd48c5d76a2f073179fa30b198869a4bb0d407c29ce42be5a35173a3a",
+      "AddonPackages/___VarsLink___/everlaster.TittyMagic.32.var": "07ccaa6eebd3466781b5dda161f9fca40fcc33a47e8b97fcfb2c71ee3c9be641",
+      "AddonPackages/___VarsLink___/everlaster.TittyMagic.35.var": "929033a7d68eb43de7d9ef409dc99850016f63a082a2467f4fe410c9f17f6b4a",
+      "AddonPackages/___VarsLink___/everlaster.TittyMagic.51.var": "622228adb0a19c577d236fc5c70f8cd00b4bd048b7fdd59e87f1419d4281637c",
+      "AddonPackages/___VarsLink___/everlaster.TittyMagic.59.var": "70ebede90ed30b26898530e7b6dcb9728a49f186d9c61e7952ac374acee8e658",
+      "AddonPackages/___VarsLink___/everlaster.Naturalis.15.var": "9665569ef274838999d73be380cbedd775ff7e55ea8b4abc5a5f3cf34fb5a6dd",
+      "AddonPackages/___VarsLink___/everlaster.Naturalis.43.var": "a6b085ed0eed62e3eeeede4739200c10b351151dd85d74237df338279701d3c6",
+      "AddonPackages/___VarsLink___/everlaster.Naturalis.44.var": "ce3974a6185f23d487ebf1a6f2ab123a024d601efe309b3a2216aa1f8bd76ff1",
+      "AddonPackages/___VarsLink___/everlaster.Naturalis.51.var": "cbc2dc5a385ee302b901cd5ba531053abe3ddfc6921c1193d111ef0ed31a0f70",
+      "AddonPackages/___VarsLink___/everlaster.Naturalis.53.var": "dccf7d31796930fa4460dc6bb42e860382fd1f80929b391bee33b973de8c587e",
+      "AddonPackages/___VarsLink___/everlaster.Naturalis.54.var": "a88a0560be35ed3999fc45ca901068ad66fe2ff5dc9fc1813f383696cf33361e",
+      "AddonPackages/___VarsLink___/everlaster.Naturalis.55.var": "0158c9e17a8ef70537e5198e64e193ed67a1a2ef1ed50c8287ea58b7e33702ac",
+      "AddonPackages/___VarsLink___/everlaster.Naturalis.70.var": "fbb4a66ed75b3a772d6699bdb81e89b2bc9f0136eefffdaec7b70c8a62016eea",
+      "AddonPackages/___VarsLink___/everlaster.Naturalis.72.var": "c0b08bc560c10a6aec7fd8df56fe1b5583daabe39260022030479ff4db31447f",
+      "AddonPackages/___VarsLink___/everlaster.Naturalis.73.var": "3f5fb3e9a1222f523cefa8daed251dc6a4c224cab3002dac130ab5f08854184f",
+      "AddonPackages/___VarsLink___/everlaster.Naturalis.92.var": "c4942a0bce7a59e7e5d21d3eb512b2226c66a9597f7c616920ffde3ae787988e",
+      "AddonPackages/___VarsLink___/everlaster.Naturalis.93.var": "8f47c7247972b96c3208fbb6af1bb7614c7ecc04cad3eb2d57639edc897f5edb",
+      "AddonPackages/___VarsLink___/dub.AudioMate.8.var": "4b2f95d8c2a9ab37f7be650f36c1a365188a429510f3e1c8b398c9e25858f26b",
+      "AddonPackages/___VarsLink___/dub.AudioMate.9.var": "69b64cef5474af69fe2393edf9f6085242c6fdbd79fe8b88ba30c38c83c9b83a",
+      "AddonPackages/___VarsLink___/dub.AudioMate.11.var": "9c52452fff7e65d2a56edf64d43d7b499f8ac840671a9af9d5b68c7654d8e574",
+      "AddonPackages/___VarsLink___/dub.AudioMate.14.var": "b8c92532eed7a1d7a844044121dec948b4505497abe165f14cff17fa3d3d6f5d",
+      "AddonPackages/___VarsLink___/dub.AudioMate.20.var": "0da2a1f85a5834fd5d62b9960f45c08eb12d62d8a8e5d10f7e5eaf8e437c390c",
+      "AddonPackages/___VarsLink___/hazmhox.vammoan.1.var": "9faec6398cd94fd3205d516bae077cdac7040980e852a811f409736a5529d6bd",
+      "AddonPackages/___VarsLink___/hazmhox.vammoan.10.var": "93c9530f3d3d2ef5ca17e0608e47afb2d5b0d30915210b7c3386e9017df77d5e",
+      "AddonPackages/___VarsLink___/hazmhox.vammoan.11.var": "5ec1605389cf099ba2d585516f8e9c9b1ba9d3065802ea10e7a737bff00dea63",
+      "AddonPackages/___VarsLink___/hazmhox.vammoan.12.var": "afdc37c9f5266314dd93067ae619b119effc11a30c53147435c8f689706b6b2c",
+      "AddonPackages/___VarsLink___/hazmhox.vammoan.14.var": "0133c0fd46216fd85cbeb4d7cc79c0ed2dc6616e724e2d64aecfbf2c9075b49a",
+      "AddonPackages/___VarsLink___/hazmhox.vammoan.15.var": "290ffed5426655ce8618f86b0f2c576332b60830a8781f66b80fecda8a777954",
+      "AddonPackages/___VarsLink___/hazmhox.vammoan.17.var": "699595c9408399fbfc9ab6499ce297b2ae5e663b714f260d4873ad513aeb60d4",
+      "AddonPackages/___VarsLink___/hazmhox.vammoan.18.var": "417c023568ffd81e1c57e89625a78ad217261809098f63c5e268cbab294949a3",
+      "AddonPackages/___VarsLink___/hazmhox.vammoan.19.var": "30286d76eee7d9fe598f72f2e0d3a8c323d8ec54932a55b3da85b2f15ce0c93d",
+      "AddonPackages/___VarsLink___/hazmhox.vammoan.20.var": "c1bb9f64bb8d9bf905ca3ce0f2001a7ffb2424d0aed8484ca8ab03977741d761",
+      "AddonPackages/___VarsLink___/hazmhox.vammoan.21.var": "84bb5b957eef74378ec8a6e0e62cd2d624f76d6372daceb99ef428edd24f6711",
+      "AddonPackages/___VarsLink___/hazmhox.vammoan.22.var": "efaf3f36b6eb369c9eb15f04d3351700ba6a1ec68acd89b52749cb5f4d9b12dd",
+      "AddonPackages/___VarsLink___/hazmhox.vammoan.23.var": "073b35d7dc736edf43b9c79fcbd98defb75bb55d20695d903570881ab3a6bb60",
+      "AddonPackages/___VarsLink___/hazmhox.vammoan.3.var": "5846586d31f7d989c91e9160fa32d2dc7bcb4cdec2f253722e0940b4c009847d",
+      "AddonPackages/___VarsLink___/hazmhox.vammoan.5.var": "4f784c990496476e067bcbfbef6adbc0845cfa42191137aaeb0b667f869a5857",
+      "AddonPackages/___VarsLink___/hazmhox.vammoan.7.var": "1a515adf7d743f02e0c9563676eb800299c65ab9fb38a366820b614384588ecc",
+      "AddonPackages/___VarsLink___/hazmhox.vammoan.8.var": "9130c80333dae19f906bba17260f456d9fff46e2266e497881047db63d641051",
+      "AddonPackages/___VarsLink___/hazmhox.vammoan.9.var": "741c3217e63e6495ed2f8ffc249035beaf25e86e06bd307fb98b3c3975416db9",
+      "AddonPackages/___VarsLink___/hazmhox.vammoanLipsyncFixed.22.var": "9105aee6122a61f85b988e890e4347ea89ff7c4bf8d204421c315e94abac593d",
+      "AddonPackages/___VarsLink___/C&G-STUDIO.Crystallization.1.var": "2b081771669cd807144493a871e85ed06f5144d26f6ea039e326317b051a31fd",
+      "AddonPackages/___VarsLink___/C&G-STUDIO.Must_Be_Love.1.var": "0ac2e1d6b6745950c1ee2994902a4a50c94d64af8a7351dff18d862889405fa9"
+    }
+  },
+  "gameBenefitBytes": null,
+  "gameCalls": 0,
+  "gameWrites": 0,
+  "forcedGameGC": false,
+  "restoredBehavior": "independent copy restores16AAF and the768MiB fixture recommit; candidate remains changed",
+  "limitation": "fixture flow is not peak/resident savings; not an attribution of persistent game growth"
+}

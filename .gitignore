@@ -1,0 +1,12 @@
+*.dll
+*.exe
+*.pyd
+*.obj
+*.lib
+*.exp
+__pycache__/
+_validation/
+isolated-run-*/
+materials/Mono/
+materials/VaM_Data/
+materials/tools/

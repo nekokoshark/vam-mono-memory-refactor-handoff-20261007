@@ -1,0 +1,3611 @@
+{
+  "files": [
+    {
+      "path": "工作区/mono_exact_reclaim_20261007/BASELINE.dll",
+      "bytes": 2808832,
+      "sha256": "d4685c71704ef7f222feebfb93851d7f3b6d354998c2e6bc8347268e047c7b3d"
+    },
+    {
+      "path": "工作区/mono_exact_reclaim_20261007/BASELINE_ABI.json",
+      "bytes": 1647,
+      "sha256": "5ac4c990d878bc6e3e02044174caefa215b4f02d6c2dfd1cdb3c8df20e01c47e"
+    },
+    {
+      "path": "工作区/mono_exact_reclaim_20261007/BASELINE_CERTIFY.json",
+      "bytes": 2154,
+      "sha256": "14b14947b8f426cac3b69e8bcd84abd134f2a9d14b3c02f4100ef7078b3ac8ec"
+    },
+    {
+      "path": "工作区/mono_exact_reclaim_20261007/BASELINE_COHORT.json",
+      "bytes": 57223,
+      "sha256": "06a2f8b03f3028e7049b9f2f9fd64fcea351f45938f04409f571752caee535d8"
+    },
+    {
+      "path": "工作区/mono_exact_reclaim_20261007/BASELINE_COMMANDS.json",
+      "bytes": 7386,
+      "sha256": "f98ea6e96f19a0f9a7b01b01edf2770d810bb3c31afd2be21a7a4da7ebe6a6a6"
+    },
+    {
+      "path": "工作区/mono_exact_reclaim_20261007/BASELINE_EXACT.json",
+      "bytes": 1085,
+      "sha256": "bf289fb8f4ad262c0f3feaae7697c0f36826186b33326625422ac0935d928e6b"
+    },
+    {
+      "path": "工作区/mono_exact_reclaim_20261007/BASELINE_FAILURE.json",
+      "bytes": 1769,
+      "sha256": "2434fc6984e10978c62d1809bf2e5ee8091e69a2e10e99437c93902e390856b7"
+    },
+    {
+      "path": "工作区/mono_exact_reclaim_20261007/BASELINE_idle.json",
+      "bytes": 7386,
+      "sha256": "d7a6887f83cb0e55d0153c3825681ca98bd99400965cfd3923b4d8b334f6e709"
+    },
+    {
+      "path": "工作区/mono_exact_reclaim_20261007/BASELINE_INTERIOR.json",
+      "bytes": 18733,
+      "sha256": "59081efd83c7cc22cedc8c4c621fdd0d410ccab1afb8c4d4d4abcdbf7c123a32"
+    },
+    {
+      "path": "工作区/mono_exact_reclaim_20261007/BASELINE_ISOLATION.json",
+      "bytes": 18901,
+      "sha256": "c2c0a770341bae4e1d3217db172d2f8df0e6e4c10ea1c26dbad532d223963f24"
+    },
+    {
+      "path": "工作区/mono_exact_reclaim_20261007/BASELINE_LIFECYCLE.json",
+      "bytes": 11350,
+      "sha256": "03b18ebdb1d1c87c50ed61a9b7d8b042ff9ed45953f01bea3adcaf078005dacb"
+    },
+    {
+      "path": "工作区/mono_exact_reclaim_20261007/BASELINE_LIFECYCLE_TRACE.json",
+      "bytes": 7965,
+      "sha256": "f84b0a5b23db454c036578af6b58fe04c7814a0d9710b0160690c0f94e5d63cd"
+    },
+    {
+      "path": "工作区/mono_exact_reclaim_20261007/BASELINE_PATCH.json",
+      "bytes": 7155,
+      "sha256": "8bbd10ecf400a66dc0c5f66445cc21c4c1f1cd38a23362a30eec75cbf931ba27"
+    },
+    {
+      "path": "工作区/mono_exact_reclaim_20261007/BASELINE_quick.json",
+      "bytes": 13246,
+      "sha256": "6cefcf6a10eb5968ac63a2c34b592fb3d18de860f5f2c8a28795f90d043418af"
+    },
+    {
+      "path": "工作区/mono_exact_reclaim_20261007/BASELINE_REUSE.json",
+      "bytes": 32893,
+      "sha256": "1adda0d3945aae2ef6a715a6ee9ed0acf3b572248480a42152a9e6c3f92ca57d"
+    },
+    {
+      "path": "工作区/mono_exact_reclaim_20261007/BASELINE_SECTIONS.json",
+      "bytes": 83763,
+      "sha256": "c7fc4ee7e117f4b809d31effe0cf917f66a4abb98862c17ba82de8bc6955a0f3"
+    },
+    {
+      "path": "工作区/mono_exact_reclaim_20261007/BASELINE_SPANS.json",
+      "bytes": 19057,
+      "sha256": "2620815702a61d1098a559faaa82724f2419ed379c5453c9050bf4b537392668"
+    },
+    {
+      "path": "工作区/mono_exact_reclaim_20261007/BASELINE_stress.json",
+      "bytes": 5775,
+      "sha256": "f5f20386c00c69abec613d13d5068e374ed027e7b1b08309de2fa578f4d36c26"
+    },
+    {
+      "path": "工作区/mono_exact_reclaim_20261007/BASELINE_WARM.json",
+      "bytes": 10027,
+      "sha256": "118f249542d7de6cca6a9da953dbf0941e63d80b59c250f40170d88dcbb3f714"
+    },
+    {
+      "path": "工作区/mono_exact_reclaim_20261007/BUILD.json",
+      "bytes": 1896,
+      "sha256": "370ea4e91cccaa9ff4374b8ccb6afecd109bc49a217f7e517b6cccb0ae3719bf"
+    },
+    {
+      "path": "工作区/mono_exact_reclaim_20261007/build.py",
+      "bytes": 2201,
+      "sha256": "3fc7fb3526226c7c7f854b16de129ce3c24627ab16272ef89abb0b10139442a9"
+    },
+    {
+      "path": "工作区/mono_exact_reclaim_20261007/BUILD_ROOT_PROBE.ps1",
+      "bytes": 661,
+      "sha256": "38381cbb2707de03bae84ba86fdf8081edfeb9e9745e84bbf4f85a118438f82e"
+    },
+    {
+      "path": "工作区/mono_exact_reclaim_20261007/capture_density.py",
+      "bytes": 5928,
+      "sha256": "953c02cc7f405719ea462a80ed077c6f4e7835de2c0d0285341db20435bf5f3e"
+    },
+    {
+      "path": "工作区/mono_exact_reclaim_20261007/CAPTURED_STALE_ROOT_FAILURE.json",
+      "bytes": 4858,
+      "sha256": "fd0c297c486c5f0d82874787a9abbc491fa21c7120edb7b4a7ab35dbd1800490"
+    },
+    {
+      "path": "工作区/mono_exact_reclaim_20261007/CAPTURED_STALE_ROOT_STATUS.json",
+      "bytes": 3021,
+      "sha256": "8122739f24b7ab52cd5d14f77c1dd2b02b2cdb324e4b9e0010c473d6431592ca"
+    },
+    {
+      "path": "工作区/mono_exact_reclaim_20261007/CERTIFY.ps1",
+      "bytes": 1613,
+      "sha256": "191695c1085138bb21b55b2bf57964732c604b98e5c311be17e7f7d88c2ff53d"
+    },
+    {
+      "path": "工作区/mono_exact_reclaim_20261007/D4_GC1_ROOT_SCAN.json",
+      "bytes": 555,
+      "sha256": "d366a6ea843d9c79a901430c21979e7cd76b221aa4a29770cab31284f9baed1b"
+    },
+    {
+      "path": "工作区/mono_exact_reclaim_20261007/DENSITY_REJECTED_BUDGET.json",
+      "bytes": 339,
+      "sha256": "1dfadbfc118aabb7e50f17b753a7e88863fce7fe94fefbaf7506ba2fa8952b7c"
+    },
+    {
+      "path": "工作区/mono_exact_reclaim_20261007/DENSITY_REJECTED_MOVING_HEAD.json",
+      "bytes": 371,
+      "sha256": "21f5486e754c9a21f2e1e6ec1408a8ce414131b0882ea2358e26f31a1a9529cc"
+    },
+    {
+      "path": "工作区/mono_exact_reclaim_20261007/DENSITY_REJECTED_UNCLASSIFIED.json",
+      "bytes": 317,
+      "sha256": "377379386e705974a4d517912e8d85a1e7168d15e4d4f2819382f93aca27c4fc"
+    },
+    {
+      "path": "工作区/mono_exact_reclaim_20261007/DENSITY_SAMPLE.json",
+      "bytes": 50841,
+      "sha256": "9f2f6a332c3490414a5b2ee8b9d53f0fd751ba650ce9783ea6ea09aa60f311ab"
+    },
+    {
+      "path": "工作区/mono_exact_reclaim_20261007/diagnose_baseline.py",
+      "bytes": 793,
+      "sha256": "5e27a8f7a5282b7aa71d836243ea49d563a4d0ea6e99cc33da5ecd5a93d142b4"
+    },
+    {
+      "path": "工作区/mono_exact_reclaim_20261007/diagnose_baseline_bytes.py",
+      "bytes": 1316,
+      "sha256": "8b51601b42b70108f35d4b34e8d2da0910ab913f6ad3c03c76c011e97106d0f2"
+    },
+    {
+      "path": "工作区/mono_exact_reclaim_20261007/diagnose_bytes.py",
+      "bytes": 975,
+      "sha256": "9c9294c79b68d772b0ed54cc49c37ba03b4c3ddf2aabdd78a93bc756667b8c9f"
+    },
+    {
+      "path": "工作区/mono_exact_reclaim_20261007/diagnose_candidate.py",
+      "bytes": 796,
+      "sha256": "17318be0077b1b2958e41e4266e548841c86c41d9c509ba4ae5381caea2ded27"
+    },
+    {
+      "path": "工作区/mono_exact_reclaim_20261007/diagnose_roots.py",
+      "bytes": 5891,
+      "sha256": "846a35092528df1a5a0ac6a855b4e67d7cac814abdf6fa9f752fc927b71d1e24"
+    },
+    {
+      "path": "工作区/mono_exact_reclaim_20261007/diagnose_stack.py",
+      "bytes": 1074,
+      "sha256": "31c60abfb0da36b40b7d6bc78fcf336948e69414f05c6d68474901366102913c"
+    },
+    {
+      "path": "工作区/mono_exact_reclaim_20261007/diagnose_thread.py",
+      "bytes": 1569,
+      "sha256": "40b8a14d89b2b9633c71a0bfba026c42e3b0b4c2cf07fbbbcd10cd89053654b5"
+    },
+    {
+      "path": "工作区/mono_exact_reclaim_20261007/DIAGNOSTIC_BYTES_MODIFIED_LIFECYCLE.json",
+      "bytes": 28142,
+      "sha256": "b371e42bec226b0f68a983a65b2d20ee6d7bf216655153bf92462d178a26d0de"
+    },
+    {
+      "path": "工作区/mono_exact_reclaim_20261007/DIAGNOSTIC_BYTES_MODIFIED_LIFECYCLE_TRACE.json",
+      "bytes": 20206,
+      "sha256": "b6f61c18e978059c33c9852843495ee8d4aaafd0df00efc1331bcce537fe774f"
+    },
+    {
+      "path": "工作区/mono_exact_reclaim_20261007/DIAGNOSTIC_D4_BYTES_MODIFIED_LIFECYCLE_TRACE.json",
+      "bytes": 20046,
+      "sha256": "079f256d90109ded73369d51c13c19e2777b5b5e88d484e6f17dfeccf4d652bf"
+    },
+    {
+      "path": "工作区/mono_exact_reclaim_20261007/DIAGNOSTIC_D4_MODIFIED_LIFECYCLE_TRACE.json",
+      "bytes": 20047,
+      "sha256": "76e16477bc6765e9e2ced6f3cec7691e9f48e3df4f44f1b81eb95fbfad9aa4eb"
+    },
+    {
+      "path": "工作区/mono_exact_reclaim_20261007/DIAGNOSTIC_EXACT_BASELINE_LIFECYCLE.json",
+      "bytes": 11355,
+      "sha256": "c880d7ea7c7632f8ce1a29a4ccca1dd0d51ea3699dac559286e900e5fb4f82c9"
+    },
+    {
+      "path": "工作区/mono_exact_reclaim_20261007/DIAGNOSTIC_EXACT_BASELINE_LIFECYCLE_TRACE.json",
+      "bytes": 7967,
+      "sha256": "f17a18b8fd72e5ad1a93c996f7a50a83d711320fe7fc9319fb2584849274cb01"
+    },
+    {
+      "path": "工作区/mono_exact_reclaim_20261007/DIAGNOSTIC_STACK_MODIFIED_LIFECYCLE_TRACE.json",
+      "bytes": 20045,
+      "sha256": "4b5fe0a6f5fb90fbd24fcbccaa490c41a64b5225595a03166a54a5d311f2af73"
+    },
+    {
+      "path": "工作区/mono_exact_reclaim_20261007/DIAGNOSTIC_THREAD_D4_MODIFIED_LIFECYCLE.json",
+      "bytes": 28145,
+      "sha256": "49b14c69600c614f15b1d2a865e30f4f354e4e5a320a2540649759a9f8d35641"
+    },
+    {
+      "path": "工作区/mono_exact_reclaim_20261007/DIAGNOSTIC_THREAD_D4_MODIFIED_LIFECYCLE_TRACE.json",
+      "bytes": 20209,
+      "sha256": "065c3050050f2dfdb9d0211c2ab5ae4f55f0d2ae69469611edb85db85463e1ab"
+    },
+    {
+      "path": "工作区/mono_exact_reclaim_20261007/DIAGNOSTIC_THREAD_EXACT_MODIFIED_LIFECYCLE.json",
+      "bytes": 28143,
+      "sha256": "a89b5b012e2c2f9e06ee5f398299baa82d4d5b2a2e675a49d8114ef75165b9c2"
+    },
+    {
+      "path": "工作区/mono_exact_reclaim_20261007/DIAGNOSTIC_THREAD_EXACT_MODIFIED_LIFECYCLE_TRACE.json",
+      "bytes": 20209,
+      "sha256": "2eae48eec95a4fad2bbeca758979b2a9d99b98da2b4265bb786aa9f8edecf41c"
+    },
+    {
+      "path": "工作区/mono_exact_reclaim_20261007/DIFF_FILE.patch",
+      "bytes": 3895,
+      "sha256": "a84fa45554916360123e125e12b338e32d06146a1716aae700f86f2d1dc707e7"
+    },
+    {
+      "path": "工作区/mono_exact_reclaim_20261007/EXACT_GC1_ROOT_SCAN.json",
+      "bytes": 555,
+      "sha256": "5ed1b1b5880277eca2bb544ce341c9f26f63a6d44b7034f97dbd7c5c16117225"
+    },
+    {
+      "path": "工作区/mono_exact_reclaim_20261007/finalize.py",
+      "bytes": 6340,
+      "sha256": "254feb1758a6b2f9bbc431c9c7c5ef9445a2f2c2ab7a1e63081f257670382d37"
+    },
+    {
+      "path": "工作区/mono_exact_reclaim_20261007/INITIAL_BASELINE_BINDING_FAILURE.json",
+      "bytes": 5050,
+      "sha256": "50d685c62b5c47cf6262675652e7739f21f22059a8cad85022c3ca390adcb73a"
+    },
+    {
+      "path": "工作区/mono_exact_reclaim_20261007/INITIAL_BASELINE_CERTIFY_FAILURE.json",
+      "bytes": 2137,
+      "sha256": "9bfdd744c548104abac57c82b68677458f6a7ff74565b9b626a00eb1c427bb8b"
+    },
+    {
+      "path": "工作区/mono_exact_reclaim_20261007/INITIAL_MODIFIED_LARGE_RETAINED_CERTIFY.json",
+      "bytes": 1415,
+      "sha256": "bf8b74e34f8f830b64fd94ab57939aa176753c0a2798891ec3ba22c5d49a0efe"
+    },
+    {
+      "path": "工作区/mono_exact_reclaim_20261007/INITIAL_MODIFIED_LARGE_RETAINED_COMMANDS.json",
+      "bytes": 2701,
+      "sha256": "1b552c0dabf3c3e0727a97e3849c2b671f25b3ecba399277235e83254b877a5b"
+    },
+    {
+      "path": "工作区/mono_exact_reclaim_20261007/INITIAL_MODIFIED_LARGE_RETAINED_TRACE.json",
+      "bytes": 20044,
+      "sha256": "566f540eea68647beb3b08dbbd17f7818edf1562225e216bb0a0dd9e26f8f532"
+    },
+    {
+      "path": "工作区/mono_exact_reclaim_20261007/install.ps1",
+      "bytes": 495,
+      "sha256": "01d558aa592552d65c404211ee43cfdd27a7c8fca161cedb7afd72ffe7ed753f"
+    },
+    {
+      "path": "工作区/mono_exact_reclaim_20261007/LifecycleSample.dll",
+      "bytes": 10240,
+      "sha256": "8c38dd13b05fdf0401b4ca154b1bbe5fef69fa13bdd01d6837cdbf60be1a8833"
+    },
+    {
+      "path": "工作区/mono_exact_reclaim_20261007/LIVE_COUNTERS.json",
+      "bytes": 3639,
+      "sha256": "5ee710e6fb02e437b7ae3a8e04d5e8cba3bb97a81463c46856e0822e0f91119d"
+    },
+    {
+      "path": "工作区/mono_exact_reclaim_20261007/MODIFIED_ABI.json",
+      "bytes": 1647,
+      "sha256": "5d633f720a3c06d581d50a36233f37b675f383a7313b481c6c67cdd269fa7805"
+    },
+    {
+      "path": "工作区/mono_exact_reclaim_20261007/MODIFIED_CERTIFY.json",
+      "bytes": 2153,
+      "sha256": "12491e737742a3b16ca7c22eb0d2a91af94c9965561f3b94c016512528580d6f"
+    },
+    {
+      "path": "工作区/mono_exact_reclaim_20261007/MODIFIED_COHORT.json",
+      "bytes": 196275,
+      "sha256": "b07c4b28251d081057d16c7c8cbefe63e58e99a99c6d691c9c2718e9699eb1a8"
+    },
+    {
+      "path": "工作区/mono_exact_reclaim_20261007/MODIFIED_COMMANDS.json",
+      "bytes": 7385,
+      "sha256": "b725e921138036a103681b5c0e9b620d16e969e2bf91180f9aa65ef5ce5bd3cd"
+    },
+    {
+      "path": "工作区/mono_exact_reclaim_20261007/MODIFIED_EXACT.json",
+      "bytes": 1078,
+      "sha256": "e9e76a3d5c49432f3f8963091efbed675961cd9cb3833209c0481bae9f11e0cb"
+    },
+    {
+      "path": "工作区/mono_exact_reclaim_20261007/MODIFIED_FAILURE.json",
+      "bytes": 4356,
+      "sha256": "918c2fecf4c19fdf52bb8a2d0d1a1af56f443a6bbdf8659df03e50e8694afc85"
+    },
+    {
+      "path": "工作区/mono_exact_reclaim_20261007/MODIFIED_FILE.dll",
+      "bytes": 2817024,
+      "sha256": "427aab71b5b751507ee8165869baeee6ca2a021c852691a942bc971967a1ce35"
+    },
+    {
+      "path": "工作区/mono_exact_reclaim_20261007/MODIFIED_idle.json",
+      "bytes": 18100,
+      "sha256": "abcddc9914837011cc7230f9bcf241afe42fa98840d90b0d6b44e2416d29736b"
+    },
+    {
+      "path": "工作区/mono_exact_reclaim_20261007/MODIFIED_INTERIOR.json",
+      "bytes": 18733,
+      "sha256": "3a45d9a719b20b8fd874743d9d6c6c49585422c8954099d2d90d03936298d95e"
+    },
+    {
+      "path": "工作区/mono_exact_reclaim_20261007/MODIFIED_ISOLATION.json",
+      "bytes": 227480,
+      "sha256": "a789941de2d1d1b596ab4ea6b29bebd9ce4c5a9cd19c3c0b131d9cfcdf28b7fb"
+    },
+    {
+      "path": "工作区/mono_exact_reclaim_20261007/MODIFIED_LIFECYCLE.json",
+      "bytes": 28142,
+      "sha256": "216afe37264ff14b3446f50fd6c099c7be57f167bf67d6dcfe9c97ae2434164c"
+    },
+    {
+      "path": "工作区/mono_exact_reclaim_20261007/MODIFIED_LIFECYCLE_TRACE.json",
+      "bytes": 20208,
+      "sha256": "e665dec15503f7bd186878b0049e263ad4ff995b85161f59dfab251a65e2af6d"
+    },
+    {
+      "path": "工作区/mono_exact_reclaim_20261007/MODIFIED_quick.json",
+      "bytes": 33349,
+      "sha256": "2337f553b24bfb2772cb1d8e1319f6148ff5cb30005af0403beef0f157cfc61b"
+    },
+    {
+      "path": "工作区/mono_exact_reclaim_20261007/MODIFIED_REUSE.json",
+      "bytes": 380487,
+      "sha256": "808b7d57f5f8556f6ed6dec2cf2437a64cf33ffb4b3c5cdd7d089501526b2e3f"
+    },
+    {
+      "path": "工作区/mono_exact_reclaim_20261007/MODIFIED_SECTIONS.json",
+      "bytes": 432154,
+      "sha256": "bca6cadc04a73337f21a525bdcf40eb2e9fb2b9585a7588137158b27665fe607"
+    },
+    {
+      "path": "工作区/mono_exact_reclaim_20261007/MODIFIED_SPANS.json",
+      "bytes": 19056,
+      "sha256": "5b2cb27979a636c9919660d6baef866664ba2d96a54ef1685ca6cb8e6053b773"
+    },
+    {
+      "path": "工作区/mono_exact_reclaim_20261007/MODIFIED_stress.json",
+      "bytes": 14049,
+      "sha256": "769836e6240d44b8ca57b603cc3cd4d370e5e676bd61c1389a05d8f7dfa4ff68"
+    },
+    {
+      "path": "工作区/mono_exact_reclaim_20261007/MODIFIED_WARM.json",
+      "bytes": 10682,
+      "sha256": "f9c705fc49596fe5a7587dd7f8b35c0eadcb06943019d3dad522bde194eaf1f2"
+    },
+    {
+      "path": "工作区/mono_exact_reclaim_20261007/observer_stack.c",
+      "bytes": 540,
+      "sha256": "4cf271e7df2419dc4265e5cc406a5a97b29a2c997aea92ed8d15b2aec6e8ae9a"
+    },
+    {
+      "path": "工作区/mono_exact_reclaim_20261007/observer_stack.dll",
+      "bytes": 2560,
+      "sha256": "e0451bdd4743e8abcc5841eda47ecaa8be3c24f7dcb88b09cf3131c3f385d57c"
+    },
+    {
+      "path": "工作区/mono_exact_reclaim_20261007/PATCH.json",
+      "bytes": 60349,
+      "sha256": "7ebd19942b167eadc13a903d92383001286703b94240731c3bc4fdaf34403ac8"
+    },
+    {
+      "path": "工作区/mono_exact_reclaim_20261007/pending_probe.dll",
+      "bytes": 7168,
+      "sha256": "520ae58b43b1263dd2cf7c425d94b016d261786e175efe90ca4b72e888e3f3c8"
+    },
+    {
+      "path": "工作区/mono_exact_reclaim_20261007/PendingCohort.dll",
+      "bytes": 13312,
+      "sha256": "3132905ae1204885c97be4bf16f85d76db7e86fb0b00fb54da1577b5147eda06"
+    },
+    {
+      "path": "工作区/mono_exact_reclaim_20261007/prepare.py",
+      "bytes": 3757,
+      "sha256": "b52b31c0f14241feb317fa95e9aa6152dcea7f115d98774c09c6fd60c1c1dd28"
+    },
+    {
+      "path": "工作区/mono_exact_reclaim_20261007/README.md",
+      "bytes": 789,
+      "sha256": "567fde7a361a397670a60f92bd00b0d20d17518f1c9d3b804bbc2919579ddd76"
+    },
+    {
+      "path": "工作区/mono_exact_reclaim_20261007/reclaim_controller.c",
+      "bytes": 30185,
+      "sha256": "c69c3119abe58e328ff940e6d358a00f1f1fe1ef28bac712726a2d6a2dfcc6b6"
+    },
+    {
+      "path": "工作区/mono_exact_reclaim_20261007/RELEASE_GATE.json",
+      "bytes": 177,
+      "sha256": "291d309f9b86c613a720d1d8533066b98a451a20f9fdcfa3d4510f13b58ac20f"
+    },
+    {
+      "path": "工作区/mono_exact_reclaim_20261007/RetireSample.dll",
+      "bytes": 9216,
+      "sha256": "7175b7201416d2ef2866aa0a382edb7f290a7ac073cf8c9758e6738c00dfb2f8"
+    },
+    {
+      "path": "工作区/mono_exact_reclaim_20261007/rollback.py",
+      "bytes": 1405,
+      "sha256": "5b5f42d8a2871cb93763774cd1c51bb619d3f6ca344540f1decf9d952b876849"
+    },
+    {
+      "path": "工作区/mono_exact_reclaim_20261007/ROLLBACK.sh",
+      "bytes": 104,
+      "sha256": "c3c63303dec2c477f9f353783eac29f0589bba333f97856fb1e4f42326165711"
+    },
+    {
+      "path": "工作区/mono_exact_reclaim_20261007/ROLLBACK_ABI.json",
+      "bytes": 1647,
+      "sha256": "0deb53046fc95d31afcbdef7f07d13c95f7156ac7aa1c4b2344143e274f59e84"
+    },
+    {
+      "path": "工作区/mono_exact_reclaim_20261007/ROLLBACK_CERTIFY.json",
+      "bytes": 2239,
+      "sha256": "d75ef3712b00b217d2e047c5597f1ba7f27fde50144631d56fc28936de0d5c67"
+    },
+    {
+      "path": "工作区/mono_exact_reclaim_20261007/ROLLBACK_COHORT.json",
+      "bytes": 56891,
+      "sha256": "95a51e06e3b3c3a561adf24f5555f6ded04783703fa15d34661a7e3b458ec74e"
+    },
+    {
+      "path": "工作区/mono_exact_reclaim_20261007/ROLLBACK_COMMANDS.json",
+      "bytes": 7386,
+      "sha256": "ab95768b1883018385ec17236d2aee0e1897469e4e9b409aceef46399409021d"
+    },
+    {
+      "path": "工作区/mono_exact_reclaim_20261007/ROLLBACK_EXACT.json",
+      "bytes": 1085,
+      "sha256": "b4cb0c421b8d1c65b5703928411c966d6359893dc8e95885f2f930783a2221ba"
+    },
+    {
+      "path": "工作区/mono_exact_reclaim_20261007/ROLLBACK_FAILURE.json",
+      "bytes": 1769,
+      "sha256": "24f5c91b159f1a887e15f407051aca2998edcdddf345b25f5f2fa22eb38cfde6"
+    },
+    {
+      "path": "工作区/mono_exact_reclaim_20261007/ROLLBACK_idle.json",
+      "bytes": 7398,
+      "sha256": "83d5b8997ded3a929369ad5dc243c6463ef9d3459326cfa990d3075aec548963"
+    },
+    {
+      "path": "工作区/mono_exact_reclaim_20261007/ROLLBACK_INTERIOR.json",
+      "bytes": 18733,
+      "sha256": "755b618f64db84a84e957d0fa00c28c40b78cced6aa2286e159f3a8afaed97c6"
+    },
+    {
+      "path": "工作区/mono_exact_reclaim_20261007/ROLLBACK_ISOLATION.json",
+      "bytes": 18901,
+      "sha256": "0e86c100e703b31a0f6c95dca5f3e6e35efd4184b3b79ba0ff3074ce6d97cbdb"
+    },
+    {
+      "path": "工作区/mono_exact_reclaim_20261007/ROLLBACK_LIFECYCLE.json",
+      "bytes": 11190,
+      "sha256": "c89bb0ccc62e927d82a598e2cca3b298b03cd465c7cfbadbe21a443583f809df"
+    },
+    {
+      "path": "工作区/mono_exact_reclaim_20261007/ROLLBACK_LIFECYCLE_TRACE.json",
+      "bytes": 7875,
+      "sha256": "ffae3f6bb186d7afc14a15a3eb06b8acf4be61b53a8161fe66638133768f81ce"
+    },
+    {
+      "path": "工作区/mono_exact_reclaim_20261007/ROLLBACK_quick.json",
+      "bytes": 13250,
+      "sha256": "dca6a461177e28712891aea3b4c082bec7f73a55ff0abcffe0bf6ad9addd6e8d"
+    },
+    {
+      "path": "工作区/mono_exact_reclaim_20261007/ROLLBACK_REUSE.json",
+      "bytes": 32893,
+      "sha256": "dbb80bce881bdca7915e6d258bf8e56c9ef2a1bf4bb8ea20fc3f79e3c08728d0"
+    },
+    {
+      "path": "工作区/mono_exact_reclaim_20261007/ROLLBACK_SECTIONS.json",
+      "bytes": 83763,
+      "sha256": "0e841f0a7ef61f4763bdca048f64457ed0d3760fdeae464c8ae8492040673823"
+    },
+    {
+      "path": "工作区/mono_exact_reclaim_20261007/ROLLBACK_SPANS.json",
+      "bytes": 19056,
+      "sha256": "d4cf6d45223879aed2bde00ea7758a55a5b58d2f6143fbe1e0ac3d576c60f3eb"
+    },
+    {
+      "path": "工作区/mono_exact_reclaim_20261007/ROLLBACK_stress.json",
+      "bytes": 5790,
+      "sha256": "d546205236679ef30281c7b26d0b35c69c788db318297a4853d5e604cda05123"
+    },
+    {
+      "path": "工作区/mono_exact_reclaim_20261007/ROLLBACK_WARM.json",
+      "bytes": 10026,
+      "sha256": "b805f6a77934af3e75caed371b232215f2bec1e6741f3f2f402e643c377a1986"
+    },
+    {
+      "path": "工作区/mono_exact_reclaim_20261007/ROOT_CASES.json",
+      "bytes": 11473,
+      "sha256": "037c75d96b04506af94beb24f7e4ae72fbcc80ccd3c2d23dc2f4ae50fcf3b86e"
+    },
+    {
+      "path": "工作区/mono_exact_reclaim_20261007/ROOT_DIAGNOSTIC_D4_CONTROL_MODIFIED_LIFECYCLE.json",
+      "bytes": 28019,
+      "sha256": "25c6ac93851768097b1f547e815bd9bfd32292d61e4615e1a821b85003cb6799"
+    },
+    {
+      "path": "工作区/mono_exact_reclaim_20261007/ROOT_DIAGNOSTIC_D4_CONTROL_MODIFIED_LIFECYCLE_TRACE.json",
+      "bytes": 20139,
+      "sha256": "e617110397010ddcdbd9a66511209656ed67707ba74bc4d9957dc19399fc2add"
+    },
+    {
+      "path": "工作区/mono_exact_reclaim_20261007/ROOT_DIAGNOSTIC_D4_HOLD_MODIFIED_LIFECYCLE_TRACE.json",
+      "bytes": 20044,
+      "sha256": "6120445730704f8230fcba95dbdb5b448eccc65dfd85bfec03f9e31c2333245f"
+    },
+    {
+      "path": "工作区/mono_exact_reclaim_20261007/ROOT_DIAGNOSTIC_D4_MODIFIED_LIFECYCLE.json",
+      "bytes": 28143,
+      "sha256": "a9745a8369eb26400e586b0aeb4811cb11392e554449b7515cc52c97a8fef237"
+    },
+    {
+      "path": "工作区/mono_exact_reclaim_20261007/ROOT_DIAGNOSTIC_D4_MODIFIED_LIFECYCLE_TRACE.json",
+      "bytes": 20208,
+      "sha256": "6707b16b543baffe1d7e7650816a95fd305cce1bc85c02dc5cfd0eab69b5e65d"
+    },
+    {
+      "path": "工作区/mono_exact_reclaim_20261007/ROOT_DIAGNOSTIC_EXACT_CONTROL_MODIFIED_LIFECYCLE.json",
+      "bytes": 28017,
+      "sha256": "70bbd60206b3b31660b495f52b43038d1c9043a53dcfbf26b8e1abd926a52243"
+    },
+    {
+      "path": "工作区/mono_exact_reclaim_20261007/ROOT_DIAGNOSTIC_EXACT_CONTROL_MODIFIED_LIFECYCLE_TRACE.json",
+      "bytes": 20138,
+      "sha256": "a6991daa3a1ee2d1e45e0c068903fe5d32e0df9aa79294e47c7507a8c03d568c"
+    },
+    {
+      "path": "工作区/mono_exact_reclaim_20261007/ROOT_DIAGNOSTIC_EXACT_HOLD_MODIFIED_LIFECYCLE_TRACE.json",
+      "bytes": 20047,
+      "sha256": "9e19f8192acd25d3fef34d3d50d6e7f1b7619f822f33507609e2fdcfa3e9e6f4"
+    },
+    {
+      "path": "工作区/mono_exact_reclaim_20261007/ROOT_DIAGNOSTIC_EXACT_MODIFIED_LIFECYCLE.json",
+      "bytes": 28144,
+      "sha256": "7f9621871d1297ec187f56aa9d3252e2e359d1056ba7bd128e32360a0a7e4a10"
+    },
+    {
+      "path": "工作区/mono_exact_reclaim_20261007/ROOT_DIAGNOSTIC_EXACT_MODIFIED_LIFECYCLE_TRACE.json",
+      "bytes": 20210,
+      "sha256": "7318b85a7ad8c93e25b4bad5b94f91634f40928a5750410f1a8b6d7242c6b036"
+    },
+    {
+      "path": "工作区/mono_exact_reclaim_20261007/ROOT_FINDINGS.md",
+      "bytes": 1371,
+      "sha256": "c2c63d1b0b9615df9a8a15c7c1e8fe68ecee5792dfd8e21dfe253b5a82c4825e"
+    },
+    {
+      "path": "工作区/mono_exact_reclaim_20261007/root_probe.c",
+      "bytes": 2756,
+      "sha256": "2efa776955b3032c9c626bc2d8e1be17c134c34dea5edcaa66bd7262d1e82774"
+    },
+    {
+      "path": "工作区/mono_exact_reclaim_20261007/root_probe.dll",
+      "bytes": 3072,
+      "sha256": "25ebca6321d3bfd99076d665390b3676250fd84ec6bb7a0960e9f6f24776ce7f"
+    },
+    {
+      "path": "工作区/mono_exact_reclaim_20261007/root_scan.py",
+      "bytes": 2956,
+      "sha256": "6e7fcd95d8954867bff09605d4f3d97088394a353f9866a75ed032d75b033e0c"
+    },
+    {
+      "path": "工作区/mono_exact_reclaim_20261007/ROOT_STATUS_D4.json",
+      "bytes": 608,
+      "sha256": "50fc9cfa855f3a3e77431169f398992b09c05af152cbdaae562485287450ec1c"
+    },
+    {
+      "path": "工作区/mono_exact_reclaim_20261007/ROOT_STATUS_D4_CONTROL.json",
+      "bytes": 772,
+      "sha256": "53227471b3f2f4b9978deac634814dc2fdac5d0ebe29567f251d49833d241130"
+    },
+    {
+      "path": "工作区/mono_exact_reclaim_20261007/ROOT_STATUS_D4_HOLD.json",
+      "bytes": 1100,
+      "sha256": "0c8da189e166bab34ee1d42ef37b47b979f2ae2cd57d0897392b184417e29542"
+    },
+    {
+      "path": "工作区/mono_exact_reclaim_20261007/ROOT_STATUS_EXACT.json",
+      "bytes": 608,
+      "sha256": "7027ac6bd7d032065ab0781ea245e113de0404eb1c06aadae3b95d169fde9a31"
+    },
+    {
+      "path": "工作区/mono_exact_reclaim_20261007/ROOT_STATUS_EXACT_CONTROL.json",
+      "bytes": 772,
+      "sha256": "715acd01e525f2f2750e62a7a8c544c77bd025f7306fb8327b8250ff2ebbe36f"
+    },
+    {
+      "path": "工作区/mono_exact_reclaim_20261007/ROOT_STATUS_EXACT_HOLD.json",
+      "bytes": 1100,
+      "sha256": "c5eb7fc28782bcae0749c59f4fe40d3a0ac2a4a462b532d295007ed473560314"
+    },
+    {
+      "path": "工作区/mono_exact_reclaim_20261007/run_case.py",
+      "bytes": 1916,
+      "sha256": "e38d7b6d581af0b99467865b03981cd76ff7a5038297efdf9942b33c5fc4d2de"
+    },
+    {
+      "path": "工作区/mono_exact_reclaim_20261007/STRUCTURE.json",
+      "bytes": 353,
+      "sha256": "f0c1930a34137ad11957f189cc7a80f40762e6bbcabe85dab25d1269646eb69e"
+    },
+    {
+      "path": "工作区/mono_exact_reclaim_20261007/test_exact.py",
+      "bytes": 4103,
+      "sha256": "f527978455a6fb704205f3e926e56aa134f935d283b3ab5610e02f7bb2460e7f"
+    },
+    {
+      "path": "工作区/mono_exact_reclaim_20261007/test_reuse.py",
+      "bytes": 12250,
+      "sha256": "2899b23914575037377bb4182cf50d78ab37d45fecc21da512a34b3c5ba6bcf5"
+    },
+    {
+      "path": "工作区/mono_exact_reclaim_20261007/trace_root_cases.py",
+      "bytes": 2139,
+      "sha256": "9a3a3628f63289f6d329ccac1f1a815c99fd3e0428434949747e03fef36cf4a5"
+    },
+    {
+      "path": "工作区/mono_exact_reclaim_20261007/validate.py",
+      "bytes": 1616,
+      "sha256": "a7a7928595455199cab4c8e0740f911c176e7f339d156fae84fbb939b30e1626"
+    },
+    {
+      "path": "工作区/mono_exact_reclaim_20261007/VERIFICATION.txt",
+      "bytes": 8979,
+      "sha256": "44c969cc36f34f7e7a6741e8bcdb182981f7f419adab55237918c42304be53ad"
+    },
+    {
+      "path": "工作区/mono_exact_reclaim_20261007/verify.py",
+      "bytes": 2206,
+      "sha256": "0ac4dec16b83f8b31d7b178b0e3a0c8cec9c6c49bc2dd0fa3cd59c3e80c6cdeb"
+    },
+    {
+      "path": "工作区/mono_exact_reclaim_20261007/WarmPages.dll",
+      "bytes": 4096,
+      "sha256": "b34f948636965a00f8945e7ec3eb1dc90539ba53f8459d3dc31d2152ab586be5"
+    },
+    {
+      "path": "工作区/mono_reuse_lifecycle_20261007/BASELINE.dll",
+      "bytes": 2807296,
+      "sha256": "a1a8f07d43aab8542247b18d0109a49508ff1489c0aba6b9c9ce1133f4392496"
+    },
+    {
+      "path": "工作区/mono_reuse_lifecycle_20261007/BASELINE_ABI.json",
+      "bytes": 1268,
+      "sha256": "e757c09fcb4d449add35cfe4d28762bc3a7b1ff4e890e875a59682aa5b1cf0ab"
+    },
+    {
+      "path": "工作区/mono_reuse_lifecycle_20261007/BASELINE_CERTIFY.json",
+      "bytes": 2015,
+      "sha256": "044b43af926073f926225c2a0ff421979e93631460b3aa5626a353a00a028adf"
+    },
+    {
+      "path": "工作区/mono_reuse_lifecycle_20261007/BASELINE_COHORT.json",
+      "bytes": 51919,
+      "sha256": "052f4ac8f749ed070258d514fd69e67b602f2fec897fb009470aba5bb7109844"
+    },
+    {
+      "path": "工作区/mono_reuse_lifecycle_20261007/BASELINE_COMMANDS.json",
+      "bytes": 6865,
+      "sha256": "85df4ecfcabba729815c9b43e4509dabc854aef7a4f2c9e7e4c7fe818cd2f99f"
+    },
+    {
+      "path": "工作区/mono_reuse_lifecycle_20261007/BASELINE_FAILURE.json",
+      "bytes": 1766,
+      "sha256": "bd222ed38217d4c0b2bfa86f9dcee966608c1be791992b146044efe9d32ac1bf"
+    },
+    {
+      "path": "工作区/mono_reuse_lifecycle_20261007/BASELINE_idle.json",
+      "bytes": 7389,
+      "sha256": "056570db72f59855eb2e72f65dd129a9e0cb7dc7613131981c96943593f78ac0"
+    },
+    {
+      "path": "工作区/mono_reuse_lifecycle_20261007/BASELINE_INTERIOR.json",
+      "bytes": 18733,
+      "sha256": "e0acb9ef94cf6e71c00a4782bab61a790e9b85bb1448c981695bce4da013a03b"
+    },
+    {
+      "path": "工作区/mono_reuse_lifecycle_20261007/BASELINE_ISOLATION.json",
+      "bytes": 11473,
+      "sha256": "43638e371be5bc6a586c3cfbb01bcacc640c568d98dfc818b043b4cd3836ab9a"
+    },
+    {
+      "path": "工作区/mono_reuse_lifecycle_20261007/BASELINE_LIFECYCLE.json",
+      "bytes": 11350,
+      "sha256": "0ef9e35f5443415756a7f025c7d1a6e3ac35f6998ca6ae104235fa25613d7cfe"
+    },
+    {
+      "path": "工作区/mono_reuse_lifecycle_20261007/BASELINE_LIFECYCLE_TRACE.json",
+      "bytes": 7964,
+      "sha256": "0709940c78f01fd07f360ed53b8969b18000b628fcde775bb4abb1c6b3afc8a9"
+    },
+    {
+      "path": "工作区/mono_reuse_lifecycle_20261007/BASELINE_PATCH.json",
+      "bytes": 4848,
+      "sha256": "421e6f1391f81f0032b52629a83b2ae231ae612fdfd63b7602a7c4842f423162"
+    },
+    {
+      "path": "工作区/mono_reuse_lifecycle_20261007/BASELINE_quick.json",
+      "bytes": 13243,
+      "sha256": "c4da6af2809ede289cf5454722e6a0a8c2cb846b08ecf8d8b576bc5fbc26d23f"
+    },
+    {
+      "path": "工作区/mono_reuse_lifecycle_20261007/BASELINE_REUSE.json",
+      "bytes": 20617,
+      "sha256": "21efd32204bfafb879bf1a63f84e9301530e290f2aecb256a4fdaafe25d4b00b"
+    },
+    {
+      "path": "工作区/mono_reuse_lifecycle_20261007/BASELINE_SECTIONS.json",
+      "bytes": 83763,
+      "sha256": "179414c29b10c1229d661f5b716d1615ec99aedb5d2a5c4c54da2d9527dd7be4"
+    },
+    {
+      "path": "工作区/mono_reuse_lifecycle_20261007/BASELINE_SPANS.json",
+      "bytes": 19048,
+      "sha256": "0ea50488afd6f4883b9644e2c5afebf36d19dea6cabfe1e8232783adb331363d"
+    },
+    {
+      "path": "工作区/mono_reuse_lifecycle_20261007/BASELINE_stress.json",
+      "bytes": 5781,
+      "sha256": "15418da6343624d54cb8d88d3ae3eb030be9eb0568bf68c91de7f27819636e68"
+    },
+    {
+      "path": "工作区/mono_reuse_lifecycle_20261007/BASELINE_WARM.json",
+      "bytes": 10022,
+      "sha256": "358b8e624b10ef34bb50f83727aeeeeaf03bcd285ec2238d828e35f181f214e1"
+    },
+    {
+      "path": "工作区/mono_reuse_lifecycle_20261007/BUILD.json",
+      "bytes": 1896,
+      "sha256": "370ea4e91cccaa9ff4374b8ccb6afecd109bc49a217f7e517b6cccb0ae3719bf"
+    },
+    {
+      "path": "工作区/mono_reuse_lifecycle_20261007/build.py",
+      "bytes": 4387,
+      "sha256": "f56d08aaf035475ba5e49599e968043b9cb9b1c96d1775f8c551db53135e894d"
+    },
+    {
+      "path": "工作区/mono_reuse_lifecycle_20261007/CERTIFY.ps1",
+      "bytes": 1584,
+      "sha256": "a0ba198898f27fc36ae5456b1acc9e0c62ff0d81dcf83a5e3bbcd78a12105ecd"
+    },
+    {
+      "path": "工作区/mono_reuse_lifecycle_20261007/DEPLOYMENT.json",
+      "bytes": 394,
+      "sha256": "bb01b82397465faff9636969bff623c02ecd921d1cfaec95c35c37453f40548d"
+    },
+    {
+      "path": "工作区/mono_reuse_lifecycle_20261007/DEPLOYMENT_TEST.json",
+      "bytes": 435,
+      "sha256": "6128f6aa4d9a1b54536b0dd375a5d427da3093b89e8fc76fdb0261824fc96f7c"
+    },
+    {
+      "path": "工作区/mono_reuse_lifecycle_20261007/DIFF_FILE.patch",
+      "bytes": 7158,
+      "sha256": "10340d99527b2e23ffc1fb03edb381a82d4fbc9c1f0bbd476edbf6a76a4bb152"
+    },
+    {
+      "path": "工作区/mono_reuse_lifecycle_20261007/finalize.py",
+      "bytes": 9156,
+      "sha256": "3231d389ed05c008962319196b508c6e24b98993345a75f402a0616799cd3662"
+    },
+    {
+      "path": "工作区/mono_reuse_lifecycle_20261007/install.ps1",
+      "bytes": 268,
+      "sha256": "fbcebe481ee6265a18600a7e950efe53679304da56c45cd622fe901c7b87edcd"
+    },
+    {
+      "path": "工作区/mono_reuse_lifecycle_20261007/INSTALL_COMMAND.json",
+      "bytes": 578,
+      "sha256": "d37faa7cb56c8ce393d88520d4bdc1cdc64bb49f06147cded2f4c49e59419367"
+    },
+    {
+      "path": "工作区/mono_reuse_lifecycle_20261007/INSTALL_VERIFIED.json",
+      "bytes": 560,
+      "sha256": "c79134b1b8a7a85f5f57406d55d27401ae934b147d51bc143df3e030c4100a2f"
+    },
+    {
+      "path": "工作区/mono_reuse_lifecycle_20261007/LIVE_COUNTERS.json",
+      "bytes": 2531,
+      "sha256": "29da3c152b80652cdc2d3f054b33091a83c4223c7806a725480227ce8f8271e4"
+    },
+    {
+      "path": "工作区/mono_reuse_lifecycle_20261007/MODIFIED_ABI.json",
+      "bytes": 1647,
+      "sha256": "5d633f720a3c06d581d50a36233f37b675f383a7313b481c6c67cdd269fa7805"
+    },
+    {
+      "path": "工作区/mono_reuse_lifecycle_20261007/MODIFIED_CERTIFY.json",
+      "bytes": 2011,
+      "sha256": "df075492d6f70d352d12019f7b9a420972d21bfb40b5ad97d2525b939d80bf90"
+    },
+    {
+      "path": "工作区/mono_reuse_lifecycle_20261007/MODIFIED_COHORT.json",
+      "bytes": 56892,
+      "sha256": "dca2632a9f9a0ad952a185e7f38db27a7cf33244deed2db764db8f38e288f04e"
+    },
+    {
+      "path": "工作区/mono_reuse_lifecycle_20261007/MODIFIED_COMMANDS.json",
+      "bytes": 6861,
+      "sha256": "0e8351545c6e8a5cc460f1f06d3b1d4441f27b0b6c5b271b4d1fe9ea974a1181"
+    },
+    {
+      "path": "工作区/mono_reuse_lifecycle_20261007/MODIFIED_FAILURE.json",
+      "bytes": 4354,
+      "sha256": "efa6cc686e63b1e16d6b7625772720b28c8ec929697c2128ac9c08ef9b1a9816"
+    },
+    {
+      "path": "工作区/mono_reuse_lifecycle_20261007/MODIFIED_FILE.dll",
+      "bytes": 2808832,
+      "sha256": "d4685c71704ef7f222feebfb93851d7f3b6d354998c2e6bc8347268e047c7b3d"
+    },
+    {
+      "path": "工作区/mono_reuse_lifecycle_20261007/MODIFIED_idle.json",
+      "bytes": 18102,
+      "sha256": "8795c249f0c508786873cef2c3ee4e1c3bbdce83ab15660fb82fb6fd5343b717"
+    },
+    {
+      "path": "工作区/mono_reuse_lifecycle_20261007/MODIFIED_INTERIOR.json",
+      "bytes": 18733,
+      "sha256": "250db37b8bdd54502eb69fb645b3fb47416faf579c4e902b1cd6c0c884f66d60"
+    },
+    {
+      "path": "工作区/mono_reuse_lifecycle_20261007/MODIFIED_ISOLATION.json",
+      "bytes": 18901,
+      "sha256": "3fef95795c323c4a394f1f3feb3fb89936d93401788cd4a47ea9984dd68bab57"
+    },
+    {
+      "path": "工作区/mono_reuse_lifecycle_20261007/MODIFIED_LIFECYCLE.json",
+      "bytes": 28134,
+      "sha256": "9dc89dae07fcfd41614d417b80920a90f37eb52b192da7c8ed63fb6b183fe4d2"
+    },
+    {
+      "path": "工作区/mono_reuse_lifecycle_20261007/MODIFIED_LIFECYCLE_TRACE.json",
+      "bytes": 20201,
+      "sha256": "9f5679fcaccc77b06b9053df0f0408b67d4acff8b49b514322654fc099f10293"
+    },
+    {
+      "path": "工作区/mono_reuse_lifecycle_20261007/MODIFIED_quick.json",
+      "bytes": 33350,
+      "sha256": "05ae195e5126a680b3d039e0b8caeb946883daac1a9185d735fe7bb31b706346"
+    },
+    {
+      "path": "工作区/mono_reuse_lifecycle_20261007/MODIFIED_REUSE.json",
+      "bytes": 32892,
+      "sha256": "a203aa3809ad69d24db052a05a20cbafa1190b16880ec054fedbe8e659b108f1"
+    },
+    {
+      "path": "工作区/mono_reuse_lifecycle_20261007/MODIFIED_SECTIONS.json",
+      "bytes": 432154,
+      "sha256": "a58f9d09bb716aa8f705d60fd0d1f32a3e2cba82465e48f270b4f4bdc19c9a0f"
+    },
+    {
+      "path": "工作区/mono_reuse_lifecycle_20261007/MODIFIED_SPANS.json",
+      "bytes": 19057,
+      "sha256": "7e220fabd8a32cde21136abf3cdafb6f7d90f3659d31d47a489711be8af58231"
+    },
+    {
+      "path": "工作区/mono_reuse_lifecycle_20261007/MODIFIED_stress.json",
+      "bytes": 14060,
+      "sha256": "3d26f710e06ec62689dc79cef3241761db9c2eeb9b2347c744434307a19c5b6c"
+    },
+    {
+      "path": "工作区/mono_reuse_lifecycle_20261007/MODIFIED_WARM.json",
+      "bytes": 10677,
+      "sha256": "fecb2fb37d1230f0447bfd9b85d2055d80ba1f27408926866d5a7ad607c30815"
+    },
+    {
+      "path": "工作区/mono_reuse_lifecycle_20261007/PACKAGE.json",
+      "bytes": 487,
+      "sha256": "c872537104bca064d953c43bc5ae39f91963d7f431ceb619d1761cac159a5844"
+    },
+    {
+      "path": "工作区/mono_reuse_lifecycle_20261007/PATCH.json",
+      "bytes": 7155,
+      "sha256": "8bbd10ecf400a66dc0c5f66445cc21c4c1f1cd38a23362a30eec75cbf931ba27"
+    },
+    {
+      "path": "工作区/mono_reuse_lifecycle_20261007/prepare.py",
+      "bytes": 7250,
+      "sha256": "0ef821dd5c706805565658576033a1905f568d04ca520f132009a5bed039fad7"
+    },
+    {
+      "path": "工作区/mono_reuse_lifecycle_20261007/README.md",
+      "bytes": 2221,
+      "sha256": "a23028bd3b846a04232471f260e2c30a4e52ee2d81d425ab6750fa64f731913b"
+    },
+    {
+      "path": "工作区/mono_reuse_lifecycle_20261007/READONLY_6052.json",
+      "bytes": 3639,
+      "sha256": "5ee710e6fb02e437b7ae3a8e04d5e8cba3bb97a81463c46856e0822e0f91119d"
+    },
+    {
+      "path": "工作区/mono_reuse_lifecycle_20261007/reclaim_controller.c",
+      "bytes": 29766,
+      "sha256": "4660d942294c8138bec28eb4ca08c69804ee23bbc401a2b56781d15a2327d367"
+    },
+    {
+      "path": "工作区/mono_reuse_lifecycle_20261007/rollback.py",
+      "bytes": 1372,
+      "sha256": "412bcc64c18912bf27cc3e7ccdc6514fc99dfeff7dcacbb4961a6d2f8f80f370"
+    },
+    {
+      "path": "工作区/mono_reuse_lifecycle_20261007/ROLLBACK.sh",
+      "bytes": 104,
+      "sha256": "c3c63303dec2c477f9f353783eac29f0589bba333f97856fb1e4f42326165711"
+    },
+    {
+      "path": "工作区/mono_reuse_lifecycle_20261007/ROLLBACK_ABI.json",
+      "bytes": 1268,
+      "sha256": "4bfa1766d4b73b12f948a58e5a2292fa66752c3823b39af2e2c6b6606bcd97c7"
+    },
+    {
+      "path": "工作区/mono_reuse_lifecycle_20261007/ROLLBACK_CERTIFY.json",
+      "bytes": 2100,
+      "sha256": "251a037eef5e099daf63e34be72019283207f91ac8feb23bf5752ba71644ef00"
+    },
+    {
+      "path": "工作区/mono_reuse_lifecycle_20261007/ROLLBACK_COHORT.json",
+      "bytes": 52250,
+      "sha256": "560f9b1510b7c340acf67a58960606f81ba7b286a6437fb6151cff4d3f60cf9e"
+    },
+    {
+      "path": "工作区/mono_reuse_lifecycle_20261007/ROLLBACK_COMMANDS.json",
+      "bytes": 6865,
+      "sha256": "70a68fc58b271d350ca6ebf03a85b5054d69e874af9dcd6ec3d128ba1f98e05f"
+    },
+    {
+      "path": "工作区/mono_reuse_lifecycle_20261007/ROLLBACK_FAILURE.json",
+      "bytes": 1768,
+      "sha256": "8a43dedb1e9ca393edff60384614c985878be336f92afefa76b6eb7d5f5a5a7b"
+    },
+    {
+      "path": "工作区/mono_reuse_lifecycle_20261007/ROLLBACK_idle.json",
+      "bytes": 7400,
+      "sha256": "cad64a9d7d69a3ff6a7a9b3c0c022d02066e286a19180fb88d2c35cd854dcb89"
+    },
+    {
+      "path": "工作区/mono_reuse_lifecycle_20261007/ROLLBACK_INTERIOR.json",
+      "bytes": 18733,
+      "sha256": "4fde01f36089303464315f6e30bd611eb435036b43c6776114a9a20b5c39c0f8"
+    },
+    {
+      "path": "工作区/mono_reuse_lifecycle_20261007/ROLLBACK_ISOLATION.json",
+      "bytes": 11473,
+      "sha256": "2384ebf1bcb854b3675590406ebdc44228f399e446e37dc1c2338259c3c0c62f"
+    },
+    {
+      "path": "工作区/mono_reuse_lifecycle_20261007/ROLLBACK_LIFECYCLE.json",
+      "bytes": 11348,
+      "sha256": "c1cb9d4fc0b85bb65f59e0be068fe42b4884b2f17415505129a834f2d4e93228"
+    },
+    {
+      "path": "工作区/mono_reuse_lifecycle_20261007/ROLLBACK_LIFECYCLE_TRACE.json",
+      "bytes": 7965,
+      "sha256": "a92e47830d0129e7d253baf594d6ada48e43ffc618639185fa019361d788b361"
+    },
+    {
+      "path": "工作区/mono_reuse_lifecycle_20261007/ROLLBACK_quick.json",
+      "bytes": 13255,
+      "sha256": "a13a3899eb76ba880793d4156357ca276569c162d03b7a6321c38653eed9e429"
+    },
+    {
+      "path": "工作区/mono_reuse_lifecycle_20261007/ROLLBACK_REUSE.json",
+      "bytes": 20618,
+      "sha256": "2bfc40e39edd4fd7e43c497dc09011aeac3ede2c6e3325ffa8dc0ef8c4867d95"
+    },
+    {
+      "path": "工作区/mono_reuse_lifecycle_20261007/ROLLBACK_SECTIONS.json",
+      "bytes": 83763,
+      "sha256": "463bcfe90876dfdd27bc27e184c4e3749208191a45dd9aed596b1c94782c9389"
+    },
+    {
+      "path": "工作区/mono_reuse_lifecycle_20261007/ROLLBACK_SPANS.json",
+      "bytes": 19051,
+      "sha256": "2a17f8f4d44b0a3ea72419a4a0dad5d90a0c4959d9544bae0365e014001df9a2"
+    },
+    {
+      "path": "工作区/mono_reuse_lifecycle_20261007/ROLLBACK_stress.json",
+      "bytes": 5795,
+      "sha256": "a744987b776e5d33596133709a963b8b2eeabdbae02806a64e499bc01697de59"
+    },
+    {
+      "path": "工作区/mono_reuse_lifecycle_20261007/ROLLBACK_WARM.json",
+      "bytes": 10023,
+      "sha256": "b642d648875fa30e233c2922ffb28e6f0e0d50f8ebbaac5889751caa983b4a99"
+    },
+    {
+      "path": "工作区/mono_reuse_lifecycle_20261007/run_case.py",
+      "bytes": 4014,
+      "sha256": "a2ee60f5d26eb60f2aadd2a13af65180c45efb4f34f5d96223aa0a32abec695f"
+    },
+    {
+      "path": "工作区/mono_reuse_lifecycle_20261007/STRUCTURE.json",
+      "bytes": 352,
+      "sha256": "bfb8c728f61bfd31992c812b5522d67c415207f32436d862f6bdb8be8ce2e0b3"
+    },
+    {
+      "path": "工作区/mono_reuse_lifecycle_20261007/test_reuse.py",
+      "bytes": 12250,
+      "sha256": "2899b23914575037377bb4182cf50d78ab37d45fecc21da512a34b3c5ba6bcf5"
+    },
+    {
+      "path": "工作区/mono_reuse_lifecycle_20261007/validate.py",
+      "bytes": 1548,
+      "sha256": "e2e9095098a24f1881f43205ed43d0b308ce4bb285749abf126ee9712ab43c59"
+    },
+    {
+      "path": "工作区/mono_reuse_lifecycle_20261007/VERIFICATION.txt",
+      "bytes": 3796,
+      "sha256": "db8b25a134888ae9f0d11c657654fb25f38fa53db44dfde07376bf3e7fbff512"
+    },
+    {
+      "path": "工作区/mono_reuse_lifecycle_20261007/verify.py",
+      "bytes": 5426,
+      "sha256": "82f8018c417753e77debfdc0c07550b3614f2acb4bec3efd392008fd4347d5f8"
+    },
+    {
+      "path": "工作区/mono_reuse_lifecycle_20261007/verify_install.py",
+      "bytes": 2751,
+      "sha256": "e31ad3d3525983ed4c1fe774f5b6b5cf0662c9d4f576bc8f9c5ee810e18df366"
+    },
+    {
+      "path": "工作区/mono_interior_commit_lifecycle_20261007/abi_test.py",
+      "bytes": 2979,
+      "sha256": "6fd2d476195eba8d12fb30ffa4787a4ed58eafa0f05fb6596ab1e10c80f367e2"
+    },
+    {
+      "path": "工作区/mono_interior_commit_lifecycle_20261007/AUDIT_INTERIOR.json",
+      "bytes": 64292,
+      "sha256": "10c1f0a2f764c062e3810a9de0b3c5d5387dd854994451517ef243ab39c938da"
+    },
+    {
+      "path": "工作区/mono_interior_commit_lifecycle_20261007/BASELINE_ABI.json",
+      "bytes": 871,
+      "sha256": "388b9371470774a166e9dd6e5d3398a0afa677e7b081134b29e75cb59d1ff161"
+    },
+    {
+      "path": "工作区/mono_interior_commit_lifecycle_20261007/BASELINE_CERTIFY.json",
+      "bytes": 1950,
+      "sha256": "226219f9c8e09ccdb48555bceebd5c1df1ee27a3fa0590396d83e24f1496b003"
+    },
+    {
+      "path": "工作区/mono_interior_commit_lifecycle_20261007/BASELINE_COHORT.json",
+      "bytes": 51565,
+      "sha256": "f56c2c56f6085cde41ff76d7c66cecf7f0a9f5faf9174ced4a09969211e77ab8"
+    },
+    {
+      "path": "工作区/mono_interior_commit_lifecycle_20261007/BASELINE_COMMANDS.json",
+      "bytes": 6402,
+      "sha256": "7d4bd01761a2ea50989bcd3f0cc1603a1e8dbb9cfb3824f09c3c8a0e1e941be6"
+    },
+    {
+      "path": "工作区/mono_interior_commit_lifecycle_20261007/BASELINE_INTERIOR.json",
+      "bytes": 18724,
+      "sha256": "2e712a4fe17986eaf2f0d9d01944787536fac48aafa4f7ca91923715b985b500"
+    },
+    {
+      "path": "工作区/mono_interior_commit_lifecycle_20261007/BASELINE_ISOLATION.json",
+      "bytes": 10447,
+      "sha256": "34f9b20371cfaf8f5cfa0a50eee1feb3a468f21f3efe6449aba5c35f02f25591"
+    },
+    {
+      "path": "工作区/mono_interior_commit_lifecycle_20261007/BASELINE_SPANS.json",
+      "bytes": 19054,
+      "sha256": "1fc1dfd59c30c298c76a0e2461b25562d710d136d70090bcd1082022ff3ef8b4"
+    },
+    {
+      "path": "工作区/mono_interior_commit_lifecycle_20261007/BASELINE_WARM.json",
+      "bytes": 10027,
+      "sha256": "a7a95f9bb1283b667036be021986e8414b25dbc8a5a9d289b3de1e7a99fd17be"
+    },
+    {
+      "path": "工作区/mono_interior_commit_lifecycle_20261007/BUILD.json",
+      "bytes": 1896,
+      "sha256": "370ea4e91cccaa9ff4374b8ccb6afecd109bc49a217f7e517b6cccb0ae3719bf"
+    },
+    {
+      "path": "工作区/mono_interior_commit_lifecycle_20261007/build.py",
+      "bytes": 4585,
+      "sha256": "c45d6c0c577f060613263b291cec4429bc83e222eedaa2d03d4a4bcb28161265"
+    },
+    {
+      "path": "工作区/mono_interior_commit_lifecycle_20261007/build_native.py",
+      "bytes": 14518,
+      "sha256": "a14f562ab50e6e5fed66c3c61ee8e805ed9d7a95c43ce86e026737282566df2a"
+    },
+    {
+      "path": "工作区/mono_interior_commit_lifecycle_20261007/capture.py",
+      "bytes": 3029,
+      "sha256": "1999147358e855b7ead17728b0df062d1f9939d44fd82e471a16e82df40e0346"
+    },
+    {
+      "path": "工作区/mono_interior_commit_lifecycle_20261007/CERTIFY.ps1",
+      "bytes": 1668,
+      "sha256": "9445ae033ed1aab5d8c654dfac953172f3d02e737fc28db3fbc251da252d917b"
+    },
+    {
+      "path": "工作区/mono_interior_commit_lifecycle_20261007/cohort_test.py",
+      "bytes": 8352,
+      "sha256": "5e7dd05d309b6c7cce9a34dc50b852d4a04c647b04493ec8815c1ce7be664c1b"
+    },
+    {
+      "path": "工作区/mono_interior_commit_lifecycle_20261007/DEPLOY_COMMAND.json",
+      "bytes": 587,
+      "sha256": "1a8f1380dd225ea43c8f8ff94e84bf32956d326d592e0c9183eb9416ae0e1e99"
+    },
+    {
+      "path": "工作区/mono_interior_commit_lifecycle_20261007/DEPLOYMENT.json",
+      "bytes": 394,
+      "sha256": "b0fd77c6b2898343b9e9220e0aa2ecc637a658944f479c7dd4bea25ad884acd5"
+    },
+    {
+      "path": "工作区/mono_interior_commit_lifecycle_20261007/DEPLOYMENT_TEST.json",
+      "bytes": 445,
+      "sha256": "4474f47250d47b9e8ec5aa286cb8ad062a466519bc873181c6cf7fe2d35133a7"
+    },
+    {
+      "path": "工作区/mono_interior_commit_lifecycle_20261007/DIFF_FILE.patch",
+      "bytes": 13621,
+      "sha256": "4702aa92243109ead737b2dfc9736ee1febd9ded472dec41daca51421d207b23"
+    },
+    {
+      "path": "工作区/mono_interior_commit_lifecycle_20261007/finalize.py",
+      "bytes": 9284,
+      "sha256": "33f3f9cbabdd81d3a65be60fd01091c0c22402bfb1fd261790424f04be750ac8"
+    },
+    {
+      "path": "工作区/mono_interior_commit_lifecycle_20261007/INITIAL_LIFECYCLE_FAILURE.json",
+      "bytes": 2706,
+      "sha256": "ac3a084d4ff2c3c0e7d939d7f7a500491f3284eeade03dca11946773cf8f9ae2"
+    },
+    {
+      "path": "工作区/mono_interior_commit_lifecycle_20261007/install.ps1",
+      "bytes": 271,
+      "sha256": "b4a576de3b793d2053beb97ae40c51c628f304e7c614c74b92ef5b6414d3d353"
+    },
+    {
+      "path": "工作区/mono_interior_commit_lifecycle_20261007/INSTALL_COPY_COMMANDS.json",
+      "bytes": 1033,
+      "sha256": "4218ec3100f21f565c96fb3c80b2ca4cfe667d0094f0a2e94bdfbe504aa7af80"
+    },
+    {
+      "path": "工作区/mono_interior_commit_lifecycle_20261007/INSTALL_VERIFIED.json",
+      "bytes": 10485,
+      "sha256": "aef016b47497fdfdbd16d870ca3e401b757bb112f78e388fe475dd9d16f7ae4c"
+    },
+    {
+      "path": "工作区/mono_interior_commit_lifecycle_20261007/interior_test.py",
+      "bytes": 14323,
+      "sha256": "ca02d8f6ba7b99abbce464db975b1a7a1631777a00ce4b9480d57ca22eae8469"
+    },
+    {
+      "path": "工作区/mono_interior_commit_lifecycle_20261007/isolation_test.py",
+      "bytes": 7661,
+      "sha256": "10ed427bc90ae44df13f18ece3c38de77724f1e6bbcba9a4afc7726235065ce1"
+    },
+    {
+      "path": "工作区/mono_interior_commit_lifecycle_20261007/LIFECYCLE_REPEATS.json",
+      "bytes": 1463,
+      "sha256": "02e752facad577d24c8be8459062a585e790539499d4a7df8c8a692d31ddf149"
+    },
+    {
+      "path": "工作区/mono_interior_commit_lifecycle_20261007/lifecycle_test.py",
+      "bytes": 9944,
+      "sha256": "c055123424f9416e0b185c70b507952ec43343fe425512a9aae55338b0fbe57c"
+    },
+    {
+      "path": "工作区/mono_interior_commit_lifecycle_20261007/LifecycleSample.dll",
+      "bytes": 10240,
+      "sha256": "8c38dd13b05fdf0401b4ca154b1bbe5fef69fa13bdd01d6837cdbf60be1a8833"
+    },
+    {
+      "path": "工作区/mono_interior_commit_lifecycle_20261007/MODIFIED_ABI.json",
+      "bytes": 1268,
+      "sha256": "dfea3049ba57c28f878cd83022995067ebb9ff3e3c73034a6046bb4698faff12"
+    },
+    {
+      "path": "工作区/mono_interior_commit_lifecycle_20261007/MODIFIED_CERTIFY.json",
+      "bytes": 1947,
+      "sha256": "c289d8406762fdc105531b9f4acd9f0cc0b62119a3d467d144533554085f6b2e"
+    },
+    {
+      "path": "工作区/mono_interior_commit_lifecycle_20261007/MODIFIED_COHORT.json",
+      "bytes": 51920,
+      "sha256": "5627a8772133afc6c18a78290ec23a033ebb187e151879e285fef9384178210f"
+    },
+    {
+      "path": "工作区/mono_interior_commit_lifecycle_20261007/MODIFIED_COMMANDS.json",
+      "bytes": 6399,
+      "sha256": "ff0467b8c82aa90d51944488ff41840c964a92cef0a7472b61e197465b683943"
+    },
+    {
+      "path": "工作区/mono_interior_commit_lifecycle_20261007/MODIFIED_INTERIOR.json",
+      "bytes": 18733,
+      "sha256": "9e980b0686ee3f9fca97c7f91b458f8d212b724ada0f4af464f6e48a041ad809"
+    },
+    {
+      "path": "工作区/mono_interior_commit_lifecycle_20261007/MODIFIED_ISOLATION.json",
+      "bytes": 11473,
+      "sha256": "33720e7ac194667841bb6ab3809627787296acdb53d0966e1ffa9d753441d292"
+    },
+    {
+      "path": "工作区/mono_interior_commit_lifecycle_20261007/MODIFIED_SPANS.json",
+      "bytes": 19058,
+      "sha256": "ed5b8a5664f0b7a7c5afb5d7d65ada73633e1673ace8ae1a48a6c73cda464093"
+    },
+    {
+      "path": "工作区/mono_interior_commit_lifecycle_20261007/MODIFIED_WARM.json",
+      "bytes": 10681,
+      "sha256": "61611bcf5c18e9c6c9e9a061f00d6637f6c75137575edce9922ba269818db0d0"
+    },
+    {
+      "path": "工作区/mono_interior_commit_lifecycle_20261007/PATCH.json",
+      "bytes": 4848,
+      "sha256": "421e6f1391f81f0032b52629a83b2ae231ae612fdfd63b7602a7c4842f423162"
+    },
+    {
+      "path": "工作区/mono_interior_commit_lifecycle_20261007/pending_probe.dll",
+      "bytes": 7168,
+      "sha256": "520ae58b43b1263dd2cf7c425d94b016d261786e175efe90ca4b72e888e3f3c8"
+    },
+    {
+      "path": "工作区/mono_interior_commit_lifecycle_20261007/PendingCohort.dll",
+      "bytes": 13312,
+      "sha256": "3132905ae1204885c97be4bf16f85d76db7e86fb0b00fb54da1577b5147eda06"
+    },
+    {
+      "path": "工作区/mono_interior_commit_lifecycle_20261007/README.md",
+      "bytes": 840,
+      "sha256": "4d619c87307c4d5b0c020cbad2f082f1768369f60a26f54916d8fb4e8af81dce"
+    },
+    {
+      "path": "工作区/mono_interior_commit_lifecycle_20261007/READONLY_56840.json",
+      "bytes": 2531,
+      "sha256": "29da3c152b80652cdc2d3f054b33091a83c4223c7806a725480227ce8f8271e4"
+    },
+    {
+      "path": "工作区/mono_interior_commit_lifecycle_20261007/reclaim_controller.c",
+      "bytes": 24404,
+      "sha256": "f68e8df4293014a4a25116d874f446fc16bf7e5827e43e4674c0b14588082f5c"
+    },
+    {
+      "path": "工作区/mono_interior_commit_lifecycle_20261007/RESULT.json",
+      "bytes": 18449,
+      "sha256": "14d44255ed5ffc2c2d931467a9b2d158c2260e2b3b3f8b94f6761a02c64d736a"
+    },
+    {
+      "path": "工作区/mono_interior_commit_lifecycle_20261007/RetireSample.dll",
+      "bytes": 9216,
+      "sha256": "7175b7201416d2ef2866aa0a382edb7f290a7ac073cf8c9758e6738c00dfb2f8"
+    },
+    {
+      "path": "工作区/mono_interior_commit_lifecycle_20261007/rollback.py",
+      "bytes": 1402,
+      "sha256": "7b2724bb8568f6fa0244732880de22ed9474a98089cb589d20e92a6fbd097fca"
+    },
+    {
+      "path": "工作区/mono_interior_commit_lifecycle_20261007/ROLLBACK.sh",
+      "bytes": 150,
+      "sha256": "e4832aaa53efd7d38e5957c44eda472bc8153f3e69e91946e6eb29a0245c5c9f"
+    },
+    {
+      "path": "工作区/mono_interior_commit_lifecycle_20261007/ROLLBACK_ABI.json",
+      "bytes": 871,
+      "sha256": "e79ff049a1fc08e1d004455fb8ea84f23479e56d7d0fdc70de5b94e583c892bd"
+    },
+    {
+      "path": "工作区/mono_interior_commit_lifecycle_20261007/ROLLBACK_CERTIFY.json",
+      "bytes": 2035,
+      "sha256": "26a694d2816abfae84dca7abaa8b2601a56d385a93285e9904ec1760e08cab0d"
+    },
+    {
+      "path": "工作区/mono_interior_commit_lifecycle_20261007/ROLLBACK_COHORT.json",
+      "bytes": 51564,
+      "sha256": "a65620600a8727d21f141d39018476a0af2f29d0b807bbd8b595987c60eca4d7"
+    },
+    {
+      "path": "工作区/mono_interior_commit_lifecycle_20261007/ROLLBACK_COMMANDS.json",
+      "bytes": 6402,
+      "sha256": "497b1431355e7bd9d74e3633cdfcd27a88110aa3aa489466f7c766bf9b22dd8a"
+    },
+    {
+      "path": "工作区/mono_interior_commit_lifecycle_20261007/ROLLBACK_INTERIOR.json",
+      "bytes": 18724,
+      "sha256": "de68057bd5b0dbf26f222930ba06305a8f805f9cbe27aa3e0f7e5c692ad2b71c"
+    },
+    {
+      "path": "工作区/mono_interior_commit_lifecycle_20261007/ROLLBACK_ISOLATION.json",
+      "bytes": 10447,
+      "sha256": "323385c6092e65a92808bee59f708979ec57b9fd9ddaa82fe9c05554c425bfbb"
+    },
+    {
+      "path": "工作区/mono_interior_commit_lifecycle_20261007/ROLLBACK_SPANS.json",
+      "bytes": 19055,
+      "sha256": "bd04705282f6deb31ff36b754c517533e1cba7317e152de54cdd0bfed85cb246"
+    },
+    {
+      "path": "工作区/mono_interior_commit_lifecycle_20261007/ROLLBACK_WARM.json",
+      "bytes": 10027,
+      "sha256": "a9ebed3890dd2378fee748fe1671763576502a3b42b72e13acbccb820cd26d51"
+    },
+    {
+      "path": "工作区/mono_interior_commit_lifecycle_20261007/run_case.py",
+      "bytes": 1120,
+      "sha256": "18ddd1e93698b88e6e021fab38dfa973b007dda75b7a6433b9d29c780b294205"
+    },
+    {
+      "path": "工作区/mono_interior_commit_lifecycle_20261007/span_test.py",
+      "bytes": 11440,
+      "sha256": "5bb50401dcae79aa62b4986e3ff9f5a18ead33434e8f2745c1400cefaa8b4863"
+    },
+    {
+      "path": "工作区/mono_interior_commit_lifecycle_20261007/STRUCTURE.json",
+      "bytes": 249,
+      "sha256": "60751a7f65a5ee8be75856368916d7c96690e278df9953a7d8d41062dd666a79"
+    },
+    {
+      "path": "工作区/mono_interior_commit_lifecycle_20261007/validate.py",
+      "bytes": 1513,
+      "sha256": "3b84bf3f9da62f7a196926996c0082e19c82a789682646891e9ceed115d1dec7"
+    },
+    {
+      "path": "工作区/mono_interior_commit_lifecycle_20261007/VERIFICATION.txt",
+      "bytes": 3931,
+      "sha256": "3c170b47b42e5fd5f964505c5087cf22a25af4c221440e6dcd74e9157bf8155e"
+    },
+    {
+      "path": "工作区/mono_interior_commit_lifecycle_20261007/verify_native.py",
+      "bytes": 6925,
+      "sha256": "42037e56045ca55cd108796397ad361ccfbaa4aba991ce39d52ad73637022974"
+    },
+    {
+      "path": "工作区/mono_interior_commit_lifecycle_20261007/WarmPages.dll",
+      "bytes": 4096,
+      "sha256": "b34f948636965a00f8945e7ec3eb1dc90539ba53f8459d3dc31d2152ab586be5"
+    },
+    {
+      "path": "工作区/mono_allocator_lifecycle_20261006/AUDIT.json",
+      "bytes": 73215,
+      "sha256": "e401cd7573bae90b1470026a1eab70edc70cf5fa4e32def9e4b9aa4fd1374aea"
+    },
+    {
+      "path": "工作区/mono_allocator_lifecycle_20261006/audit_binary.py",
+      "bytes": 3657,
+      "sha256": "01c95ed1e8d9874c8d56f3069ad8800d63279ec412c0fdb9c1a83c381f73c25b"
+    },
+    {
+      "path": "工作区/mono_allocator_lifecycle_20261006/BASELINE.dll",
+      "bytes": 2725832,
+      "sha256": "cd7ab354a43faf18479c3a2d1f57d2d068769b8a490338942f6c510e8b02242d"
+    },
+    {
+      "path": "工作区/mono_allocator_lifecycle_20261006/BASELINE_COMBINED.json",
+      "bytes": 1996,
+      "sha256": "d21377ea2cfd8e06c2f0c224a5f13ff45fb452f6d4afd05b1a7e97e8b7911244"
+    },
+    {
+      "path": "工作区/mono_allocator_lifecycle_20261006/BASELINE_FAILURE.json",
+      "bytes": 1783,
+      "sha256": "4d61c7745ca1fa3de91bac24db3e56bbcb3882b6eb35b21c88a4a1c5ff8fc191"
+    },
+    {
+      "path": "工作区/mono_allocator_lifecycle_20261006/BASELINE_LIFECYCLE.json",
+      "bytes": 11459,
+      "sha256": "403afbeac3f4ae3d3d0b0b59fcc0f884381ad94fd6716d2477b5e08b9ee8e770"
+    },
+    {
+      "path": "工作区/mono_allocator_lifecycle_20261006/BASELINE_RESULT.json",
+      "bytes": 61358,
+      "sha256": "40a31862e540f9610a18bb03e8a122a3e433b4744b7a4b0291fc2f10ac7e330e"
+    },
+    {
+      "path": "工作区/mono_allocator_lifecycle_20261006/BASELINE_RUN.json",
+      "bytes": 3833,
+      "sha256": "7a957c784e0868ac5ba4a91b831996f21096a2c2b0a7e790d5707bfcb0f412c7"
+    },
+    {
+      "path": "工作区/mono_allocator_lifecycle_20261006/BASELINE_SECTIONS.json",
+      "bytes": 83763,
+      "sha256": "c186e367ad998a49f35954119d1e97578451062fc54e3fed73de889d5424335b"
+    },
+    {
+      "path": "工作区/mono_allocator_lifecycle_20261006/BUILD.json",
+      "bytes": 1797,
+      "sha256": "bc44bcb0898256ad4d4c86530fbad36a92d704f6130869caa4cd75b2c88d14e7"
+    },
+    {
+      "path": "工作区/mono_allocator_lifecycle_20261006/build.py",
+      "bytes": 13021,
+      "sha256": "674c21f50cd74fe77bd7ec92be0444e5029ed8a711f460252e85d9d9ccd3880d"
+    },
+    {
+      "path": "工作区/mono_allocator_lifecycle_20261006/COMMANDS.json",
+      "bytes": 3160,
+      "sha256": "b35f3aaeeca8d2d4a2b90a0b23ebb0a2da661ad0efafb8d2949fda8dc905e78b"
+    },
+    {
+      "path": "工作区/mono_allocator_lifecycle_20261006/COMPARISON.json",
+      "bytes": 2243,
+      "sha256": "5f390ff63843c8c3cb451f54396af5db72bf95defc33f5d32c19b9d7695878b1"
+    },
+    {
+      "path": "工作区/mono_allocator_lifecycle_20261006/DEPLOYMENT.json",
+      "bytes": 394,
+      "sha256": "537530327459cb0deb0503956129361dcce0856db52967c206f3f88fcf32062b"
+    },
+    {
+      "path": "工作区/mono_allocator_lifecycle_20261006/DEPLOYMENT_TEST.json",
+      "bytes": 439,
+      "sha256": "26d6bfdc84cd4961c662c31745a3dfbde31b0ba38b0a39ff6cf7ff1f040c8c50"
+    },
+    {
+      "path": "工作区/mono_allocator_lifecycle_20261006/DIFF_FILE.patch",
+      "bytes": 12939,
+      "sha256": "4f1f9edb6c9627453e1930bfa2787c33578fed7d5feaa928b04a3a2a9353b04b"
+    },
+    {
+      "path": "工作区/mono_allocator_lifecycle_20261006/finish.py",
+      "bytes": 7015,
+      "sha256": "3516c9da23db2bc438551afd22654f768fb0d698f299a428593eb7e61f0af419"
+    },
+    {
+      "path": "工作区/mono_allocator_lifecycle_20261006/install.ps1",
+      "bytes": 4944,
+      "sha256": "89b4c4bebf8057cabed28bb9af830d4e88f8cc8d9deabf298d27593ef80c59ad"
+    },
+    {
+      "path": "工作区/mono_allocator_lifecycle_20261006/lifecycle.py",
+      "bytes": 9641,
+      "sha256": "dd95ffd18b5b09ab044ce7af7b7102e80daebe8a93db54649bb14ef075d86f79"
+    },
+    {
+      "path": "工作区/mono_allocator_lifecycle_20261006/LifecycleSample.cs",
+      "bytes": 7546,
+      "sha256": "e2756dd1a01b81a3c143a7381021f6271a315555c27aebf63e0222971f15cafe"
+    },
+    {
+      "path": "工作区/mono_allocator_lifecycle_20261006/LifecycleSample.dll",
+      "bytes": 10240,
+      "sha256": "fd3b1f49d0a8db7b0ed7e4de61bfd62eee93892a7e00103d2a08f4e0d23ee21a"
+    },
+    {
+      "path": "工作区/mono_allocator_lifecycle_20261006/MODIFIED_COMBINED.json",
+      "bytes": 1996,
+      "sha256": "6cd6471b5fd603592bd660bfc60e5d5eec139274821fabb3f23fa2c10322e285"
+    },
+    {
+      "path": "工作区/mono_allocator_lifecycle_20261006/MODIFIED_FAILURE.json",
+      "bytes": 4356,
+      "sha256": "22749f905633f3fa14c5296ec9972ddcca9923228d9eb130dfad136bac3b8b56"
+    },
+    {
+      "path": "工作区/mono_allocator_lifecycle_20261006/MODIFIED_FILE.dll",
+      "bytes": 2796544,
+      "sha256": "d89ccf26fd75b354244f7225b978667c215d54681a2565df624ac59fb6ac323e"
+    },
+    {
+      "path": "工作区/mono_allocator_lifecycle_20261006/MODIFIED_LIFECYCLE.json",
+      "bytes": 28143,
+      "sha256": "6ed64f6fc30c1753e285993db82b4d2e78357ead555e6643fd2268fdc1cff574"
+    },
+    {
+      "path": "工作区/mono_allocator_lifecycle_20261006/MODIFIED_RESULT.json",
+      "bytes": 149846,
+      "sha256": "f11fb03a9d9eaa06c5ddaa40402925bccbf48f3cf4fe8b1416aa0d68cf9360ec"
+    },
+    {
+      "path": "工作区/mono_allocator_lifecycle_20261006/MODIFIED_RUN.json",
+      "bytes": 3833,
+      "sha256": "f1f7595308a8b825b76d27e8c52b0581f28b7c1ba0d7289a4c111c8e6092565c"
+    },
+    {
+      "path": "工作区/mono_allocator_lifecycle_20261006/MODIFIED_SECTIONS.json",
+      "bytes": 432155,
+      "sha256": "045c20eeb7150cfed3673272e33fb368cf2996cc1469ab1ef56d1c1fcc326f8f"
+    },
+    {
+      "path": "工作区/mono_allocator_lifecycle_20261006/PATCH.json",
+      "bytes": 2004,
+      "sha256": "cd7f59dedbd699d19a18ff8f524f382bc490acc3eacb8b1c4ede59242c6b77ed"
+    },
+    {
+      "path": "工作区/mono_allocator_lifecycle_20261006/README.md",
+      "bytes": 2798,
+      "sha256": "705a496f29cbd0f2525bcc9c6e1ef81a6817c975604f080763ca4940f258086b"
+    },
+    {
+      "path": "工作区/mono_allocator_lifecycle_20261006/reclaim_controller.c",
+      "bytes": 13436,
+      "sha256": "5f4274bff21ee71064caeb2adaa49349fd8504b91df4d4fe420e15395db864aa"
+    },
+    {
+      "path": "工作区/mono_allocator_lifecycle_20261006/record.py",
+      "bytes": 7261,
+      "sha256": "ac58981aa07cc211a1eceea1fcd6b587aea3d011d8171eb50ff9d5cc86bba2fc"
+    },
+    {
+      "path": "工作区/mono_allocator_lifecycle_20261006/REGRESSION.json",
+      "bytes": 18779,
+      "sha256": "56331cf8554eece631a1921b45b5b8724a06a594074c4864c7d864589d6042a2"
+    },
+    {
+      "path": "工作区/mono_allocator_lifecycle_20261006/REJECTED.dll",
+      "bytes": 2796544,
+      "sha256": "f3f46bba95a099cf6a20971aa6da0eded497f7b5c71b48653ec35b76bebb310a"
+    },
+    {
+      "path": "工作区/mono_allocator_lifecycle_20261006/REJECTED_SECTIONS.json",
+      "bytes": 402351,
+      "sha256": "a3b121e1968e0cecf1c6f505339d0c1f9f3e846bcd560cdbdb30e1036112e281"
+    },
+    {
+      "path": "工作区/mono_allocator_lifecycle_20261006/RetireSample.cs",
+      "bytes": 8628,
+      "sha256": "1d49a49075518d9940b625ed5af3247cb65c6a54cc2179c4274bf37ee83a15d3"
+    },
+    {
+      "path": "工作区/mono_allocator_lifecycle_20261006/RetireSample.dll",
+      "bytes": 9216,
+      "sha256": "c9fe7d52753adf13b1dcf15410977e23a5a4dcbd48d357911f5d8a3a482b1dd9"
+    },
+    {
+      "path": "工作区/mono_allocator_lifecycle_20261006/rollback.py",
+      "bytes": 1261,
+      "sha256": "de473169a9139e8c2d74b1dabeceecc48160fa07677372cda81abd82c2450807"
+    },
+    {
+      "path": "工作区/mono_allocator_lifecycle_20261006/ROLLBACK.sh",
+      "bytes": 236,
+      "sha256": "95307df1d0dcd4307f2c56b72786a6abc8ac2c1b3da7975653d9495b6c27554d"
+    },
+    {
+      "path": "工作区/mono_allocator_lifecycle_20261006/ROLLBACK_COMBINED.json",
+      "bytes": 1996,
+      "sha256": "14ccb7a9fdf1256cadf821169327838a97b5d786908abf77f8714c20dfe0fccf"
+    },
+    {
+      "path": "工作区/mono_allocator_lifecycle_20261006/ROLLBACK_FAILURE.json",
+      "bytes": 1784,
+      "sha256": "96476262a1b82fba24cb77817c411648d0b891e4a97274ae5fb2c4712319c48c"
+    },
+    {
+      "path": "工作区/mono_allocator_lifecycle_20261006/ROLLBACK_LIFECYCLE.json",
+      "bytes": 11462,
+      "sha256": "7e1894ae7d627032615e08686c7e560b9f35055f7690f999446d14cc33aef6a1"
+    },
+    {
+      "path": "工作区/mono_allocator_lifecycle_20261006/ROLLBACK_RESULT.json",
+      "bytes": 30789,
+      "sha256": "edb6916b865dc85b925a6402e44fd87e72e0d068983492f16b9f181baef21597"
+    },
+    {
+      "path": "工作区/mono_allocator_lifecycle_20261006/ROLLBACK_RUN.json",
+      "bytes": 1919,
+      "sha256": "6981f0a2e5c85886d5f87c7fe6533ae19a14781ba31f30f7318fca6e0d8c6f5f"
+    },
+    {
+      "path": "工作区/mono_allocator_lifecycle_20261006/ROLLBACK_SECTIONS.json",
+      "bytes": 83763,
+      "sha256": "68f0727c8ca8ac0259f6b98ad789276aa79611185c4d565baa0b750a051f11c0"
+    },
+    {
+      "path": "工作区/mono_allocator_lifecycle_20261006/sample.py",
+      "bytes": 7473,
+      "sha256": "8717c943bad31090bf239dc70024bb82cbb4adcd96f2795df0bb54404212f2fc"
+    },
+    {
+      "path": "工作区/mono_allocator_lifecycle_20261006/sections.py",
+      "bytes": 6054,
+      "sha256": "cc69646aae9229fc38dfe297f52208a009ac927f543a1cb0b68366fb479c15fd"
+    },
+    {
+      "path": "工作区/mono_allocator_lifecycle_20261006/STRUCTURE.json",
+      "bytes": 249,
+      "sha256": "6441e83121a31a90c0b830e21bd1bb2a1ce02930d1b7774b85e6b21eae18fa7b"
+    },
+    {
+      "path": "工作区/mono_allocator_lifecycle_20261006/test_suite.py",
+      "bytes": 4586,
+      "sha256": "dc9a3a616563b75af46ebed17f8dbfd83abc6d816e447cd21f199a0beba58df3"
+    },
+    {
+      "path": "工作区/mono_allocator_lifecycle_20261006/test_vm.py",
+      "bytes": 1783,
+      "sha256": "89924dc8bb3fba908d21a0e9adda37b57d2cde8117907d0fc7f91f9b88ae315a"
+    },
+    {
+      "path": "工作区/mono_allocator_lifecycle_20261006/validate.ps1",
+      "bytes": 585,
+      "sha256": "69acd156c6f96f9d63327af2fdf2ae579e98253537bcf4ba66cbaa4757dad3ac"
+    },
+    {
+      "path": "工作区/mono_allocator_lifecycle_20261006/validate.py",
+      "bytes": 1308,
+      "sha256": "f2919fc055fef1f3b8d587183b19dc3b253a2a68ec3001f3c13d6f0686247555"
+    },
+    {
+      "path": "工作区/mono_allocator_lifecycle_20261006/VERIFICATION.txt",
+      "bytes": 8050,
+      "sha256": "a3264a8138e0d821dd4d73ab0e5c884c494e8747dc87e2b9a03705165db08f5e"
+    },
+    {
+      "path": "工作区/mono_allocator_lifecycle_20261006/verify.py",
+      "bytes": 5817,
+      "sha256": "0198ed4dd26a28acd08155de0b9a4a03e8468e1448959d68381b7df9db3f832c"
+    },
+    {
+      "path": "工作区/mono_warm_pages_20261006/BASELINE_COMMANDS.json",
+      "bytes": 3601,
+      "sha256": "f541942e690025d75ef306424c728f432f6991557b282ba027ee52e068ef84c3"
+    },
+    {
+      "path": "工作区/mono_warm_pages_20261006/BASELINE_FAILURE.json",
+      "bytes": 1769,
+      "sha256": "b0187ebca9044f10a9d66cb4101ad1b3f0591aafc1e8f9756e9df8108b841a54"
+    },
+    {
+      "path": "工作区/mono_warm_pages_20261006/BASELINE_LIFECYCLE.json",
+      "bytes": 11353,
+      "sha256": "9a4d8e63c455c397cbf02199bd40f003cca1b7f931eda27987fd739cd0bd6c00"
+    },
+    {
+      "path": "工作区/mono_warm_pages_20261006/BASELINE_SECTIONS.json",
+      "bytes": 83761,
+      "sha256": "3f97ed4189281ed8864f53e16a2ca20a50f53d952585e490a4b8aef2024aaa6f"
+    },
+    {
+      "path": "工作区/mono_warm_pages_20261006/BASELINE_WARM.json",
+      "bytes": 10041,
+      "sha256": "7f489a5bedee7ee8fc5308b1cff72dc9a6f4c56c719ea2b8a581440f6bd9c56c"
+    },
+    {
+      "path": "工作区/mono_warm_pages_20261006/BUILD.json",
+      "bytes": 2189,
+      "sha256": "b5275e6b6510d5e0aa4e2d032b70481760224e8a01367b8baccd41e1603ecaef"
+    },
+    {
+      "path": "工作区/mono_warm_pages_20261006/build.py",
+      "bytes": 3036,
+      "sha256": "98ad1f87aebf11abf8dd4ed793711c7627c895f1cdc5a0d162218b344925eb68"
+    },
+    {
+      "path": "工作区/mono_warm_pages_20261006/capture.py",
+      "bytes": 3350,
+      "sha256": "d8b324eeab8177bf1b9c72539b5faa92ef3f17323b479ff793aaf23797bede2a"
+    },
+    {
+      "path": "工作区/mono_warm_pages_20261006/COMMANDS.json",
+      "bytes": 5711,
+      "sha256": "6ca805493f4eae7635ffa91c7ca98bf771b847ec23fd0bed56374cfc326ce33b"
+    },
+    {
+      "path": "工作区/mono_warm_pages_20261006/deploy.py",
+      "bytes": 4017,
+      "sha256": "40a6e31b9c6c4cafbf75fa315610bac1280c106c7493ed92b4541f91f0436818"
+    },
+    {
+      "path": "工作区/mono_warm_pages_20261006/DEPLOY_COMMAND.json",
+      "bytes": 825,
+      "sha256": "7b4c77bab641a2ced7b8fd7341e811ed9e3f0dfff3dfb6aab560a4ee03959bf1"
+    },
+    {
+      "path": "工作区/mono_warm_pages_20261006/DEPLOYMENT.json",
+      "bytes": 394,
+      "sha256": "6d66488abd3fb8d1cb6f8eeb008189ef5d33e019dd7b931ddd6359d2953d85af"
+    },
+    {
+      "path": "工作区/mono_warm_pages_20261006/DEPLOYMENT_TEST.json",
+      "bytes": 430,
+      "sha256": "618a9ecbd0dde05a19f8fd865c044a336237fba4851e5d3b74f5d411582afeca"
+    },
+    {
+      "path": "工作区/mono_warm_pages_20261006/DIFF_FILE.patch",
+      "bytes": 7146,
+      "sha256": "1149c6c0d783c67dab2be699323385feab7a31b99776553609434f661a124b74"
+    },
+    {
+      "path": "工作区/mono_warm_pages_20261006/finish.py",
+      "bytes": 3231,
+      "sha256": "23e08b0821327c98c5e7f04644b36f55ddcc54b3aaaabf4a6993d7074324b201"
+    },
+    {
+      "path": "工作区/mono_warm_pages_20261006/finish_deploy.py",
+      "bytes": 4142,
+      "sha256": "f7bd5cacfaf60c4734536faf922938d76206c62ca6714f84a7e0f1974fe8b285"
+    },
+    {
+      "path": "工作区/mono_warm_pages_20261006/install.ps1",
+      "bytes": 321,
+      "sha256": "dd80e4099dcd854becfcb7db6e98dba91b8a4325afd513ae1526c90533df255f"
+    },
+    {
+      "path": "工作区/mono_warm_pages_20261006/INSTALL_VERIFIED.json",
+      "bytes": 529,
+      "sha256": "a1b91a9ab3111a135d099146866182730f75fb3aded1c27b47f4f91153b35540"
+    },
+    {
+      "path": "工作区/mono_warm_pages_20261006/LifecycleSample.dll",
+      "bytes": 10240,
+      "sha256": "6666a95c7af7306b7094dcd39f52f9fe5b767686eb5138d30276cee28a0e0126"
+    },
+    {
+      "path": "工作区/mono_warm_pages_20261006/measure.py",
+      "bytes": 2121,
+      "sha256": "cf51af37c9a77585feb561c7bb5b01a90f143953cb63f4f53c73c8ab4361b986"
+    },
+    {
+      "path": "工作区/mono_warm_pages_20261006/MODIFIED_COMMANDS.json",
+      "bytes": 3598,
+      "sha256": "f7b5288d17eba824845292a43d92b7bcafb91997ca9c40d91026f5f6b16b81c1"
+    },
+    {
+      "path": "工作区/mono_warm_pages_20261006/MODIFIED_FAILURE.json",
+      "bytes": 4354,
+      "sha256": "6682575d733b0f36549dde926e18e9ef85c163b6ab306241cdc31b59b8b2cd12"
+    },
+    {
+      "path": "工作区/mono_warm_pages_20261006/MODIFIED_LIFECYCLE.json",
+      "bytes": 28142,
+      "sha256": "f19424e4642978d4fd30595b65fa3a403a4d9ba22ec15c3edc5b82cf71ca18c6"
+    },
+    {
+      "path": "工作区/mono_warm_pages_20261006/MODIFIED_SECTIONS.json",
+      "bytes": 431952,
+      "sha256": "992f14e84cffd81e0258596642a78c631fe4197020c6b51ac9299229c6e1d0b9"
+    },
+    {
+      "path": "工作区/mono_warm_pages_20261006/MODIFIED_WARM.json",
+      "bytes": 10681,
+      "sha256": "1f719e2e09f758f376b5f0a83a907ceb430a83dea3cfd46f067724c1ba37e5e1"
+    },
+    {
+      "path": "工作区/mono_warm_pages_20261006/PATCH.json",
+      "bytes": 2123,
+      "sha256": "8f6d3c229a5699d44f6665b16d7fba0e8fa355575351fa9004df2205af014cd1"
+    },
+    {
+      "path": "工作区/mono_warm_pages_20261006/PERF_COMMANDS.json",
+      "bytes": 3162,
+      "sha256": "e7dead0cb1f4529495925d797bf4b29a84cfd358452f3fd596745347174f7fd7"
+    },
+    {
+      "path": "工作区/mono_warm_pages_20261006/PERFORMANCE.json",
+      "bytes": 72030,
+      "sha256": "eab384caf6c9ce3ecc2cb8e83ee2ffb5cf3f23b7df080594da8f398d20c9a9ac"
+    },
+    {
+      "path": "工作区/mono_warm_pages_20261006/READONLY.json",
+      "bytes": 17349,
+      "sha256": "abb8dda3776cde56f3d122085bb03129df20404ea66ec0b83ee83729a8f99979"
+    },
+    {
+      "path": "工作区/mono_warm_pages_20261006/reclaim_controller.c",
+      "bytes": 14823,
+      "sha256": "edcd0a7771c5b0e74fbeb25e0ad581855904a46a7d9a7a018d0e75bbff52a992"
+    },
+    {
+      "path": "工作区/mono_warm_pages_20261006/record.py",
+      "bytes": 5822,
+      "sha256": "8ab3aefe7fd5015332373a8b7b6fd1aac7ba8f17427b79f650a92f6b956adce6"
+    },
+    {
+      "path": "工作区/mono_warm_pages_20261006/RetireSample.dll",
+      "bytes": 9216,
+      "sha256": "d3070be6e217f2c36e9b81b963068630e79858dea6974a62bee44ff730a2afaf"
+    },
+    {
+      "path": "工作区/mono_warm_pages_20261006/rollback.py",
+      "bytes": 1357,
+      "sha256": "8d3b90ead50b9e12e074453f1ac552db0ef797260a0114ab1b7288ba44f3b8ea"
+    },
+    {
+      "path": "工作区/mono_warm_pages_20261006/ROLLBACK.sh",
+      "bytes": 150,
+      "sha256": "e4832aaa53efd7d38e5957c44eda472bc8153f3e69e91946e6eb29a0245c5c9f"
+    },
+    {
+      "path": "工作区/mono_warm_pages_20261006/ROLLBACK_COMMANDS.json",
+      "bytes": 3601,
+      "sha256": "4d17833d25b4ccffd200acf11e1f64da24e32da6539363cb4631a1ad5a1289d0"
+    },
+    {
+      "path": "工作区/mono_warm_pages_20261006/ROLLBACK_FAILURE.json",
+      "bytes": 1769,
+      "sha256": "1d969d8278e3b2bd7ebce5a4daedca2ff9dd8594ad39a3d3e21eae5e2bb12930"
+    },
+    {
+      "path": "工作区/mono_warm_pages_20261006/ROLLBACK_LIFECYCLE.json",
+      "bytes": 11346,
+      "sha256": "951140997067b2a172c2b114ba18db0d8fb8bc797b6cc2e83f738d1fba44102e"
+    },
+    {
+      "path": "工作区/mono_warm_pages_20261006/ROLLBACK_SECTIONS.json",
+      "bytes": 83763,
+      "sha256": "489c0f4bf6ef8288bdda5ab4d21345711a61df4af4fcd896de0ac12f0fb590f5"
+    },
+    {
+      "path": "工作区/mono_warm_pages_20261006/ROLLBACK_WARM.json",
+      "bytes": 10038,
+      "sha256": "928fe1f4d1bd0308ce6749ba8fe1f0a99e802a10b0225e2ca58923b50152976c"
+    },
+    {
+      "path": "工作区/mono_warm_pages_20261006/run_case.py",
+      "bytes": 1372,
+      "sha256": "8399444edf1413455248dae65d04c07f55ab70b00d6d51aae22dd81133f9a564"
+    },
+    {
+      "path": "工作区/mono_warm_pages_20261006/STRUCTURE.json",
+      "bytes": 249,
+      "sha256": "6441e83121a31a90c0b830e21bd1bb2a1ce02930d1b7774b85e6b21eae18fa7b"
+    },
+    {
+      "path": "工作区/mono_warm_pages_20261006/validate.py",
+      "bytes": 1894,
+      "sha256": "3d8e07c026cb29df164384477593dd5c226a9493b545b459fd439f1b0db8d529"
+    },
+    {
+      "path": "工作区/mono_warm_pages_20261006/VERIFICATION.txt",
+      "bytes": 7793,
+      "sha256": "3bbade79a3c1c5a6edba85f626d9d7c8b37983428b61131ad3c081c4076fb6d8"
+    },
+    {
+      "path": "工作区/mono_warm_pages_20261006/warm_pages.py",
+      "bytes": 5750,
+      "sha256": "4a2d2a604af83d09a80a311ff2c4bf12ea0672531755c9b70355b43336a976c5"
+    },
+    {
+      "path": "工作区/mono_warm_pages_20261006/WarmPages.cs",
+      "bytes": 1571,
+      "sha256": "279ea1c451ab6b4c321bdf49a00be9f343df1016ef80c6f83f799ad575fe9bac"
+    },
+    {
+      "path": "工作区/mono_warm_pages_20261006/WarmPages.dll",
+      "bytes": 4096,
+      "sha256": "b34f948636965a00f8945e7ec3eb1dc90539ba53f8459d3dc31d2152ab586be5"
+    },
+    {
+      "path": "工作区/mono_free_span_lifecycle_20261006/BASELINE_CERTIFY.json",
+      "bytes": 1716,
+      "sha256": "6f7c7ff2f0faa5fd8084fd85c1f85fa11545a4e05bcb6bed451105270bf1a709"
+    },
+    {
+      "path": "工作区/mono_free_span_lifecycle_20261006/BASELINE_COHORT.json",
+      "bytes": 50389,
+      "sha256": "04bf14df9fead54b2f7e7afa4b40d5c92cb2648b380832379d6471258ab16606"
+    },
+    {
+      "path": "工作区/mono_free_span_lifecycle_20261006/BASELINE_COMMANDS.json",
+      "bytes": 5305,
+      "sha256": "f727869f504eec275f93390ba4946c37fe47c397f5c29e386e975f5a8625c5b9"
+    },
+    {
+      "path": "工作区/mono_free_span_lifecycle_20261006/BASELINE_ISOLATION.json",
+      "bytes": 8683,
+      "sha256": "21ecff607bdb5e9a9d7cc13d997c0a8d6750bd3bfc5e80a89f2f49e52aa69fb2"
+    },
+    {
+      "path": "工作区/mono_free_span_lifecycle_20261006/BASELINE_READONLY_66908.json",
+      "bytes": 2071,
+      "sha256": "c68bf64b6af841818eca99f8ec5f9d8a39e6a26030bcaf602b2e68fa0229fa02"
+    },
+    {
+      "path": "工作区/mono_free_span_lifecycle_20261006/BASELINE_SPANS.json",
+      "bytes": 20666,
+      "sha256": "233e07bb387b5676036fda85bd5f73ca5e5c0fc761b1ab32a1a5e4ea067dd7cc"
+    },
+    {
+      "path": "工作区/mono_free_span_lifecycle_20261006/BASELINE_WARM.json",
+      "bytes": 10025,
+      "sha256": "f8fc5fc5ae74f0ef7cf52b2523b65f2a79ec40a3a0f8be1a8c2316fa41b107d1"
+    },
+    {
+      "path": "工作区/mono_free_span_lifecycle_20261006/BUILD.json",
+      "bytes": 1896,
+      "sha256": "370ea4e91cccaa9ff4374b8ccb6afecd109bc49a217f7e517b6cccb0ae3719bf"
+    },
+    {
+      "path": "工作区/mono_free_span_lifecycle_20261006/build.py",
+      "bytes": 3918,
+      "sha256": "2bb4a959fe45c4a152572c42db07dd18b7bc823b93ae9cf6d02746b131baa773"
+    },
+    {
+      "path": "工作区/mono_free_span_lifecycle_20261006/capture.py",
+      "bytes": 2894,
+      "sha256": "d0c4f166102b06aef2ddc9efb318331b28f7753d069c342583efe3c93eea0274"
+    },
+    {
+      "path": "工作区/mono_free_span_lifecycle_20261006/CERTIFY.ps1",
+      "bytes": 1515,
+      "sha256": "bb1651221f56cd16d367a9e33858671bb0dc234c906b652ccb4442ca269bd330"
+    },
+    {
+      "path": "工作区/mono_free_span_lifecycle_20261006/cohort_test.py",
+      "bytes": 8348,
+      "sha256": "c848dd21c3d4c72b7a93645572b48377b4216bac80d1c8aeee1d2938b67541e7"
+    },
+    {
+      "path": "工作区/mono_free_span_lifecycle_20261006/COMMIT_VERIFIED.json",
+      "bytes": 251,
+      "sha256": "de6d2e6a1e9435de6ef0b5dbeedf7ecd4065639efa5ede48ce987f1c56426f55"
+    },
+    {
+      "path": "工作区/mono_free_span_lifecycle_20261006/DEPLOY_COMMAND.json",
+      "bytes": 545,
+      "sha256": "6a1abea5cf7de4b087cbbf7b8d0664aa2eb8527c0665a94ad18b7f98a6c03ba6"
+    },
+    {
+      "path": "工作区/mono_free_span_lifecycle_20261006/DEPLOYMENT.json",
+      "bytes": 394,
+      "sha256": "27c61b41c2cc87b3674ad0af6c20262d4767ec5548cfefe29c1d49cb085d369b"
+    },
+    {
+      "path": "工作区/mono_free_span_lifecycle_20261006/DEPLOYMENT_TEST.json",
+      "bytes": 384,
+      "sha256": "c97f16d5571780b23ab8aed11fb06b41236438ab2d4403e3697d6647a2d30863"
+    },
+    {
+      "path": "工作区/mono_free_span_lifecycle_20261006/DIFF_FILE.patch",
+      "bytes": 6861,
+      "sha256": "067fd48778aa44510ea5b6969fde6a681ed4ef12bc817c4a3a0182d4229f25bf"
+    },
+    {
+      "path": "工作区/mono_free_span_lifecycle_20261006/finalize.py",
+      "bytes": 10873,
+      "sha256": "7c119bfd2bbefda7eaf11494b891e706281bbb2525d0d9fbb7e361f3871cc137"
+    },
+    {
+      "path": "工作区/mono_free_span_lifecycle_20261006/install.ps1",
+      "bytes": 321,
+      "sha256": "dd80e4099dcd854becfcb7db6e98dba91b8a4325afd513ae1526c90533df255f"
+    },
+    {
+      "path": "工作区/mono_free_span_lifecycle_20261006/INSTALL_COPY_COMMANDS.json",
+      "bytes": 1160,
+      "sha256": "9b52e675b73f031e1d667faf0b96bfb73d4b6e4a3a16a885efff2c42e329e468"
+    },
+    {
+      "path": "工作区/mono_free_span_lifecycle_20261006/INSTALL_VERIFIED.json",
+      "bytes": 10506,
+      "sha256": "b82c71c07dbcf26ce754eee27ebe698e85d170212b41074e2d27a25b49739b21"
+    },
+    {
+      "path": "工作区/mono_free_span_lifecycle_20261006/isolation_test.py",
+      "bytes": 7657,
+      "sha256": "d31f0e4826e94cf44fe2902d8d927ccffe88a379c0b2dfecaa105dcc33c4625d"
+    },
+    {
+      "path": "工作区/mono_free_span_lifecycle_20261006/LifecycleSample.dll",
+      "bytes": 10240,
+      "sha256": "8c38dd13b05fdf0401b4ca154b1bbe5fef69fa13bdd01d6837cdbf60be1a8833"
+    },
+    {
+      "path": "工作区/mono_free_span_lifecycle_20261006/MODIFIED_CERTIFY.json",
+      "bytes": 1708,
+      "sha256": "fd1ef4904c9059330245284efe045792357af8260c6d0f3434259a247de7f3c7"
+    },
+    {
+      "path": "工作区/mono_free_span_lifecycle_20261006/MODIFIED_COHORT.json",
+      "bytes": 51564,
+      "sha256": "5ac7166dac8245c2361a06e8cf8b19e6c58bd6b4fddd39acdaa96f69b4b7ff0d"
+    },
+    {
+      "path": "工作区/mono_free_span_lifecycle_20261006/MODIFIED_COMMANDS.json",
+      "bytes": 5297,
+      "sha256": "fbcc549b32ff321eda646ec33067c39e93a6c9857827f0a520a4193459472f79"
+    },
+    {
+      "path": "工作区/mono_free_span_lifecycle_20261006/MODIFIED_ISOLATION.json",
+      "bytes": 10447,
+      "sha256": "a1d1c4d81897976701627a07e523ac382029e06eae8ffc4850dd3510fcc6fc3f"
+    },
+    {
+      "path": "工作区/mono_free_span_lifecycle_20261006/MODIFIED_SPANS.json",
+      "bytes": 19057,
+      "sha256": "bdd7efa6d025679f81fdd012024bf797eb79acb0ab1e1c680b57ff44f5e39f70"
+    },
+    {
+      "path": "工作区/mono_free_span_lifecycle_20261006/MODIFIED_WARM.json",
+      "bytes": 10676,
+      "sha256": "ff5561e804cfab5ea9b5b019c4de1829d18a75aeba9d2584d24b7864845ab2a5"
+    },
+    {
+      "path": "工作区/mono_free_span_lifecycle_20261006/PATCH.json",
+      "bytes": 4099,
+      "sha256": "3f9b851c370fe0795ce58c48a43f0e364df759ff16affc1036d7175a236a96e4"
+    },
+    {
+      "path": "工作区/mono_free_span_lifecycle_20261006/pending_probe.dll",
+      "bytes": 7168,
+      "sha256": "520ae58b43b1263dd2cf7c425d94b016d261786e175efe90ca4b72e888e3f3c8"
+    },
+    {
+      "path": "工作区/mono_free_span_lifecycle_20261006/PendingCohort.dll",
+      "bytes": 13312,
+      "sha256": "3132905ae1204885c97be4bf16f85d76db7e86fb0b00fb54da1577b5147eda06"
+    },
+    {
+      "path": "工作区/mono_free_span_lifecycle_20261006/README.md",
+      "bytes": 1064,
+      "sha256": "d23e3bc941f5aa18f7fc83609d6c86d3097ae222a4435d70bbfb25cb4e38cfc5"
+    },
+    {
+      "path": "工作区/mono_free_span_lifecycle_20261006/READONLY_61504.json",
+      "bytes": 2366,
+      "sha256": "0194fa08df8155c56c5ef4de0ac3af5f71deb8cb2722f685fd1e6cbe2a203e50"
+    },
+    {
+      "path": "工作区/mono_free_span_lifecycle_20261006/reclaim_controller.c",
+      "bytes": 21977,
+      "sha256": "d1fb7658746b5a06434ceeea97a3501cfd420a2e22c32d6b159d7499f1b1f3df"
+    },
+    {
+      "path": "工作区/mono_free_span_lifecycle_20261006/RESULT.json",
+      "bytes": 17777,
+      "sha256": "32fda8939c4242b12e75c75a744f3741c0967c10e9222397a998741016acfadf"
+    },
+    {
+      "path": "工作区/mono_free_span_lifecycle_20261006/RetireSample.dll",
+      "bytes": 9216,
+      "sha256": "7175b7201416d2ef2866aa0a382edb7f290a7ac073cf8c9758e6738c00dfb2f8"
+    },
+    {
+      "path": "工作区/mono_free_span_lifecycle_20261006/rollback.py",
+      "bytes": 1399,
+      "sha256": "490192922d3534790e5acc87a763960265e56728ceab7b2adae88059bd6d5ce0"
+    },
+    {
+      "path": "工作区/mono_free_span_lifecycle_20261006/ROLLBACK.sh",
+      "bytes": 150,
+      "sha256": "e4832aaa53efd7d38e5957c44eda472bc8153f3e69e91946e6eb29a0245c5c9f"
+    },
+    {
+      "path": "工作区/mono_free_span_lifecycle_20261006/ROLLBACK_CERTIFY.json",
+      "bytes": 1798,
+      "sha256": "d3aa06f753d438c938001fe28c57d44ca4c97a7fbc2aecb0539dd864c1b4af75"
+    },
+    {
+      "path": "工作区/mono_free_span_lifecycle_20261006/ROLLBACK_COHORT.json",
+      "bytes": 50391,
+      "sha256": "92b462d02126443c70f26f9b6412f7f0c102c67aafd753af263a2e04fe0aebe5"
+    },
+    {
+      "path": "工作区/mono_free_span_lifecycle_20261006/ROLLBACK_COMMANDS.json",
+      "bytes": 5305,
+      "sha256": "91017e4d3caab23273c4e1208d3736d9f295a79c68eb84ebd77c457bc7106b0c"
+    },
+    {
+      "path": "工作区/mono_free_span_lifecycle_20261006/ROLLBACK_ISOLATION.json",
+      "bytes": 8683,
+      "sha256": "a56a37a92d19b54e50674bd79cd5bc1e758eddf01197344cd0e7c91c9887e4b4"
+    },
+    {
+      "path": "工作区/mono_free_span_lifecycle_20261006/ROLLBACK_SPANS.json",
+      "bytes": 20666,
+      "sha256": "ce104e5d14043dac57c61259bc8c1a1555f921ec0a583c61f33539416b510831"
+    },
+    {
+      "path": "工作区/mono_free_span_lifecycle_20261006/ROLLBACK_WARM.json",
+      "bytes": 10025,
+      "sha256": "63b28bb77d6cfe69ab023f80542b3eb58f60e7d033e5823be7c1eba771507fea"
+    },
+    {
+      "path": "工作区/mono_free_span_lifecycle_20261006/run_case.py",
+      "bytes": 696,
+      "sha256": "a947698537178c9260bab4b07f61d5a8d231f484c9b3b92fd7f0df3ffec507d1"
+    },
+    {
+      "path": "工作区/mono_free_span_lifecycle_20261006/span_test.py",
+      "bytes": 11510,
+      "sha256": "08bb80ba25004f8a129ee95ba5e5fab8ef511b99c9e66b40408faa661ffd8f6c"
+    },
+    {
+      "path": "工作区/mono_free_span_lifecycle_20261006/STRUCTURE.json",
+      "bytes": 249,
+      "sha256": "6d6c5eaa066ee7b62217c405a3c63d1bedc576566567d3b1a1fc5a757a0a4b48"
+    },
+    {
+      "path": "工作区/mono_free_span_lifecycle_20261006/validate.py",
+      "bytes": 1461,
+      "sha256": "568b76ab73b8fa48db972e1143ee522ab906f57a572b41f318bf11a36baed05a"
+    },
+    {
+      "path": "工作区/mono_free_span_lifecycle_20261006/VERIFICATION.txt",
+      "bytes": 3676,
+      "sha256": "37d4e5de16bf58fe7d11ef979e9094b902bd273f2134766cee0c8df70434e15e"
+    },
+    {
+      "path": "工作区/mono_free_span_lifecycle_20261006/WarmPages.dll",
+      "bytes": 4096,
+      "sha256": "b34f948636965a00f8945e7ec3eb1dc90539ba53f8459d3dc31d2152ab586be5"
+    },
+    {
+      "path": "工作区/mono_reclaim_cohorts_20261006/BASELINE_CERTIFY.json",
+      "bytes": 1578,
+      "sha256": "f692cad92865b2602489ea922b671126969570b0fdff17520c5aef050d91b257"
+    },
+    {
+      "path": "工作区/mono_reclaim_cohorts_20261006/BASELINE_COHORT.json",
+      "bytes": 48617,
+      "sha256": "096ea8a2c34a7d392aea940c98a06eca7d5a5eefbbd8c442596f18a129e07cdd"
+    },
+    {
+      "path": "工作区/mono_reclaim_cohorts_20261006/BASELINE_COMMANDS.json",
+      "bytes": 4741,
+      "sha256": "2e6af94266cc0c8f4cd009b00c38c333fe09428236c6c21c825df0c427df7a88"
+    },
+    {
+      "path": "工作区/mono_reclaim_cohorts_20261006/BASELINE_ISOLATION.json",
+      "bytes": 6520,
+      "sha256": "7707a1cbe9e408b3e55ab8f5b4064b1e154594d5f630645d79a46cf0f9fcf774"
+    },
+    {
+      "path": "工作区/mono_reclaim_cohorts_20261006/BUILD.json",
+      "bytes": 1896,
+      "sha256": "370ea4e91cccaa9ff4374b8ccb6afecd109bc49a217f7e517b6cccb0ae3719bf"
+    },
+    {
+      "path": "工作区/mono_reclaim_cohorts_20261006/build.py",
+      "bytes": 3744,
+      "sha256": "c9e0c1777ff6b7f9951f3b4f505e66623b55cf38981b912f445c8bf446141d2f"
+    },
+    {
+      "path": "工作区/mono_reclaim_cohorts_20261006/capture.py",
+      "bytes": 2831,
+      "sha256": "3fa6b7687adfca3577dd350bc03dafed0d6a06123e7d3d491809c56b384d62a5"
+    },
+    {
+      "path": "工作区/mono_reclaim_cohorts_20261006/CERTIFY.ps1",
+      "bytes": 1484,
+      "sha256": "3c1c26b925722da08b7694dd7e91036ac484660ae367269c9bf9a6dd2f531c20"
+    },
+    {
+      "path": "工作区/mono_reclaim_cohorts_20261006/cohort_test.py",
+      "bytes": 8127,
+      "sha256": "f0fdef6651b3db09c7fe4a4b913a00fbad91d851c9b06b1c715358fe5ed21105"
+    },
+    {
+      "path": "工作区/mono_reclaim_cohorts_20261006/DEPLOY_COMMAND.json",
+      "bytes": 547,
+      "sha256": "e6ea2eb111deb22eb67f1e46de18e3949fcd9ef0e86a1673b70d7241ac9d3a51"
+    },
+    {
+      "path": "工作区/mono_reclaim_cohorts_20261006/DEPLOYMENT.json",
+      "bytes": 394,
+      "sha256": "39b3434605ff083a1ce72a895dca0220281036f462f01c46daa4fd504ec0c8f3"
+    },
+    {
+      "path": "工作区/mono_reclaim_cohorts_20261006/DEPLOYMENT_TEST.json",
+      "bytes": 435,
+      "sha256": "197be2be2d0094441d113b91001844c740bba50ca0e92561f043d85fa4592875"
+    },
+    {
+      "path": "工作区/mono_reclaim_cohorts_20261006/DIFF_FILE.patch",
+      "bytes": 5443,
+      "sha256": "7ae33c9ac0c88cec6b3a93caa170fab47146819e1aa6a1d57afa99d9074bab7c"
+    },
+    {
+      "path": "工作区/mono_reclaim_cohorts_20261006/finalize.py",
+      "bytes": 9366,
+      "sha256": "342f1cd123942861a7cf1d5c27faa6c5b9f65e3a512c86d6f3019b2d7dfcbd4b"
+    },
+    {
+      "path": "工作区/mono_reclaim_cohorts_20261006/install.ps1",
+      "bytes": 321,
+      "sha256": "dd80e4099dcd854becfcb7db6e98dba91b8a4325afd513ae1526c90533df255f"
+    },
+    {
+      "path": "工作区/mono_reclaim_cohorts_20261006/INSTALL_VERIFIED.json",
+      "bytes": 440,
+      "sha256": "781c7badcc1dd76b1e7348631cf965381791b3a59bb0ecee837a75e9441b815f"
+    },
+    {
+      "path": "工作区/mono_reclaim_cohorts_20261006/isolation_test.py",
+      "bytes": 7603,
+      "sha256": "83bd085c768f2eb6deb0de6ecf1b1be7a2b85c2aef51c99ff716df00372c6081"
+    },
+    {
+      "path": "工作区/mono_reclaim_cohorts_20261006/LifecycleSample.dll",
+      "bytes": 10240,
+      "sha256": "c822990da739bc2e56ce11c8d3e95ea1933765b15e035b42b45595be4efa5ece"
+    },
+    {
+      "path": "工作区/mono_reclaim_cohorts_20261006/MODIFIED_CERTIFY.json",
+      "bytes": 1566,
+      "sha256": "9a7c0778ffff973bfcb27491aca4c13fb87d0d0c259cad4154f8458f97efc561"
+    },
+    {
+      "path": "工作区/mono_reclaim_cohorts_20261006/MODIFIED_COHORT.json",
+      "bytes": 50059,
+      "sha256": "05ac37a70b12ff34227b80856a7f2427a2ae0e6b3c6d56bdaa415c0f728ad852"
+    },
+    {
+      "path": "工作区/mono_reclaim_cohorts_20261006/MODIFIED_COMMANDS.json",
+      "bytes": 4729,
+      "sha256": "cdfeb7777530cc2f18c095d58d8fc0555876af5e4b9b3ed6ee6f7395a987d70a"
+    },
+    {
+      "path": "工作区/mono_reclaim_cohorts_20261006/MODIFIED_ISOLATION.json",
+      "bytes": 8683,
+      "sha256": "47aec6237bd549f0b9f9310198da28d3182963c124bad3c8172e6f8b760dde34"
+    },
+    {
+      "path": "工作区/mono_reclaim_cohorts_20261006/PATCH.json",
+      "bytes": 3576,
+      "sha256": "a4fec7e8b3726518b883d5a0a3f47cd9f2c1f364a38228ef258960514bf8204c"
+    },
+    {
+      "path": "工作区/mono_reclaim_cohorts_20261006/pending_probe.c",
+      "bytes": 2591,
+      "sha256": "af353dfaa26277435a4c8002baa517dcd78013f0e94912387b22ff646acb564a"
+    },
+    {
+      "path": "工作区/mono_reclaim_cohorts_20261006/pending_probe.dll",
+      "bytes": 7168,
+      "sha256": "520ae58b43b1263dd2cf7c425d94b016d261786e175efe90ca4b72e888e3f3c8"
+    },
+    {
+      "path": "工作区/mono_reclaim_cohorts_20261006/PendingCohort.cs",
+      "bytes": 4203,
+      "sha256": "a1c126f295e873c5263e02a327bc48fd2c89b5c43a504c776e9a1bca67daca47"
+    },
+    {
+      "path": "工作区/mono_reclaim_cohorts_20261006/PendingCohort.dll",
+      "bytes": 13312,
+      "sha256": "3132905ae1204885c97be4bf16f85d76db7e86fb0b00fb54da1577b5147eda06"
+    },
+    {
+      "path": "工作区/mono_reclaim_cohorts_20261006/PROBE_BUILD.json",
+      "bytes": 1430,
+      "sha256": "9baa22915b0d1450797e43f0791f35e0bf8d5eb2facfb5b4d823bd2f2b19b9e2"
+    },
+    {
+      "path": "工作区/mono_reclaim_cohorts_20261006/probe_build.py",
+      "bytes": 2229,
+      "sha256": "b03b590cd2640e468eb532e5810d713c8e243729867ae0d8b164e2adf3543771"
+    },
+    {
+      "path": "工作区/mono_reclaim_cohorts_20261006/README.md",
+      "bytes": 752,
+      "sha256": "ccef86743e681f527027e374fa609e647c22e1a7ac25a65c50014ecbe4fcb3f0"
+    },
+    {
+      "path": "工作区/mono_reclaim_cohorts_20261006/reclaim_controller.c",
+      "bytes": 16830,
+      "sha256": "e1a3c5f90de53cd98cee7d35a1a72a80dca41176389be588443c0bfd4ef5f51a"
+    },
+    {
+      "path": "工作区/mono_reclaim_cohorts_20261006/RESULT.json",
+      "bytes": 7377,
+      "sha256": "f0bb25c8d2ed16bea80ca63d61280bba30c323b0ee71710053b550b37731a79a"
+    },
+    {
+      "path": "工作区/mono_reclaim_cohorts_20261006/RetireSample.dll",
+      "bytes": 9216,
+      "sha256": "a864fb7545e94cc3dac729ae1357693019ae1964efa1f0ab648c10af6abb5de5"
+    },
+    {
+      "path": "工作区/mono_reclaim_cohorts_20261006/rollback.py",
+      "bytes": 1363,
+      "sha256": "0b994f16840e4109bdb2f513fa29b5d3802c4a609883db163d2fe0f8a0e3a53f"
+    },
+    {
+      "path": "工作区/mono_reclaim_cohorts_20261006/ROLLBACK.sh",
+      "bytes": 150,
+      "sha256": "e4832aaa53efd7d38e5957c44eda472bc8153f3e69e91946e6eb29a0245c5c9f"
+    },
+    {
+      "path": "工作区/mono_reclaim_cohorts_20261006/ROLLBACK_CERTIFY.json",
+      "bytes": 1657,
+      "sha256": "21cac6b9d38196a3d4801628e84a6be869e0ed098cbdb94dc3c02b0cbb862ab0"
+    },
+    {
+      "path": "工作区/mono_reclaim_cohorts_20261006/ROLLBACK_COHORT.json",
+      "bytes": 48614,
+      "sha256": "85a195760bf7e348662d5bcf1d09439f2ffb682d5c08150d1b145321701c7170"
+    },
+    {
+      "path": "工作区/mono_reclaim_cohorts_20261006/ROLLBACK_COMMANDS.json",
+      "bytes": 4741,
+      "sha256": "191bcc273e183e971d693e7c5dd60fb33414df62207a63a5f38a8951cc711454"
+    },
+    {
+      "path": "工作区/mono_reclaim_cohorts_20261006/ROLLBACK_ISOLATION.json",
+      "bytes": 6520,
+      "sha256": "99603e12a6a49091cb0cf038310e597a7d6ff89d852457142c5b861a0546fd85"
+    },
+    {
+      "path": "工作区/mono_reclaim_cohorts_20261006/run_case.py",
+      "bytes": 696,
+      "sha256": "a947698537178c9260bab4b07f61d5a8d231f484c9b3b92fd7f0df3ffec507d1"
+    },
+    {
+      "path": "工作区/mono_reclaim_cohorts_20261006/STRUCTURE.json",
+      "bytes": 249,
+      "sha256": "ac900c481c334e20012826c34269042b8c090ea013d035283a60aa9d2f2dc081"
+    },
+    {
+      "path": "工作区/mono_reclaim_cohorts_20261006/validate.py",
+      "bytes": 1406,
+      "sha256": "23212d549b907154fd21b8a4916c3902f5d29870824162a0fbb980ca1614e00b"
+    },
+    {
+      "path": "工作区/mono_reclaim_cohorts_20261006/VERIFICATION.txt",
+      "bytes": 3659,
+      "sha256": "ed7833e9212569a8fd3ca2fd868d1757a158f997358c91a84dcbbe235e59f7c1"
+    },
+    {
+      "path": "工作区/mono_reclaim_cohorts_20261006/WarmPages.dll",
+      "bytes": 4096,
+      "sha256": "b34f948636965a00f8945e7ec3eb1dc90539ba53f8459d3dc31d2152ab586be5"
+    },
+    {
+      "path": "工作区/mono_reclaim_controller_20261006/AUDIT.json",
+      "bytes": 20197,
+      "sha256": "5f63aa044a199a5bc1a02f7b0b502d2ae6316d8ae18e4c6a4318a2c647b80adb"
+    },
+    {
+      "path": "工作区/mono_reclaim_controller_20261006/audit_binary.py",
+      "bytes": 2741,
+      "sha256": "64d1203f3c5489243a6c1ae42f29b8e5d57d8dcfeea2bb87cf4e300ebca2f0cb"
+    },
+    {
+      "path": "工作区/mono_reclaim_controller_20261006/BASELINE_RESULT.json",
+      "bytes": 61368,
+      "sha256": "a7a18e743ad5da29f320efdd9960d8071402e069faf5133dc055dcd981fc567d"
+    },
+    {
+      "path": "工作区/mono_reclaim_controller_20261006/BASELINE_RUN.json",
+      "bytes": 3821,
+      "sha256": "bd68d02960d3ae570042df785c02bcf0f59c09ef36d6e3adbd7205d70e090d0a"
+    },
+    {
+      "path": "工作区/mono_reclaim_controller_20261006/BUILD.json",
+      "bytes": 1393,
+      "sha256": "db26b8f3e5166f2f9887009bad915e2ab0d06eb6d272a8367515184c0e0cc842"
+    },
+    {
+      "path": "工作区/mono_reclaim_controller_20261006/build.py",
+      "bytes": 8962,
+      "sha256": "29caa96938284ec1308af3c600c0bba36560e57d28a30f75ec11449c91985af2"
+    },
+    {
+      "path": "工作区/mono_reclaim_controller_20261006/COMMANDS.json",
+      "bytes": 2815,
+      "sha256": "d15b9e3ac9445e81912bc024f1285b667df16e0e50726f74791142817c23d31d"
+    },
+    {
+      "path": "工作区/mono_reclaim_controller_20261006/COMPARISON.json",
+      "bytes": 608,
+      "sha256": "bf95f02c43bf2c025e8cf27d4843bd359d0f1fb17286300c5c5cc83b7e5b7ca9"
+    },
+    {
+      "path": "工作区/mono_reclaim_controller_20261006/DEPLOYMENT.json",
+      "bytes": 342,
+      "sha256": "f943544db128691b577691d591482e8f855bed5c4c1e62bf0e320d9247129a73"
+    },
+    {
+      "path": "工作区/mono_reclaim_controller_20261006/DEPLOYMENT_TEST.json",
+      "bytes": 438,
+      "sha256": "1f6a8a2091e3f94bfbc8adcda88b83f52bbffdcce21e5d9550f7628a49ae1288"
+    },
+    {
+      "path": "工作区/mono_reclaim_controller_20261006/DIFF_FILE.patch",
+      "bytes": 2294,
+      "sha256": "4c16134f4443b96616fbe1b79e0f25f91c5d9c386b134a47f233bc5e1768c591"
+    },
+    {
+      "path": "工作区/mono_reclaim_controller_20261006/install.ps1",
+      "bytes": 4877,
+      "sha256": "bef036ba1c8f9e5cba41a04672e419eed3e4329a2dcfdfe067607555456fd14b"
+    },
+    {
+      "path": "工作区/mono_reclaim_controller_20261006/MODIFIED_RESULT.json",
+      "bytes": 99173,
+      "sha256": "085d722be59d917af154fcfa5cbf80c78b890693e85fbcff0b58d96045d6e636"
+    },
+    {
+      "path": "工作区/mono_reclaim_controller_20261006/MODIFIED_RUN.json",
+      "bytes": 3821,
+      "sha256": "1f358eba129e256fb012107f10ec1f8b36baffaa3e3c0c149763a52f2a594453"
+    },
+    {
+      "path": "工作区/mono_reclaim_controller_20261006/PATCH.json",
+      "bytes": 800,
+      "sha256": "69f80d29143e6bd50bf91e942392c09ac1a5f29ad2d4f0add05f305b9240cfee"
+    },
+    {
+      "path": "工作区/mono_reclaim_controller_20261006/README.md",
+      "bytes": 1605,
+      "sha256": "291a78c565617a0394657ba683b984ae6830762a008e2a6f35250c189e12ef1d"
+    },
+    {
+      "path": "工作区/mono_reclaim_controller_20261006/reclaim_controller.c",
+      "bytes": 4773,
+      "sha256": "8371f6d5729f52d4d09c4adb0d7ba84af6c9c30e36373b85c0cafbfa3ce12ded"
+    },
+    {
+      "path": "工作区/mono_reclaim_controller_20261006/record.py",
+      "bytes": 6773,
+      "sha256": "966e60e43a9ccb15af6bc462e073bdbcc870140be1e833b7ac395967f4bad07a"
+    },
+    {
+      "path": "工作区/mono_reclaim_controller_20261006/RetireSample.cs",
+      "bytes": 8628,
+      "sha256": "1d49a49075518d9940b625ed5af3247cb65c6a54cc2179c4274bf37ee83a15d3"
+    },
+    {
+      "path": "工作区/mono_reclaim_controller_20261006/RetireSample.dll",
+      "bytes": 9216,
+      "sha256": "1c696d9675a089b97322d2866a8da389e2edbae3df82e7074ebde55cc081dc85"
+    },
+    {
+      "path": "工作区/mono_reclaim_controller_20261006/rollback.py",
+      "bytes": 1261,
+      "sha256": "de473169a9139e8c2d74b1dabeceecc48160fa07677372cda81abd82c2450807"
+    },
+    {
+      "path": "工作区/mono_reclaim_controller_20261006/ROLLBACK.sh",
+      "bytes": 238,
+      "sha256": "a461ca4a8baa6796f4a8c0410d5f7c8c5255d7c5f0e8cb281582ad2263889c17"
+    },
+    {
+      "path": "工作区/mono_reclaim_controller_20261006/ROLLBACK_RESULT.json",
+      "bytes": 30788,
+      "sha256": "2de051d0bacc577c87c6313a8c0250f23eb19b53a21de0bf9d8340347b95cbe0"
+    },
+    {
+      "path": "工作区/mono_reclaim_controller_20261006/ROLLBACK_RUN.json",
+      "bytes": 1913,
+      "sha256": "3fc9b39523bae59fd3ba53e890fabb6881dfbe6b5067559769839e6d7630c952"
+    },
+    {
+      "path": "工作区/mono_reclaim_controller_20261006/sample.py",
+      "bytes": 6200,
+      "sha256": "e9817ca3f627b5fb3af281b6486fff64d7c5692e703bca705ebf1e82363b8cbf"
+    },
+    {
+      "path": "工作区/mono_reclaim_controller_20261006/STRUCTURE.json",
+      "bytes": 247,
+      "sha256": "e03dd42de03bd2e75310103cc36c4ada6de95753c3d5d6eb48ccb7e3bb38c6b6"
+    },
+    {
+      "path": "工作区/mono_reclaim_controller_20261006/test_suite.py",
+      "bytes": 4505,
+      "sha256": "02d15b2d2aa95c0f662151fb86c4b1eabe3dde129fcb65113eeac7214abdc699"
+    },
+    {
+      "path": "工作区/mono_reclaim_controller_20261006/test_vm.py",
+      "bytes": 1783,
+      "sha256": "89924dc8bb3fba908d21a0e9adda37b57d2cde8117907d0fc7f91f9b88ae315a"
+    },
+    {
+      "path": "工作区/mono_reclaim_controller_20261006/VERIFICATION.txt",
+      "bytes": 5151,
+      "sha256": "a6acc518a9098e54ce7c3533cea608f524e48955e4ead2d10d8662e10397e9a7"
+    },
+    {
+      "path": "工作区/mono_reclaim_controller_20261006/verify.py",
+      "bytes": 4428,
+      "sha256": "58fab614baeab4216c9dd3ea3d79f8eef064ac9a634129f37dd467541631d710"
+    },
+    {
+      "path": "工作区/mono_unmap_20260930/BASELINE.py",
+      "bytes": 2101,
+      "sha256": "844122cf07def7370964e17cfcc959052306df6d0c843b157d78f1ceeb2ccdb9"
+    },
+    {
+      "path": "工作区/mono_unmap_20260930/DIFF_FILE.patch",
+      "bytes": 18282,
+      "sha256": "f8327e1fe1800876f920a7a2345e35b31544847a0d1de9d8ff958c334dd0e328"
+    },
+    {
+      "path": "工作区/mono_unmap_20260930/FINDINGS.md",
+      "bytes": 2542,
+      "sha256": "4d8fa46329d66be7fbf540910281da869228a25ec942b8ac1715e270c8f3466c"
+    },
+    {
+      "path": "工作区/mono_unmap_20260930/INVENTORY_RUNTIME.json",
+      "bytes": 5355,
+      "sha256": "26e61445da1c9bd8b02808d212f0f0eb8423c373436c53b7d3c1922388a23f3e"
+    },
+    {
+      "path": "工作区/mono_unmap_20260930/MODIFIED_FILE.py",
+      "bytes": 19111,
+      "sha256": "01dd474bcd5478b6b99c1f4a0532543929e5bcd6cedaaad4e256f8a0e86a5690"
+    },
+    {
+      "path": "工作区/mono_unmap_20260930/ROLLBACK.sh",
+      "bytes": 613,
+      "sha256": "68032062de50281705efa015db63f3c3d2cd71b2d05d65efa967113b026cc579"
+    },
+    {
+      "path": "工作区/mono_unmap_20260930/RUNTIME.json",
+      "bytes": 3300,
+      "sha256": "a68b9109ac756b92f3e1151a5f323f2f44f7ca35157e176f4f052f38b0efdf2a"
+    },
+    {
+      "path": "工作区/mono_unmap_20260930/test_probe.py",
+      "bytes": 9402,
+      "sha256": "165f273317c6acf5e185fea09dbbdaa641bc4c2e27cf9fc0904450453084e853"
+    },
+    {
+      "path": "工作区/mono_unmap_20260930/VERIFICATION.txt",
+      "bytes": 4955,
+      "sha256": "b57041a8c17745b5c62eeeac5c1d4ffc94128907fe349faaab4e9d8468863edf"
+    },
+    {
+      "path": "工作区/allocator_growth_pair_20261006/MODIFIED_FILE.py",
+      "bytes": 7391,
+      "sha256": "c72004510ef473d912cd62553fcdec70de99eec48f950390717a17c52bdc05f9"
+    },
+    {
+      "path": "工作区/allocator_growth_pair_20261006/PAIR_RESULT.json",
+      "bytes": 960,
+      "sha256": "583117587efce9677a9134fae5292570201318d35154f14f07d349d0654a15b2"
+    },
+    {
+      "path": "工作区/allocator_growth_pair_20261006/FINDINGS.md",
+      "bytes": 1283,
+      "sha256": "9d2f4f00c7391fb91ce2afe9628bd3700ac7741682ed715a1de6a7e9c56a43ef"
+    },
+    {
+      "path": "工作区/allocator_growth_pair_20261006/START_01.json",
+      "bytes": 232889,
+      "sha256": "6ada840bbed91431bf0027dbf66f4b0941b811f26803df2afc790428699af84d"
+    },
+    {
+      "path": "工作区/allocator_growth_pair_20261006/RETURN_01.json",
+      "bytes": 272095,
+      "sha256": "fb40bb03cc1e22eb375396d6c7b5de7005a62ab8739d5bfba8b8c13c819ac49f"
+    },
+    {
+      "path": "VaM_Data/Managed/mscorlib.dll",
+      "bytes": 2590208,
+      "sha256": "2c6679fa134c8f6450612f600115a56125b37e66fbc5fafa9ed0e4012e8599cb"
+    },
+    {
+      "path": "VaM_Data/Managed/System.dll",
+      "bytes": 1679360,
+      "sha256": "2d37a873fac3a3a44a77c0f3df41a42a7aaff87affab2585ddcea6d6275b0e7e"
+    },
+    {
+      "path": "VaM_Data/Managed/System.Core.dll",
+      "bytes": 297984,
+      "sha256": "9634a913b24e6259c7114183765968da8bfd8519da2f095d6b03087d49ddcdef"
+    },
+    {
+      "path": "Mono/EmbedRuntime/mono.dll",
+      "bytes": 2808832,
+      "sha256": "d4685c71704ef7f222feebfb93851d7f3b6d354998c2e6bc8347268e047c7b3d"
+    },
+    {
+      "path": "BepInEx/plugins/VaMMemory/VaM.Memory.dll",
+      "bytes": 9061888,
+      "sha256": "300d8335a2faedd473a09a0cb27c28df519413ffadf6c4e555f6a3b673278da8"
+    },
+    {
+      "path": "BepInEx/config/vam.memory.cfg",
+      "bytes": 20812,
+      "sha256": "6f3b5c78bc2e058752deb19b8d7952f00c930069b24005ec2716f6aec1bb5eb7"
+    },
+    {
+      "path": "Mono/etc/mono/1.0/DefaultWsdlHelpGenerator.aspx",
+      "bytes": 58196,
+      "sha256": "d87d5196b2ae2abf4e673315e1fd22c3a44df80192f23e89b78108579c287524"
+    },
+    {
+      "path": "Mono/etc/mono/1.0/machine.config",
+      "bytes": 17258,
+      "sha256": "eded908c507a7a230ee7ad3146d8893cf140638e6eaeab58bff05c95c2f3a7e3"
+    },
+    {
+      "path": "Mono/etc/mono/2.0/Browsers/Compat.browser",
+      "bytes": 1605,
+      "sha256": "8a1082057ac5681dcd4e9c227ed7fb8eb42ac1618963b5de3b65739dd77e2741"
+    },
+    {
+      "path": "Mono/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx",
+      "bytes": 60453,
+      "sha256": "ae044cd9cc2c7c42f8864195125ab440472d657e5f0d55e131f7890bd45c518a"
+    },
+    {
+      "path": "Mono/etc/mono/2.0/machine.config",
+      "bytes": 27625,
+      "sha256": "531d0d5bc30466a8a7ea6c032639721d7f16aab57c9701ef0afab5fdb432792f"
+    },
+    {
+      "path": "Mono/etc/mono/2.0/settings.map",
+      "bytes": 2618,
+      "sha256": "ca89036b7d7f1ae9311a6a2fbcf05fc5b997bd43fd21dd54e11c18018ef65f08"
+    },
+    {
+      "path": "Mono/etc/mono/2.0/web.config",
+      "bytes": 11686,
+      "sha256": "3c1a76a5849074b437d297656a208a3bef6d84b982153542b9c797046c601dfc"
+    },
+    {
+      "path": "Mono/etc/mono/browscap.ini",
+      "bytes": 311984,
+      "sha256": "4ddd50f31fb968f30bedefc253a46dc3f2890192d05cdaa9e0a64a056eee807e"
+    },
+    {
+      "path": "Mono/etc/mono/config",
+      "bytes": 1691,
+      "sha256": "b585c70c70c88b3e03489361558f5d711c2ef71df9baaf37d92dbf95fbf6cd92"
+    },
+    {
+      "path": "Mono/etc/mono/mconfig/config.xml",
+      "bytes": 25817,
+      "sha256": "0c56e34c69124510fa8c19e7b4c2ca6c1c4ff460ae19f798dd0ca035809e396d"
+    },
+    {
+      "path": "tools/pydeps/capstone/__init__.py",
+      "bytes": 43853,
+      "sha256": "94571d1314355e261aff0ddfc94985fe8761232ddff6874181fd21efa9fab47f"
+    },
+    {
+      "path": "tools/pydeps/capstone/arm.py",
+      "bytes": 2154,
+      "sha256": "00ea7442a1496d84aca469bfa3542290eafe22898b5be0dece9294865b9508ba"
+    },
+    {
+      "path": "tools/pydeps/capstone/arm64.py",
+      "bytes": 2428,
+      "sha256": "834979e887315fae9a447698502f6866c246cb99b65c84b8b6fdef8087181284"
+    },
+    {
+      "path": "tools/pydeps/capstone/arm64_const.py",
+      "bytes": 81768,
+      "sha256": "f358d461b1f45a8d91d8e308ca82e5b35c5d2e5c135d8ed07d8cdc86456a5418"
+    },
+    {
+      "path": "tools/pydeps/capstone/arm_const.py",
+      "bytes": 17295,
+      "sha256": "1b00d7b48be4b72b730272486d4fd2057cb8019e67f1bd145bcabb1b988d1c67"
+    },
+    {
+      "path": "tools/pydeps/capstone/bpf.py",
+      "bytes": 1438,
+      "sha256": "f879595fbc413bfa74600b4cbaa7a2cdd7200b2f92e718ad31fb36844e7c0f9d"
+    },
+    {
+      "path": "tools/pydeps/capstone/bpf_const.py",
+      "bytes": 2160,
+      "sha256": "070717e28a68ee7e1e8b29cb9a299f5e462be81d9ad6c83dccce5f771fe22e7e"
+    },
+    {
+      "path": "tools/pydeps/capstone/evm.py",
+      "bytes": 383,
+      "sha256": "29f35d3953b2eeb976e02af3cdbf3a78066d4d5a750588da0672e48bc5aa0385"
+    },
+    {
+      "path": "tools/pydeps/capstone/evm_const.py",
+      "bytes": 3292,
+      "sha256": "b3a60498c0ac455098d884574829875deb83a4176a052480249a9d3e93f42b6d"
+    },
+    {
+      "path": "tools/pydeps/capstone/include/capstone/arm.h",
+      "bytes": 20872,
+      "sha256": "55b51767f8a9118eb73a34ed231eb6ffe3ace5df3326e42fee430778f5628d30"
+    },
+    {
+      "path": "tools/pydeps/capstone/include/capstone/arm64.h",
+      "bytes": 86980,
+      "sha256": "335cd0305922e852777cdcaa0e38479d07d1333d46cc8cde0fe90c03ce776c9b"
+    },
+    {
+      "path": "tools/pydeps/capstone/include/capstone/bpf.h",
+      "bytes": 4308,
+      "sha256": "864014559514848b914b26310c912eaf42a1c54ab30cb9f89d6edf6393a79eef"
+    },
+    {
+      "path": "tools/pydeps/capstone/include/capstone/capstone.h",
+      "bytes": 34908,
+      "sha256": "65bb5f0a7947ccf91d23a4db4584ed310663af9527fc4cbd179b1fa99d21f9fe"
+    },
+    {
+      "path": "tools/pydeps/capstone/include/capstone/evm.h",
+      "bytes": 4574,
+      "sha256": "1defbf3926651d481ae0fd9942f3811ceac6a79df28fbd5d58eb6b0423d8b34d"
+    },
+    {
+      "path": "tools/pydeps/capstone/include/capstone/m680x.h",
+      "bytes": 12857,
+      "sha256": "6d20cb54b1c882aa874ea364e98c880484fdee65e046d0a172a31b82400eb141"
+    },
+    {
+      "path": "tools/pydeps/capstone/include/capstone/m68k.h",
+      "bytes": 14468,
+      "sha256": "91f23e01a3addcb9b8b18de5d2fd2946134fac782cc7833144187b259f145a98"
+    },
+    {
+      "path": "tools/pydeps/capstone/include/capstone/mips.h",
+      "bytes": 18000,
+      "sha256": "8f806d3f8f86f84a36a6c2e586c10191c8494a8e6cb036db5ed020c5ae402158"
+    },
+    {
+      "path": "tools/pydeps/capstone/include/capstone/mos65xx.h",
+      "bytes": 5991,
+      "sha256": "7ef12404e03725a1d807f46bfac06de0c45981b353532ab67efb4e07e4e46ce9"
+    },
+    {
+      "path": "tools/pydeps/capstone/include/capstone/platform.h",
+      "bytes": 4132,
+      "sha256": "06ccad6778eea6a94930f10e20e24ae4287014a4dc87cc66b9f13198371d838c"
+    },
+    {
+      "path": "tools/pydeps/capstone/include/capstone/ppc.h",
+      "bytes": 40378,
+      "sha256": "d1d5bf90bf03ccf479262cf90d003ccd271f941a369e0e5556076afc3a55caba"
+    },
+    {
+      "path": "tools/pydeps/capstone/include/capstone/riscv.h",
+      "bytes": 13799,
+      "sha256": "6d112f486553896607746315340b69db991242d81e8c33b30f02e0c339ade25a"
+    },
+    {
+      "path": "tools/pydeps/capstone/include/capstone/sh.h",
+      "bytes": 8238,
+      "sha256": "a3be96c93a2b91682ff0bcd3ba0a1303a6f30fce8aa9105d52a84d0467b60aa4"
+    },
+    {
+      "path": "tools/pydeps/capstone/include/capstone/sparc.h",
+      "bytes": 11817,
+      "sha256": "59f988c98630a9c3f70282a1095861f48bfcfd58f6d104f24f378a17eaf767ca"
+    },
+    {
+      "path": "tools/pydeps/capstone/include/capstone/systemz.h",
+      "bytes": 47232,
+      "sha256": "32da6c63cd358ba7002814b2a0f77d0fd617347ead2c30cddc8e9f8075740b87"
+    },
+    {
+      "path": "tools/pydeps/capstone/include/capstone/tms320c64x.h",
+      "bytes": 8621,
+      "sha256": "e30f98590a301d65e413951a663ea6cd15f7f9992543bd52dcc6f1205ee0a061"
+    },
+    {
+      "path": "tools/pydeps/capstone/include/capstone/tricore.h",
+      "bytes": 13257,
+      "sha256": "c0bcc689644f0066cbae95d3b6e9370545336aa5415c329990f273f01e736c23"
+    },
+    {
+      "path": "tools/pydeps/capstone/include/capstone/wasm.h",
+      "bytes": 6441,
+      "sha256": "f2861adc7692734ddf9e955f6eba5c00ea5462eb30f8c2da2239b4718febff53"
+    },
+    {
+      "path": "tools/pydeps/capstone/include/capstone/x86.h",
+      "bytes": 45041,
+      "sha256": "e150421101a4467c7f1ff6418f16a97f7504df27af6f2d86c44b13b8f3f7b8a0"
+    },
+    {
+      "path": "tools/pydeps/capstone/include/capstone/xcore.h",
+      "bytes": 5154,
+      "sha256": "5f81adf0761c57cf61306e4f683f27cedcc9f50d7a308a374c389d16e490c297"
+    },
+    {
+      "path": "tools/pydeps/capstone/lib/capstone.dll",
+      "bytes": 7576576,
+      "sha256": "76958e18380023a68fd1714fa2e01c594cc6db1955a07ad6937b66e66dc5d6c3"
+    },
+    {
+      "path": "tools/pydeps/capstone/m680x.py",
+      "bytes": 2065,
+      "sha256": "24d56b8f6e9c12d73f830f26de36d02461e4d73a3091943e6c90884181efe41d"
+    },
+    {
+      "path": "tools/pydeps/capstone/m680x_const.py",
+      "bytes": 8885,
+      "sha256": "a8ceebe6e6213da834406e7a56c1f808fad554c5ed85a986b0ef8647db3718da"
+    },
+    {
+      "path": "tools/pydeps/capstone/m68k.py",
+      "bytes": 2438,
+      "sha256": "0567bf26e32a274b086d296fdcc078dcbda2c66280f941e5986b30eecc647bc8"
+    },
+    {
+      "path": "tools/pydeps/capstone/m68k_const.py",
+      "bytes": 10489,
+      "sha256": "79de0ea42977ad2875fd73a34ddb55fc2ace58dac45b0ee8aff0ae138c7a8faa"
+    },
+    {
+      "path": "tools/pydeps/capstone/mips.py",
+      "bytes": 1001,
+      "sha256": "c23b6e5d5df2be6f728dda2da2a8f805d4d1500e383aebf555da1fa9650639e8"
+    },
+    {
+      "path": "tools/pydeps/capstone/mips_const.py",
+      "bytes": 18592,
+      "sha256": "80a325c59a8a88918d1ebc55268e07461841ddde50d034a545d31cdf44668324"
+    },
+    {
+      "path": "tools/pydeps/capstone/mos65xx.py",
+      "bytes": 998,
+      "sha256": "f9b525569fcae4768ac4b2230a46468a571e934717f14d52910e243d0b279e9a"
+    },
+    {
+      "path": "tools/pydeps/capstone/mos65xx_const.py",
+      "bytes": 3393,
+      "sha256": "22762e23dec6d011f75068cac995f4c05f6cf5c93c207502eeb11d0cd4a136f3"
+    },
+    {
+      "path": "tools/pydeps/capstone/ppc.py",
+      "bytes": 1384,
+      "sha256": "1ee21161d21902744379624d87048138272a99c6bd98623256baa065038bf03d"
+    },
+    {
+      "path": "tools/pydeps/capstone/ppc_const.py",
+      "bytes": 45023,
+      "sha256": "4284db74b7db3a0e3eda043970096c047df81d9b0a81c13b3b5b70ca623d4b0b"
+    },
+    {
+      "path": "tools/pydeps/capstone/riscv.py",
+      "bytes": 1104,
+      "sha256": "c40beee7bd99d3f1cc329203020def06140a786d17e2ec963feefb12e0c8e872"
+    },
+    {
+      "path": "tools/pydeps/capstone/riscv_const.py",
+      "bytes": 10953,
+      "sha256": "6ac81243404207d74b3190c37180b6353a001191c7df5d04fd25f89b624abdd1"
+    },
+    {
+      "path": "tools/pydeps/capstone/sh.py",
+      "bytes": 1478,
+      "sha256": "d50212075a918e94b41f1e67f838a3b70bc44d19941f33b6d502e5359c967592"
+    },
+    {
+      "path": "tools/pydeps/capstone/sh_const.py",
+      "bytes": 7154,
+      "sha256": "a19a1837892a0eaa9bc3e5cd3638625471d705a35b08aa26994ad108928125be"
+    },
+    {
+      "path": "tools/pydeps/capstone/sparc.py",
+      "bytes": 1127,
+      "sha256": "389867d194a7bef779466a5283953cb2b30d2e84368e80112677cfaa0334097c"
+    },
+    {
+      "path": "tools/pydeps/capstone/sparc_const.py",
+      "bytes": 9738,
+      "sha256": "aef73803efe9a2e0e109fe05e0b791f33e62d41c54ed32cd2773837960d1ddae"
+    },
+    {
+      "path": "tools/pydeps/capstone/systemz.py",
+      "bytes": 1115,
+      "sha256": "9e75611fb8930ef665b04a80e14ca0735953f69d2f0fdb608f96ea172cef7f2d"
+    },
+    {
+      "path": "tools/pydeps/capstone/sysz_const.py",
+      "bytes": 56291,
+      "sha256": "98ad76240b48eff060f96fc0986933c904cbdfd654866eb49e7ee5879db2908e"
+    },
+    {
+      "path": "tools/pydeps/capstone/tms320c64x.py",
+      "bytes": 1672,
+      "sha256": "597bf661d25e283c007c9ee76defb422f41e4279aae5bbd8b5736400109cf6b3"
+    },
+    {
+      "path": "tools/pydeps/capstone/tms320c64x_const.py",
+      "bytes": 7257,
+      "sha256": "643aeb59e96e2eb10f6ca4e9d27db9c00d83195cf442dea453418ac2df0cb94b"
+    },
+    {
+      "path": "tools/pydeps/capstone/tricore.py",
+      "bytes": 1123,
+      "sha256": "6716ed4579dadec5c476a0a704c35421860cdaaf20796c7d9c5ebfceb5c4e3cb"
+    },
+    {
+      "path": "tools/pydeps/capstone/tricore_const.py",
+      "bytes": 12010,
+      "sha256": "95d640cfc8d698f162edc68646c4829cd25289ee47d2869815b33b7839d32bae"
+    },
+    {
+      "path": "tools/pydeps/capstone/wasm.py",
+      "bytes": 1627,
+      "sha256": "8fb19dfb59cd7175ab0e55b8b7c2d37e150c237ed6060862be6ec3e98bf21d6d"
+    },
+    {
+      "path": "tools/pydeps/capstone/wasm_const.py",
+      "bytes": 5132,
+      "sha256": "e03e231892153456070055f39a53ed3205feeb24e7d768a2b193adcbe26cffc5"
+    },
+    {
+      "path": "tools/pydeps/capstone/x86.py",
+      "bytes": 2816,
+      "sha256": "08cbb0a02ff152bcf1fbd7c4f8850b3ade38c25b9f0a6a9b900a55ee75e87c67"
+    },
+    {
+      "path": "tools/pydeps/capstone/x86_const.py",
+      "bytes": 45756,
+      "sha256": "83cf4550d9256f5f9b8e218b9b732e46d83ef602b463a01d6eeb778deb28e040"
+    },
+    {
+      "path": "tools/pydeps/capstone/xcore.py",
+      "bytes": 1082,
+      "sha256": "67a3bab5ec77998bf88f320b61be7110318454be2252ff2a02f42ca4aab56a8c"
+    },
+    {
+      "path": "tools/pydeps/capstone/xcore_const.py",
+      "bytes": 3424,
+      "sha256": "34367710ee0501621fb8b325890cae740ff38075d3ef66b36de9b8b4dcec227f"
+    },
+    {
+      "path": "tools/pydeps/capstone-5.0.9.dist-info/INSTALLER",
+      "bytes": 4,
+      "sha256": "ceebae7b8927a3227e5303cf5e0f1f7b34bb542ad7250ac03fbcde36ec2f1508"
+    },
+    {
+      "path": "tools/pydeps/capstone-5.0.9.dist-info/LICENSE.TXT",
+      "bytes": 1718,
+      "sha256": "404bd0cb0137ffb797258f844f53e5273f9b6d5781a1a359a2880411f49a4f30"
+    },
+    {
+      "path": "tools/pydeps/capstone-5.0.9.dist-info/METADATA",
+      "bytes": 3418,
+      "sha256": "be4a51b083e6175d370ab2d0cfac1a32d0ade1dfe9dd7525155f353a89ad3332"
+    },
+    {
+      "path": "tools/pydeps/capstone-5.0.9.dist-info/RECORD",
+      "bytes": 7177,
+      "sha256": "db479fa4f232e115a82d29c4634913d61b80e55b7dee6add4bcc14ab423de846"
+    },
+    {
+      "path": "tools/pydeps/capstone-5.0.9.dist-info/REQUESTED",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "tools/pydeps/capstone-5.0.9.dist-info/top_level.txt",
+      "bytes": 9,
+      "sha256": "56c1f96e71b2e141ae32eee253f90d7a19cb2d9be56d940a76af5b90617100a2"
+    },
+    {
+      "path": "tools/pydeps/capstone-5.0.9.dist-info/WHEEL",
+      "bytes": 97,
+      "sha256": "954d2ebdda888c0e874734e98d9d47f8321f3929249066add906bbe074cb3439"
+    },
+    {
+      "path": "tools/pydeps/dncil/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "tools/pydeps/dncil/cil/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "tools/pydeps/dncil/cil/body/__init__.py",
+      "bytes": 8474,
+      "sha256": "9e68a9642ff48930d252d21ca58538548bf0acfe8d7b90122b4fed7578cccfbd"
+    },
+    {
+      "path": "tools/pydeps/dncil/cil/body/flags.py",
+      "bytes": 2224,
+      "sha256": "48a47288a5e59903ec972734f77e8cda522e1e6dcf9dac3cb3e3d6aa5fcede61"
+    },
+    {
+      "path": "tools/pydeps/dncil/cil/body/reader.py",
+      "bytes": 12541,
+      "sha256": "f3d49759605d02bf340e04443877348ff964f610dc77bd46105bbca41a7856d1"
+    },
+    {
+      "path": "tools/pydeps/dncil/cil/enums.py",
+      "bytes": 7908,
+      "sha256": "8984c359a3a5ed001180cbe070521ace9319e8d560ea1cf427a11c6bc4923678"
+    },
+    {
+      "path": "tools/pydeps/dncil/cil/error.py",
+      "bytes": 831,
+      "sha256": "d7f2d04f26d2a7065df6e5053553b9b7ba5b149918b4239f7521725eb34561fe"
+    },
+    {
+      "path": "tools/pydeps/dncil/cil/exception.py",
+      "bytes": 1808,
+      "sha256": "fd86eda0e064283420b16f0e7563c977f198eca38ca17dc4bf75b2ccd228dc2e"
+    },
+    {
+      "path": "tools/pydeps/dncil/cil/instruction.py",
+      "bytes": 10915,
+      "sha256": "c4e52a0e6098517d8a92e40c48287e503267bde1de9bbd051346ddca2a58329d"
+    },
+    {
+      "path": "tools/pydeps/dncil/cil/opcode.py",
+      "bytes": 54136,
+      "sha256": "e9f026df04dd8b4d45709a819bfc85e0eef19b05b6d368e78510f98e283341d4"
+    },
+    {
+      "path": "tools/pydeps/dncil/clr/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "tools/pydeps/dncil/clr/argument.py",
+      "bytes": 872,
+      "sha256": "b9798ad84d4736ac2f1b07c0383a949dc0ccbf584cd00cd17d35982288a9f852"
+    },
+    {
+      "path": "tools/pydeps/dncil/clr/local.py",
+      "bytes": 863,
+      "sha256": "d389967b8ae5972f5dc639312ddc63b60fce986f0e85e9c2bdf3de94eaaab16a"
+    },
+    {
+      "path": "tools/pydeps/dncil/clr/token.py",
+      "bytes": 1551,
+      "sha256": "aedadcbd41b5faf49660417eedbd71c5e3794bff876a46cd305a6e83cf4d2195"
+    },
+    {
+      "path": "tools/pydeps/dncil/version.py",
+      "bytes": 22,
+      "sha256": "6372d27d18a84a5db1721ef4a6afd42e5bf21025f212d37792b55a59e1b26b19"
+    },
+    {
+      "path": "tools/pydeps/dncil-1.0.2.dist-info/INSTALLER",
+      "bytes": 4,
+      "sha256": "ceebae7b8927a3227e5303cf5e0f1f7b34bb542ad7250ac03fbcde36ec2f1508"
+    },
+    {
+      "path": "tools/pydeps/dncil-1.0.2.dist-info/LICENSE.txt",
+      "bytes": 11349,
+      "sha256": "525eeef1d2b742f2ec268278d5f135882b4b726b941cbe969019a56f405ffc90"
+    },
+    {
+      "path": "tools/pydeps/dncil-1.0.2.dist-info/METADATA",
+      "bytes": 6938,
+      "sha256": "cdfa27a046a442fa936aae26778fb8912b2688ef07c65f1dd49d78d911edd896"
+    },
+    {
+      "path": "tools/pydeps/dncil-1.0.2.dist-info/RECORD",
+      "bytes": 2463,
+      "sha256": "02343d2e4499d872ad48c5b3034b0d51e8e785e7cb3c2ade940b18e5eae9049c"
+    },
+    {
+      "path": "tools/pydeps/dncil-1.0.2.dist-info/REQUESTED",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "tools/pydeps/dncil-1.0.2.dist-info/top_level.txt",
+      "bytes": 6,
+      "sha256": "1d3d77e39ca7ebe54138acaae143c948c9be14b42e7b6f14529650d05cc71465"
+    },
+    {
+      "path": "tools/pydeps/dncil-1.0.2.dist-info/WHEEL",
+      "bytes": 92,
+      "sha256": "db07a93359e4e034b8785a58ad6d534ea3dca0635f1e184efe2e66e1c3a299ba"
+    },
+    {
+      "path": "tools/pydeps/dnfile/__init__.py",
+      "bytes": 23598,
+      "sha256": "9d1460cd8e5b5f05abd37c68193a1d465ae9094dc3a9abb2a7891e067a7d34e3"
+    },
+    {
+      "path": "tools/pydeps/dnfile/base.py",
+      "bytes": 38462,
+      "sha256": "cdfe3d228e92f7d38b4ca816a6ab385c422b7bddf777ae90c0a1bbfe2b2d5865"
+    },
+    {
+      "path": "tools/pydeps/dnfile/codedindex.py",
+      "bytes": 4016,
+      "sha256": "0b83cefbb65b32e21ab0ddfc09d6cdd3278f52243bdd18ae2691f8ba64a0d88f"
+    },
+    {
+      "path": "tools/pydeps/dnfile/enums.py",
+      "bytes": 33283,
+      "sha256": "8197bc2576c5ec059f6e010e49e5c651f138a771bd08034d4e0f17943cfd615c"
+    },
+    {
+      "path": "tools/pydeps/dnfile/errors.py",
+      "bytes": 90,
+      "sha256": "a28c3d59911afd579ee849aaca7f42eeaef4c91deb0007b38f905bd059051f28"
+    },
+    {
+      "path": "tools/pydeps/dnfile/mdtable.py",
+      "bytes": 49876,
+      "sha256": "534fd7dfeac2ba5f7649f0104a9289eb3543a15ad0f8795f51591e70c88c303b"
+    },
+    {
+      "path": "tools/pydeps/dnfile/py.typed",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "tools/pydeps/dnfile/resource.py",
+      "bytes": 17669,
+      "sha256": "13891e0df8695d9abc8e0a7a996a271a0d0061d6d3b5dd7d6ee2aa858858ce97"
+    },
+    {
+      "path": "tools/pydeps/dnfile/stream.py",
+      "bytes": 25943,
+      "sha256": "aca58c0ed4c5e13a390dcd6cfdf997b5486be0dbba8bc78f989e2f7405509648"
+    },
+    {
+      "path": "tools/pydeps/dnfile/utils.py",
+      "bytes": 4921,
+      "sha256": "606b3b69983542d49dd35d041da57033620e364b64cca32f92915040e97fd4f6"
+    },
+    {
+      "path": "tools/pydeps/dnfile-0.18.0.dist-info/INSTALLER",
+      "bytes": 4,
+      "sha256": "ceebae7b8927a3227e5303cf5e0f1f7b34bb542ad7250ac03fbcde36ec2f1508"
+    },
+    {
+      "path": "tools/pydeps/dnfile-0.18.0.dist-info/licenses/LICENSE",
+      "bytes": 1071,
+      "sha256": "6bd13c3c732ca65db0009bcef46e1727e06699c79bc0df6b5f9b4f92f941a7d2"
+    },
+    {
+      "path": "tools/pydeps/dnfile-0.18.0.dist-info/METADATA",
+      "bytes": 7578,
+      "sha256": "3275fa74941b0ea43c31264a7b41f980f316467503589272f67fe33b5b721be7"
+    },
+    {
+      "path": "tools/pydeps/dnfile-0.18.0.dist-info/RECORD",
+      "bytes": 1730,
+      "sha256": "4c770d696a97eafea743b1f001cc21f32e4bed5381dabdf7d57bd65f3420e19d"
+    },
+    {
+      "path": "tools/pydeps/dnfile-0.18.0.dist-info/REQUESTED",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "tools/pydeps/dnfile-0.18.0.dist-info/top_level.txt",
+      "bytes": 7,
+      "sha256": "035c7219e284d55c25bf8af4adcf8abadf0a2b8a736a10e52d0b7f9f76af297b"
+    },
+    {
+      "path": "tools/pydeps/dnfile-0.18.0.dist-info/WHEEL",
+      "bytes": 92,
+      "sha256": "c14c80f0e6ae95195b7f032d990b2f367806af140702f90a72f466762ce5262d"
+    },
+    {
+      "path": "tools/pydeps/ordlookup/__init__.py",
+      "bytes": 786,
+      "sha256": "fe7e3869702abb571846d74bc34ea4966e8f75a6603530fe3f9e03c982d736a7"
+    },
+    {
+      "path": "tools/pydeps/ordlookup/oleaut32.py",
+      "bytes": 11759,
+      "sha256": "d3199a7ea2f1ef42a93cb8b20acc752de67789671cb4248584e2b43f441e5aaf"
+    },
+    {
+      "path": "tools/pydeps/ordlookup/ws2_32.py",
+      "bytes": 6003,
+      "sha256": "0879ce2fee63d738838f61332e69a149d463c177649c78935295d7f335604810"
+    },
+    {
+      "path": "tools/pydeps/ordlookup/wsock32.py",
+      "bytes": 2034,
+      "sha256": "f029bc58669eae582a7087c630fd8be8f9f5aa2df6f7cecaa13f8f1e1199ed17"
+    },
+    {
+      "path": "tools/pydeps/pefile-2024.8.26.dist-info/INSTALLER",
+      "bytes": 4,
+      "sha256": "ceebae7b8927a3227e5303cf5e0f1f7b34bb542ad7250ac03fbcde36ec2f1508"
+    },
+    {
+      "path": "tools/pydeps/pefile-2024.8.26.dist-info/LICENSE",
+      "bytes": 1083,
+      "sha256": "b44409c067c6da52bfb54bb6624fb11a7b52157c3a13ae1400232f8196e86ad3"
+    },
+    {
+      "path": "tools/pydeps/pefile-2024.8.26.dist-info/METADATA",
+      "bytes": 1355,
+      "sha256": "8ad83a5f8659e8da6eeaabf2dafa0eebb8c05832a3def16a5db4dd0d52e72474"
+    },
+    {
+      "path": "tools/pydeps/pefile-2024.8.26.dist-info/RECORD",
+      "bytes": 1222,
+      "sha256": "9226ada9e61f94a5054e6d1f8218b5b6a03cf7f3366455bace1dc701f46974d0"
+    },
+    {
+      "path": "tools/pydeps/pefile-2024.8.26.dist-info/top_level.txt",
+      "bytes": 25,
+      "sha256": "7bf125792b9950e40a7171c92ecdac49e1a4c46e0e6608542dc09cfefea441ba"
+    },
+    {
+      "path": "tools/pydeps/pefile-2024.8.26.dist-info/WHEEL",
+      "bytes": 91,
+      "sha256": "678a585ea47fad307b3963436053a6d6a464d115fa1853f6a3c2e0bcfe39dc79"
+    },
+    {
+      "path": "tools/pydeps/pefile.py",
+      "bytes": 301767,
+      "sha256": "0d0eb68f0f169182613dc64b3ab50b20855508c1c1d2faafe8fccf23edb6a345"
+    },
+    {
+      "path": "tools/pydeps/peutils.py",
+      "bytes": 18367,
+      "sha256": "09c314f4b955575d7c0cd3d86bd555ffadbd931112b1e2a922c6eac5f5fb4d54"
+    },
+    {
+      "path": "deployed_source/memory_modules.txt",
+      "bytes": 1897,
+      "sha256": "804170d35ebb2dfa1564c8e3042ebd42499b800ad8e53f64678792d3626062f7"
+    },
+    {
+      "path": "deployed_source/plugin_sources/BodySmootherCompatibility.cs",
+      "bytes": 8219,
+      "sha256": "c7075dcbd347728e123e9885456546d05cc074a99d1d0325aaa82013b6677235"
+    },
+    {
+      "path": "deployed_source/plugin_sources/ClothingScriptAssemblyReuse.cs",
+      "bytes": 12586,
+      "sha256": "0e013dbf74d5751e83c6d5da12f6ae1f7d06017a2509bfd2d620c64b55050600"
+    },
+    {
+      "path": "deployed_source/plugin_sources/PackageJsonWeakRetention.cs",
+      "bytes": 13959,
+      "sha256": "9ca9e1fa5886b2a9a79376a53dbe944dfb78291e7b207625477d45af95088fa8"
+    },
+    {
+      "path": "deployed_source/plugin_sources/MorphTargetStringReuse.cs",
+      "bytes": 8337,
+      "sha256": "c5a93a59233719e042b5d090afbfdac5a41cfe0b66c36aa0f681102b2ca6163e"
+    },
+    {
+      "path": "deployed_source/plugin_sources/JointLifetimeRetirement.cs",
+      "bytes": 9141,
+      "sha256": "7b51333f51944c49be45c7a8ba6752f5809848a64f493b235786cd0d18d3a661"
+    },
+    {
+      "path": "deployed_source/plugin_sources/AtomPoolHairRetirement.cs",
+      "bytes": 7005,
+      "sha256": "74dc213eebe31aa9d6a045131e3c1c51f068e7dfcf49a6a3e8ec38f0cb8118ce"
+    },
+    {
+      "path": "deployed_source/plugin_sources/AssetCallbackRetirement.cs",
+      "bytes": 5533,
+      "sha256": "b7f181771df0b194388615d29fc427ef6d25239d873808d7f4f8bcf1d87d3f0d"
+    },
+    {
+      "path": "deployed_source/plugin_sources/AllocatedObjectRetirement.cs",
+      "bytes": 3427,
+      "sha256": "c7da079eff5f755d425a17593b8dc15b22dd8a8584a51a16a1fc78a06f53a962"
+    },
+    {
+      "path": "deployed_source/plugin_sources/FailedAssetOperationRetirement.cs",
+      "bytes": 3551,
+      "sha256": "97514443b76616ccf429cea3f959d9fb9e601e050e549bd103d1abbe5510d58a"
+    },
+    {
+      "path": "deployed_source/plugin_sources/CancelledBundleDependencyRetirement.cs",
+      "bytes": 4538,
+      "sha256": "0a9f5b723096657be9b944623602e0ca8071b653d6b775db0eb47e72131d4d9a"
+    },
+    {
+      "path": "deployed_source/plugin_sources/FailedDynamicBundleLeaseRetirement.cs",
+      "bytes": 4514,
+      "sha256": "a11f2aaca653debc7a67ff98e7091a66b02fdf626dbf14dd9900ca1cf8bdcd19"
+    },
+    {
+      "path": "deployed_source/plugin_sources/InterruptedDynamicBundleRetirement.cs",
+      "bytes": 7131,
+      "sha256": "b007671f7ba0ab69b02da9f5aa4b67b333734d0a65ccd9cafed95df97d86cd20"
+    },
+    {
+      "path": "deployed_source/plugin_sources/CancelledCuaRequestRetirement.cs",
+      "bytes": 17035,
+      "sha256": "75defeed280c279fdb1f6bc6143a3dfc3d73ec387857ee0f6fb83ba71328c26d"
+    },
+    {
+      "path": "deployed_source/plugin_sources/SkinBlendTiled.cs",
+      "bytes": 9975,
+      "sha256": "aa36e43fef2d451704c9f060bf9f2a4737c860c0c6fd24b208fdd6c70ba9bfec"
+    },
+    {
+      "path": "deployed_source/plugin_sources/DrawCameraArrayReuse.cs",
+      "bytes": 3607,
+      "sha256": "9da4ef3cbbf5e5df8599ad52f38698390a6707bc6b57e122fefab69af80b78ec"
+    },
+    {
+      "path": "deployed_source/plugin_sources/GraftBoundaryTiles.cs",
+      "bytes": 9737,
+      "sha256": "35ee63d0f0ff97906b56b2a3f4ea05bddd8b656969bb4a39ea6aa112fa231d83"
+    },
+    {
+      "path": "deployed_source/plugin_sources/AudioEncodedStream.cs",
+      "bytes": 6859,
+      "sha256": "2777dce4d833468d5eec0168ec199caaa7f54bc3d0de855264dba5c4a26c636e"
+    },
+    {
+      "path": "deployed_source/plugin_sources/AudioPcmChunks.cs",
+      "bytes": 29072,
+      "sha256": "b216a64fe90f1078646c6897448f9aaae7bd350d41771fc33052df94a2150817"
+    },
+    {
+      "path": "deployed_source/plugin_sources/LegacyMorphFilterStreaming.cs",
+      "bytes": 11128,
+      "sha256": "616032789b2270dc122f9818f88c1b4d67fbd27488b7f0dc7287f50f1b5379ba"
+    },
+    {
+      "path": "deployed_source/plugin_sources/SceneJsonRuntime.cs",
+      "bytes": 12660,
+      "sha256": "64e6bed379046919a033a666554e3c4aa09e1426b1e4aeb47b6b87d4fbeaec7f"
+    },
+    {
+      "path": "deployed_source/plugin_sources/DependencyErrorPropagation.cs",
+      "bytes": 3629,
+      "sha256": "c4c9cb8ee41a0c08c55608268ef262894ddefe2fe0722b47fbd9c9cb4778a40a"
+    },
+    {
+      "path": "deployed_source/plugin_sources/ScenePrefabPresence.cs",
+      "bytes": 4517,
+      "sha256": "6909e30f0dd4e04d69187e93cea76e61d5315831ae33d2111e8e723402c58914"
+    },
+    {
+      "path": "deployed_source/plugin_sources/ScenePreloadLease.cs",
+      "bytes": 3523,
+      "sha256": "f46a6419867f8aaecb917df9b66730b5db7418ee01216fa3a4ceb198b34c915d"
+    },
+    {
+      "path": "deployed_source/plugin_sources/RefreshDelegateRetirement.cs",
+      "bytes": 4284,
+      "sha256": "9d81a66992c3515c056bb19f1ec545d0041a91c8877adb8eea1dc97ad8645425"
+    },
+    {
+      "path": "deployed_source/plugin_sources/CatalogueActionRetention.cs",
+      "bytes": 8263,
+      "sha256": "a3c0887f362f43c306f95d009d8896bd9ecd078f308f704e0d25da43d152ca9d"
+    },
+    {
+      "path": "deployed_source/plugin_sources/PresetDeltaApply.cs",
+      "bytes": 11020,
+      "sha256": "7053d2971a58e6801e0f71d02f0131d02d9e650a2abf419db70586a3fd33dfeb"
+    },
+    {
+      "path": "deployed_source/plugin_sources/PresetHairRenderBatch.cs",
+      "bytes": 5656,
+      "sha256": "5dd53376507dd44e42ceca2782b4d20ddf1be8e41d8a2192c16bf59a17541b01"
+    },
+    {
+      "path": "deployed_source/plugin_sources/PresetSweepGate.cs",
+      "bytes": 57259,
+      "sha256": "0b09454c36b2f4bc92dadd05ea26b0c0fde8bc4f40fccb4c5b2536e683c6a37e"
+    },
+    {
+      "path": "deployed_source/plugin_sources/TextureUploadReuse.cs",
+      "bytes": 6177,
+      "sha256": "dcff32d5ebe4718c102824e4e0a0ade342fd9e84bae4d0640fea9aff8c1cb429"
+    },
+    {
+      "path": "deployed_source/plugin_sources/TextureInFlight.cs",
+      "bytes": 8411,
+      "sha256": "ce7bf9af036fb2ea9d57fd3772bcc3d29f732e213ba7c8aeedbc3149c480f468"
+    },
+    {
+      "path": "deployed_source/plugin_sources/TextureCompletionBudget.cs",
+      "bytes": 4158,
+      "sha256": "237a57842c4438fcd02273b264f063ee05dc52942116e921dc87d6a80ff541ef"
+    },
+    {
+      "path": "deployed_source/plugin_sources/TextureMetadataReuse.cs",
+      "bytes": 7100,
+      "sha256": "963d6e0015c07db4ccf1f552b02f1fe60c2e3c812e04f996361ca499b3eafd1c"
+    },
+    {
+      "path": "deployed_source/plugin_sources/TextureScratchLifetime.cs",
+      "bytes": 10990,
+      "sha256": "af2ccc82a2b15b6aeb50971b1e0114aa8938c22f5f1f1b05082cb35408ae192c"
+    },
+    {
+      "path": "deployed_source/plugin_sources/TextureCacheWriteBudget.cs",
+      "bytes": 11843,
+      "sha256": "88ed192d22bb4a3739ff62938ff2e0308b05ab1a03f00818d72d740409b68a46"
+    },
+    {
+      "path": "deployed_source/plugin_sources/TextureCacheBc7Convert.cs",
+      "bytes": 31210,
+      "sha256": "cd8f073bd99e181c72aee075631369420efb3ac4df17d52191663586935accc2"
+    },
+    {
+      "path": "deployed_source/plugin_sources/AudioCacheJanitor.cs",
+      "bytes": 10079,
+      "sha256": "ff37e1fc684a2d577a17c3081be22e65ca44f0b136e9f06754146176250d2070"
+    },
+    {
+      "path": "deployed_source/plugin_sources/WardrobeJanitor.cs",
+      "bytes": 40339,
+      "sha256": "a9800fbd3e57fbdc3c36f567759ddfd9bb4372e15d7bf87a6a82b929fbf29cd3"
+    },
+    {
+      "path": "deployed_source/plugin_sources/ColdRasterDecode.cs",
+      "bytes": 9882,
+      "sha256": "83f0f7f724e2a4eeff13b5884dcaf939bcceb276eb55dcad8ac039a59e36fc1b"
+    },
+    {
+      "path": "deployed_source/plugin_sources/SceneOrphanSweep.cs",
+      "bytes": 28423,
+      "sha256": "b7731916b4a2855efa083836be44ab6fb5193eca08e7e549a9d14669ebdfeeda"
+    },
+    {
+      "path": "deployed_source/plugin_sources/TextureDecodeBudget.cs",
+      "bytes": 25658,
+      "sha256": "4f3fd84fab1bf3eb98747b7a37a0b81945c568ad0f89c53b2f68a58aca097bb3"
+    },
+    {
+      "path": "deployed_source/plugin_sources/TextureOrphanSweeper.cs",
+      "bytes": 12220,
+      "sha256": "e83b54e75c7454497583c8ec607129219bd00c40e6e9dcd88115b23abb1e275d"
+    },
+    {
+      "path": "deployed_source/plugin_sources/BumpNormalRowConverter.cs",
+      "bytes": 8017,
+      "sha256": "2070e2cce48073abc42afaf9f8b21af1b2b5f366dac917a4bd3739a88bb1da44"
+    },
+    {
+      "path": "deployed_source/plugin_sources/PresetCleanupCoalescer.cs",
+      "bytes": 6785,
+      "sha256": "b103c6bbb284748dfe2512b625c0fa90eeb8f1976124c3b947286f476260dfff"
+    },
+    {
+      "path": "deployed_source/plugin_sources/PresetInstanceReuse.cs",
+      "bytes": 7500,
+      "sha256": "3731bc563351a803b7b266c255d49ab1756c71feb39de3238c94992ed5478ced"
+    },
+    {
+      "path": "deployed_source/plugin_sources/StaleTextureRequestGuard.cs",
+      "bytes": 5573,
+      "sha256": "279d6664a063430c30bad901198625750a51f52867286afc66753f13a2ae090c"
+    },
+    {
+      "path": "deployed_source/plugin_sources/DecodedBufferPool.cs",
+      "bytes": 15103,
+      "sha256": "4a368f10d0a04d851a1c4685d0fdf19d04c266d31399776f0a145db99708231a"
+    },
+    {
+      "path": "deployed_source/plugin_sources/TextureCacheByteReuse.cs",
+      "bytes": 9119,
+      "sha256": "74d07fe163028e0d5000ec272f28c72f8f8cee05046ddcfdb594634d322b5b8c"
+    },
+    {
+      "path": "deployed_source/plugin_sources/ColdTextureBufferLayout.cs",
+      "bytes": 4747,
+      "sha256": "648fba05472301e106215e8a3eaa22b3ff5671d4a85e02cfb256356cdeb6670c"
+    },
+    {
+      "path": "deployed_source/plugin_sources/ColdRasterBump.cs",
+      "bytes": 2293,
+      "sha256": "97dc76071152997f801369f266fd01c54808ce45c9408d0cefcf612f0329fb54"
+    },
+    {
+      "path": "deployed_source/plugin_sources/ColdTextureHeader.cs",
+      "bytes": 5611,
+      "sha256": "c73c4d4042c9b87d1084e04308e6c53f2ca4b7bed6817dc97e16106382ae6e1e"
+    },
+    {
+      "path": "deployed_source/plugin_sources/NativeCacheBuffer.cs",
+      "bytes": 13194,
+      "sha256": "4bb1c20683e9d99d250c95b5c319fa1995c8a17c0449fe0dacfd747d8f14c0ce"
+    },
+    {
+      "path": "deployed_source/plugin_sources/InstanceAssetLedger.cs",
+      "bytes": 21549,
+      "sha256": "d2f3db21bb834d6f3df2b2243717bb0aadb184deeb6c72e88a3219fbfa52c425"
+    },
+    {
+      "path": "deployed_source/plugin_sources/GpuPhysicsRetentionProbe.cs",
+      "bytes": 29928,
+      "sha256": "8a344284a23e3e48be0daaedc60fcbb8de9c2280810f58f51dc9ad8bd8427fa2"
+    },
+    {
+      "path": "deployed_source/plugin_sources/GpuResourceProbe.cs",
+      "bytes": 19048,
+      "sha256": "24efd8e0d7b621666d15f88cf8ed15251ff96371bf492c65b9f9972620a44f44"
+    },
+    {
+      "path": "deployed_source/plugin_sources/MeshOwnerRetentionProbe.cs",
+      "bytes": 50535,
+      "sha256": "d4c937a7d183482f29f0fbf8e90d5c92873c4c1b62d6de00ce032eadc2e81c4f"
+    },
+    {
+      "path": "deployed_source/plugin_sources/MemoryRetentionReport.cs",
+      "bytes": 14230,
+      "sha256": "5373ca4ea3c429448595c8ddbc7dc7ecad794973cc6bbca99e131d41427e97ba"
+    },
+    {
+      "path": "deployed_source/plugin_sources/MemoryProbe.cs",
+      "bytes": 45920,
+      "sha256": "ba640e8fea95944a8263164df1f940675b1fed911376bdebe70a238cb3467ab9"
+    },
+    {
+      "path": "deployed_source/plugin_sources/Bc7CacheCompatibility.cs",
+      "bytes": 5946,
+      "sha256": "5368df516dbfcba6bff916481224f63fc26e5232518c6d324fa2fd14563c791a"
+    },
+    {
+      "path": "deployed_source/plugin_sources/Bc7CacheLoadCompatibility.cs",
+      "bytes": 3726,
+      "sha256": "327f38aa65cd2fb8d83b923c5c6fcc121efdf5325e0576243270d399593a82f3"
+    },
+    {
+      "path": "deployed_source/plugin_sources/SkinBlendByteInputs.cs",
+      "bytes": 8073,
+      "sha256": "bd9ef3506652ee78096ba4db551e4ddddecfe3af9d6d0e8c5a4e8772a331d5cb"
+    },
+    {
+      "path": "deployed_source/plugin_sources/SoftBodySkinReuse.cs",
+      "bytes": 14368,
+      "sha256": "78a9a83eb9ad083269269242a5b8487ea95ebb32efdfd0f5a437de82e3725a37"
+    },
+    {
+      "path": "deployed_source/plugin_sources/TextureCacheStreamIO.cs",
+      "bytes": 6410,
+      "sha256": "33f2d84c6d3db0fa96cb784d1748d59176565b872a535ca5347a74cc54babb71"
+    },
+    {
+      "path": "deployed_source/plugin_sources/MorphFilterMethodAudit.cs",
+      "bytes": 7509,
+      "sha256": "43788bd01c2081664b80afd8f98a5de67768a1a0358f19c8323ad2a56ffac84f"
+    },
+    {
+      "path": "deployed_source/plugin_sources/JsonStreamParser.cs",
+      "bytes": 9690,
+      "sha256": "120c1a1163bd7694538b34e748d6c5e5a2d22914d57edc1a2b51d3cde5dfb53b"
+    },
+    {
+      "path": "deployed_source/plugin_sources/SceneJsonStreamInput.cs",
+      "bytes": 4847,
+      "sha256": "6af0657dce4d19f15fa2099fd7a290492ec660cfd6f221acad00b0dd5be466bc"
+    },
+    {
+      "path": "deployed_source/plugin_sources/PathReplacementStream.cs",
+      "bytes": 4428,
+      "sha256": "1fe7189a2f8bbaeed08bd69bbc79341e81fe4255ba04708669d3833f8c9f87ab"
+    },
+    {
+      "path": "deployed_source/plugin_sources/NativeRasterLease.cs",
+      "bytes": 6584,
+      "sha256": "fe0af6c4031feff6d2433374321b40f45aa3a4b609d92bfbd5c5a4a23e35bb5b"
+    },
+    {
+      "path": "deployed_source/plugin_sources/TextureCacheEstimate.cs",
+      "bytes": 7937,
+      "sha256": "3170a55e19ddf430f8a93190d190a9b17b4b75507f312e1f4d1644147db0004f"
+    },
+    {
+      "path": "deployed_source/plugin_sources/UuaGate.cs",
+      "bytes": 8408,
+      "sha256": "5ba0071c9f7a87714fd0916d052756c796642845206da3e4c170a22c16b43ce1"
+    },
+    {
+      "path": "deployed_source/plugin_sources/UuaTypeCensus.cs",
+      "bytes": 17062,
+      "sha256": "e30753ae0f82512d2322b2be28b3d0ba45afd3c36ead9dbd1eb3da3127af29b3"
+    },
+    {
+      "path": "deployed_source/plugin_sources/CatalogueRetirement.cs",
+      "bytes": 4427,
+      "sha256": "90a835ba32f9cffac83c93e108949e77cc2241fb75d3d48f3785675efd115d1f"
+    },
+    {
+      "path": "deployed_source/plugin_sources/LoadWindow.cs",
+      "bytes": 3258,
+      "sha256": "ffec6e04bfcc0cd60a06412718f12206162b0f5f38fa7f2463ea65b30b788511"
+    }
+  ],
+  "count": 721,
+  "totalBytes": 55478307
+}

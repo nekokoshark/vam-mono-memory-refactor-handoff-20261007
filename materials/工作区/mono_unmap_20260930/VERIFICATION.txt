@@ -1,0 +1,53 @@
+CHANGED: BASELINE.py is the unchanged mono export reader; MODIFIED_FILE.py adds SHA/code-signature-bound read-only fields heap/free/unmapped/gc_count, committedLargeFreeBytes, and a bounded free-list age-6/age-2 diagnostic. Native GC age branch and all game/runtime files remain unchanged.
+MODIFIED_FILE=F:\vam1.22.0.12\工作区\mono_unmap_20260930\MODIFIED_FILE.py
+DIFF_FILE=F:\vam1.22.0.12\工作区\mono_unmap_20260930\DIFF_FILE.patch
+VERIFICATION.txt=F:\vam1.22.0.12\工作区\mono_unmap_20260930\VERIFICATION.txt
+ROLLBACK.sh=F:\vam1.22.0.12\工作区\mono_unmap_20260930\ROLLBACK.sh
+BASELINE.py SHA256=844122CF07DEF7370964E17CFCC959052306DF6D0C843B157D78F1CEEB2CCDB9 (same as original resident_audit_20260930/mono_exports.py)
+MODIFIED_FILE.py SHA256=F051B38811AFB9610D9FD4BFCC3D4F5AB7F2C45855909FC9829D64D5F762B15E
+mono.dll SHA256=160F224EAD92DAC4F33E91A584FDC1C7EF82ED1CED2FEAC9A903AFA31A7E2738
+
+BASELINE command: & 'C:\Users\Administrator\AppData\Local\Programs\Python\Python312\python.exe' -B 'F:\vam1.22.0.12\工作区\mono_unmap_20260930\test_probe.py' BASELINE
+input: unchanged BASELINE.py and actual mono.dll export table
+literal output: BASELINE_PASS tests=6 namedExports=806 source=BASELINE.py
+exit status: 0
+
+MODIFIED command: & 'C:\Users\Administrator\AppData\Local\Programs\Python\Python312\python.exe' -B 'F:\vam1.22.0.12\工作区\mono_unmap_20260930\test_probe.py' MODIFIED
+input: changed MODIFIED_FILE.py; same mono.dll; synthetic free-block/counter/race fixture
+literal output: MODIFIED_PASS tests=18 namedExports=806 source=MODIFIED_FILE.py
+exit status: 0
+
+STATIC command: & 'C:\Users\Administrator\AppData\Local\Programs\Python\Python312\python.exe' -B 'F:\vam1.22.0.12\工作区\mono_unmap_20260930\MODIFIED_FILE.py' --verify
+input: actual mono.dll SHA and 16 internal instruction/field checks
+literal output: VERIFY_PASS checks=16 nativeAgeThreshold=6 sha256=160f224ead92dac4f33e91a584fdc1c7ef82ed1ced2feac9a903afa31a7e2738
+exit status: 0
+
+LIVE command: & 'C:\Users\Administrator\AppData\Local\Programs\Python\Python312\python.exe' -B 'F:\vam1.22.0.12\工作区\mono_unmap_20260930\MODIFIED_FILE.py' --live --pid 17352 --samples 3 --interval 0.5 --counters-only --output 'F:\vam1.22.0.12\工作区\mono_unmap_20260930\RUNTIME.json'
+input: running VaM mono.dll; three paired fixed-counter samples; PROCESS_VM_READ|PROCESS_QUERY_INFORMATION
+literal output:
+SAMPLE n=1 gc=460 heapMiB=30308.47 freeMiB=8279.57 unmappedMiB=6660.32 committedFreeMiB=1619.25 consistent=True
+SAMPLE n=2 gc=460 heapMiB=30308.47 freeMiB=8275.76 unmappedMiB=6660.32 committedFreeMiB=1615.44 consistent=True
+SAMPLE n=3 gc=460 heapMiB=30308.47 freeMiB=8272.09 unmappedMiB=6660.32 committedFreeMiB=1611.77 consistent=True
+LIVE_PASS samples=3 writes=0 callsIntoGame=0 output=F:\vam1.22.0.12\工作区\mono_unmap_20260930\RUNTIME.json
+exit status: 0
+
+INVENTORY command: & 'C:\Users\Administrator\AppData\Local\Programs\Python\Python312\python.exe' -B 'F:\vam1.22.0.12\工作区\mono_unmap_20260930\MODIFIED_FILE.py' --live --pid 17352 --samples 3 --interval 0.5 --output 'F:\vam1.22.0.12\工作区\mono_unmap_20260930\INVENTORY_RUNTIME.json'
+input: concurrently reused free-list headers; three bounded scans
+literal result: LIVE_PARTIAL samples=3 writes=0 callsIntoGame=0; sampled 52979/52935/52900 blocks; mapped-age-6 eligible=0.00 MiB, mapped-age-2 eligible=29.21 MiB in observed prefix; stop=free-list node reallocated during walk
+exit status: 2
+
+ROLLBACK_PREP command (cwd F:\vam1.22.0.12\工作区\mono_unmap_20260930): New-Item -ItemType Directory -Path '.\rollback_check' -Force | Out-Null; Copy-Item -LiteralPath '.\MODIFIED_FILE.py' -Destination '.\rollback_check\MODIFIED_FILE.py' -Force
+input: changed MODIFIED_FILE.py
+literal result: ROLLBACK_INPUT_PASS independentModifiedHash=F051B38811AFB9610D9FD4BFCC3D4F5AB7F2C45855909FC9829D64D5F762B15E
+exit status: 0
+
+ROLLBACK command: & 'C:\Program Files\Git\bin\bash.exe' '/f/vam1.22.0.12/工作区/mono_unmap_20260930/ROLLBACK.sh' '/f/vam1.22.0.12/工作区/mono_unmap_20260930/rollback_check'
+input: independent rollback_check directory; BASELINE.py restored there; original MODIFIED_FILE.py kept changed
+literal output: ROLLBACK_PASS restoredHash=844122cf07def7370964e17cfcc959052306df6d0c843b157d78f1ceeb2ccdb9 target=/f/vam1.22.0.12/工作区/mono_unmap_20260930/rollback_check runtimeWrites=0
+exit status: 0
+
+ROLLBACK_TEST command (cwd F:\vam1.22.0.12\工作区\mono_unmap_20260930): & 'C:\Users\Administrator\AppData\Local\Programs\Python\Python312\python.exe' -B '.\test_probe.py' ROLLBACK --source '.\rollback_check\MODIFIED_FILE.py'
+input: restored independent copy of original export-only script
+literal output: ROLLBACK_PASS tests=6 namedExports=806 source=MODIFIED_FILE.py
+exit status: 0
+Restored behavior/status: isolated copy matches BASELINE.py SHA256 and passes all 6 original export-reader tests; read-only live sampler original retains modified SHA; VaM process and mono.dll unchanged.

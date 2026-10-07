@@ -1,0 +1,127 @@
+--- mono_warm_pages_20261006/reclaim_controller.c
++++ mono_reclaim_cohorts_20261006/reclaim_controller.c
+@@ -50,6 +50,17 @@
+     u64 warm_batches;
+     u64 warm_bytes;
+     u64 warm_extra_bytes;
++    u64 chain_scans;
++    u64 chain_pages_validated;
++    u64 chain_header_rejects;
++    u64 chain_mark_rejects;
++    u64 chain_limit_rejects;
++    u64 last_rejected_kind;
++    u64 last_rejected_size;
++    u64 last_reject_reason;
++    u64 max_chain_pages;
++    u64 last_pending_pages;
++    u64 uniform_chains;
+ } ReclaimState;
+ 
+ typedef FreeHeader* (*FindHeader)(u64 block);
+@@ -79,6 +90,7 @@
+ #define KIND_TABLE_RVA 0x2659a0
+ #define KIND_COUNT_RVA 0x265998
+ #define FREE_BYTES_RVA 0x27c808
++#define HEAP_BYTES_RVA 0x27c7e0
+ #define BUCKETS 61
+ #define MAGIC 0x31524c5443524347ULL
+ #define MAX_BLOCKS 1048576ULL
+@@ -105,13 +117,35 @@
+     return total;
+ }
+ 
++__declspec(noinline) static void reject_chain(ReclaimState* state, int kind, u64 size, u64 reason)
++{
++    state->rejected++;
++    state->last_rejected_kind = (u64)kind;
++    state->last_rejected_size = size;
++    state->last_reject_reason = reason;
++    if (reason == 1) state->chain_limit_rejects++;
++    else if (reason == 7) state->chain_mark_rejects++;
++    else state->chain_header_rejects++;
++}
++
+ static void order_reclaim(u8* base, ReclaimState* state)
+ {
+     FindHeader find = (FindHeader)(base + FIND_HEADER_RVA);
+     int kinds = *(int*)(base + KIND_COUNT_RVA), kind;
+-    u64 size, count = 0;
+-    if (kinds < 1 || kinds > 16) { state->rejected++; return; }
+-    /* Validate every candidate before changing any links. */
++    u64 heap = *(u64*)(base + HEAP_BYTES_RVA), size;
++    u64 page_bound = heap / 4096;
++    state->last_pending_pages = 0;
++    if (kinds < 1 || kinds > 16 || !page_bound || (heap & 4095) || heap >= MAX_BYTES) {
++        reject_chain(state, kinds, 0, 8);
++        return;
++    }
++    state->sort_runs++;
++    /* Each (kind,size) chain is its own validation/commit unit. The registered
++     * object heap bounds its page count, including cold reserved sections.
++     * This is not a larger fixed cap: no valid chain can contain more pages than
++     * the heap itself. Invalid/cyclic chains retain their native order and do
++     * not deny service to other kinds or sizes. No scratch allocation is used.
++     */
+     for (kind = 0; kind < kinds; ++kind) {
+         u64* pending = *(u64**)(base + KIND_TABLE_RVA + 32 * kind + 8);
+         /* Native IS_UNCOLLECTABLE uses (kind & ~1) == 2. Its permanently marked
+@@ -120,28 +154,40 @@
+         if ((kind & ~1) == 2) continue;
+         if (!pending) continue;
+         for (size = 1; size <= 256; ++size) {
+-            u64 block = pending[size];
+-            while (block) {
+-                FreeHeader* h = find(block);
+-                if (++count > MAX_BLOCKS || (u64)h <= 4096 || (block & 4095)
+-                    || h->bytes != size || h->kind != kind || (h->flags & 2)
+-                    || marked(h) > 512 / size) { state->rejected++; return; }
+-                block = h->next;
+-            }
+-        }
+-    }
+-    state->sort_runs++;
+-    state->sort_pages += count;
+-    for (kind = 0; kind < kinds; ++kind) {
+-        u64* pending = *(u64**)(base + KIND_TABLE_RVA + 32 * kind + 8);
+-        if ((kind & ~1) == 2) continue;
+-        if (!pending) continue;
+-        for (size = 1; size <= 256; ++size) {
+-            u64 block = pending[size], old = block, joined = 0;
++            u64 block = pending[size], old = block, count = 0, reason = 0;
++            u64 joined = 0, minimum = 8, maximum = 0;
+             volatile u64 heads[8];
+             volatile u64 tails[8];
+             int band;
+-            if (!block || !find(block)->next) continue;
++            if (!block) continue;
++            state->chain_scans++;
++            while (block) {
++                FreeHeader* h;
++                u64 marks, density;
++                if (count >= page_bound) { reason = 1; break; }
++                if (block & 4095) { reason = 2; break; }
++                h = find(block);
++                if ((u64)h <= 4096) { reason = 3; break; }
++                if (h->bytes != size) { reason = 4; break; }
++                if (h->kind != kind) { reason = 5; break; }
++                if (h->flags & 2) { reason = 6; break; }
++                marks = marked(h);
++                if (marks > 512 / size) { reason = 7; break; }
++                density = marks * 8 / (512 / size);
++                if (density > 7) density = 7;
++                if (density < minimum) minimum = density;
++                if (density > maximum) maximum = density;
++                ++count;
++                block = h->next;
++            }
++            state->chain_pages_validated += count;
++            if (count > state->max_chain_pages) state->max_chain_pages = count;
++            if (reason) { reject_chain(state, kind, size, reason); continue; }
++            state->sort_pages += count;
++            state->last_pending_pages += count;
++            /* Uniform-density chains already satisfy the ordering contract. */
++            if (minimum == maximum) { state->uniform_chains++; continue; }
++            block = old;
+             for (band = 0; band < 8; ++band) { heads[band] = 0; tails[band] = 0; }
+             while (block) {
+                 FreeHeader* h = find(block);

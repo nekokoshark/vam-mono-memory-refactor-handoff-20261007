@@ -1,0 +1,25 @@
+{
+  "pid": 25160,
+  "rootCount": 10,
+  "staticMatches": [],
+  "largeHeader": {
+    "bytes": 805834752,
+    "kind": 0,
+    "flags": 2,
+    "marks": [
+      "0x0",
+      "0x0",
+      "0x0",
+      "0x0",
+      "0x0",
+      "0x0",
+      "0x0",
+      "0x0"
+    ]
+  },
+  "reads": 18,
+  "bytesRead": 926,
+  "elapsedSeconds": 0.00014650006778538227,
+  "targetAddressHidden": 18446742138094616575,
+  "limitations": "Static registered roots only; thread stacks and exclusions still require audit; matches alone are not proof of marking."
+}

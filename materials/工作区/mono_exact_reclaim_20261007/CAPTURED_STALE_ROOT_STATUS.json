@@ -1,0 +1,125 @@
+[
+  {
+    "stage": "GC1",
+    "staticNonNull": false,
+    "weakAlive": true,
+    "pushCalls": 2,
+    "stackBytes": 6952,
+    "stackMatches": 7,
+    "rejectedRanges": 0,
+    "matches": [
+      {
+        "tid": 65580,
+        "slotHidden": 18446743816114344223,
+        "targetOffset": 0,
+        "startHidden": 18446743816114346079
+      },
+      {
+        "tid": 65580,
+        "slotHidden": 18446743816114343959,
+        "targetOffset": 0,
+        "startHidden": 18446743816114346079
+      },
+      {
+        "tid": 65580,
+        "slotHidden": 18446743816114343647,
+        "targetOffset": 2,
+        "startHidden": 18446743816114346079
+      },
+      {
+        "tid": 65580,
+        "slotHidden": 18446743816114343223,
+        "targetOffset": 0,
+        "startHidden": 18446743816114346079
+      },
+      {
+        "tid": 65580,
+        "slotHidden": 18446743816114343031,
+        "targetOffset": 0,
+        "startHidden": 18446743816114346079
+      },
+      {
+        "tid": 65580,
+        "slotHidden": 18446743816114342967,
+        "targetOffset": 2,
+        "startHidden": 18446743816114346079
+      },
+      {
+        "tid": 65580,
+        "slotHidden": 18446743816114342863,
+        "targetOffset": 2,
+        "startHidden": 18446743816114346079
+      }
+    ]
+  },
+  {
+    "stage": "GC2",
+    "staticNonNull": false,
+    "weakAlive": true,
+    "pushCalls": 2,
+    "stackBytes": 6888,
+    "stackMatches": 4,
+    "rejectedRanges": 0,
+    "matches": [
+      {
+        "tid": 65580,
+        "slotHidden": 18446743816114343879,
+        "targetOffset": 1,
+        "startHidden": 18446743816114346015
+      },
+      {
+        "tid": 65580,
+        "slotHidden": 18446743816114343247,
+        "targetOffset": 1,
+        "startHidden": 18446743816114346015
+      },
+      {
+        "tid": 65580,
+        "slotHidden": 18446743816114342967,
+        "targetOffset": 1,
+        "startHidden": 18446743816114346015
+      },
+      {
+        "tid": 65580,
+        "slotHidden": 18446743816114342863,
+        "targetOffset": 2,
+        "startHidden": 18446743816114346015
+      }
+    ]
+  },
+  {
+    "stage": "GC3",
+    "staticNonNull": false,
+    "weakAlive": true,
+    "pushCalls": 2,
+    "stackBytes": 6888,
+    "stackMatches": 4,
+    "rejectedRanges": 0,
+    "matches": [
+      {
+        "tid": 65580,
+        "slotHidden": 18446743816114345279,
+        "targetOffset": 14,
+        "startHidden": 18446743816114346015
+      },
+      {
+        "tid": 65580,
+        "slotHidden": 18446743816114343247,
+        "targetOffset": 1,
+        "startHidden": 18446743816114346015
+      },
+      {
+        "tid": 65580,
+        "slotHidden": 18446743816114342967,
+        "targetOffset": 1,
+        "startHidden": 18446743816114346015
+      },
+      {
+        "tid": 65580,
+        "slotHidden": 18446743816114342863,
+        "targetOffset": 2,
+        "startHidden": 18446743816114346015
+      }
+    ]
+  }
+]

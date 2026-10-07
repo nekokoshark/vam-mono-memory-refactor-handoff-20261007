@@ -1,0 +1,149 @@
+[
+  {
+    "argv": [
+      "C:\\Users\\Administrator\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "F:\\vam1.22.0.12\\\u5de5\u4f5c\u533a\\mono_free_span_lifecycle_20261006\\run_case.py",
+      "MODIFIED",
+      "idle"
+    ],
+    "input": {
+      "mode": "MODIFIED",
+      "test": "idle"
+    },
+    "stdout": "ISOLATED_PASS mode=MODIFIED scenario=idle livePinnedAliasReuse=verified gameCalls=0 gameWrites=0\n",
+    "stderr": "",
+    "exitStatus": 0
+  },
+  {
+    "argv": [
+      "C:\\Users\\Administrator\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "F:\\vam1.22.0.12\\\u5de5\u4f5c\u533a\\mono_free_span_lifecycle_20261006\\run_case.py",
+      "MODIFIED",
+      "quick"
+    ],
+    "input": {
+      "mode": "MODIFIED",
+      "test": "quick"
+    },
+    "stdout": "ISOLATED_PASS mode=MODIFIED scenario=quick livePinnedAliasReuse=verified gameCalls=0 gameWrites=0\n",
+    "stderr": "",
+    "exitStatus": 0
+  },
+  {
+    "argv": [
+      "C:\\Users\\Administrator\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "F:\\vam1.22.0.12\\\u5de5\u4f5c\u533a\\mono_free_span_lifecycle_20261006\\run_case.py",
+      "MODIFIED",
+      "stress"
+    ],
+    "input": {
+      "mode": "MODIFIED",
+      "test": "stress"
+    },
+    "stdout": "ISOLATED_PASS mode=MODIFIED scenario=stress livePinnedAliasReuse=verified gameCalls=0 gameWrites=0\n",
+    "stderr": "",
+    "exitStatus": 0
+  },
+  {
+    "argv": [
+      "C:\\Users\\Administrator\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "F:\\vam1.22.0.12\\\u5de5\u4f5c\u533a\\mono_free_span_lifecycle_20261006\\run_case.py",
+      "MODIFIED",
+      "lifecycle"
+    ],
+    "input": {
+      "mode": "MODIFIED",
+      "test": "lifecycle"
+    },
+    "stdout": "LIFECYCLE_PASS mode=MODIFIED cells=1048576 refill=262144 prefix=300MiB inventory=closed pinned=verified gameCalls=0 gameWrites=0\n",
+    "stderr": "",
+    "exitStatus": 0
+  },
+  {
+    "argv": [
+      "C:\\Users\\Administrator\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "F:\\vam1.22.0.12\\\u5de5\u4f5c\u533a\\mono_free_span_lifecycle_20261006\\run_case.py",
+      "MODIFIED",
+      "failure"
+    ],
+    "input": {
+      "mode": "MODIFIED",
+      "test": "failure"
+    },
+    "stdout": "FAILURE_PASS mode=MODIFIED originalOOM=caught limit=restored recovery=verified gameCalls=0 gameWrites=0\n",
+    "stderr": "",
+    "exitStatus": 0
+  },
+  {
+    "argv": [
+      "C:\\Users\\Administrator\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "F:\\vam1.22.0.12\\\u5de5\u4f5c\u533a\\mono_free_span_lifecycle_20261006\\run_case.py",
+      "MODIFIED",
+      "sections"
+    ],
+    "input": {
+      "mode": "MODIFIED",
+      "test": "sections"
+    },
+    "stdout": "SECTIONS_PASS mode=MODIFIED retained=50000 limit=4096 data=verified growth=original\n",
+    "stderr": "",
+    "exitStatus": 0
+  },
+  {
+    "argv": [
+      "C:\\Users\\Administrator\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "F:\\vam1.22.0.12\\\u5de5\u4f5c\u533a\\mono_free_span_lifecycle_20261006\\run_case.py",
+      "MODIFIED",
+      "warm"
+    ],
+    "input": {
+      "mode": "MODIFIED",
+      "test": "warm"
+    },
+    "stdout": "WARM_PAGES_PASS mode=MODIFIED cells=524288 coldRemaps=10931 allocationMs=769.540 sections=unchanged VM=closed aliases=verified gameCalls=0\n",
+    "stderr": "",
+    "exitStatus": 0
+  },
+  {
+    "argv": [
+      "C:\\Users\\Administrator\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "F:\\vam1.22.0.12\\\u5de5\u4f5c\u533a\\mono_free_span_lifecycle_20261006\\cohort_test.py",
+      "MODIFIED"
+    ],
+    "input": {
+      "mode": "MODIFIED",
+      "test": "cohort_test.py"
+    },
+    "stdout": "COHORT_PASS mode=MODIFIED pendingPages=1108240 independentInversions=0 globalRejects=0 rootedAliases=verified gameCalls=0 gameWrites=0\n",
+    "stderr": "",
+    "exitStatus": 0
+  },
+  {
+    "argv": [
+      "C:\\Users\\Administrator\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "F:\\vam1.22.0.12\\\u5de5\u4f5c\u533a\\mono_free_span_lifecycle_20261006\\isolation_test.py",
+      "MODIFIED"
+    ],
+    "input": {
+      "mode": "MODIFIED",
+      "test": "isolation_test.py"
+    },
+    "stdout": "ISOLATION_PASS mode=MODIFIED faults=size+marks+cycle invalidChain=unchanged unrelatedChain=sorted nativeState=restored gameCalls=0 gameWrites=0\n",
+    "stderr": "",
+    "exitStatus": 0
+  },
+  {
+    "argv": [
+      "C:\\Users\\Administrator\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "F:\\vam1.22.0.12\\\u5de5\u4f5c\u533a\\mono_free_span_lifecycle_20261006\\span_test.py",
+      "MODIFIED"
+    ],
+    "input": {
+      "mode": "MODIFIED",
+      "test": "span_test.py"
+    },
+    "stdout": "SPAN_PASS mode=MODIFIED cases=27 avoidableCommitBytes=0 coalesced=True VM=closed sections=unchanged live=verified IAT=restored\n",
+    "stderr": "",
+    "exitStatus": 0
+  }
+]

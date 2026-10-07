@@ -1,0 +1,31 @@
+{
+  "baselineSHA256": "cd7ab354a43faf18479c3a2d1f57d2d068769b8a490338942f6c510e8b02242d",
+  "modifiedSHA256": "85db66a50b8b142eff610764d587724f3cb3fa99c437628ccfaca0ced468b2d1",
+  "callsiteRVA": 1408708,
+  "baselineCall": "e8c77d0000",
+  "stubRVA": 3113824,
+  "controllerRVA": 3112960,
+  "stateRVA": 3121664,
+  "stateBytes": 96,
+  "reserveBytes": 268435456,
+  "exceptionTableRVA": 3121760,
+  "newUnwindEntries": 4,
+  "chainedUnwindRecords": 3,
+  "sections": [
+    {
+      "name": ".gcrtext",
+      "rva": 3112960,
+      "rawOffset": 2725888,
+      "bytes": 1024
+    },
+    {
+      "name": ".gcrdat",
+      "rva": 3117056,
+      "rawOffset": 2726912,
+      "bytes": 62544
+    }
+  ],
+  "collectorABI": "unchanged nonmoving Boehm",
+  "gameCalls": 0,
+  "deployed": false
+}

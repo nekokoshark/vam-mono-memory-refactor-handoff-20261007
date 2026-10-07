@@ -1,0 +1,56 @@
+[
+  {
+    "argv": [
+      "C:\\Users\\Administrator\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "F:\\vam1.22.0.12\\\u5de5\u4f5c\u533a\\mono_allocator_lifecycle_20261006\\test_suite.py",
+      "ROLLBACK"
+    ],
+    "input": [
+      "ROLLBACK"
+    ],
+    "stdout": "RUNTIME_PASS mode=ROLLBACK scenarios=3 repeats=1 firstLargeReturn=3 livePinnedAliasReuse=verified concurrent=4x32 mixed=8 fragmented=4 dispose=25000 gameCalls=0 gameWrites=0\n",
+    "stderr": "",
+    "exitStatus": 0
+  },
+  {
+    "argv": [
+      "C:\\Users\\Administrator\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "F:\\vam1.22.0.12\\\u5de5\u4f5c\u533a\\mono_allocator_lifecycle_20261006\\lifecycle.py",
+      "ROLLBACK"
+    ],
+    "input": [
+      "ROLLBACK"
+    ],
+    "stdout": "LIFECYCLE_PASS mode=ROLLBACK cells=1048576 refill=262144 prefix=300MiB inventory=closed pinned=verified gameCalls=0 gameWrites=0\n",
+    "stderr": "",
+    "exitStatus": 0
+  },
+  {
+    "argv": [
+      "C:\\Users\\Administrator\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "F:\\vam1.22.0.12\\\u5de5\u4f5c\u533a\\mono_allocator_lifecycle_20261006\\lifecycle.py",
+      "ROLLBACK",
+      "failure"
+    ],
+    "input": [
+      "ROLLBACK",
+      "failure"
+    ],
+    "stdout": "FAILURE_PASS mode=ROLLBACK originalOOM=caught limit=restored recovery=verified gameCalls=0 gameWrites=0\n",
+    "stderr": "",
+    "exitStatus": 0
+  },
+  {
+    "argv": [
+      "C:\\Users\\Administrator\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "F:\\vam1.22.0.12\\\u5de5\u4f5c\u533a\\mono_allocator_lifecycle_20261006\\sections.py",
+      "ROLLBACK"
+    ],
+    "input": [
+      "ROLLBACK"
+    ],
+    "stdout": "SECTIONS_PASS mode=ROLLBACK retained=50000 limit=4096 data=verified growth=original\n",
+    "stderr": "",
+    "exitStatus": 0
+  }
+]

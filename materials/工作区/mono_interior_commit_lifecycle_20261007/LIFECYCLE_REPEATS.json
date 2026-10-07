@@ -1,0 +1,44 @@
+[
+  {
+    "mode": "BASELINE",
+    "repeat": 0,
+    "stdout": "LIFECYCLE_PASS mode=BASELINE cells=1048576 refill=262144 prefix=300MiB inventory=closed pinned=verified gameCalls=0 gameWrites=0\n",
+    "stderr": "",
+    "exitStatus": 0
+  },
+  {
+    "mode": "MODIFIED",
+    "repeat": 0,
+    "stdout": "LIFECYCLE_PASS mode=MODIFIED cells=1048576 refill=262144 prefix=300MiB inventory=closed pinned=verified gameCalls=0 gameWrites=0\n",
+    "stderr": "",
+    "exitStatus": 0
+  },
+  {
+    "mode": "BASELINE",
+    "repeat": 1,
+    "stdout": "LIFECYCLE_PASS mode=BASELINE cells=1048576 refill=262144 prefix=300MiB inventory=closed pinned=verified gameCalls=0 gameWrites=0\n",
+    "stderr": "",
+    "exitStatus": 0
+  },
+  {
+    "mode": "MODIFIED",
+    "repeat": 1,
+    "stdout": "LIFECYCLE_PASS mode=MODIFIED cells=1048576 refill=262144 prefix=300MiB inventory=closed pinned=verified gameCalls=0 gameWrites=0\n",
+    "stderr": "",
+    "exitStatus": 0
+  },
+  {
+    "mode": "BASELINE",
+    "repeat": 2,
+    "stdout": "LIFECYCLE_PASS mode=BASELINE cells=1048576 refill=262144 prefix=300MiB inventory=closed pinned=verified gameCalls=0 gameWrites=0\n",
+    "stderr": "",
+    "exitStatus": 0
+  },
+  {
+    "mode": "MODIFIED",
+    "repeat": 2,
+    "stdout": "LIFECYCLE_PASS mode=MODIFIED cells=1048576 refill=262144 prefix=300MiB inventory=closed pinned=verified gameCalls=0 gameWrites=0\n",
+    "stderr": "",
+    "exitStatus": 0
+  }
+]

@@ -1,0 +1,115 @@
+{
+  "pid": 17352,
+  "module": "F:\\vam1.22.0.12\\Mono\\EmbedRuntime\\mono.dll",
+  "moduleBase": "0x7ffb74ac0000",
+  "binary": {
+    "sha256": "160f224ead92dac4f33e91a584fdc1c7ef82ed1ced2feac9a903afa31a7e2738",
+    "checks": 16,
+    "nativeAgeThreshold": 6,
+    "rva": {
+      "heap": "0x27c7e0",
+      "free": "0x27c808",
+      "unmapped": "0x27ea88",
+      "gc_count": "0x269b90",
+      "page_size": "0x26c5c8",
+      "free_lists": "0x269d70",
+      "header_index": "0x2bdcd0",
+      "zero_index": "0x2bdcc8",
+      "free_marker": "0x269f70"
+    }
+  },
+  "remoteWrites": 0,
+  "callsIntoGame": 0,
+  "samples": [
+    {
+      "counters": {
+        "gc_count": 460,
+        "heap": 31780732928,
+        "free": 8681762816,
+        "unmapped": 6983852032,
+        "allocatedEstimateBytes": 23098970112,
+        "committedHeapEstimateBytes": 24796880896,
+        "committedLargeFreeBytes": 1697910784
+      },
+      "inventory": {
+        "requested": false
+      },
+      "consistent": true,
+      "countersConsistent": true,
+      "consistencyMeaning": "repeated fixed counters agree; not an allocator-locked snapshot",
+      "pageSize": 4096,
+      "afterCounters": {
+        "gc_count": 460,
+        "heap": 31780732928,
+        "free": 8681762816,
+        "unmapped": 6983852032
+      },
+      "process": {
+        "privateUsageBytes": 42626162688,
+        "workingSetBytes": 11650588672
+      },
+      "timeUTC": "2026-09-30T14:09:45Z",
+      "elapsedMs": 0.0
+    },
+    {
+      "counters": {
+        "gc_count": 460,
+        "heap": 31780732928,
+        "free": 8677761024,
+        "unmapped": 6983852032,
+        "allocatedEstimateBytes": 23102971904,
+        "committedHeapEstimateBytes": 24796880896,
+        "committedLargeFreeBytes": 1693908992
+      },
+      "inventory": {
+        "requested": false
+      },
+      "consistent": true,
+      "countersConsistent": true,
+      "consistencyMeaning": "repeated fixed counters agree; not an allocator-locked snapshot",
+      "pageSize": 4096,
+      "afterCounters": {
+        "gc_count": 460,
+        "heap": 31780732928,
+        "free": 8677761024,
+        "unmapped": 6983852032
+      },
+      "process": {
+        "privateUsageBytes": 42626162688,
+        "workingSetBytes": 11650588672
+      },
+      "timeUTC": "2026-09-30T14:09:45Z",
+      "elapsedMs": 0.0
+    },
+    {
+      "counters": {
+        "gc_count": 460,
+        "heap": 31780732928,
+        "free": 8673918976,
+        "unmapped": 6983852032,
+        "allocatedEstimateBytes": 23106813952,
+        "committedHeapEstimateBytes": 24796880896,
+        "committedLargeFreeBytes": 1690066944
+      },
+      "inventory": {
+        "requested": false
+      },
+      "consistent": true,
+      "countersConsistent": true,
+      "consistencyMeaning": "repeated fixed counters agree; not an allocator-locked snapshot",
+      "pageSize": 4096,
+      "afterCounters": {
+        "gc_count": 460,
+        "heap": 31780732928,
+        "free": 8673918976,
+        "unmapped": 6983852032
+      },
+      "process": {
+        "privateUsageBytes": 42626162688,
+        "workingSetBytes": 11650588672
+      },
+      "timeUTC": "2026-09-30T14:09:46Z",
+      "elapsedMs": 0.0
+    }
+  ]
+}

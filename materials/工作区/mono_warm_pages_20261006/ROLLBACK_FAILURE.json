@@ -1,0 +1,76 @@
+{
+  "mode": "ROLLBACK",
+  "rows": [
+    {
+      "stage": "AllocationFailure",
+      "output": "OOM_OK originalException=caught",
+      "elapsedMs": 1.8581999465823174,
+      "controller": null,
+      "counters": {
+        "gc_count": 1,
+        "heap": 262144,
+        "free": 114688,
+        "unmapped": 0
+      },
+      "vm": {
+        "gcOSRoots": 5,
+        "monoCommittedBytes": 1331200,
+        "monoReservedBytes": 0,
+        "regionCount": 5
+      },
+      "inventory": {
+        "blocks": 1,
+        "freeBytes": 114688,
+        "unmappedBytes": 0
+      }
+    },
+    {
+      "stage": "AfterFailure",
+      "output": "AFTER_OOM_OK allocation=restored data=verified",
+      "elapsedMs": 0.6600000197067857,
+      "controller": null,
+      "counters": {
+        "gc_count": 2,
+        "heap": 1400832,
+        "free": 200704,
+        "unmapped": 0
+      },
+      "vm": {
+        "gcOSRoots": 6,
+        "monoCommittedBytes": 2473984,
+        "monoReservedBytes": 0,
+        "regionCount": 6
+      },
+      "inventory": {
+        "blocks": 2,
+        "freeBytes": 200704,
+        "unmappedBytes": 0
+      }
+    },
+    {
+      "stage": "AfterFailureGC",
+      "output": "ORIGINAL_MONO_GC_COMPLETED",
+      "elapsedMs": 0.05989999044686556,
+      "controller": null,
+      "counters": {
+        "gc_count": 3,
+        "heap": 1400832,
+        "free": 1253376,
+        "unmapped": 0
+      },
+      "vm": {
+        "gcOSRoots": 6,
+        "monoCommittedBytes": 2473984,
+        "monoReservedBytes": 0,
+        "regionCount": 6
+      },
+      "inventory": {
+        "blocks": 2,
+        "freeBytes": 1253376,
+        "unmappedBytes": 0
+      }
+    }
+  ],
+  "gameCalls": 0,
+  "gameWrites": 0
+}

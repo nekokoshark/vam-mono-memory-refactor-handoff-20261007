@@ -1,0 +1,31 @@
+{
+  "processDelta": {
+    "privateBytes": 5386543104,
+    "workingSetBytes": 4328738816
+  },
+  "monoOSCommittedDeltaBytes": 3753816064,
+  "gcEpochs": [
+    93,
+    115
+  ],
+  "notAnObjectRootProof": true,
+  "notResidentComposition": true,
+  "counterModelDelta": {
+    "allocatedEstimateBytes": 2169008128,
+    "committedLargeFreeBytes": 1520926720,
+    "committedHeapEstimateBytes": 3689934848
+  },
+  "privateMinusMonoOSDeltaBytes": 1632727040,
+  "sourceFiles": [
+    "START_01.json",
+    "RETURN_01.json"
+  ],
+  "pid": 46380,
+  "creationFiletime": 134357188127383915,
+  "sourceUTC": [
+    "2026-10-06T00:49:45.351769+00:00",
+    "2026-10-06T00:57:38.063103+00:00"
+  ],
+  "startEndpointCheckOrder": "GC table rechecked before VM endpoint recheck; GC epoch and capacity counters unchanged through full window; no final table recheck",
+  "returnEndpointCheckOrder": "GC table rechecked both before and after VM endpoint recheck"
+}

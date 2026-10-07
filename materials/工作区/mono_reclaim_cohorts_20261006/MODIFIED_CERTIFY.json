@@ -1,0 +1,12 @@
+﻿{
+    "mode":  "MODIFIED",
+    "command":  "powershell -NoProfile -File CERTIFY.ps1 -Mode MODIFIED",
+    "workingDirectory":  "F:\\vam1.22.0.12\\工作区\\mono_reclaim_cohorts_20261006",
+    "input":  {
+                  "cases":  9,
+                  "runtime":  "isolated-original-Mono"
+              },
+    "stdout":  "MODIFIED_PASS cases=9",
+    "nestedOutput":  "ISOLATED_PASS mode=MODIFIED scenario=idle livePinnedAliasReuse=verified gameCalls=0 gameWrites=0\nISOLATED_PASS mode=MODIFIED scenario=quick livePinnedAliasReuse=verified gameCalls=0 gameWrites=0\nISOLATED_PASS mode=MODIFIED scenario=stress livePinnedAliasReuse=verified gameCalls=0 gameWrites=0\nLIFECYCLE_PASS mode=MODIFIED cells=1048576 refill=262144 prefix=300MiB inventory=closed pinned=verified gameCalls=0 gameWrites=0\nFAILURE_PASS mode=MODIFIED originalOOM=caught limit=restored recovery=verified gameCalls=0 gameWrites=0\nSECTIONS_PASS mode=MODIFIED retained=50000 limit=4096 data=verified growth=original\nWARM_PAGES_PASS mode=MODIFIED cells=524288 coldRemaps=10931 allocationMs=825.865 sections=unchanged VM=closed aliases=verified gameCalls=0\nCOHORT_PASS mode=MODIFIED pendingPages=1108240 independentInversions=0 globalRejects=0 rootedAliases=verified gameCalls=0 gameWrites=0\nISOLATION_PASS mode=MODIFIED faults=size+marks+cycle invalidChain=unchanged unrelatedChain=sorted nativeState=restored gameCalls=0 gameWrites=0\nVALIDATION_PASS mode=MODIFIED runtime=3 lifecycle=1 OOM=1 sections=1 warm=1 oversized=1 isolation=1 gameModified=False",
+    "exitStatus":  0
+}

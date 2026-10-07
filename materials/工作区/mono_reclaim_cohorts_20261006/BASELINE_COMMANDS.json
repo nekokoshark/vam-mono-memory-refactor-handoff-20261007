@@ -1,0 +1,135 @@
+[
+  {
+    "argv": [
+      "C:\\Users\\Administrator\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "F:\\vam1.22.0.12\\\u5de5\u4f5c\u533a\\mono_reclaim_cohorts_20261006\\run_case.py",
+      "BASELINE",
+      "idle"
+    ],
+    "input": {
+      "mode": "BASELINE",
+      "test": "idle"
+    },
+    "stdout": "ISOLATED_PASS mode=BASELINE scenario=idle livePinnedAliasReuse=verified gameCalls=0 gameWrites=0\n",
+    "stderr": "",
+    "exitStatus": 0
+  },
+  {
+    "argv": [
+      "C:\\Users\\Administrator\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "F:\\vam1.22.0.12\\\u5de5\u4f5c\u533a\\mono_reclaim_cohorts_20261006\\run_case.py",
+      "BASELINE",
+      "quick"
+    ],
+    "input": {
+      "mode": "BASELINE",
+      "test": "quick"
+    },
+    "stdout": "ISOLATED_PASS mode=BASELINE scenario=quick livePinnedAliasReuse=verified gameCalls=0 gameWrites=0\n",
+    "stderr": "",
+    "exitStatus": 0
+  },
+  {
+    "argv": [
+      "C:\\Users\\Administrator\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "F:\\vam1.22.0.12\\\u5de5\u4f5c\u533a\\mono_reclaim_cohorts_20261006\\run_case.py",
+      "BASELINE",
+      "stress"
+    ],
+    "input": {
+      "mode": "BASELINE",
+      "test": "stress"
+    },
+    "stdout": "ISOLATED_PASS mode=BASELINE scenario=stress livePinnedAliasReuse=verified gameCalls=0 gameWrites=0\n",
+    "stderr": "",
+    "exitStatus": 0
+  },
+  {
+    "argv": [
+      "C:\\Users\\Administrator\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "F:\\vam1.22.0.12\\\u5de5\u4f5c\u533a\\mono_reclaim_cohorts_20261006\\run_case.py",
+      "BASELINE",
+      "lifecycle"
+    ],
+    "input": {
+      "mode": "BASELINE",
+      "test": "lifecycle"
+    },
+    "stdout": "LIFECYCLE_PASS mode=BASELINE cells=1048576 refill=262144 prefix=300MiB inventory=closed pinned=verified gameCalls=0 gameWrites=0\n",
+    "stderr": "",
+    "exitStatus": 0
+  },
+  {
+    "argv": [
+      "C:\\Users\\Administrator\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "F:\\vam1.22.0.12\\\u5de5\u4f5c\u533a\\mono_reclaim_cohorts_20261006\\run_case.py",
+      "BASELINE",
+      "failure"
+    ],
+    "input": {
+      "mode": "BASELINE",
+      "test": "failure"
+    },
+    "stdout": "FAILURE_PASS mode=BASELINE originalOOM=caught limit=restored recovery=verified gameCalls=0 gameWrites=0\n",
+    "stderr": "",
+    "exitStatus": 0
+  },
+  {
+    "argv": [
+      "C:\\Users\\Administrator\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "F:\\vam1.22.0.12\\\u5de5\u4f5c\u533a\\mono_reclaim_cohorts_20261006\\run_case.py",
+      "BASELINE",
+      "sections"
+    ],
+    "input": {
+      "mode": "BASELINE",
+      "test": "sections"
+    },
+    "stdout": "SECTIONS_PASS mode=BASELINE retained=50000 limit=4096 data=verified growth=original\n",
+    "stderr": "",
+    "exitStatus": 0
+  },
+  {
+    "argv": [
+      "C:\\Users\\Administrator\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "F:\\vam1.22.0.12\\\u5de5\u4f5c\u533a\\mono_reclaim_cohorts_20261006\\run_case.py",
+      "BASELINE",
+      "warm"
+    ],
+    "input": {
+      "mode": "BASELINE",
+      "test": "warm"
+    },
+    "stdout": "WARM_PAGES_PASS mode=BASELINE cells=524288 coldRemaps=10931 allocationMs=789.862 sections=unchanged VM=closed aliases=verified gameCalls=0\n",
+    "stderr": "",
+    "exitStatus": 0
+  },
+  {
+    "argv": [
+      "C:\\Users\\Administrator\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "F:\\vam1.22.0.12\\\u5de5\u4f5c\u533a\\mono_reclaim_cohorts_20261006\\cohort_test.py",
+      "BASELINE"
+    ],
+    "input": {
+      "mode": "BASELINE",
+      "test": "cohort_test.py"
+    },
+    "stdout": "COHORT_PASS mode=BASELINE pendingPages=1108240 independentInversions=6142 globalRejects=1 rootedAliases=verified gameCalls=0 gameWrites=0\n",
+    "stderr": "",
+    "exitStatus": 0
+  },
+  {
+    "argv": [
+      "C:\\Users\\Administrator\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "F:\\vam1.22.0.12\\\u5de5\u4f5c\u533a\\mono_reclaim_cohorts_20261006\\isolation_test.py",
+      "BASELINE"
+    ],
+    "input": {
+      "mode": "BASELINE",
+      "test": "isolation_test.py"
+    },
+    "stdout": "ISOLATION_PASS mode=BASELINE faults=size+marks+cycle invalidChain=unchanged unrelatedChain=native-fallback nativeState=restored gameCalls=0 gameWrites=0\n",
+    "stderr": "",
+    "exitStatus": 0
+  }
+]

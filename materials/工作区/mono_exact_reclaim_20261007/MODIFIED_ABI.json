@@ -1,0 +1,79 @@
+{
+  "mode": "MODIFIED",
+  "rows": [
+    {
+      "thunk": "remember_remap",
+      "offset": 0,
+      "stackRestored": true,
+      "returnRestored": true
+    },
+    {
+      "thunk": "remember_remap",
+      "offset": 4,
+      "stackRestored": true,
+      "returnRestored": true
+    },
+    {
+      "thunk": "remember_remap",
+      "offset": 31,
+      "stackRestored": true,
+      "returnRestored": true
+    },
+    {
+      "thunk": "take_prefix",
+      "offset": 0,
+      "stackRestored": true,
+      "returnRestored": true
+    },
+    {
+      "thunk": "take_prefix",
+      "offset": 4,
+      "stackRestored": true,
+      "returnRestored": true
+    },
+    {
+      "thunk": "take_prefix",
+      "offset": 33,
+      "stackRestored": true,
+      "returnRestored": true
+    },
+    {
+      "thunk": "split_cold_extent",
+      "offset": 0,
+      "stackRestored": true,
+      "returnRestored": true
+    },
+    {
+      "thunk": "split_cold_extent",
+      "offset": 4,
+      "stackRestored": true,
+      "returnRestored": true
+    },
+    {
+      "thunk": "split_cold_extent",
+      "offset": 41,
+      "stackRestored": true,
+      "returnRestored": true
+    },
+    {
+      "thunk": "reuse_small",
+      "offset": 0,
+      "stackRestored": true,
+      "returnRestored": true
+    },
+    {
+      "thunk": "reuse_small",
+      "offset": 4,
+      "stackRestored": true,
+      "returnRestored": true
+    },
+    {
+      "thunk": "reuse_small",
+      "offset": 28,
+      "stackRestored": true,
+      "returnRestored": true
+    }
+  ],
+  "registeredByWindowsLoader": true,
+  "gameWrites": 0
+}

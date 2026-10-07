@@ -1,0 +1,157 @@
+BASELINE_SHA256 d89ccf26fd75b354244f7225b978667c215d54681a2565df624ac59fb6ac323e
+MODIFIED_SHA256 1c023c2516d002f5762bb5bd9636cbaa4b46ab421bfa396b874539ed9f668fa1
+Changed branch: take_prefix / need < 65536 / bounded warm prefix and cold tail
+
+--- D89/reclaim_controller.c
++++ candidate/reclaim_controller.c
+@@ -47,6 +47,9 @@
+     u64 pending_block;
+     u64 pending_full;
+     u64 pending_bytes;
++    u64 warm_batches;
++    u64 warm_bytes;
++    u64 warm_extra_bytes;
+ } ReclaimState;
+ 
+ typedef FreeHeader* (*FindHeader)(u64 block);
+@@ -56,6 +59,7 @@
+ typedef void (*AddFree)(u64 block, FreeHeader* h);
+ typedef u64 (*FirstPart)(u64 block, FreeHeader* h, u64 bytes, int bucket);
+ typedef int (*Expand)(u64 blocks);
++typedef void (*RemoveHeader)(u64 block);
+ 
+ #define FREE_LIST_RVA 0x269d70
+ #define FREE_MARKER_RVA 0x269f70
+@@ -67,6 +71,7 @@
+ #define REMAP_RVA 0x15ec50
+ #define MERGE_RVA 0x15fd18
+ #define INSTALL_HEADER_RVA 0x15f12c
++#define REMOVE_HEADER_RVA 0x15f298
+ #define REMOVE_FREE_RVA 0x15fa24
+ #define ADD_FREE_RVA 0x15fc04
+ #define FIRST_PART_RVA 0x15fecc
+@@ -79,6 +84,7 @@
+ #define MAX_BLOCKS 1048576ULL
+ #define MAX_BYTES (1ULL << 44)
+ #define MIB (1024ULL * 1024ULL)
++#define WARM_QUANTUM 65536ULL
+ 
+ /* Native header marks occupy eight words at +0x30. The size is in eight-byte
+  * words for allocated small blocks, but in bytes for whole-free blocks.
+@@ -193,17 +199,43 @@
+         if (pending == block && pending_need == need && h == find(block)
+             && h->bytes == full && bucket >= 0 && bucket < BUCKETS) {
+             FindHeader install = (FindHeader)(base + INSTALL_HEADER_RVA);
++            /* Small allocation pages share a bounded 64-KiB committed prefix.
++             * This is a remap quantum inside an existing OS reservation, not
++             * a new heap section or a change to original expansion batches.
++             * Large requests retain exact-prefix remapping.
++             */
++            u64 warm = need < WARM_QUANTUM ?
++                (full < WARM_QUANTUM ? full : WARM_QUANTUM) : need;
+             FreeHeader* rest = install(block + need);
++            FreeHeader* cold = 0;
++            if (rest && warm > need && warm < full) {
++                cold = install(block + warm);
++                if (!cold) {
++                    RemoveHeader remove_header = (RemoveHeader)(base + REMOVE_HEADER_RVA);
++                    remove_header(block + need);
++                    rest = 0;
++                }
++            }
+             if (rest) {
+                 RemoveFree remove = (RemoveFree)(base + REMOVE_FREE_RVA);
+                 AddFree add = (AddFree)(base + ADD_FREE_RVA);
+                 remove(h, bucket);
+-                remap(block, need);
+-                rest->bytes = full - need;
+-                rest->flags = 2;
++                remap(block, warm);
++                rest->bytes = warm > need ? warm - need : full - need;
++                rest->flags = warm > need ? 0 : 2;
+                 add(block + need, rest);
+-                state->remap_prefix_bytes += need;
+-                state->remap_avoided_bytes += full - need;
++                if (cold) {
++                    cold->bytes = full - warm;
++                    cold->flags = 2;
++                    add(block + warm, cold);
++                }
++                if (warm > need) {
++                    state->warm_batches++;
++                    state->warm_bytes += warm;
++                    state->warm_extra_bytes += warm - need;
++                }
++                state->remap_prefix_bytes += warm;
++                state->remap_avoided_bytes += full - warm;
+                 state->split_prefixes++;
+                 return block;
+             }
+
+--- HEAD/mono_allocator_lifecycle_20261006/build.py
++++ mono_allocator_lifecycle_20261006/build.py
+@@ -29,7 +29,12 @@
+         raise RuntimeError(run.stdout + run.stderr)
+ 
+ 
+-def main() -> None:
++def main(output_dir: Path | None = None, state_words: int = 29) -> None:
++    global HERE
++    if output_dir is not None:
++        HERE = output_dir.resolve()
++    if state_words < 29:
++        raise ValueError("Controller state must preserve its first 29 words")
+     baseline = HERE / "BASELINE.dll"
+     source = baseline if baseline.exists() else ROOT / "Mono/EmbedRuntime/mono.dll"
+     original = source.read_bytes()
+@@ -77,7 +82,7 @@
+     # Keep donor relative code/data distances. No new absolute pointers/relocs.
+     payload_end = max(s.VirtualAddress + max(s.Misc_VirtualSize, s.SizeOfRawData) for s in other) + delta
+     state_rva = align(payload_end, 8)
+-    state_size = 29 * 8
++    state_size = state_words * 8
+     old_directory = pe.OPTIONAL_HEADER.DATA_DIRECTORY[3]
+     old_rows = [struct.unpack_from("<III", pe.get_data(old_directory.VirtualAddress, old_directory.Size), n)
+                 for n in range(0, old_directory.Size, 12)]
+@@ -109,8 +114,8 @@
+         data[off:off+s.SizeOfRawData] = s.get_data()
+     for rva, chain in chained_records:
+         struct.pack_into("<III", data, rva - data_rva, *chain)
+-    struct.pack_into("<29Q", data, state_rva - data_rva,
+-                     0x31524C5443524347, 256 * 1024**2, *([0] * 27))
++    struct.pack_into(f"<{state_words}Q", data, state_rva - data_rva,
++                     0x31524C5443524347, 256 * 1024**2, *([0] * (state_words - 2)))
+     data[thunk_unwind_rva-data_rva:thunk_unwind_rva-data_rva+8] = bytes.fromhex("0104010004620000")
+     data[table_rva-data_rva:] = table
+     # Leaf thunk: establish module base/context without changing stack or ABI.
+
+--- HEAD/mono_allocator_lifecycle_20261006/verify.py
++++ mono_allocator_lifecycle_20261006/verify.py
+@@ -77,7 +77,10 @@
+             assert struct.unpack("<III", new.get_data(offset, 12)) in rows
+             chains += 1
+     assert chains == patch["chainedUnwindRecords"]
+-    assert new.get_data(patch["stateRVA"], 232) == struct.pack("<29Q", 0x31524C5443524347, 256*1024**2, *([0]*27))
++    words = patch["stateBytes"] // 8
++    assert words >= 29 and words * 8 == patch["stateBytes"]
++    assert new.get_data(patch["stateRVA"], patch["stateBytes"]) == struct.pack(
++        f"<{words}Q", 0x31524C5443524347, 256*1024**2, *([0]*(words-2)))
+     for rva, size in ((0x15EA48, 0x9D), (0x15EAE8, 0x65), (0x15EB8C, 194),
+                       (0x15EC50, 191), (0x15EE50, 68), (0x15FC90, 133)):
+         assert old.get_data(rva, size) == new.get_data(rva, size)
+
+--- HEAD/mono_allocator_lifecycle_20261006/install.ps1
++++ mono_allocator_lifecycle_20261006/install.ps1
+@@ -1,9 +1,10 @@
+ ﻿param(
+     [ValidateSet('Install','Restore','Check')][string]$Mode='Install',
+-    [switch]$TestCopy
++    [switch]$TestCopy,
++    [string]$TaskDirectory=$PSScriptRoot
+ )
+ $ErrorActionPreference='Stop'
+-$task=$PSScriptRoot
++$task=[IO.Path]::GetFullPath($TaskDirectory)
+ $root=Split-Path (Split-Path $task -Parent) -Parent
+ $patch=Get-Content -LiteralPath (Join-Path $task 'PATCH.json') -Raw -Encoding UTF8 | ConvertFrom-Json
+ $target=Join-Path $root 'Mono\EmbedRuntime\mono.dll'

@@ -1,0 +1,482 @@
+{
+  "mode": "MODIFIED",
+  "scenario": "stress",
+  "pid": 17472,
+  "loadedMono": "F:\\vam1.22.0.12\\\u5de5\u4f5c\u533a\\mono_reuse_lifecycle_20261007\\MODIFIED_FILE.dll",
+  "loadedSHA256": "d4685c71704ef7f222feebfb93851d7f3b6d354998c2e6bc8347268e047c7b3d",
+  "rows": [
+    {
+      "stage": "Prepare",
+      "output": "PREPARE live=33554432 temporary=536870912 touchedEveryPage=True",
+      "elapsedMs": 135.92050003353506,
+      "counters": {
+        "gc_count": 9,
+        "heap": 1125638144,
+        "free": 554786816,
+        "unmapped": 243150848
+      },
+      "process": {
+        "privateUsageBytes": 911896576,
+        "workingSetBytes": 606846976
+      },
+      "controller": {
+        "magic": 3553986980739171143,
+        "reserveBytes": 268435456,
+        "collections": 9,
+        "scannedBlocks": 154,
+        "freeBefore": 479326208,
+        "freeAfter": 261328896,
+        "decommittedBytes": 243150848,
+        "decommittedBlocks": 29,
+        "rejected": 0,
+        "lastGC": 9,
+        "lastReturned": 217997312,
+        "lastScanned": 63,
+        "sortRuns": 9,
+        "sortPages": 245,
+        "sortLists": 0,
+        "sortChangedLists": 0,
+        "mergeCalls": 9,
+        "mergedBlocks": 0,
+        "remapCalls": 0,
+        "remapFullBytes": 0,
+        "remapPrefixBytes": 0,
+        "remapAvoidedBytes": 0,
+        "splitPrefixes": 0,
+        "growthCalls": 68,
+        "growthOriginalBlocks": 274750,
+        "growthActualBlocks": 274750,
+        "pendingBlock": 0,
+        "pendingFull": 0,
+        "pendingBytes": 0
+      },
+      "vm": {
+        "gcOSRoots": 79,
+        "monoCommittedBytes": 885432320,
+        "monoReservedBytes": 243150848,
+        "regionCount": 137
+      }
+    },
+    {
+      "stage": "Drop",
+      "output": "DROP temporaryRoot=null",
+      "elapsedMs": 0.5794999888166785,
+      "counters": {
+        "gc_count": 9,
+        "heap": 1125638144,
+        "free": 554782720,
+        "unmapped": 243150848
+      },
+      "process": {
+        "privateUsageBytes": 912207872,
+        "workingSetBytes": 607465472
+      },
+      "controller": {
+        "magic": 3553986980739171143,
+        "reserveBytes": 268435456,
+        "collections": 9,
+        "scannedBlocks": 154,
+        "freeBefore": 479326208,
+        "freeAfter": 261328896,
+        "decommittedBytes": 243150848,
+        "decommittedBlocks": 29,
+        "rejected": 0,
+        "lastGC": 9,
+        "lastReturned": 217997312,
+        "lastScanned": 63,
+        "sortRuns": 9,
+        "sortPages": 245,
+        "sortLists": 0,
+        "sortChangedLists": 0,
+        "mergeCalls": 9,
+        "mergedBlocks": 0,
+        "remapCalls": 0,
+        "remapFullBytes": 0,
+        "remapPrefixBytes": 0,
+        "remapAvoidedBytes": 0,
+        "splitPrefixes": 0,
+        "growthCalls": 68,
+        "growthOriginalBlocks": 274750,
+        "growthActualBlocks": 274750,
+        "pendingBlock": 0,
+        "pendingFull": 0,
+        "pendingBytes": 0
+      },
+      "vm": {
+        "gcOSRoots": 79,
+        "monoCommittedBytes": 885432320,
+        "monoReservedBytes": 243150848,
+        "regionCount": 137
+      }
+    },
+    {
+      "stage": "Concurrent",
+      "output": "CONCURRENT_OK workers=4 rounds=32 pinnedLive=verified",
+      "elapsedMs": 502.02639994677156,
+      "counters": {
+        "gc_count": 25,
+        "heap": 1125638144,
+        "free": 1023926272,
+        "unmapped": 772165632
+      },
+      "process": {
+        "privateUsageBytes": 383336448,
+        "workingSetBytes": 264724480
+      },
+      "controller": {
+        "magic": 3553986980739171143,
+        "reserveBytes": 268435456,
+        "collections": 25,
+        "scannedBlocks": 1282,
+        "freeBefore": 251760640,
+        "freeAfter": 251760640,
+        "decommittedBytes": 580022272,
+        "decommittedBlocks": 53,
+        "rejected": 0,
+        "lastGC": 25,
+        "lastReturned": 14708736,
+        "lastScanned": 69,
+        "sortRuns": 25,
+        "sortPages": 805,
+        "sortLists": 16,
+        "sortChangedLists": 0,
+        "mergeCalls": 25,
+        "mergedBlocks": 37,
+        "remapCalls": 71,
+        "remapFullBytes": 675876864,
+        "remapPrefixBytes": 122691584,
+        "remapAvoidedBytes": 553185280,
+        "splitPrefixes": 71,
+        "growthCalls": 68,
+        "growthOriginalBlocks": 274750,
+        "growthActualBlocks": 274750,
+        "pendingBlock": 0,
+        "pendingFull": 0,
+        "pendingBytes": 0
+      },
+      "vm": {
+        "gcOSRoots": 79,
+        "monoCommittedBytes": 356417536,
+        "monoReservedBytes": 772165632,
+        "regionCount": 139
+      }
+    },
+    {
+      "stage": "Concurrent.GC",
+      "output": "CHECK_LIVE_OK retiredContainerAlive=False",
+      "elapsedMs": 4.327400005422533,
+      "counters": {
+        "gc_count": 26,
+        "heap": 1125638144,
+        "free": 1091903488,
+        "unmapped": 840060928
+      },
+      "process": {
+        "privateUsageBytes": 315944960,
+        "workingSetBytes": 196976640
+      },
+      "controller": {
+        "magic": 3553986980739171143,
+        "reserveBytes": 268435456,
+        "collections": 26,
+        "scannedBlocks": 1353,
+        "freeBefore": 251850752,
+        "freeAfter": 251850752,
+        "decommittedBytes": 580022272,
+        "decommittedBlocks": 53,
+        "rejected": 0,
+        "lastGC": 26,
+        "lastReturned": 67895296,
+        "lastScanned": 71,
+        "sortRuns": 26,
+        "sortPages": 838,
+        "sortLists": 16,
+        "sortChangedLists": 0,
+        "mergeCalls": 26,
+        "mergedBlocks": 42,
+        "remapCalls": 71,
+        "remapFullBytes": 675876864,
+        "remapPrefixBytes": 122691584,
+        "remapAvoidedBytes": 553185280,
+        "splitPrefixes": 71,
+        "growthCalls": 68,
+        "growthOriginalBlocks": 274750,
+        "growthActualBlocks": 274750,
+        "pendingBlock": 0,
+        "pendingFull": 0,
+        "pendingBytes": 0
+      },
+      "vm": {
+        "gcOSRoots": 79,
+        "monoCommittedBytes": 288522240,
+        "monoReservedBytes": 840060928,
+        "regionCount": 134
+      }
+    },
+    {
+      "stage": "Mixed",
+      "output": "MIXED_OK rounds=8 arrays=strings+references+bytes+indices aliases=preserved",
+      "elapsedMs": 34.809299977496266,
+      "counters": {
+        "gc_count": 34,
+        "heap": 1125638144,
+        "free": 1081102336,
+        "unmapped": 818905088
+      },
+      "process": {
+        "privateUsageBytes": 337272832,
+        "workingSetBytes": 218415104
+      },
+      "controller": {
+        "magic": 3553986980739171143,
+        "reserveBytes": 268435456,
+        "collections": 34,
+        "scannedBlocks": 1971,
+        "freeBefore": 262197248,
+        "freeAfter": 262197248,
+        "decommittedBytes": 580022272,
+        "decommittedBlocks": 53,
+        "rejected": 0,
+        "lastGC": 34,
+        "lastReturned": 0,
+        "lastScanned": 86,
+        "sortRuns": 34,
+        "sortPages": 2829,
+        "sortLists": 77,
+        "sortChangedLists": 31,
+        "mergeCalls": 34,
+        "mergedBlocks": 43,
+        "remapCalls": 394,
+        "remapFullBytes": 3810922496,
+        "remapPrefixBytes": 143859712,
+        "remapAvoidedBytes": 3667062784,
+        "splitPrefixes": 394,
+        "growthCalls": 68,
+        "growthOriginalBlocks": 274750,
+        "growthActualBlocks": 274750,
+        "pendingBlock": 0,
+        "pendingFull": 0,
+        "pendingBytes": 0
+      },
+      "vm": {
+        "gcOSRoots": 80,
+        "monoCommittedBytes": 309944320,
+        "monoReservedBytes": 818905088,
+        "regionCount": 135
+      }
+    },
+    {
+      "stage": "Fragmented",
+      "output": "FRAGMENTED_OK rounds=4 liveSmall=8192 liveLarge=4096 pinnedLive=verified",
+      "elapsedMs": 76.16699999198318,
+      "counters": {
+        "gc_count": 38,
+        "heap": 1125638144,
+        "free": 1053069312,
+        "unmapped": 801198080
+      },
+      "process": {
+        "privateUsageBytes": 355954688,
+        "workingSetBytes": 270807040
+      },
+      "controller": {
+        "magic": 3553986980739171143,
+        "reserveBytes": 268435456,
+        "collections": 38,
+        "scannedBlocks": 18911,
+        "freeBefore": 251871232,
+        "freeAfter": 251871232,
+        "decommittedBytes": 647131136,
+        "decommittedBlocks": 57,
+        "rejected": 0,
+        "lastGC": 38,
+        "lastReturned": 57344,
+        "lastScanned": 4254,
+        "sortRuns": 38,
+        "sortPages": 7521,
+        "sortLists": 85,
+        "sortChangedLists": 35,
+        "mergeCalls": 38,
+        "mergedBlocks": 46,
+        "remapCalls": 1691,
+        "remapFullBytes": 14773178368,
+        "remapPrefixBytes": 228782080,
+        "remapAvoidedBytes": 14544396288,
+        "splitPrefixes": 1691,
+        "growthCalls": 68,
+        "growthOriginalBlocks": 274750,
+        "growthActualBlocks": 274750,
+        "pendingBlock": 0,
+        "pendingFull": 0,
+        "pendingBytes": 0
+      },
+      "vm": {
+        "gcOSRoots": 85,
+        "monoCommittedBytes": 328982528,
+        "monoReservedBytes": 801198080,
+        "regionCount": 139
+      }
+    },
+    {
+      "stage": "Exceptions",
+      "output": "EXCEPTIONS_OK dispose=25000 exceptions=250 pinnedLive=verified",
+      "elapsedMs": 22.611599997617304,
+      "counters": {
+        "gc_count": 63,
+        "heap": 1125638144,
+        "free": 1091850240,
+        "unmapped": 840060928
+      },
+      "process": {
+        "privateUsageBytes": 318484480,
+        "workingSetBytes": 249470976
+      },
+      "controller": {
+        "magic": 3553986980739171143,
+        "reserveBytes": 268435456,
+        "collections": 63,
+        "scannedBlocks": 20785,
+        "freeBefore": 251826176,
+        "freeAfter": 251826176,
+        "decommittedBytes": 680685568,
+        "decommittedBlocks": 59,
+        "rejected": 0,
+        "lastGC": 63,
+        "lastReturned": 0,
+        "lastScanned": 75,
+        "sortRuns": 63,
+        "sortPages": 8496,
+        "sortLists": 85,
+        "sortChangedLists": 35,
+        "mergeCalls": 63,
+        "mergedBlocks": 47,
+        "remapCalls": 1691,
+        "remapFullBytes": 14773178368,
+        "remapPrefixBytes": 228782080,
+        "remapAvoidedBytes": 14544396288,
+        "splitPrefixes": 1691,
+        "growthCalls": 68,
+        "growthOriginalBlocks": 274750,
+        "growthActualBlocks": 274750,
+        "pendingBlock": 0,
+        "pendingFull": 0,
+        "pendingBytes": 0
+      },
+      "vm": {
+        "gcOSRoots": 85,
+        "monoCommittedBytes": 290119680,
+        "monoReservedBytes": 840060928,
+        "regionCount": 140
+      }
+    },
+    {
+      "stage": "Final.GC",
+      "output": "CHECK_LIVE_OK retiredContainerAlive=False",
+      "elapsedMs": 0.9680000366643071,
+      "counters": {
+        "gc_count": 64,
+        "heap": 1125638144,
+        "free": 1091891200,
+        "unmapped": 840060928
+      },
+      "process": {
+        "privateUsageBytes": 317792256,
+        "workingSetBytes": 249184256
+      },
+      "controller": {
+        "magic": 3553986980739171143,
+        "reserveBytes": 268435456,
+        "collections": 64,
+        "scannedBlocks": 20859,
+        "freeBefore": 251830272,
+        "freeAfter": 251830272,
+        "decommittedBytes": 680685568,
+        "decommittedBlocks": 59,
+        "rejected": 0,
+        "lastGC": 64,
+        "lastReturned": 0,
+        "lastScanned": 74,
+        "sortRuns": 64,
+        "sortPages": 8534,
+        "sortLists": 85,
+        "sortChangedLists": 35,
+        "mergeCalls": 64,
+        "mergedBlocks": 47,
+        "remapCalls": 1691,
+        "remapFullBytes": 14773178368,
+        "remapPrefixBytes": 228782080,
+        "remapAvoidedBytes": 14544396288,
+        "splitPrefixes": 1691,
+        "growthCalls": 68,
+        "growthOriginalBlocks": 274750,
+        "growthActualBlocks": 274750,
+        "pendingBlock": 0,
+        "pendingFull": 0,
+        "pendingBytes": 0
+      },
+      "vm": {
+        "gcOSRoots": 85,
+        "monoCommittedBytes": 290119680,
+        "monoReservedBytes": 840060928,
+        "regionCount": 140
+      }
+    },
+    {
+      "stage": "ReuseAfterStress",
+      "output": "REUSE_OK liveAndNewPages=verified",
+      "elapsedMs": 97.79409994371235,
+      "counters": {
+        "gc_count": 66,
+        "heap": 1125638144,
+        "free": 554758144,
+        "unmapped": 428818432
+      },
+      "process": {
+        "privateUsageBytes": 728825856,
+        "workingSetBytes": 660312064
+      },
+      "controller": {
+        "magic": 3553986980739171143,
+        "reserveBytes": 268435456,
+        "collections": 66,
+        "scannedBlocks": 21007,
+        "freeBefore": 201474048,
+        "freeAfter": 201474048,
+        "decommittedBytes": 680685568,
+        "decommittedBlocks": 59,
+        "rejected": 0,
+        "lastGC": 66,
+        "lastReturned": 0,
+        "lastScanned": 74,
+        "sortRuns": 66,
+        "sortPages": 8610,
+        "sortLists": 85,
+        "sortChangedLists": 35,
+        "mergeCalls": 66,
+        "mergedBlocks": 47,
+        "remapCalls": 1740,
+        "remapFullBytes": 15595261952,
+        "remapPrefixBytes": 640024576,
+        "remapAvoidedBytes": 14955237376,
+        "splitPrefixes": 1740,
+        "growthCalls": 68,
+        "growthOriginalBlocks": 274750,
+        "growthActualBlocks": 274750,
+        "pendingBlock": 0,
+        "pendingFull": 0,
+        "pendingBytes": 0
+      },
+      "vm": {
+        "gcOSRoots": 85,
+        "monoCommittedBytes": 701362176,
+        "monoReservedBytes": 428818432,
+        "regionCount": 189
+      }
+    }
+  ],
+  "liveBytes": 33554432,
+  "temporaryBytes": 536870912,
+  "testProcessOnly": true,
+  "gameCalls": 0,
+  "gameWrites": 0
+}

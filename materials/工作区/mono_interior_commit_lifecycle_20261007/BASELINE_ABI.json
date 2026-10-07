@@ -1,0 +1,43 @@
+{
+  "mode": "BASELINE",
+  "rows": [
+    {
+      "thunk": "remember_remap",
+      "offset": 0,
+      "stackRestored": true,
+      "returnRestored": true
+    },
+    {
+      "thunk": "remember_remap",
+      "offset": 4,
+      "stackRestored": true,
+      "returnRestored": true
+    },
+    {
+      "thunk": "remember_remap",
+      "offset": 31,
+      "stackRestored": true,
+      "returnRestored": true
+    },
+    {
+      "thunk": "take_prefix",
+      "offset": 0,
+      "stackRestored": true,
+      "returnRestored": true
+    },
+    {
+      "thunk": "take_prefix",
+      "offset": 4,
+      "stackRestored": true,
+      "returnRestored": true
+    },
+    {
+      "thunk": "take_prefix",
+      "offset": 33,
+      "stackRestored": true,
+      "returnRestored": true
+    }
+  ],
+  "registeredByWindowsLoader": true,
+  "gameWrites": 0
+}

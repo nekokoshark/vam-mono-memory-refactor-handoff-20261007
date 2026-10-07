@@ -1,0 +1,15 @@
+{
+  "command": [
+    "powershell",
+    "-NoProfile",
+    "-Command",
+    "[Console]::OutputEncoding=[Text.UTF8Encoding]::new($false); & 'F:\\vam1.22.0.12\\\u5de5\u4f5c\u533a\\mono_interior_commit_lifecycle_20261007\\install.ps1' -Mode Install"
+  ],
+  "input": {
+    "Mode": "Install",
+    "TestCopy": false
+  },
+  "stdout": "SNAPSHOT PASS: 81 files copied and hash-verified; game files read-only\nINSTALL_PASS mode=Install testCopy=False sha256=a1a8f07d43aab8542247b18d0109a49508ff1489c0aba6b9c9ce1133f4392496 runtimeModified=False\n",
+  "stderr": "",
+  "exitStatus": 0
+}

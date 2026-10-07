@@ -1,0 +1,53 @@
+[
+  {
+    "stage": "GC1",
+    "staticNonNull": false,
+    "weakAlive": true,
+    "pushCalls": 2,
+    "stackBytes": 6104,
+    "stackMatches": 1,
+    "rejectedRanges": 0,
+    "matches": [
+      {
+        "tid": 61244,
+        "slotHidden": 18446743224799268159,
+        "targetOffset": 0,
+        "startHidden": 18446743224799270015
+      }
+    ]
+  },
+  {
+    "stage": "GC2",
+    "staticNonNull": false,
+    "weakAlive": true,
+    "pushCalls": 2,
+    "stackBytes": 6104,
+    "stackMatches": 1,
+    "rejectedRanges": 0,
+    "matches": [
+      {
+        "tid": 61244,
+        "slotHidden": 18446743224799268159,
+        "targetOffset": 0,
+        "startHidden": 18446743224799270015
+      }
+    ]
+  },
+  {
+    "stage": "GC3",
+    "staticNonNull": false,
+    "weakAlive": true,
+    "pushCalls": 2,
+    "stackBytes": 6104,
+    "stackMatches": 1,
+    "rejectedRanges": 0,
+    "matches": [
+      {
+        "tid": 61244,
+        "slotHidden": 18446743224799268159,
+        "targetOffset": 0,
+        "startHidden": 18446743224799270015
+      }
+    ]
+  }
+]

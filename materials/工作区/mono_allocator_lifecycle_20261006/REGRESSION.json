@@ -1,0 +1,96 @@
+{
+  "error": "Too many heap sections: Increase MAXHINCR or MAX_HEAP_SECTS",
+  "rejectedSHA256": "f3f46bba95a099cf6a20971aa6da0eded497f7b5c71b48653ec35b76bebb310a",
+  "lastObservedPID": 52876,
+  "liveSectionCounterCaptured": false,
+  "nativeAddToHeapRVA": "0x157ef8",
+  "counterRVA": "0x269bc8",
+  "counterWidth": 8,
+  "sectionTableRVA": "0x281ac8",
+  "sectionEntryBytes": 16,
+  "limit": 4096,
+  "immediateRestore": {
+    "command": "powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\\install.ps1 -Mode Restore",
+    "stdout": "SNAPSHOT PASS: 81 files copied and hash-verified; game files read-only\nINSTALL_PASS mode=Restore testCopy=False sha256=cd7ab354a43faf18479c3a2d1f57d2d068769b8a490338942f6c510e8b02242d runtimeModified=False\n",
+    "exitStatus": 0
+  },
+  "boundedLogTail": [
+    "[Info   :VaM Memory] [mesh-owner-ret] settled-1 stale-skin retiredFields=0 retiredFieldsTotal=0 retiredSkinWeakAlive=0 (weak observations, not proof of released bytes)",
+    "[Info   :VaM Memory] [mesh-owner-ret] settled-1 known-roots page=0 morePages=False selectors=0 nodes=0 matchedDeadOwners=0 rootSeeds=0 rootUntrackedDead=0 rootDeadDirectArrayBytes=0 rootDeadSkins=0 rootDeadSkinDirectArrayBytes=0 rootDeadWraps=0 rootDeadWrapDirectArrayBytes=0 rootTotalDeadDirectArrayBytes=0 rootRows=0 rootRowsSkipped=0 rootRowsTruncated=False dynamicCandidates=0 dynamicCandidatesSkipped=0 controlCandidates=0 controlCandidatesSkipped=0 cacheCandidates=0 cacheCandidatesSkipped=0 partial=False budgetClipped=False missingFields=0 rowCap=256 nodeCap=16384 directoryPageCap=256 nestedContainerCap=4096 (fixed selector and page-zero Atom registry paths; unmatched is not proof of no root)",
+    "[Info   :VaM Memory] [mesh-owner-ret] settled-1 status=done scope=hook-observed-DAZMesh+fixed-root owners=0 tracked=0 nativeLiveOwners=0 nativeDeadManagedOwners=0 repeatedDeriveOwners=0 registeredMesh=0 registeredMaterial=0 unityDead=0 directArrayPayloadBytes=0 nativeDeadArrayPayloadBytes=0 unknownFieldsOrLists=0 arraySkipped=0 registrationsTotal=0 exitCalls=0 exitRowsDropped=0 ownerSkippedEvents=0 retiredWeak=0 (direct arrays held by native-dead owners may be shared; not total heap/native/GPU or all preexisting owners)",
+    "[Info   :VaM Memory] [MemProbe] snap[watch] ws=9.59GB pagefile=14.94GB heap=6.57GB gfx=11083MB texCache=0(0.00GB live=0 dead=0(0.00GB) untracked=0) monoHeap=8.51GB monoUsed=6.57GB monoFree=1.94GB",
+    "[Info   :VaM Memory] [MemProbe] attr[watch] heapMiB=6727(+868) poolMiB=0(+0) poolRet=9(+9) poolDrop=9(+9) poolEvict=0(+0) varPath=2950460(+0) varUid=737615(+0) pkgByPath=40440(+0) morphDir=0(+0) morphJson=0(+0) morphInit=0(+0) mat=225(+135) mesh=448(+225) tex2d=607(+357) rt=11(-3) attrMs=0",
+    "[Info   :VaM Memory] [ret] watch gcHist gcHist=idle_growth_watchdog:1/total=1",
+    "[Info   :VaM Memory] [gpu-owner-ret] settled-1 status=done persons=0 rootLiveOwners=0 rootDeadOwners=0 weakOnlyOwners=0 arrays=0 unionPayloadBytes=0 rootLiveBytes=0 rootDeadBytes=0 weakOnlyBytes=0 disposedStrongBytes=0 sharedAcrossOwnersBytes=0 nodes=4 missingFields=0 unknownArrays=0 clipped=0 weakDropped=0 consumerManager=live consumersBefore=0 consumersAfter=0 consumersScanned=0 consumerDuplicates=0 consumerNulls=0 consumerNativeDead=0 consumerOtherTypes=0 clothAttachments=0 attachmentReadFailures=0 clothSwitcherVisits=0 clothCreatorVisits=0 clothReloaderVisits=0 scopeLimited=True (CPU array capacity, not native/GPU/exclusive bytes; categories overlap; flags=live1/dead2/weak4/disposedStrong8)",
+    "[Info   :Quest 3 Trigger UI] [帧看门狗] [long-frame] freeze=28.0s processCpu=33.5s inner=DAZMorphBank::RefreshPackageMorphsx103, DAZMorphBank::RefreshRuntimeMorphsx8, DAZMorphBank::InitMorphsx2",
+    "[Error  :Quest 3 Trigger UI] Q3 hud diag[hud-reopen]: selectMode=Off activeUI=SelectedOptions worldUIActivated=True disableAllNav=False hudActive=True rig=False,False,False, canvases=[Scene Control Canvas+a][HelpHUDCanvas+a][VRKeyboardFull-a][OVR Help Canvas-a][HeadPossessedCanvas-a][MsgHUDCanvas-a][ErrorHUDCanvas-a][IsolateEditSubSceneCanvas-a][IsolateEditAtomCanvas-a][MainUICanvas-a][TemplateCanvas-a][Online Scene Browser Canvas-a][Canvas+a][RenameCanvas-a][DeleteCanvas-a][RenameCanvas-a][DeleteCanvas-a][RenameCanvas-a][DeleteCanvas-a][ConfirmLoadCanvas-a][ConfirmOverwriteCanvas-a][Canvas-a][JoinPatreonCanvas-a][ErrorLogCanvas-a][MessageLogCanvas-a][UserConfirmCanvas+a][Loading Canvas-a][LoadingIconCanvas-a][Loading Canvas-a][WaitCanvas-a][Canvas+a][RenameCanvas-a][DeleteCanvas-a][RenameCanvas-a][DeleteCanvas-a][HubResourceBrowserCanvas-a][Online Scene Browser Canvas-a][VRKeyboardFullWorldUI-a][Canvas+a][Cursor-a][CursorRight-a][CursorMouse-a][Canvas-a][Canvas-a][Canvas-a][MouseCrosshair-a][MainWindowUI+a][PerfCanvas-a][ScreenShotCanvas-a][BackCanvas-a][ScreenShotCanvas-a][BackCanvas-a][Canvas-a][New Game Object+a][New Game Object+a][New Game Object+a][New Game Object+a][AlwaysShowPluginUIs+a][New Game Object+a][New Game Object+a][New Game Object+a][New Game Object+a][Quest3 Preset Browser-a][New Game Object+a] gso=none uiDisabled=False im=[LookInputModule+en useLookDrag=True useLookDragSlider=True useLookDragScrollbar=True] badCG=0 deadSel=2/13932 [ButtonOpenSceneFullDialog] [DynamicButton(Clone)] btn=RectTransform,CanvasRenderer,Image(c=RGBA(0.172, 0.246, 0.390, 1.000),ray=True),Button,UIStyleImage,EventTrigger, OVL:BackPanel c=RGBA(1.000, 1.000, 1.000, 0.020) ray=True sib=0/7 act=True OVL:ButtonOnlineBrowseDisabled c=RGBA(0.172, 0.246, 0.390, 1.000) ray=True sib=7/29 act=False OVL:ButtonBlank c=RGBA(1.000, 1.000, 1.000, 1.000) ray=False sib=8/29 act=False OVL:ButtonOpenPackageManagerDisabled c=RGBA(0.172, 0.246, 0.390, 1.000) ray=True sib=10/29 act=False OVL:Image c=RGBA(1.000, 1.000, 1.000, 0.502) ray=True sib=0/1 act=False OVL:ButtonOpenPackageDownloader c=RGBA(0.172, 0.246, 0.390, 1.000) ray=True sib=11/29 act=True OVL:ButtonOpenPackageDownloaderDisabled c=RGBA(0.172, 0.246, 0.390, 1.000) ray=True sib=12/29 act=False OVL:Image c=RGBA(1.000, 1.000, 1.000, 0.502) ray=True sib=0/1 act=False OVL:ButtonToggleMotionControllerModels c=RGBA(0.624, 0.071, 0.412, 1.000) ray=True sib=13/29 act=True OVL:Image c=RGBA(1.000, 1.000, 1.000, 1.000) ray=True sib=0/1 act=True OVL:ButtonPossessAndAlignHead c=RGBA(0.624, 0.071, 0.412, 1.000) ray=True sib=14/29 act=True OVL:Image c=RGBA(1.000, 1.000, 1.000, 1.000) ray=True sib=0/1 act=True OVL:ButtonToggleMotionControllerCollision c=RGBA(0.624, 0.071, 0.412, 1.000) ray=True sib=15/29 act=True OVL:Image c=RGBA(1.000, 1.000, 1.000, 1.000) ray=True sib=0/1 act=True OVL:ButtonResetPlayback c=RGBA(0.172, 0.390, 0.390, 1.000) ray=True sib=16/29 act=True OVL:Image c=RGBA(1.000, 1.000, 1.000, 1.000) ray=True sib=0/1 act=True OVL:ButtonAddPersonAtomDisabled c=RGBA(0.057, 0.391, 0.647, 1.000) ray=True sib=18/29 act=False OVL:Image c=RGBA(1.000, 1.000, 1.000, 0.502) ray=True sib=0/1 act=False OVL:ButtonAddPersonAtomPlayMode c=RGBA(1.000, 1.000, 1.000, 1.000) ray=False sib=20/29 act=True OVL:ButtonAddCustomUnityAssetAtomPlayMode c=RGBA(1.000, 1.000, 1.000, 1.000) ray=False sib=22/29 act=True OVL:ButtonAddCustomUnityAssetAtomDisabled c=RGBA(0.057, 0.391, 0.647, 1.000) ray=True sib=23/29 act=False OVL:Image c=RGBA(1.000, 1.000, 1.000, 0.502) ray=True sib=0/1 act=False OVL:ButtonAddSubSceneAtomPlayMode c=RGBA(1.000, 1.000, 1.000, 1.000) ray=False sib=26/29 act=True OVL:ButtonAddAtomPlayMode c=RGBA(1.000, 1.000, 1.000, 1.000) ray=False sib=28/29 act=True OVL:ButtonOpenSceneForEdit c=RGBA(0.172, 0.246, 0.390, 1.000) ray=True sib=1/26 act=True OVL:Image c=RGBA(0.875, 0.776, 0.537, 1.000) ray=True sib=0/1 act=True OVL:ButtonOpenSceneForEditDisabled c=RGBA(0.172, 0.246, 0.390, 1.000) ray=True sib=2/26 act=False OVL:Image c=RGBA(0.875, 0.776, 0.537, 0.502) ray=True sib=0/1 act=False OVL:ButtonOpenTemplateForEdit c=RGBA(0.172, 0.246, 0.390, 1.000) ray=True sib=3/26 act=True OVL:Image c=RGBA(0.000, 1.000, 0.000, 1.000) ray=True sib=0/3 act=True OVL:Image c=RGBA(0.208, 0.208, 0.208, 1.000) ray=True sib=1/3 act=False OVL:Image c=RGBA(0.172, 0.246, 0.390, 1.000) ray=True sib=2/3 act=True OVL:ButtonOpenTemplateForEditDisabled c=RGBA(0.172, 0.246, 0.390, 1.000) ray=True sib=4/26 act=False OVL:Image c=RGBA(0.000, 1.000, 0.000, 0.502) ray=True sib=0/2 act=False OVL:Image c=RGBA(0.172, 0.246, 0.390, 0.502) ray=True sib=1/2 act=False OVL:ButtonScreenshotMode c=RGBA(0.172, 0.246, 0.390, 1.000) ray=True sib=5/26 act=True OVL:Image c=RGBA(1.000, 1.000, 1.000, 1.000) ray=True sib=0/1 act=True OVL:ButtonHubBrowse c=RGBA(0.172, 0.246, 0.390, 1.000) ray=True sib=6/26 act=True OVL:Image c=RGBA(1.000, 1.000, 1.000, 1.000) ray=True sib=0/1 act=True OVL:ButtonHubBrowseDisabled c=RGBA(0.172, 0.246, 0.390, 1.000) ray=True sib=7/26 act=False OVL:Image c=RGBA(1.000, 1.000, 1.000, 0.502) ray=True sib=0/1 act=False OVL:ButtonBlank c=RGBA(1.000, 1.000, 1.000, 1.000) ray=False sib=8/26 act=False OVL:ButtonOpenPackageBuilder c=RGBA(0.172, 0.246, 0.390, 1.000) ray=True sib=9/26 act=True OVL:Image c=RGBA(1.000, 1.000, 1.000, 1.000) ray=True sib=0/1 act=True OVL:ButtonOpenPackageBuilderDisabled c=RGBA(0.172, 0.246, 0.390, 1.000) ray=True sib=10/26 act=False OVL:Image c=RGBA(1.000, 1.000, 1.000, 0.502) ray=True sib=0/1 act=False OVL:ButtonOpenMessageLog c=RGBA(0.172, 0.246, 0.390, 1.000) ray=True sib=11/26 act=True OVL:Image c=RGBA(1.000, 1.000, 1.000, 1.000) ray=True sib=0/1 act=True OVL:ButtonOpenErrorLog c=RGBA(0.172, 0.246, 0.390, 1.000) ray=True sib=12/26 act=True OVL:Image c=RGBA(1.000, 1.000, 1.000, 1.000) ray=True sib=0/1 act=True OVL:ButtonStopPossess c=RGBA(0.624, 0.071, 0.412, 1.000) ray=True sib=13/26 act=True OVL:Image c=RGBA(1.000, 1.000, 1.000, 1.000) ray=True sib=0/1 act=True OVL:ButtonToggleLeapHands c=RGBA(0.624, 0.071, 0.412, 1.000) ray=True sib=14/26 act=True OVL:ButtonInactiveTargetsOption c=RGBA(1.000, 1.000, 1.000, 1.000) ray=False sib=17/26 act=False OVL:ButtonShowInactiveTargets c=RGBA(0.172, 0.390, 0.390, 1.000) ray=True sib=0/2 act=False OVL:Image c=RGBA(0.689, 0.689, 0.689, 1.000) ray=True sib=0/1 act=False OVL:ButtonHideInactiveTargets c=RGBA(0.172, 0.390, 0.390, 1.000) ray=True sib=1/2 act=False OVL:Image c=RGBA(1.000, 1.000, 1.000, 1.000) ray=True sib=0/1 act=False OVL:ButtonBlank c=RGBA(1.000, 1.000, 1.000, 1.000) ray=False sib=18/26 act=False OVL:ButtonSelect c=RGBA(0.172, 0.390, 0.390, 1.000) ray=True sib=20/26 act=False OVL:Image c=RGBA(1.000, 1.000, 1.000, 1.000) ray=True sib=0/1 act=False OVL:ButtonSelectPerson c=RGBA(0.172, 0.390, 0.390, 1.000) ray=True sib=22/26 act=False OVL:Image c=RGBA(1.000, 1.000, 1.000, 1.000) ray=True sib=0/1 act=False OVL:ButtonSelectedOptions c=RGBA(0.172, 0.390, 0.390, 1.000) ray=True sib=24/26 act=False OVL:Image c=RGBA(1.000, 1.000, 1.000, 1.000) ray=True sib=0/1 act=False OVL:Panel c=RGBA(0.172, 0.246, 0.390, 1.000) ray=True sib=3/7 act=True OVL:OtherOptionsPopup c=RGBA(0.172, 0.246, 0.390, 1.000) ray=True sib=2/3 act=False OVL:DefaultValueButton c=RGBA(1.000, 1.000, 1.000, 1.000) ray=True sib=4/14 act=False OVL:MinusPoint01Button c=RGBA(1.000, 1.000, 1.000, 1.000) ray=True sib=5/14 act=False OVL:1Button c=RGBA(1.000, 1.000, 1.000, 1.000) ray=True sib=6/14 act=False OVL:PlusPoint01Button c=RGBA(1.000, 1.000, 1.000, 1.000) ray=True sib=7/14 act=False OVL:PlusPoint1Button c=RGBA(1.000, 1.000, 1.000, 1.000) ray=True sib=9/14 act=False OVL:Plus1Button c=RGBA(1.000, 1.000, 1.000, 1.000) ray=True sib=10/14 act=False OVL:MinusPoint1Button c=RGBA(1.000, 1.000, 1.000, 1.000) ray=True sib=11/14 act=False OVL:Panel c=RGBA(1.000, 1.000, 1.000, 1.000) ray=True sib=0/12 act=False OVL:Player Height Slider c=RGBA(0.000, 0.000, 0.000, 0.498) ray=True sib=1/12 act=False OVL:Fill c=RGBA(1.000, 1.000, 1.000, 1.000) ray=True sib=0/1 act=False OVL:Handle c=RGBA(1.000, 1.000, 1.000, 1.000) ray=True sib=0/1 act=False OVL:MinusPoint01Button c=RGBA(1.000, 1.000, 1.000, 1.000) ray=True sib=5/12 act=False OVL:ZeroButton c=RGBA(1.000, 1.000, 1.000, 1.000) ray=True sib=6/12 act=False OVL:Minus1Button c=RGBA(1.000, 1.000, 1.000, 1.000) ray=True sib=8/12 act=False OVL:MinusPoint1Button c=RGBA(1.000, 1.000, 1.000, 1.000) ray=True sib=11/12 act=False",
+    "[Info   : Q3FavDiag] press miss | right=SceneAtoms/CoreControl/WorldScaleAdjust/HUD/New Game Object/DynamicButton(Clone)/Text{ace=False,comps=RectTransform,CanvasRenderer,Text,UIStyleText} | left=null | favBar=False | asmHash=1105672448",
+    "[Info   :Quest 3 Trigger UI] [场景加速] [slow-call] ImageLoaderThreaded::PostProcessCompletedImages ms=307",
+    "[Info   :Quest 3 Trigger UI] [场景加速] 依赖缓存命中：1 个依赖包、11 个原子（第 58 次加载）",
+    "[Info   :Quest 3 Trigger UI] [stream-accel] burst seen=10265 wrapped=76 bytes=0.8MiB burstBytes=0.4MiB skippedType=0 other=InflaterInputStream types=InflaterInputStream:10189,PartialInputStream:76",
+    "[Info   :Quest 3 Trigger UI] [场景加速] #LoadCo[1] state=0 next=1 segment=17.7ms window=+65.1ms",
+    "[Info   :Quest 3 Trigger UI] Q3 shots: loaded 0 for LDR.Camille_Fix.1:/Saves/scene/LDR/Camille_Fix.json",
+    "[Info   :Quest 3 Trigger UI] [场景加速] #LoadCo[2] state=1 next=2 segment=0.8ms window=+99.1ms",
+    "[Info   :  VaM DLSS] [vdn] VaM scene load STARTED",
+    "[Info   :VaM Memory] [scene-preload-lease] consumerDeferred total=1 speculativeLease=notAcquired actualLoad=native countsNotBytes=True",
+    "[Info   :VaM Memory] [scene-preload-lease] consumerDeferred total=2 speculativeLease=notAcquired actualLoad=native countsNotBytes=True",
+    "[Info   :VaM Memory] [scene-preload-lease] consumerDeferred total=3 speculativeLease=notAcquired actualLoad=native countsNotBytes=True",
+    "[Info   :Quest 3 Trigger UI] [场景加速] #LoadCo[3] state=2 next=5 segment=26.3ms window=+160.8ms",
+    "[Info   :Quest 3 Trigger UI] [场景加速] #LoadCo[4] state=5 next=6 segment=5.8ms window=+179.5ms",
+    "[Info   :VaM Memory] [texture-metadata] first same-request read/parse reuse",
+    "[Info   :Quest 3 Trigger UI] [场景加速] #LoadCo[5] state=6 next=7 segment=6.0ms window=+201.5ms",
+    "[Info   :Quest 3 Trigger UI] [场景加速] #LoadCo[6] state=7 next=7 segment=0.0ms window=+248.6ms",
+    "[Info   :Quest 3 Trigger UI] [场景加速] #LoadCo[7] state=7 next=7 segment=0.0ms window=+260.4ms",
+    "[Info   :Quest 3 Trigger UI] [场景加速] #LoadCo[8] state=7 next=8 segment=2166.7ms window=+2508.5ms",
+    "[Info   :VaM Memory] [MemProbe] snap[watch] ws=9.47GB pagefile=15.15GB heap=5.76GB gfx=11364MB texCache=11(0.22GB live=0 dead=0(0.00GB) untracked=11) monoHeap=8.51GB monoUsed=5.76GB monoFree=2.75GB",
+    "[Info   :VaM Memory] [MemProbe] attr[watch] heapMiB=5896(-831) poolMiB=0(+0) poolRet=188(+179) poolDrop=188(+179) poolEvict=0(+0) varPath=2950460(+0) varUid=737615(+0) pkgByPath=40440(+0) morphDir=4(+4) morphJson=0(+0) morphInit=0(+0) mat=201(-24) mesh=444(-4) tex2d=816(+209) rt=11(+0) attrMs=0",
+    "[Info   :VaM Memory] [MemProbe] snap[watch] top: Skynet.Addon_Textures.12:/Custom/Atom/Pe…=21MB; Skynet.Addon_Textures.12:/Custom/Atom/Pe…=21MB; Skynet.Addon_Textures.12:/Custom/Atom/Pe…=21MB; Skynet.Addon_Textures.12:/Custom/Atom/Pe…=21MB; Skynet.Addon_Textures.12:/Custom/Atom/Pe…=21MB; Skynet.Addon_Textures.12:/Custom/Atom/Pe…=21MB; ",
+    "[Info   :Quest 3 Trigger UI] [场景加速] #LoadCo[9] state=8 next=9 segment=19.2ms window=+2695.8ms",
+    "[Info   :VaM Memory] [texture-budget] cycle admitted=15 deferred=4 earlyDiscarded=0 cacheSized=12 cacheProbeMs=9 peakReservedMiB=1536 headerSized=0 headerMs=0 pendingWriteMiB=0 directCopies=0 compactSavedMiB=0 compactArrays=0 inPlaceBumps=0 managedDecodeMiB=22 bumpScratchMiB=0 heapMiB=6845->5897 poolMiB=0 poolHit=0/0 poolEvicted=0 poolShared=0/0/0/0 sharedLive=0 sharedMiB=0 cacheReuse=0/0MiB fallback=188 nativeStaged=35/353MiB nativeUploaded=35 nativeLive=0MiB nativeHeld=62MiB nativeFail=0 probeMaxMs=1 probeIoMs=9 probeSuspended=0 gc0InCycle=2 (estimate, not actual memory; not a preset completion signal)",
+    "[Info   :VaM Memory] [texture-cache-write] profile cumulative=True readbacks=0 failed=0 writeBytes=0 layoutCandidates=0 layoutCandidateBytes=0 maxRawPlusWriteBytes=0 pendingBytes=0 peakPendingBytes=0 readbackTicks=0 stopwatchFrequency=10000000 shapeUnknown=0 (layout candidates, not pixel proof; capacities, not process peak; pending includes older writers)",
+    "[Info   :VaM Memory] [PersonPrepared] units=1 atoms=0 retire=0 native=0 bundles=1 scenes=1 plans=1 tags=3 faults=0",
+    "[Info   :Quest 3 Trigger UI] [帧看门狗] [long-frame] freeze=2.2s processCpu=18.7s inner=（未挂区间的代码里）"
+  ],
+  "sourceReference": "https://raw.githubusercontent.com/mono/mono/mono-2-10/libgc/alloc.c",
+  "hypothesis": "Reduced expansion batches consume permanent section entries faster; test natural fragmented allocation before attributing mechanism.",
+  "mechanismTest": {
+    "REJECTED": {
+      "runtimeSHA256": "f3f46bba95a099cf6a20971aa6da0eded497f7b5c71b48653ec35b76bebb310a",
+      "retained": 46336,
+      "sections": 3914,
+      "stoppedBeforeFatal": true
+    },
+    "BASELINE": {
+      "runtimeSHA256": "cd7ab354a43faf18479c3a2d1f57d2d068769b8a490338942f6c510e8b02242d",
+      "retained": 50000,
+      "sections": 82,
+      "stoppedBeforeFatal": false
+    },
+    "MODIFIED": {
+      "runtimeSHA256": "d89ccf26fd75b354244f7225b978667c215d54681a2565df624ac59fb6ac323e",
+      "retained": 50000,
+      "sections": 82,
+      "stoppedBeforeFatal": false
+    },
+    "ROLLBACK": {
+      "runtimeSHA256": "cd7ab354a43faf18479c3a2d1f57d2d068769b8a490338942f6c510e8b02242d",
+      "retained": 50000,
+      "sections": 82,
+      "stoppedBeforeFatal": false
+    }
+  },
+  "conclusion": "Rejected reduced-batch policy reproduces near-exhaustion of the unchanged native section table under fragmented retained allocation. Restoring original expansion batch arguments completes the same target using baseline-equivalent section count. Game incident counter was not captured.",
+  "installationCopyTest": [
+    {
+      "command": "powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\\install.ps1 -Mode Install -TestCopy",
+      "stdout": "INSTALL_PASS mode=Install testCopy=True sha256=d89ccf26fd75b354244f7225b978667c215d54681a2565df624ac59fb6ac323e runtimeModified=False\n",
+      "exitStatus": 0
+    },
+    {
+      "command": "powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\\install.ps1 -Mode Restore -TestCopy",
+      "stdout": "INSTALL_PASS mode=Restore testCopy=True sha256=cd7ab354a43faf18479c3a2d1f57d2d068769b8a490338942f6c510e8b02242d runtimeModified=False\n",
+      "exitStatus": 0
+    }
+  ],
+  "correctedSHA256": "d89ccf26fd75b354244f7225b978667c215d54681a2565df624ac59fb6ac323e"
+}

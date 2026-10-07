@@ -1,0 +1,47 @@
+Mono 小对象页取用生命周期已冷安装 D4685C71；下次自然启动生效。
+CHANGED_BRANCH: GC_new_hblk RVA 0x161EBA -> reuse_small -> original GC_allochblk_nth / full-search fallback
+CHANGED_FIELDS: original 56 state words preserved; six counters at word 56; 32 complemented non-owning hints at word 62.
+BASELINE_SHA256: a1a8f07d43aab8542247b18d0109a49508ff1489c0aba6b9c9ce1133f4392496
+MODIFIED_SHA256: d4685c71704ef7f222feebfb93851d7f3b6d354998c2e6bc8347268e047c7b3d
+
+MODIFIED_FILE.dll: F:\vam1.22.0.12\工作区\mono_reuse_lifecycle_20261007\MODIFIED_FILE.dll
+DIFF_FILE.patch: F:\vam1.22.0.12\工作区\mono_reuse_lifecycle_20261007\DIFF_FILE.patch
+VERIFICATION.txt: F:\vam1.22.0.12\工作区\mono_reuse_lifecycle_20261007\VERIFICATION.txt
+ROLLBACK.sh: F:\vam1.22.0.12\工作区\mono_reuse_lifecycle_20261007\ROLLBACK.sh
+
+WORKING_DIRECTORY: F:\vam1.22.0.12\工作区\mono_reuse_lifecycle_20261007
+INPUT: idle quick stress lifecycle failure sections warm reuse cohort isolation spans interior ABI; isolated original Mono children; no game calls/writes.
+
+BASELINE COMMAND: powershell -NoProfile -File CERTIFY.ps1 -Mode BASELINE
+BASELINE INPUT: mode=BASELINE; same 13 isolated cases above.
+BASELINE LITERAL_STDOUT: BASELINE_PASS cases=13
+BASELINE EXIT_STATUS: 0
+BASELINE NESTED_COMMANDS_AND_LITERAL_OUTPUTS: F:\vam1.22.0.12\工作区\mono_reuse_lifecycle_20261007\BASELINE_COMMANDS.json
+
+MODIFIED COMMAND: powershell -NoProfile -File CERTIFY.ps1 -Mode MODIFIED
+MODIFIED INPUT: mode=MODIFIED; same 13 isolated cases above.
+MODIFIED LITERAL_STDOUT: MODIFIED_PASS cases=13
+MODIFIED EXIT_STATUS: 0
+MODIFIED NESTED_COMMANDS_AND_LITERAL_OUTPUTS: F:\vam1.22.0.12\工作区\mono_reuse_lifecycle_20261007\MODIFIED_COMMANDS.json
+
+ROLLBACK COMMAND: powershell -NoProfile -File CERTIFY.ps1 -Mode ROLLBACK
+ROLLBACK INPUT: mode=ROLLBACK; same 13 isolated cases above.
+ROLLBACK LITERAL_STDOUT: ROLLBACK_PASS cases=13
+ROLLBACK EXIT_STATUS: 0
+ROLLBACK NESTED_COMMANDS_AND_LITERAL_OUTPUTS: F:\vam1.22.0.12\工作区\mono_reuse_lifecycle_20261007\ROLLBACK_COMMANDS.json
+
+RESTORED_BEHAVIOR: rollback_copy/mono.dll hashes to A1A8F07D; same 13 tests pass; normal fixture commits 65536 B again.
+CANDIDATE_STATUS: MODIFIED_FILE.dll remains D4685C71; its normal fixture commits 0 B; blacklisted fixture commits 4096 B versus 65536 B baseline/rollback.
+DEPLOYMENT_COPY_RESULT: Install/Restore exit 0; restored A1A8F07D. Historical pre-exit Check: INSTALL_PENDING gameRunning=True diskModified=False, exit 2.
+PRESERVED: original marking/locks/live aliases/blacklists/OOM/expansion arguments/4096 sections; A1 retire, sort, merge, interior and 64-KiB quantum policies.
+FIXTURE_NOT_GAME_SAVINGS: 64-KiB avoided commitment is a constructed native allocation test, not physical-RAM benefit or proof that continuous growth is solved.
+TIMING: one-run warm fixture retains 10931 cold remaps in all arms; no game loading/frame-time benefit asserted.
+ROLLBACK.sh is executable under Git Bash; CERTIFY ROLLBACK executes test -x and the script before validation.
+INSTALL/RESTORE: install.ps1 -Mode Install/Restore, only after normal game exit. These local tools reuse adjacent audited engineering projects.
+PACKAGE: F:\vam1.22.0.12\Mono_Warm_Reuse_Lifecycle_20261007.zip
+INSTALL COMMAND: powershell -NoProfile -File install.ps1 -Mode Install
+INSTALL INPUT: mode=Install; testCopy=False; gameExited=True.
+INSTALL LITERAL_OUTPUT: SNAPSHOT PASS: 81 files copied and hash-verified; game files read-only
+INSTALL_PASS mode=Install testCopy=False sha256=d4685c71704ef7f222feebfb93851d7f3b6d354998c2e6bc8347268e047c7b3d runtimeModified=False
+INSTALL EXIT_STATUS: 0
+INSTALLED_STATUS: production/candidate/snapshot hashes match D4685C71; no game started; cold restore remains A1A8F07D.

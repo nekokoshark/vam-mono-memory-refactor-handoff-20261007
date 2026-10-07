@@ -1,0 +1,42 @@
+{
+  "mode": "BASELINE",
+  "runtimeSHA256": "d4685c71704ef7f222feebfb93851d7f3b6d354998c2e6bc8347268e047c7b3d",
+  "rows": [
+    {
+      "case": "same-old-bin",
+      "exactInversions": 14,
+      "membersPreserved": true,
+      "stableEqualCounts": true,
+      "payloadUnchanged": true,
+      "workspaceCleared": false
+    },
+    {
+      "case": "equal-count-stability",
+      "exactInversions": 12,
+      "membersPreserved": true,
+      "stableEqualCounts": true,
+      "payloadUnchanged": true,
+      "workspaceCleared": false
+    },
+    {
+      "case": "exact-uniform",
+      "exactInversions": 0,
+      "membersPreserved": true,
+      "stableEqualCounts": true,
+      "payloadUnchanged": true,
+      "workspaceCleared": false
+    },
+    {
+      "case": "multiple-old-bins",
+      "exactInversions": 11,
+      "membersPreserved": true,
+      "stableEqualCounts": true,
+      "payloadUnchanged": true,
+      "workspaceCleared": false
+    }
+  ],
+  "restoredBeforeResume": true,
+  "gameWrites": 0,
+  "gameCalls": 0,
+  "gameBenefitBytes": null
+}

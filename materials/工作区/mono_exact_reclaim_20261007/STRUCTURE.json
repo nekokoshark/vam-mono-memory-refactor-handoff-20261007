@@ -1,0 +1,14 @@
+{
+  "nativeChangedBytes": 7,
+  "importsUnchanged": true,
+  "exportsUnchanged": true,
+  "newCallsite": "0x161eba",
+  "originalNthUnchanged": true,
+  "originalGrowthUnchanged": true,
+  "originalSectionLimit": 4096,
+  "hintBytes": 256,
+  "originalFieldPrefixWords": 94,
+  "hintWordOffset": 62,
+  "stateWords": 1123,
+  "gameModified": false
+}

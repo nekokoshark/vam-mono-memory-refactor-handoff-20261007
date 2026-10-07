@@ -1,0 +1,52 @@
+Changed branch: whole-free merge: independent size decision -> reserve-aware coalescing
+Changed fields: native mixed mapped/cold state; first43 controller words preserved; append8 counters
+Preserved: collector, objects/addresses/content, TLS/locks, blacklist, OOM, native growth, section cap4096, warm64KiB, reserve256MiB
+BASELINE_SHA256=16aaf4bdf3fa0eaf8a02347ff5304ef0d6bcad5ce7d4e265674c1d4da31de808
+MODIFIED_SHA256=b7c1f56dd38fb70b6ee7e66f3dd65dd86f7a10e832006a5e5a2c3837928974b2
+MODIFIED_FILE=F:\vam1.22.0.12\工作区\mono_free_span_lifecycle_20261006\MODIFIED_FILE.dll
+DIFF_FILE=F:\vam1.22.0.12\工作区\mono_free_span_lifecycle_20261006\DIFF_FILE.patch
+VERIFICATION=F:\vam1.22.0.12\工作区\mono_free_span_lifecycle_20261006\VERIFICATION.txt
+ROLLBACK=F:\vam1.22.0.12\工作区\mono_free_span_lifecycle_20261006\ROLLBACK.sh
+
+BASELINE
+cwd=F:\vam1.22.0.12\工作区\mono_free_span_lifecycle_20261006
+command=powershell -NoProfile -File CERTIFY.ps1 -Mode BASELINE
+input={"cases": 10, "runtime": "isolated-original-Mono"}
+stdout(literal)=BASELINE_PASS cases=10
+exitStatus=0
+
+MODIFIED
+cwd=F:\vam1.22.0.12\工作区\mono_free_span_lifecycle_20261006
+command=powershell -NoProfile -File CERTIFY.ps1 -Mode MODIFIED
+input={"cases": 10, "runtime": "isolated-original-Mono"}
+stdout(literal)=MODIFIED_PASS cases=10
+exitStatus=0
+
+ROLLBACK
+cwd=F:\vam1.22.0.12\工作区\mono_free_span_lifecycle_20261006
+command=powershell -NoProfile -File CERTIFY.ps1 -Mode ROLLBACK
+input={"cases": 10, "runtime": "isolated-original-Mono"}
+stdout(literal)=ROLLBACK_PASS cases=10
+exitStatus=0
+
+Restored: independent copy hash16AAF and original768MiB repeated recommit behavior; candidate retained.
+Ten cases/arm: idle/quick/stress, lifecycle, OOM, fragmented sections, warm pages, >1M pending, faults, 27 VM span cases.
+All mixed directions/ties/within-budget/cold-cold spans coalesce; free totals, links, heap sections and VM/native counters close.
+Native VirtualAlloc/VirtualFree observation uses only the private helper IAT; original imports restored before managed execution resumes.
+Fixture correction: mapped/mapped neighbors normally coalesce inside freehblk, not in the mixed-state merge input.
+Over-budget repeated commit bytes: {"BASELINE": 805306368, "MODIFIED": 0, "ROLLBACK": 805306368}
+Small-page helper observation: {"BASELINE": {"remaps": 10931, "milliseconds": 785.221999976784}, "MODIFIED": {"remaps": 10931, "milliseconds": 769.5395000046119}, "ROLLBACK": {"remaps": 10931, "milliseconds": 742.136700078845}}
+No stable timing, game resident benefit, or cause of the persistent slope is established.
+Budget veto may retain less warm storage than native size-only ordering would eventually choose; first-ready loading must be checked.
+Merged extents do not move live objects; no dynamic section table, growth shrink, game GC, WS trim, game start/stop or memory writes.
+COLD_INSTALL
+command=powershell -NoProfile -File install.ps1 -Mode Install
+input={"testCopy": false, "normalExitConfirmed": true}
+stdout(literal):
+SNAPSHOT PASS: 81 files copied and hash-verified; game files read-only
+INSTALL_PASS mode=Install testCopy=False sha256=b7c1f56dd38fb70b6ee7e66f3dd65dd86f7a10e832006a5e5a2c3837928974b2 runtimeModified=False
+exitStatus=0
+installedSHA256=b7c1f56dd38fb70b6ee7e66f3dd65dd86f7a10e832006a5e5a2c3837928974b2
+81 snapshot members verified; only Mono member changed; application DLL1.5.0 preserved.
+Cold restore: powershell -NoProfile -File install.ps1 -Mode Restore (after normal game exit).
+Local integration tools reuse adjacent audited build/validation/install modules; this archive is not a standalone source checkout.

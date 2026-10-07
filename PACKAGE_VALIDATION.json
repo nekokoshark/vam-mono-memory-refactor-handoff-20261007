@@ -1,0 +1,80 @@
+{
+  "packageIntegrity": "PASS",
+  "manifestFiles": 721,
+  "sourceSnapshotUnchanged": true,
+  "records": [
+    {
+      "name": "structure",
+      "argv": [
+        "C:\\Users\\Administrator\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "F:\\vam1.22.0.12\\工作区\\github_mono_handoff_20261007\\_validation\\VaM_Mono_Handoff_20261007\\materials\\工作区\\mono_exact_reclaim_20261007\\verify.py"
+      ],
+      "input": [],
+      "stdout": "EXACT_STRUCTURE_PASS baseline=D4685C71 hooks=7 newHooks=0 originals=unchanged WX=none stateWords=1123\n",
+      "stderr": "",
+      "exitStatus": 0
+    },
+    {
+      "name": "exact-original-method",
+      "argv": [
+        "C:\\Users\\Administrator\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "F:\\vam1.22.0.12\\工作区\\github_mono_handoff_20261007\\_validation\\VaM_Mono_Handoff_20261007\\materials\\工作区\\mono_exact_reclaim_20261007\\run_case.py",
+        "MODIFIED",
+        "exact"
+      ],
+      "input": [
+        "MODIFIED",
+        "exact"
+      ],
+      "stdout": "EXACT_PASS mode=MODIFIED cases=4 sameBinInversions=0 aliases=verified payload=unchanged workspace=cleared-original-restored gameModified=False\n",
+      "stderr": "",
+      "exitStatus": 0
+    },
+    {
+      "name": "baseline-lifecycle-original",
+      "argv": [
+        "C:\\Users\\Administrator\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "F:\\vam1.22.0.12\\工作区\\github_mono_handoff_20261007\\_validation\\VaM_Mono_Handoff_20261007\\materials\\工作区\\mono_exact_reclaim_20261007\\run_case.py",
+        "BASELINE",
+        "lifecycle"
+      ],
+      "input": [
+        "BASELINE",
+        "lifecycle"
+      ],
+      "stdout": "LIFECYCLE_PASS mode=BASELINE cells=1048576 refill=262144 prefix=300MiB inventory=closed pinned=verified gameCalls=0 gameWrites=0\n",
+      "stderr": "",
+      "exitStatus": 0
+    },
+    {
+      "name": "candidate-lifecycle-original",
+      "argv": [
+        "C:\\Users\\Administrator\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "F:\\vam1.22.0.12\\工作区\\github_mono_handoff_20261007\\_validation\\VaM_Mono_Handoff_20261007\\materials\\工作区\\mono_exact_reclaim_20261007\\run_case.py",
+        "MODIFIED",
+        "lifecycle"
+      ],
+      "input": [
+        "MODIFIED",
+        "lifecycle"
+      ],
+      "stdout": "LIFECYCLE_PASS mode=MODIFIED cells=1048576 refill=262144 prefix=300MiB inventory=closed pinned=verified gameCalls=0 gameWrites=0\n",
+      "stderr": "",
+      "exitStatus": 0
+    },
+    {
+      "name": "root-calibration",
+      "argv": [
+        "C:\\Users\\Administrator\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "F:\\vam1.22.0.12\\工作区\\github_mono_handoff_20261007\\_validation\\VaM_Mono_Handoff_20261007\\materials\\工作区\\mono_exact_reclaim_20261007\\trace_root_cases.py"
+      ],
+      "input": [],
+      "stdout": "D4 natural exit=0 weakAlive=[False, False, False] roots=[0, 0, 0]\nD4 control exit=0 weakAlive=[True, False, False] roots=[1, 0, 0]\nD4 hold exit=1 weakAlive=[True, True, True] roots=[1, 1, 1]\nEXACT natural exit=0 weakAlive=[False, False, False] roots=[0, 0, 0]\nEXACT control exit=0 weakAlive=[True, False, False] roots=[1, 0, 0]\nEXACT hold exit=1 weakAlive=[True, True, True] roots=[1, 1, 1]\nROOT_TRACE_CALIBRATION_PASS runtimes=2 cases=6 originalGCs=3 hooksRestored=True gameModified=False\n",
+      "stderr": "",
+      "exitStatus": 0
+    }
+  ],
+  "productionChanged": false,
+  "gameBenefitMeasured": false,
+  "initialFailureRootAttributed": false
+}

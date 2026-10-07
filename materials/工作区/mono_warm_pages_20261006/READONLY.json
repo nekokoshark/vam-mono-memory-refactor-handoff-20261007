@@ -1,0 +1,239 @@
+{
+  "pid": 23840,
+  "utc": "2026-10-06T06:59:10.425492+00:00",
+  "role": "diagnostic-current-not-first-ready",
+  "runtimeSHA256": "d89ccf26fd75b354244f7225b978667c215d54681a2565df624ac59fb6ac323e",
+  "codeWindowsVerified": 16,
+  "counters": {
+    "gc_count": 170,
+    "heap": 18597187584,
+    "free": 3866681344,
+    "unmapped": 3644461056
+  },
+  "countersEnd": {
+    "gc_count": 170,
+    "heap": 18597187584,
+    "free": 3866681344,
+    "unmapped": 3644461056
+  },
+  "countersEqual": true,
+  "state": {
+    "magic": 3553986980739171143,
+    "reserveBytes": 268435456,
+    "collections": 170,
+    "scannedBlocks": 13528060,
+    "freeBefore": 1597235200,
+    "freeAfter": 268435456,
+    "decommittedBytes": 162144927744,
+    "decommittedBlocks": 4100073,
+    "rejected": 100,
+    "lastGC": 170,
+    "lastReturned": 1325862912,
+    "lastScanned": 193253,
+    "sortRuns": 70,
+    "sortPages": 6440220,
+    "sortLists": 3372,
+    "sortChangedLists": 2523,
+    "mergeCalls": 170,
+    "mergedBlocks": 100564,
+    "remapCalls": 20680505,
+    "remapFullBytes": 23750049730560,
+    "remapPrefixBytes": 145299644416,
+    "remapAvoidedBytes": 23604750086144,
+    "splitPrefixes": 16746519,
+    "growthCalls": 874,
+    "growthOriginalBlocks": 4540092,
+    "growthActualBlocks": 4540092,
+    "pendingBlock": 0,
+    "pendingFull": 0,
+    "pendingBytes": 0
+  },
+  "process": {
+    "privateUsageBytes": 30802096128,
+    "workingSetBytes": 18243813376
+  },
+  "gameCalls": 0,
+  "gameWrites": 0,
+  "forcedGC": false,
+  "payloadBytesRead": 0,
+  "captureSeconds": 0.35900000005494803,
+  "existingTraceEvents": [
+    {
+      "file": "BepInEx\\config\\Quest3TriggerUI.charactertrace_20261006_140220.tsv",
+      "line": "14:04:23.368\t0\t0\t682\tgc\t[preset-sweep] native GC ms=995; reason=idle growth watchdog; managedMiB=6593->5654; freedMiB=939 monoHeap=7.29GB monoUsed=5.52GB monoFree=1.77GB"
+    },
+    {
+      "file": "BepInEx\\config\\Quest3TriggerUI.charactertrace_20261006_140220.tsv",
+      "line": "14:06:28.585\t0\t0\t1237\tgc\t[preset-sweep] native GC ms=1819; reason=load-tail:scene-completion; managedMiB=11669->6799; freedMiB=4870 monoHeap=11.90GB monoUsed=6.64GB monoFree=5.26GB"
+    },
+    {
+      "file": "BepInEx\\config\\Quest3TriggerUI.charactertrace_20261006_140220.tsv",
+      "line": "14:06:56.557\t1\t6672\t2186\tgc\t[preset-sweep] native GC ms=1360; reason=load-tail:preset-completion; managedMiB=7767->7062; freedMiB=704 monoHeap=11.90GB monoUsed=6.90GB monoFree=5.00GB"
+    },
+    {
+      "file": "BepInEx\\config\\Quest3TriggerUI.charactertrace_20261006_140220.tsv",
+      "line": "14:07:01.957\t1\t12072\t2266\tEND\treason=settled totalMs=12072 frames=126 hitches=20 restores=1 restoreLastMs=1851 cycles=1 admitted=63 deferred=18 cacheSized=46 releases=6 sweeps=1 sweepSkipped=0 sweepSubmitMs=53 sweepWaitMs=3082 cacheProbeMs=38 gcs=1 gcMs=1360 managedMiB=6978->7064 peak=7767 wsMiB=11142->11142"
+    },
+    {
+      "file": "BepInEx\\config\\Quest3TriggerUI.charactertrace_20261006_140220.tsv",
+      "line": "14:11:37.129\t0\t0\t2976\tgc\t[preset-sweep] native GC ms=2140; reason=load-tail:scene-completion; managedMiB=10490->9843; freedMiB=646 monoHeap=13.41GB monoUsed=9.61GB monoFree=3.80GB"
+    },
+    {
+      "file": "BepInEx\\config\\Quest3TriggerUI.charactertrace_20261006_140220.tsv",
+      "line": "14:12:44.650\t2\t20107\t4195\tgc\t[preset-sweep] native GC ms=2107; reason=load-tail:preset-completion; managedMiB=10560->10324; freedMiB=236 monoHeap=13.51GB monoUsed=10.08GB monoFree=3.42GB"
+    },
+    {
+      "file": "BepInEx\\config\\Quest3TriggerUI.charactertrace_20261006_140220.tsv",
+      "line": "14:13:04.736\t2\t40193\t4351\tEND\treason=superseded totalMs=40192 frames=185 hitches=173 restores=1 restoreLastMs=1460 cycles=1 admitted=42 deferred=11 cacheSized=34 releases=53 sweeps=1 sweepSkipped=0 sweepSubmitMs=53 sweepWaitMs=6463 cacheProbeMs=27 gcs=1 gcMs=2107 managedMiB=10267->10753 peak=10959 wsMiB=16229->16229"
+    },
+    {
+      "file": "BepInEx\\config\\Quest3TriggerUI.charactertrace_20261006_140220.tsv",
+      "line": "14:13:23.846\t3\t19110\t4456\tgc\t[preset-sweep] native GC ms=2170; reason=load-tail:preset-completion; managedMiB=11148->10438; freedMiB=710 monoHeap=13.52GB monoUsed=10.19GB monoFree=3.33GB"
+    },
+    {
+      "file": "BepInEx\\config\\Quest3TriggerUI.charactertrace_20261006_140220.tsv",
+      "line": "14:13:37.158\t3\t32422\t4724\tEND\treason=superseded totalMs=32420 frames=373 hitches=365 restores=1 restoreLastMs=3762 cycles=1 admitted=166 deferred=47 cacheSized=125 releases=93 sweeps=1 sweepSkipped=0 sweepSubmitMs=0 sweepWaitMs=39 cacheProbeMs=97 gcs=1 gcMs=2170 managedMiB=10753->10486 peak=11148 wsMiB=17764->17764"
+    },
+    {
+      "file": "BepInEx\\config\\Quest3TriggerUI.charactertrace_20261006_140220.tsv",
+      "line": "14:13:53.114\t4\t15956\t4747\tgc\t[preset-sweep] native GC ms=2165; reason=load-tail:preset-completion; managedMiB=11339->10922; freedMiB=417 monoHeap=13.58GB monoUsed=10.67GB monoFree=2.92GB"
+    },
+    {
+      "file": "BepInEx\\config\\Quest3TriggerUI.charactertrace_20261006_140220.tsv",
+      "line": "14:15:00.164\t4\t83006\t5035\tgc\t[preset-sweep] native GC ms=2420; reason=idle growth watchdog; managedMiB=12991->9931; freedMiB=3060 monoHeap=14.02GB monoUsed=9.70GB monoFree=4.32GB"
+    },
+    {
+      "file": "BepInEx\\config\\Quest3TriggerUI.charactertrace_20261006_140220.tsv",
+      "line": "14:15:02.248\t4\t85091\t5036\tgc\t[preset-sweep] native GC ms=1986; reason=load-tail:scene-completion; managedMiB=9931->9930; freedMiB=0 monoHeap=14.02GB monoUsed=9.70GB monoFree=4.32GB"
+    },
+    {
+      "file": "BepInEx\\config\\Quest3TriggerUI.charactertrace_20261006_140220.tsv",
+      "line": "14:15:03.947\t4\t86789\t5113\tEND\treason=settled totalMs=86789 frames=390 hitches=277 restores=1 restoreLastMs=1275 cycles=4 admitted=64 deferred=18 cacheSized=50 releases=114 sweeps=1 sweepSkipped=0 sweepSubmitMs=0 sweepWaitMs=182 cacheProbeMs=38 gcs=3 gcMs=6571 managedMiB=10486->10042 peak=13767 wsMiB=18583->18583"
+    },
+    {
+      "file": "BepInEx\\config\\Quest3TriggerUI.charactertrace_20261006_140220.tsv",
+      "line": "14:15:26.826\t5\t7725\t5799\tgc\t[preset-sweep] native GC ms=2393; reason=load-tail:preset-completion; managedMiB=10759->10056; freedMiB=702 monoHeap=14.02GB monoUsed=9.82GB monoFree=4.20GB"
+    },
+    {
+      "file": "BepInEx\\config\\Quest3TriggerUI.charactertrace_20261006_140220.tsv",
+      "line": "14:15:28.100\t5\t8998\t5837\tEND\treason=settled totalMs=8998 frames=92 hitches=20 restores=1 restoreLastMs=1916 cycles=1 admitted=62 deferred=17 cacheSized=47 releases=219 sweeps=1 sweepSkipped=0 sweepSubmitMs=0 sweepWaitMs=15 cacheProbeMs=35 gcs=1 gcMs=2393 managedMiB=10069->10058 peak=10758 wsMiB=16013->16013"
+    },
+    {
+      "file": "BepInEx\\config\\Quest3TriggerUI.charactertrace_20261006_140220.tsv",
+      "line": "14:17:10.642\t0\t0\t6756\tgc\t[preset-sweep] native GC ms=2928; reason=idle growth watchdog; managedMiB=13732->11341; freedMiB=2391 monoHeap=14.55GB monoUsed=11.08GB monoFree=3.48GB"
+    },
+    {
+      "file": "BepInEx\\config\\Quest3TriggerUI.charactertrace_20261006_140220.tsv",
+      "line": "14:18:09.215\t0\t0\t6766\tgc\t[preset-sweep] native GC ms=2505; reason=load-tail:scene-completion; managedMiB=12088->11250; freedMiB=838 monoHeap=14.55GB monoUsed=10.99GB monoFree=3.57GB"
+    },
+    {
+      "file": "BepInEx\\config\\Quest3TriggerUI.charactertrace_20261006_140220.tsv",
+      "line": "14:19:04.960\t6\t9525\t7839\tgc\t[preset-sweep] native GC ms=2747; reason=load-tail:preset-completion; managedMiB=13155->11681; freedMiB=1474 monoHeap=14.55GB monoUsed=11.41GB monoFree=3.15GB"
+    },
+    {
+      "file": "BepInEx\\config\\Quest3TriggerUI.charactertrace_20261006_140220.tsv",
+      "line": "14:19:19.591\t6\t24157\t7921\tEND\treason=superseded totalMs=24157 frames=104 hitches=99 restores=1 restoreLastMs=1568 cycles=1 admitted=41 deferred=11 cacheSized=31 releases=264 sweeps=1 sweepSkipped=0 sweepSubmitMs=53 sweepWaitMs=6581 cacheProbeMs=27 gcs=1 gcMs=2747 managedMiB=11597->12669 peak=13155 wsMiB=18079->18079"
+    },
+    {
+      "file": "BepInEx\\config\\Quest3TriggerUI.charactertrace_20261006_140220.tsv",
+      "line": "14:19:40.608\t7\t21016\t8016\tgc\t[preset-sweep] native GC ms=2393; reason=load-tail:preset-completion; managedMiB=11866->11842; freedMiB=24 monoHeap=14.55GB monoUsed=11.56GB monoFree=2.99GB"
+    },
+    {
+      "file": "BepInEx\\config\\Quest3TriggerUI.charactertrace_20261006_140220.tsv",
+      "line": "14:21:07.709\t7\t108117\t8268\tgc\t[preset-sweep] native GC ms=2754; reason=idle growth watchdog; managedMiB=13998->10902; freedMiB=3096 monoHeap=14.83GB monoUsed=10.65GB monoFree=4.19GB"
+    },
+    {
+      "file": "BepInEx\\config\\Quest3TriggerUI.charactertrace_20261006_140220.tsv",
+      "line": "14:21:10.279\t7\t110687\t8269\tgc\t[preset-sweep] native GC ms=2273; reason=load-tail:scene-completion; managedMiB=10952->10896; freedMiB=55 monoHeap=14.83GB monoUsed=10.64GB monoFree=4.19GB"
+    },
+    {
+      "file": "BepInEx\\config\\Quest3TriggerUI.charactertrace_20261006_140220.tsv",
+      "line": "14:21:11.923\t7\t112331\t8345\tEND\treason=settled totalMs=112331 frames=425 hitches=314 restores=1 restoreLastMs=1883 cycles=4 admitted=153 deferred=84 cacheSized=145 releases=286 sweeps=1 sweepSkipped=0 sweepSubmitMs=0 sweepWaitMs=49 cacheProbeMs=124 gcs=3 gcMs=7420 managedMiB=12669->10957 peak=14808 wsMiB=20015->20015"
+    },
+    {
+      "file": "BepInEx\\config\\Quest3TriggerUI.charactertrace_20261006_140220.tsv",
+      "line": "14:21:37.487\t8\t8762\t9092\tgc\t[preset-sweep] native GC ms=3428; reason=load-tail:preset-completion; managedMiB=11661->11026; freedMiB=634 monoHeap=14.83GB monoUsed=10.77GB monoFree=4.07GB"
+    },
+    {
+      "file": "BepInEx\\config\\Quest3TriggerUI.charactertrace_20261006_140220.tsv",
+      "line": "14:21:39.857\t8\t11132\t9170\tEND\treason=settled totalMs=11132 frames=132 hitches=20 restores=1 restoreLastMs=1972 cycles=1 admitted=65 deferred=25 cacheSized=57 releases=379 sweeps=1 sweepSkipped=0 sweepSubmitMs=0 sweepWaitMs=23 cacheProbeMs=56 gcs=1 gcMs=3428 managedMiB=10989->11029 peak=11661 wsMiB=17414->17414"
+    },
+    {
+      "file": "BepInEx\\config\\Quest3TriggerUI.charactertrace_20261006_140220.tsv",
+      "line": "14:24:40.378\t0\t0\t10284\tgc\t[preset-sweep] native GC ms=3006; reason=load-tail:scene-completion; managedMiB=15049->12313; freedMiB=2735 monoHeap=15.46GB monoUsed=12.02GB monoFree=3.44GB"
+    },
+    {
+      "file": "BepInEx\\config\\Quest3TriggerUI.charactertrace_20261006_140220.tsv",
+      "line": "14:25:28.283\t9\t10278\t11212\tgc\t[preset-sweep] native GC ms=3123; reason=load-tail:preset-completion; managedMiB=14093->12735; freedMiB=1357 monoHeap=15.46GB monoUsed=12.44GB monoFree=3.02GB"
+    },
+    {
+      "file": "BepInEx\\config\\Quest3TriggerUI.charactertrace_20261006_140220.tsv",
+      "line": "14:25:45.518\t9\t27513\t11344\tEND\treason=superseded totalMs=27513 frames=157 hitches=147 restores=1 restoreLastMs=1547 cycles=1 admitted=38 deferred=14 cacheSized=36 releases=424 sweeps=1 sweepSkipped=0 sweepSubmitMs=53 sweepWaitMs=6751 cacheProbeMs=32 gcs=1 gcMs=3123 managedMiB=12575->13527 peak=14093 wsMiB=19747->19747"
+    },
+    {
+      "file": "BepInEx\\config\\Quest3TriggerUI.charactertrace_20261006_140220.tsv",
+      "line": "14:26:06.540\t10\t21022\t11424\tgc\t[preset-sweep] native GC ms=2713; reason=load-tail:preset-completion; managedMiB=13183->13001; freedMiB=182 monoHeap=15.46GB monoUsed=12.70GB monoFree=2.76GB"
+    },
+    {
+      "file": "BepInEx\\config\\Quest3TriggerUI.charactertrace_20261006_140220.tsv",
+      "line": "14:27:50.439\t10\t124921\t11615\tgc\t[preset-sweep] native GC ms=3059; reason=idle growth watchdog; managedMiB=15147->12033; freedMiB=3113 monoHeap=15.77GB monoUsed=11.75GB monoFree=4.02GB"
+    },
+    {
+      "file": "BepInEx\\config\\Quest3TriggerUI.charactertrace_20261006_140220.tsv",
+      "line": "14:27:53.047\t10\t127530\t11616\tgc\t[preset-sweep] native GC ms=2485; reason=load-tail:scene-completion; managedMiB=12084->12033; freedMiB=50 monoHeap=15.77GB monoUsed=11.75GB monoFree=4.02GB"
+    },
+    {
+      "file": "BepInEx\\config\\Quest3TriggerUI.charactertrace_20261006_140220.tsv",
+      "line": "14:27:54.999\t10\t129481\t11692\tEND\treason=settled totalMs=129481 frames=349 hitches=236 restores=1 restoreLastMs=2056 cycles=4 admitted=185 deferred=70 cacheSized=182 releases=446 sweeps=1 sweepSkipped=0 sweepSubmitMs=0 sweepWaitMs=47 cacheProbeMs=130 gcs=3 gcMs=8257 managedMiB=13527->12094 peak=15762 wsMiB=21493->21493"
+    },
+    {
+      "file": "BepInEx\\config\\Quest3TriggerUI.charactertrace_20261006_140220.tsv",
+      "line": "14:28:21.424\t11\t9280\t12449\tgc\t[preset-sweep] native GC ms=3967; reason=load-tail:preset-completion; managedMiB=12805->12173; freedMiB=631 monoHeap=15.77GB monoUsed=11.89GB monoFree=3.88GB"
+    },
+    {
+      "file": "BepInEx\\config\\Quest3TriggerUI.charactertrace_20261006_140220.tsv",
+      "line": "14:28:23.344\t11\t11199\t12503\tEND\treason=settled totalMs=11199 frames=103 hitches=15 restores=1 restoreLastMs=2020 cycles=1 admitted=63 deferred=27 cacheSized=53 releases=549 sweeps=1 sweepSkipped=0 sweepSubmitMs=0 sweepWaitMs=23 cacheProbeMs=51 gcs=1 gcMs=3967 managedMiB=12128->12176 peak=12804 wsMiB=19120->19120"
+    },
+    {
+      "file": "BepInEx\\config\\Quest3TriggerUI.charactertrace_20261006_140220.tsv",
+      "line": "14:31:34.214\t0\t0\t13672\tgc\t[preset-sweep] native GC ms=2924; reason=load-tail:scene-completion; managedMiB=13747->13475; freedMiB=272 monoHeap=17.04GB monoUsed=13.16GB monoFree=3.88GB"
+    },
+    {
+      "file": "BepInEx\\config\\Quest3TriggerUI.charactertrace_20261006_140220.tsv",
+      "line": "14:32:35.453\t12\t16357\t14802\tgc\t[preset-sweep] native GC ms=3460; reason=load-tail:preset-completion; managedMiB=16433->14008; freedMiB=2425 monoHeap=17.04GB monoUsed=13.68GB monoFree=3.36GB"
+    },
+    {
+      "file": "BepInEx\\config\\Quest3TriggerUI.charactertrace_20261006_140220.tsv",
+      "line": "14:32:49.642\t12\t30546\t14914\tEND\treason=superseded totalMs=30546 frames=189 hitches=178 restores=1 restoreLastMs=1574 cycles=1 admitted=38 deferred=25 cacheSized=38 releases=594 sweeps=1 sweepSkipped=0 sweepSubmitMs=53 sweepWaitMs=7403 cacheProbeMs=34 gcs=1 gcMs=3460 managedMiB=13791->14016 peak=16433 wsMiB=21333->21333"
+    },
+    {
+      "file": "BepInEx\\config\\Quest3TriggerUI.charactertrace_20261006_140220.tsv",
+      "line": "14:33:09.100\t13\t19458\t15020\tgc\t[preset-sweep] native GC ms=3418; reason=load-tail:preset-completion; managedMiB=16046->14105; freedMiB=1941 monoHeap=17.04GB monoUsed=13.77GB monoFree=3.26GB"
+    },
+    {
+      "file": "BepInEx\\config\\Quest3TriggerUI.charactertrace_20261006_140220.tsv",
+      "line": "14:34:41.084\t13\t111442\t15211\tgc\t[preset-sweep] native GC ms=3357; reason=idle growth watchdog; managedMiB=16288->13164; freedMiB=3124 monoHeap=17.32GB monoUsed=12.86GB monoFree=4.46GB"
+    },
+    {
+      "file": "BepInEx\\config\\Quest3TriggerUI.charactertrace_20261006_140220.tsv",
+      "line": "14:34:44.060\t13\t114418\t15212\tgc\t[preset-sweep] native GC ms=2848; reason=load-tail:scene-completion; managedMiB=13215->13160; freedMiB=55 monoHeap=17.32GB monoUsed=12.85GB monoFree=4.47GB"
+    },
+    {
+      "file": "BepInEx\\config\\Quest3TriggerUI.charactertrace_20261006_140220.tsv",
+      "line": "14:34:46.745\t13\t117104\t15347\tEND\treason=settled totalMs=117104 frames=434 hitches=265 restores=1 restoreLastMs=1722 cycles=3 admitted=153 deferred=115 cacheSized=151 releases=616 sweeps=1 sweepSkipped=0 sweepSubmitMs=0 sweepWaitMs=45 cacheProbeMs=120 gcs=3 gcMs=9623 managedMiB=14016->13225 peak=16284 wsMiB=22575->22575"
+    },
+    {
+      "file": "BepInEx\\config\\Quest3TriggerUI.charactertrace_20261006_140220.tsv",
+      "line": "14:35:12.004\t14\t10993\t15895\tgc\t[preset-sweep] native GC ms=5645; reason=load-tail:preset-completion; managedMiB=13906->13286; freedMiB=620 monoHeap=17.32GB monoUsed=12.97GB monoFree=4.35GB"
+    },
+    {
+      "file": "BepInEx\\config\\Quest3TriggerUI.charactertrace_20261006_140220.tsv",
+      "line": "14:35:14.141\t14\t13129\t15989\tEND\treason=settled totalMs=13129 frames=150 hitches=18 restores=1 restoreLastMs=1991 cycles=1 admitted=64 deferred=39 cacheSized=59 releases=709 sweeps=1 sweepSkipped=0 sweepSubmitMs=0 sweepWaitMs=21 cacheProbeMs=49 gcs=1 gcMs=5645 managedMiB=13245->13288 peak=13906 wsMiB=20696->20696"
+    },
+    {
+      "file": "BepInEx\\config\\Quest3TriggerUI.charactertrace_20261006_140220.tsv",
+      "line": "14:55:29.545\t0\t0\t73844\tgc\t[preset-sweep] native GC ms=3255; reason=idle growth watchdog; managedMiB=14822->13314; freedMiB=1508 monoHeap=17.32GB monoUsed=13.00GB monoFree=4.32GB"
+    }
+  ],
+  "interpretation": "Native cumulative counts are activity, not elapsed GC subphase time or current bytes. rejected includes policy admission rejection without a reason code. GC trace timings cover the complete invoked GC, not proof of sorter cost. This current/idle point is not a first-ready memory-growth comparison."
+}

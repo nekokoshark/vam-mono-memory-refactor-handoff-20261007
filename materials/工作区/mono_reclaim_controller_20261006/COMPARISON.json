@@ -1,0 +1,25 @@
+{
+  "baselineFirstLargeReturn": 3,
+  "modifiedFirstLargeReturn": 1,
+  "rollbackFirstLargeReturn": 3,
+  "baselineQuickMedianMs": 107.20780002884567,
+  "modifiedQuickMedianMs": 77.51889992505312,
+  "candidateReserveBytes": 268435456,
+  "measuredGameSavingsBytes": null,
+  "baselineActualOSCommitDropsBytes": [
+    788733952,
+    788733952
+  ],
+  "baselineGC1Milliseconds": [
+    0.5988000193610787,
+    0.5946999881416559
+  ],
+  "modifiedActualOSCommitDropsBytes": [
+    597028864,
+    580153344
+  ],
+  "modifiedGC1Milliseconds": [
+    14.636200037784874,
+    11.314400006085634
+  ]
+}

@@ -1,0 +1,800 @@
+{
+  "mode": "BASELINE",
+  "runtimeSHA256": "d4685c71704ef7f222feebfb93851d7f3b6d354998c2e6bc8347268e047c7b3d",
+  "rows": [
+    {
+      "cycle": 0,
+      "label": "over-budget-left-warm",
+      "before": {
+        "committed": 402653184,
+        "reserved": 134217728
+      },
+      "after": {
+        "committed": 0,
+        "reserved": 536870912
+      },
+      "commitBytes": 0,
+      "decommitBytes": 402653184,
+      "elapsedMs": 0.8762000361457467,
+      "VMcalls": [
+        {
+          "op": "decommit",
+          "address": 2296320819200,
+          "bytes": 402653184,
+          "flags": 16384,
+          "success": true
+        }
+      ],
+      "globalVM": {
+        "gcOSRoots": 18,
+        "monoCommittedBytes": 68096000,
+        "monoReservedBytes": 536870912,
+        "regionCount": 19
+      }
+    },
+    {
+      "cycle": 0,
+      "label": "over-budget-right-warm",
+      "before": {
+        "committed": 402653184,
+        "reserved": 134217728
+      },
+      "after": {
+        "committed": 0,
+        "reserved": 536870912
+      },
+      "commitBytes": 0,
+      "decommitBytes": 402653184,
+      "elapsedMs": 1.4319999609142542,
+      "VMcalls": [
+        {
+          "op": "decommit",
+          "address": 2296455036928,
+          "bytes": 402653184,
+          "flags": 16384,
+          "success": true
+        }
+      ],
+      "globalVM": {
+        "gcOSRoots": 18,
+        "monoCommittedBytes": 68096000,
+        "monoReservedBytes": 536870912,
+        "regionCount": 19
+      }
+    },
+    {
+      "cycle": 0,
+      "label": "native-cold-left",
+      "before": {
+        "committed": 134217728,
+        "reserved": 402653184
+      },
+      "after": {
+        "committed": 0,
+        "reserved": 536870912
+      },
+      "commitBytes": 0,
+      "decommitBytes": 134217728,
+      "elapsedMs": 0.4790000384673476,
+      "VMcalls": [
+        {
+          "op": "decommit",
+          "address": 2296723472384,
+          "bytes": 134217728,
+          "flags": 16384,
+          "success": true
+        }
+      ],
+      "globalVM": {
+        "gcOSRoots": 18,
+        "monoCommittedBytes": 68096000,
+        "monoReservedBytes": 536870912,
+        "regionCount": 19
+      }
+    },
+    {
+      "cycle": 0,
+      "label": "native-cold-right",
+      "before": {
+        "committed": 134217728,
+        "reserved": 402653184
+      },
+      "after": {
+        "committed": 0,
+        "reserved": 536870912
+      },
+      "commitBytes": 0,
+      "decommitBytes": 134217728,
+      "elapsedMs": 0.5784999812021852,
+      "VMcalls": [
+        {
+          "op": "decommit",
+          "address": 2296320819200,
+          "bytes": 134217728,
+          "flags": 16384,
+          "success": true
+        }
+      ],
+      "globalVM": {
+        "gcOSRoots": 18,
+        "monoCommittedBytes": 68096000,
+        "monoReservedBytes": 536870912,
+        "regionCount": 19
+      }
+    },
+    {
+      "cycle": 0,
+      "label": "tie-left-warm",
+      "before": {
+        "committed": 268435456,
+        "reserved": 268435456
+      },
+      "after": {
+        "committed": 0,
+        "reserved": 536870912
+      },
+      "commitBytes": 0,
+      "decommitBytes": 268435456,
+      "elapsedMs": 0.97510009072721,
+      "VMcalls": [
+        {
+          "op": "decommit",
+          "address": 2296320819200,
+          "bytes": 268435456,
+          "flags": 16384,
+          "success": true
+        }
+      ],
+      "globalVM": {
+        "gcOSRoots": 18,
+        "monoCommittedBytes": 68096000,
+        "monoReservedBytes": 536870912,
+        "regionCount": 19
+      }
+    },
+    {
+      "cycle": 0,
+      "label": "tie-right-warm",
+      "before": {
+        "committed": 268435456,
+        "reserved": 268435456
+      },
+      "after": {
+        "committed": 0,
+        "reserved": 536870912
+      },
+      "commitBytes": 0,
+      "decommitBytes": 268435456,
+      "elapsedMs": 1.9705999875441194,
+      "VMcalls": [
+        {
+          "op": "decommit",
+          "address": 2296589254656,
+          "bytes": 268435456,
+          "flags": 16384,
+          "success": true
+        }
+      ],
+      "globalVM": {
+        "gcOSRoots": 18,
+        "monoCommittedBytes": 68096000,
+        "monoReservedBytes": 536870912,
+        "regionCount": 19
+      }
+    },
+    {
+      "cycle": 0,
+      "label": "within-budget-left-warm",
+      "before": {
+        "committed": 402653184,
+        "reserved": 134217728
+      },
+      "after": {
+        "committed": 536870912,
+        "reserved": 0
+      },
+      "commitBytes": 134217728,
+      "decommitBytes": 0,
+      "elapsedMs": 0.27059996500611305,
+      "VMcalls": [
+        {
+          "op": "commit",
+          "address": 2296723472384,
+          "bytes": 134217728,
+          "flags": 4096,
+          "success": true
+        }
+      ],
+      "globalVM": {
+        "gcOSRoots": 18,
+        "monoCommittedBytes": 604966912,
+        "monoReservedBytes": 0,
+        "regionCount": 18
+      }
+    },
+    {
+      "cycle": 0,
+      "label": "within-budget-right-warm",
+      "before": {
+        "committed": 402653184,
+        "reserved": 134217728
+      },
+      "after": {
+        "committed": 536870912,
+        "reserved": 0
+      },
+      "commitBytes": 134217728,
+      "decommitBytes": 0,
+      "elapsedMs": 0.30720001086592674,
+      "VMcalls": [
+        {
+          "op": "commit",
+          "address": 2296320819200,
+          "bytes": 134217728,
+          "flags": 4096,
+          "success": true
+        }
+      ],
+      "globalVM": {
+        "gcOSRoots": 18,
+        "monoCommittedBytes": 604966912,
+        "monoReservedBytes": 0,
+        "regionCount": 18
+      }
+    },
+    {
+      "cycle": 0,
+      "label": "both-cold",
+      "before": {
+        "committed": 0,
+        "reserved": 536870912
+      },
+      "after": {
+        "committed": 0,
+        "reserved": 536870912
+      },
+      "commitBytes": 0,
+      "decommitBytes": 0,
+      "elapsedMs": 0.002900022082030773,
+      "VMcalls": [],
+      "globalVM": {
+        "gcOSRoots": 18,
+        "monoCommittedBytes": 68096000,
+        "monoReservedBytes": 536870912,
+        "regionCount": 19
+      }
+    },
+    {
+      "cycle": 1,
+      "label": "over-budget-left-warm",
+      "before": {
+        "committed": 402653184,
+        "reserved": 134217728
+      },
+      "after": {
+        "committed": 0,
+        "reserved": 536870912
+      },
+      "commitBytes": 0,
+      "decommitBytes": 402653184,
+      "elapsedMs": 1.3861999614164233,
+      "VMcalls": [
+        {
+          "op": "decommit",
+          "address": 2296320819200,
+          "bytes": 402653184,
+          "flags": 16384,
+          "success": true
+        }
+      ],
+      "globalVM": {
+        "gcOSRoots": 18,
+        "monoCommittedBytes": 68096000,
+        "monoReservedBytes": 536870912,
+        "regionCount": 19
+      }
+    },
+    {
+      "cycle": 1,
+      "label": "over-budget-right-warm",
+      "before": {
+        "committed": 402653184,
+        "reserved": 134217728
+      },
+      "after": {
+        "committed": 0,
+        "reserved": 536870912
+      },
+      "commitBytes": 0,
+      "decommitBytes": 402653184,
+      "elapsedMs": 1.2946000788360834,
+      "VMcalls": [
+        {
+          "op": "decommit",
+          "address": 2296455036928,
+          "bytes": 402653184,
+          "flags": 16384,
+          "success": true
+        }
+      ],
+      "globalVM": {
+        "gcOSRoots": 18,
+        "monoCommittedBytes": 68096000,
+        "monoReservedBytes": 536870912,
+        "regionCount": 19
+      }
+    },
+    {
+      "cycle": 1,
+      "label": "native-cold-left",
+      "before": {
+        "committed": 134217728,
+        "reserved": 402653184
+      },
+      "after": {
+        "committed": 0,
+        "reserved": 536870912
+      },
+      "commitBytes": 0,
+      "decommitBytes": 134217728,
+      "elapsedMs": 0.4434000002220273,
+      "VMcalls": [
+        {
+          "op": "decommit",
+          "address": 2296723472384,
+          "bytes": 134217728,
+          "flags": 16384,
+          "success": true
+        }
+      ],
+      "globalVM": {
+        "gcOSRoots": 18,
+        "monoCommittedBytes": 68096000,
+        "monoReservedBytes": 536870912,
+        "regionCount": 19
+      }
+    },
+    {
+      "cycle": 1,
+      "label": "native-cold-right",
+      "before": {
+        "committed": 134217728,
+        "reserved": 402653184
+      },
+      "after": {
+        "committed": 0,
+        "reserved": 536870912
+      },
+      "commitBytes": 0,
+      "decommitBytes": 134217728,
+      "elapsedMs": 0.4395999712869525,
+      "VMcalls": [
+        {
+          "op": "decommit",
+          "address": 2296320819200,
+          "bytes": 134217728,
+          "flags": 16384,
+          "success": true
+        }
+      ],
+      "globalVM": {
+        "gcOSRoots": 18,
+        "monoCommittedBytes": 68096000,
+        "monoReservedBytes": 536870912,
+        "regionCount": 19
+      }
+    },
+    {
+      "cycle": 1,
+      "label": "tie-left-warm",
+      "before": {
+        "committed": 268435456,
+        "reserved": 268435456
+      },
+      "after": {
+        "committed": 0,
+        "reserved": 536870912
+      },
+      "commitBytes": 0,
+      "decommitBytes": 268435456,
+      "elapsedMs": 0.8955999510362744,
+      "VMcalls": [
+        {
+          "op": "decommit",
+          "address": 2296320819200,
+          "bytes": 268435456,
+          "flags": 16384,
+          "success": true
+        }
+      ],
+      "globalVM": {
+        "gcOSRoots": 18,
+        "monoCommittedBytes": 68096000,
+        "monoReservedBytes": 536870912,
+        "regionCount": 19
+      }
+    },
+    {
+      "cycle": 1,
+      "label": "tie-right-warm",
+      "before": {
+        "committed": 268435456,
+        "reserved": 268435456
+      },
+      "after": {
+        "committed": 0,
+        "reserved": 536870912
+      },
+      "commitBytes": 0,
+      "decommitBytes": 268435456,
+      "elapsedMs": 0.8689999813213944,
+      "VMcalls": [
+        {
+          "op": "decommit",
+          "address": 2296589254656,
+          "bytes": 268435456,
+          "flags": 16384,
+          "success": true
+        }
+      ],
+      "globalVM": {
+        "gcOSRoots": 18,
+        "monoCommittedBytes": 68096000,
+        "monoReservedBytes": 536870912,
+        "regionCount": 19
+      }
+    },
+    {
+      "cycle": 1,
+      "label": "within-budget-left-warm",
+      "before": {
+        "committed": 402653184,
+        "reserved": 134217728
+      },
+      "after": {
+        "committed": 536870912,
+        "reserved": 0
+      },
+      "commitBytes": 134217728,
+      "decommitBytes": 0,
+      "elapsedMs": 0.2495999215170741,
+      "VMcalls": [
+        {
+          "op": "commit",
+          "address": 2296723472384,
+          "bytes": 134217728,
+          "flags": 4096,
+          "success": true
+        }
+      ],
+      "globalVM": {
+        "gcOSRoots": 18,
+        "monoCommittedBytes": 604966912,
+        "monoReservedBytes": 0,
+        "regionCount": 18
+      }
+    },
+    {
+      "cycle": 1,
+      "label": "within-budget-right-warm",
+      "before": {
+        "committed": 402653184,
+        "reserved": 134217728
+      },
+      "after": {
+        "committed": 536870912,
+        "reserved": 0
+      },
+      "commitBytes": 134217728,
+      "decommitBytes": 0,
+      "elapsedMs": 0.2606000052765012,
+      "VMcalls": [
+        {
+          "op": "commit",
+          "address": 2296320819200,
+          "bytes": 134217728,
+          "flags": 4096,
+          "success": true
+        }
+      ],
+      "globalVM": {
+        "gcOSRoots": 18,
+        "monoCommittedBytes": 604966912,
+        "monoReservedBytes": 0,
+        "regionCount": 18
+      }
+    },
+    {
+      "cycle": 1,
+      "label": "both-cold",
+      "before": {
+        "committed": 0,
+        "reserved": 536870912
+      },
+      "after": {
+        "committed": 0,
+        "reserved": 536870912
+      },
+      "commitBytes": 0,
+      "decommitBytes": 0,
+      "elapsedMs": 0.0029999064281582832,
+      "VMcalls": [],
+      "globalVM": {
+        "gcOSRoots": 18,
+        "monoCommittedBytes": 68096000,
+        "monoReservedBytes": 536870912,
+        "regionCount": 19
+      }
+    },
+    {
+      "cycle": 2,
+      "label": "over-budget-left-warm",
+      "before": {
+        "committed": 402653184,
+        "reserved": 134217728
+      },
+      "after": {
+        "committed": 0,
+        "reserved": 536870912
+      },
+      "commitBytes": 0,
+      "decommitBytes": 402653184,
+      "elapsedMs": 1.2798999669030309,
+      "VMcalls": [
+        {
+          "op": "decommit",
+          "address": 2296320819200,
+          "bytes": 402653184,
+          "flags": 16384,
+          "success": true
+        }
+      ],
+      "globalVM": {
+        "gcOSRoots": 18,
+        "monoCommittedBytes": 68096000,
+        "monoReservedBytes": 536870912,
+        "regionCount": 19
+      }
+    },
+    {
+      "cycle": 2,
+      "label": "over-budget-right-warm",
+      "before": {
+        "committed": 402653184,
+        "reserved": 134217728
+      },
+      "after": {
+        "committed": 0,
+        "reserved": 536870912
+      },
+      "commitBytes": 0,
+      "decommitBytes": 402653184,
+      "elapsedMs": 1.2999000027775764,
+      "VMcalls": [
+        {
+          "op": "decommit",
+          "address": 2296455036928,
+          "bytes": 402653184,
+          "flags": 16384,
+          "success": true
+        }
+      ],
+      "globalVM": {
+        "gcOSRoots": 18,
+        "monoCommittedBytes": 68096000,
+        "monoReservedBytes": 536870912,
+        "regionCount": 19
+      }
+    },
+    {
+      "cycle": 2,
+      "label": "native-cold-left",
+      "before": {
+        "committed": 134217728,
+        "reserved": 402653184
+      },
+      "after": {
+        "committed": 0,
+        "reserved": 536870912
+      },
+      "commitBytes": 0,
+      "decommitBytes": 134217728,
+      "elapsedMs": 0.4262999864295125,
+      "VMcalls": [
+        {
+          "op": "decommit",
+          "address": 2296723472384,
+          "bytes": 134217728,
+          "flags": 16384,
+          "success": true
+        }
+      ],
+      "globalVM": {
+        "gcOSRoots": 18,
+        "monoCommittedBytes": 68096000,
+        "monoReservedBytes": 536870912,
+        "regionCount": 19
+      }
+    },
+    {
+      "cycle": 2,
+      "label": "native-cold-right",
+      "before": {
+        "committed": 134217728,
+        "reserved": 402653184
+      },
+      "after": {
+        "committed": 0,
+        "reserved": 536870912
+      },
+      "commitBytes": 0,
+      "decommitBytes": 134217728,
+      "elapsedMs": 0.43670006562024355,
+      "VMcalls": [
+        {
+          "op": "decommit",
+          "address": 2296320819200,
+          "bytes": 134217728,
+          "flags": 16384,
+          "success": true
+        }
+      ],
+      "globalVM": {
+        "gcOSRoots": 18,
+        "monoCommittedBytes": 68096000,
+        "monoReservedBytes": 536870912,
+        "regionCount": 19
+      }
+    },
+    {
+      "cycle": 2,
+      "label": "tie-left-warm",
+      "before": {
+        "committed": 268435456,
+        "reserved": 268435456
+      },
+      "after": {
+        "committed": 0,
+        "reserved": 536870912
+      },
+      "commitBytes": 0,
+      "decommitBytes": 268435456,
+      "elapsedMs": 0.8756999159231782,
+      "VMcalls": [
+        {
+          "op": "decommit",
+          "address": 2296320819200,
+          "bytes": 268435456,
+          "flags": 16384,
+          "success": true
+        }
+      ],
+      "globalVM": {
+        "gcOSRoots": 18,
+        "monoCommittedBytes": 68096000,
+        "monoReservedBytes": 536870912,
+        "regionCount": 19
+      }
+    },
+    {
+      "cycle": 2,
+      "label": "tie-right-warm",
+      "before": {
+        "committed": 268435456,
+        "reserved": 268435456
+      },
+      "after": {
+        "committed": 0,
+        "reserved": 536870912
+      },
+      "commitBytes": 0,
+      "decommitBytes": 268435456,
+      "elapsedMs": 0.8598999120295048,
+      "VMcalls": [
+        {
+          "op": "decommit",
+          "address": 2296589254656,
+          "bytes": 268435456,
+          "flags": 16384,
+          "success": true
+        }
+      ],
+      "globalVM": {
+        "gcOSRoots": 18,
+        "monoCommittedBytes": 68096000,
+        "monoReservedBytes": 536870912,
+        "regionCount": 19
+      }
+    },
+    {
+      "cycle": 2,
+      "label": "within-budget-left-warm",
+      "before": {
+        "committed": 402653184,
+        "reserved": 134217728
+      },
+      "after": {
+        "committed": 536870912,
+        "reserved": 0
+      },
+      "commitBytes": 134217728,
+      "decommitBytes": 0,
+      "elapsedMs": 0.26620004791766405,
+      "VMcalls": [
+        {
+          "op": "commit",
+          "address": 2296723472384,
+          "bytes": 134217728,
+          "flags": 4096,
+          "success": true
+        }
+      ],
+      "globalVM": {
+        "gcOSRoots": 18,
+        "monoCommittedBytes": 604966912,
+        "monoReservedBytes": 0,
+        "regionCount": 18
+      }
+    },
+    {
+      "cycle": 2,
+      "label": "within-budget-right-warm",
+      "before": {
+        "committed": 402653184,
+        "reserved": 134217728
+      },
+      "after": {
+        "committed": 536870912,
+        "reserved": 0
+      },
+      "commitBytes": 134217728,
+      "decommitBytes": 0,
+      "elapsedMs": 0.25770009960979223,
+      "VMcalls": [
+        {
+          "op": "commit",
+          "address": 2296320819200,
+          "bytes": 134217728,
+          "flags": 4096,
+          "success": true
+        }
+      ],
+      "globalVM": {
+        "gcOSRoots": 18,
+        "monoCommittedBytes": 604966912,
+        "monoReservedBytes": 0,
+        "regionCount": 18
+      }
+    },
+    {
+      "cycle": 2,
+      "label": "both-cold",
+      "before": {
+        "committed": 0,
+        "reserved": 536870912
+      },
+      "after": {
+        "committed": 0,
+        "reserved": 536870912
+      },
+      "commitBytes": 0,
+      "decommitBytes": 0,
+      "elapsedMs": 0.004900037311017513,
+      "VMcalls": [],
+      "globalVM": {
+        "gcOSRoots": 18,
+        "monoCommittedBytes": 68096000,
+        "monoReservedBytes": 536870912,
+        "regionCount": 19
+      }
+    }
+  ],
+  "heapBytes": 602796032,
+  "sections": 10,
+  "originalIATRestored": true,
+  "originalReserveRestored": true,
+  "liveAliasesVerified": true,
+  "gameCalls": 0,
+  "gameWrites": 0,
+  "gameBenefitBytes": null
+}

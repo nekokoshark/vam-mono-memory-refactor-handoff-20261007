@@ -1,0 +1,12 @@
+{
+  "pid": 6052,
+  "status": "rejected",
+  "sampledPages": null,
+  "gameCalls": 0,
+  "gameWrites": 0,
+  "coverage": "At most 128 leading pending pages per (kind,size); last GC marks, not current live roots.",
+  "reason": "AssertionError: pending head endpoint changed; line=89",
+  "readCalls": 10757,
+  "readBytes": 591772,
+  "seconds": 0.42099999997299165
+}

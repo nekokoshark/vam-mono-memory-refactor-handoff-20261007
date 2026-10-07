@@ -1,0 +1,73 @@
+[
+  {
+    "argv": [
+      "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\cl.exe",
+      "/nologo",
+      "/c",
+      "/O2",
+      "/GS-",
+      "/Zl",
+      "/W4",
+      "/WX",
+      "/Brepro",
+      "/Foreclaim_controller.obj",
+      "reclaim_controller.c"
+    ],
+    "stdout": "reclaim_controller.c\n",
+    "stderr": "",
+    "exitStatus": 0
+  },
+  {
+    "argv": [
+      "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\link.exe",
+      "/nologo",
+      "/dll",
+      "/noentry",
+      "/nodefaultlib",
+      "/machine:x64",
+      "/dynamicbase",
+      "/nxcompat",
+      "/opt:ref",
+      "/opt:icf",
+      "/Brepro",
+      "/out:controller_image.dll",
+      "/align:8192",
+      "reclaim_controller.obj"
+    ],
+    "stdout": "LINK : warning LNK4108: /ALIGN specified without /DRIVER; image may not run\n   Creating library controller_image.lib and object controller_image.exp\n",
+    "stderr": "",
+    "exitStatus": 0
+  },
+  {
+    "argv": [
+      "C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\csc.exe",
+      "/nologo",
+      "/noconfig",
+      "/nostdlib+",
+      "/optimize+",
+      "/target:library",
+      "/out:RetireSample.dll",
+      "/reference:F:\\vam1.22.0.12\\VaM_Data\\Managed\\mscorlib.dll",
+      "RetireSample.cs"
+    ],
+    "stdout": "",
+    "stderr": "",
+    "exitStatus": 0
+  },
+  {
+    "argv": [
+      "C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\csc.exe",
+      "/nologo",
+      "/noconfig",
+      "/nostdlib+",
+      "/optimize+",
+      "/target:library",
+      "/out:LifecycleSample.dll",
+      "/reference:F:\\vam1.22.0.12\\VaM_Data\\Managed\\mscorlib.dll",
+      "LifecycleSample.cs"
+    ],
+    "stdout": "",
+    "stderr": "",
+    "exitStatus": 0
+  }
+]

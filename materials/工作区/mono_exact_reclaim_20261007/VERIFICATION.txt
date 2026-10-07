@@ -1,0 +1,86 @@
+STATUS: CANDIDATE_ONLY / NOT_APPROVED / NOT_DEPLOYED
+Changed branch: order_reclaim: eight coarse density bands -> stable descending exact marked-object count (513 bins).
+Original 94 words preserved; 3 counters + 1026 complemented non-owning scratch words added, cleared before publishing.
+Seven hooks preserved; original marking, locks, addresses, contents, blacklist, growth and 4096 section cap preserved.
+BASELINE_SHA256=d4685c71704ef7f222feebfb93851d7f3b6d354998c2e6bc8347268e047c7b3d
+MODIFIED_SHA256=427aab71b5b751507ee8165869baeee6ca2a021c852691a942bc971967a1ce35
+MODIFIED_FILE.dll=F:\vam1.22.0.12\工作区\mono_exact_reclaim_20261007\MODIFIED_FILE.dll
+DIFF_FILE.patch=F:\vam1.22.0.12\工作区\mono_exact_reclaim_20261007\DIFF_FILE.patch
+VERIFICATION.txt=F:\vam1.22.0.12\工作区\mono_exact_reclaim_20261007\VERIFICATION.txt
+ROLLBACK.sh=F:\vam1.22.0.12\工作区\mono_exact_reclaim_20261007\ROLLBACK.sh
+
+BASELINE exact command: powershell -NoProfile -File CERTIFY.ps1 -Mode BASELINE
+Working directory: F:\vam1.22.0.12\工作区\mono_exact_reclaim_20261007
+Input: {"cases": 14, "runtime": "isolated-original-Mono"}
+Literal stdout: BASELINE_PASS cases=14
+Exit status: 0
+Nested exact commands/input/literal output/status: F:\vam1.22.0.12\工作区\mono_exact_reclaim_20261007\BASELINE_COMMANDS.json
+ISOLATED_PASS mode=BASELINE scenario=idle livePinnedAliasReuse=verified gameCalls=0 gameWrites=0
+ISOLATED_PASS mode=BASELINE scenario=quick livePinnedAliasReuse=verified gameCalls=0 gameWrites=0
+ISOLATED_PASS mode=BASELINE scenario=stress livePinnedAliasReuse=verified gameCalls=0 gameWrites=0
+LIFECYCLE_PASS mode=BASELINE cells=1048576 refill=262144 prefix=300MiB inventory=closed pinned=verified gameCalls=0 gameWrites=0
+FAILURE_PASS mode=BASELINE originalOOM=caught limit=restored recovery=verified gameCalls=0 gameWrites=0
+SECTIONS_PASS mode=BASELINE retained=50000 limit=4096 data=verified growth=original
+WARM_PAGES_PASS mode=BASELINE cells=524288 coldRemaps=10931 allocationMs=740.616 sections=unchanged VM=closed aliases=verified gameCalls=0
+REUSE_PASS mode=BASELINE cases=5 normalCommitBytes=0 blacklistCommitBytes=4096 heap=unchanged sections=unchanged aliases=verified VM=closed
+COHORT_PASS mode=BASELINE pendingPages=1108240 independentInversions=0 globalRejects=0 rootedAliases=verified gameCalls=0 gameWrites=0
+ISOLATION_PASS mode=BASELINE faults=size+marks+cycle invalidChain=unchanged unrelatedChain=sorted nativeState=restored gameCalls=0 gameWrites=0
+SPAN_PASS mode=BASELINE cases=27 avoidableCommitBytes=0 coalesced=True VM=closed sections=unchanged live=verified IAT=restored
+INTERIOR_PASS mode=BASELINE cases=27 ordinaryCommitBytes=6684672 placement=original VM=closed blacklists=restored live=verified
+ABI_PASS mode=BASELINE unwindCases=12 stack=restored return=restored loader=registered
+EXACT_PASS mode=BASELINE cases=4 sameBinInversions=14 aliases=verified payload=unchanged workspace=cleared-original-restored gameModified=False
+VALIDATION_PASS mode=BASELINE cases=14 originalMono=True gameModified=False
+
+MODIFIED exact command: powershell -NoProfile -File CERTIFY.ps1 -Mode MODIFIED
+Working directory: F:\vam1.22.0.12\工作区\mono_exact_reclaim_20261007
+Input: {"cases": 14, "runtime": "isolated-original-Mono"}
+Literal stdout: MODIFIED_PASS cases=14
+Exit status: 0
+Nested exact commands/input/literal output/status: F:\vam1.22.0.12\工作区\mono_exact_reclaim_20261007\MODIFIED_COMMANDS.json
+ISOLATED_PASS mode=MODIFIED scenario=idle livePinnedAliasReuse=verified gameCalls=0 gameWrites=0
+ISOLATED_PASS mode=MODIFIED scenario=quick livePinnedAliasReuse=verified gameCalls=0 gameWrites=0
+ISOLATED_PASS mode=MODIFIED scenario=stress livePinnedAliasReuse=verified gameCalls=0 gameWrites=0
+LIFECYCLE_PASS mode=MODIFIED cells=1048576 refill=262144 prefix=300MiB inventory=closed pinned=verified gameCalls=0 gameWrites=0
+FAILURE_PASS mode=MODIFIED originalOOM=caught limit=restored recovery=verified gameCalls=0 gameWrites=0
+SECTIONS_PASS mode=MODIFIED retained=50000 limit=4096 data=verified growth=original
+WARM_PAGES_PASS mode=MODIFIED cells=524288 coldRemaps=10931 allocationMs=737.379 sections=unchanged VM=closed aliases=verified gameCalls=0
+REUSE_PASS mode=MODIFIED cases=5 normalCommitBytes=0 blacklistCommitBytes=4096 heap=unchanged sections=unchanged aliases=verified VM=closed
+COHORT_PASS mode=MODIFIED pendingPages=1108240 independentInversions=0 globalRejects=0 rootedAliases=verified gameCalls=0 gameWrites=0
+ISOLATION_PASS mode=MODIFIED faults=size+marks+cycle invalidChain=unchanged unrelatedChain=sorted nativeState=restored gameCalls=0 gameWrites=0
+SPAN_PASS mode=MODIFIED cases=27 avoidableCommitBytes=0 coalesced=True VM=closed sections=unchanged live=verified IAT=restored
+INTERIOR_PASS mode=MODIFIED cases=27 ordinaryCommitBytes=6684672 placement=original VM=closed blacklists=restored live=verified
+ABI_PASS mode=MODIFIED unwindCases=12 stack=restored return=restored loader=registered
+EXACT_PASS mode=MODIFIED cases=4 sameBinInversions=0 aliases=verified payload=unchanged workspace=cleared-original-restored gameModified=False
+VALIDATION_PASS mode=MODIFIED cases=14 originalMono=True gameModified=False
+
+ROLLBACK exact command: powershell -NoProfile -File CERTIFY.ps1 -Mode ROLLBACK
+Working directory: F:\vam1.22.0.12\工作区\mono_exact_reclaim_20261007
+Input: {"cases": 14, "runtime": "isolated-original-Mono"}
+Literal stdout: ROLLBACK_PASS cases=14
+Exit status: 0
+Nested exact commands/input/literal output/status: F:\vam1.22.0.12\工作区\mono_exact_reclaim_20261007\ROLLBACK_COMMANDS.json
+ROLLBACK_HASH_PASS baseline=D4685C71-restored candidate=retained gameModified=False
+ISOLATED_PASS mode=ROLLBACK scenario=idle livePinnedAliasReuse=verified gameCalls=0 gameWrites=0
+ISOLATED_PASS mode=ROLLBACK scenario=quick livePinnedAliasReuse=verified gameCalls=0 gameWrites=0
+ISOLATED_PASS mode=ROLLBACK scenario=stress livePinnedAliasReuse=verified gameCalls=0 gameWrites=0
+LIFECYCLE_PASS mode=ROLLBACK cells=1048576 refill=262144 prefix=300MiB inventory=closed pinned=verified gameCalls=0 gameWrites=0
+FAILURE_PASS mode=ROLLBACK originalOOM=caught limit=restored recovery=verified gameCalls=0 gameWrites=0
+SECTIONS_PASS mode=ROLLBACK retained=50000 limit=4096 data=verified growth=original
+WARM_PAGES_PASS mode=ROLLBACK cells=524288 coldRemaps=10931 allocationMs=739.316 sections=unchanged VM=closed aliases=verified gameCalls=0
+REUSE_PASS mode=ROLLBACK cases=5 normalCommitBytes=0 blacklistCommitBytes=4096 heap=unchanged sections=unchanged aliases=verified VM=closed
+COHORT_PASS mode=ROLLBACK pendingPages=1108240 independentInversions=0 globalRejects=0 rootedAliases=verified gameCalls=0 gameWrites=0
+ISOLATION_PASS mode=ROLLBACK faults=size+marks+cycle invalidChain=unchanged unrelatedChain=sorted nativeState=restored gameCalls=0 gameWrites=0
+SPAN_PASS mode=ROLLBACK cases=27 avoidableCommitBytes=0 coalesced=True VM=closed sections=unchanged live=verified IAT=restored
+INTERIOR_PASS mode=ROLLBACK cases=27 ordinaryCommitBytes=6684672 placement=original VM=closed blacklists=restored live=verified
+ABI_PASS mode=ROLLBACK unwindCases=12 stack=restored return=restored loader=registered
+EXACT_PASS mode=ROLLBACK cases=4 sameBinInversions=14 aliases=verified payload=unchanged workspace=cleared-original-restored gameModified=False
+VALIDATION_PASS mode=ROLLBACK cases=14 originalMono=True gameModified=False
+
+Restored behavior/status: independent-copy D4685C71 hash restored; original coarse ordering exact inversions 14 -> 0 -> 14; all 14 rollback cases passed. Candidate remains modified.
+Important failures: two original candidate runs retained the released 768MiB payload and failed unchanged avoided > 64MiB assertion (AssertionError: 0, exit 1); first evidence retained in INITIAL_MODIFIED_LARGE_RETAINED_*.
+Diagnostic D4 baseline under modified-arm assertions failed the same assertion; byte-copy/observer-thread experiments were not consistently passing. Cause remains unresolved. No success retry authorizes installation.
+Latest complete three-arm pass is algorithm/protocol evidence, not stable large-object retirement proof, game RAM savings or explanation of 2%-3% per-round growth.
+Live sampling: 3203 pages, 611 adjacent same-band exact-count inversions, 0.438s, partial accepted chains only; not a global atomic/root/heap attribution.
+Production Mono remains D4685C71; VaM.Memory remains 1.5.0 / 300d8335a2faedd473a09a0cb27c28df519413ffadf6c4e555f6a3b673278da8. No process was stopped or started.
+Root follow-up: CAPTURED_STALE_ROOT_FAILURE.json records actual GC2/GC3 main-stack residual roots after an explicit control slot ended; static=null, weak=alive, original AssertionError:0 exit1. Controlled evidence only; earlier uninstrumented incident remains unattributed.
+INSTALL gate=false. Next required work: explain original native lifecycle retention with root/worker-exit evidence before releasing this candidate.

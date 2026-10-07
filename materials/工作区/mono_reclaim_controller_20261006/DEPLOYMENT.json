@@ -1,0 +1,10 @@
+﻿{
+    "state":  "ready",
+    "mode":  "Check",
+    "target":  "F:\\vam1.22.0.12\\Mono\\EmbedRuntime\\mono.dll",
+    "testCopy":  false,
+    "sha256":  "cd7ab354a43faf18479c3a2d1f57d2d068769b8a490338942f6c510e8b02242d",
+    "detail":  "Read-only check",
+    "runtimeModified":  false,
+    "utc":  "2026-10-06T04:55:18.7220952Z"
+}

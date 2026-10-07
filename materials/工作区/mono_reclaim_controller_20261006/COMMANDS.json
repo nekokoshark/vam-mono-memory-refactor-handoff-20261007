@@ -1,0 +1,52 @@
+[
+  {
+    "mode": "STRUCTURE",
+    "argv": [
+      "C:\\Users\\Administrator\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "F:\\vam1.22.0.12\\\u5de5\u4f5c\u533a\\mono_reclaim_controller_20261006\\verify.py"
+    ],
+    "cwd": "F:\\vam1.22.0.12\\\u5de5\u4f5c\u533a\\mono_reclaim_controller_20261006",
+    "stdout": "STRUCTURE_PASS exports=unchanged imports=unchanged allocator=original unwind=4+3 WX=none callsites=1\n",
+    "stderr": "",
+    "exitStatus": 0,
+    "input": "32 MiB pinned/live; 512 MiB page-touched temporary; quick reuse; 4x32 concurrent; mixed/fragmented arrays; 25000 Dispose"
+  },
+  {
+    "mode": "BASELINE",
+    "argv": [
+      "C:\\Users\\Administrator\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "F:\\vam1.22.0.12\\\u5de5\u4f5c\u533a\\mono_reclaim_controller_20261006\\test_suite.py",
+      "BASELINE"
+    ],
+    "cwd": "F:\\vam1.22.0.12\\\u5de5\u4f5c\u533a\\mono_reclaim_controller_20261006",
+    "stdout": "RUNTIME_PASS mode=BASELINE scenarios=3 repeats=2 firstLargeReturn=3 livePinnedAliasReuse=verified concurrent=4x32 mixed=8 fragmented=4 dispose=25000 gameCalls=0 gameWrites=0\n",
+    "stderr": "",
+    "exitStatus": 0,
+    "input": "32 MiB pinned/live; 512 MiB page-touched temporary; quick reuse; 4x32 concurrent; mixed/fragmented arrays; 25000 Dispose"
+  },
+  {
+    "mode": "MODIFIED",
+    "argv": [
+      "C:\\Users\\Administrator\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "F:\\vam1.22.0.12\\\u5de5\u4f5c\u533a\\mono_reclaim_controller_20261006\\test_suite.py",
+      "MODIFIED"
+    ],
+    "cwd": "F:\\vam1.22.0.12\\\u5de5\u4f5c\u533a\\mono_reclaim_controller_20261006",
+    "stdout": "RUNTIME_PASS mode=MODIFIED scenarios=3 repeats=2 firstLargeReturn=1 livePinnedAliasReuse=verified concurrent=4x32 mixed=8 fragmented=4 dispose=25000 gameCalls=0 gameWrites=0\n",
+    "stderr": "",
+    "exitStatus": 0,
+    "input": "32 MiB pinned/live; 512 MiB page-touched temporary; quick reuse; 4x32 concurrent; mixed/fragmented arrays; 25000 Dispose"
+  },
+  {
+    "mode": "ROLLBACK",
+    "argv": [
+      "C:\\Program Files\\Git\\bin\\bash.exe",
+      "./ROLLBACK.sh"
+    ],
+    "cwd": "F:\\vam1.22.0.12\\\u5de5\u4f5c\u533a\\mono_reclaim_controller_20261006",
+    "stdout": "ROLLBACK_HASH_PASS baseline=restored candidate=retained gameModified=False\nRUNTIME_PASS mode=ROLLBACK scenarios=3 repeats=1 firstLargeReturn=3 livePinnedAliasReuse=verified concurrent=4x32 mixed=8 fragmented=4 dispose=25000 gameCalls=0 gameWrites=0\n",
+    "stderr": "",
+    "exitStatus": 0,
+    "input": "32 MiB pinned/live; 512 MiB page-touched temporary; quick reuse; 4x32 concurrent; mixed/fragmented arrays; 25000 Dispose"
+  }
+]

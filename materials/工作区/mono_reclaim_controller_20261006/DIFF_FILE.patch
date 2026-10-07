@@ -1,0 +1,63 @@
+Binary + source refactor; reproduce with build.py and audit_binary.py.
+baseline SHA256 cd7ab354a43faf18479c3a2d1f57d2d068769b8a490338942f6c510e8b02242d
+modified SHA256 85db66a50b8b142eff610764d587724f3cb3fa99c437628ccfaca0ced468b2d1
+Native original sections: only the five-byte CALL site at RVA 0x157ec4 is redirected.
+Original unmap/remap/scanner/OS-table/native GC bodies are byte-identical.
+Added native C controller in RX .gcrtext; numeric state and relocated unwind records in RW .gcrdat.
+PE: 2 section headers, image/code/data sizes, merged exception directory and checksum updated.
+Modified PE signing directory cleared; no new imports, exports, relocations or entry point.
+The original entire file is retained as BASELINE.dll.
+HEADER BYTE DIFF:
+offset 0xfe: 09 -> 0b
+offset 0x115: e2 -> e6
+offset 0x119: 1a -> 10
+offset 0x11a: 0f -> 10
+offset 0x149: 80 -> 90
+offset 0x14a: 2f -> 30
+offset 0x150: 95 -> 33
+offset 0x151: 2b -> 67
+offset 0x152: 28 -> 2b
+offset 0x198: 00 -> 60
+offset 0x199: 30 -> a2
+offset 0x19a: 2c -> 2f
+offset 0x19c: c0 -> f0
+offset 0x1a2: 28 -> 00
+offset 0x1a4: c8 -> 00
+offset 0x1a5: 17 -> 00
+offset 0x368: 00 -> 2e
+offset 0x369: 00 -> 67
+offset 0x36a: 00 -> 63
+offset 0x36b: 00 -> 72
+offset 0x36c: 00 -> 74
+offset 0x36d: 00 -> 65
+offset 0x36e: 00 -> 78
+offset 0x36f: 00 -> 74
+offset 0x371: 00 -> 04
+offset 0x375: 00 -> 80
+offset 0x376: 00 -> 2f
+offset 0x379: 00 -> 04
+offset 0x37d: 00 -> 98
+offset 0x37e: 00 -> 29
+offset 0x38c: 00 -> 20
+offset 0x38f: 00 -> 60
+offset 0x390: 00 -> 2e
+offset 0x391: 00 -> 67
+offset 0x392: 00 -> 63
+offset 0x393: 00 -> 72
+offset 0x394: 00 -> 64
+offset 0x395: 00 -> 61
+offset 0x396: 00 -> 74
+offset 0x398: 00 -> 50
+offset 0x399: 00 -> f4
+offset 0x39d: 00 -> 90
+offset 0x39e: 00 -> 2f
+offset 0x3a1: 00 -> f6
+offset 0x3a5: 00 -> 9c
+offset 0x3a6: 00 -> 29
+offset 0x3b4: 00 -> 40
+offset 0x3b7: 00 -> c0
+native file offset 0x1572c5: c7 -> 97
+native file offset 0x1572c6: 7d -> 04
+native file offset 0x1572c7: 00 -> 1a
+APPENDED SECTIONS: [{"name": ".gcrtext", "rva": 3112960, "rawOffset": 2725888, "bytes": 1024}, {"name": ".gcrdat", "rva": 3117056, "rawOffset": 2726912, "bytes": 62544}]
+SOURCE: reclaim_controller.c; BUILD: build.py; loader preservation validated by verify.py.

@@ -1,0 +1,86 @@
+[
+  {
+    "argv": [
+      "C:\\Users\\Administrator\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "F:\\vam1.22.0.12\\\u5de5\u4f5c\u533a\\mono_warm_pages_20261006\\warm_pages.py",
+      "BASELINE"
+    ],
+    "input": {
+      "mode": "BASELINE",
+      "repeat": 1
+    },
+    "stdout": "WARM_PAGES_PASS mode=BASELINE cells=524288 coldRemaps=174731 allocationMs=9856.992 sections=unchanged VM=closed aliases=verified gameCalls=0\n",
+    "stderr": "",
+    "exitStatus": 0
+  },
+  {
+    "argv": [
+      "C:\\Users\\Administrator\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "F:\\vam1.22.0.12\\\u5de5\u4f5c\u533a\\mono_warm_pages_20261006\\warm_pages.py",
+      "MODIFIED"
+    ],
+    "input": {
+      "mode": "MODIFIED",
+      "repeat": 1
+    },
+    "stdout": "WARM_PAGES_PASS mode=MODIFIED cells=524288 coldRemaps=10931 allocationMs=854.942 sections=unchanged VM=closed aliases=verified gameCalls=0\n",
+    "stderr": "",
+    "exitStatus": 0
+  },
+  {
+    "argv": [
+      "C:\\Users\\Administrator\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "F:\\vam1.22.0.12\\\u5de5\u4f5c\u533a\\mono_warm_pages_20261006\\warm_pages.py",
+      "MODIFIED"
+    ],
+    "input": {
+      "mode": "MODIFIED",
+      "repeat": 2
+    },
+    "stdout": "WARM_PAGES_PASS mode=MODIFIED cells=524288 coldRemaps=10923 allocationMs=811.022 sections=unchanged VM=closed aliases=verified gameCalls=0\n",
+    "stderr": "",
+    "exitStatus": 0
+  },
+  {
+    "argv": [
+      "C:\\Users\\Administrator\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "F:\\vam1.22.0.12\\\u5de5\u4f5c\u533a\\mono_warm_pages_20261006\\warm_pages.py",
+      "BASELINE"
+    ],
+    "input": {
+      "mode": "BASELINE",
+      "repeat": 2
+    },
+    "stdout": "WARM_PAGES_PASS mode=BASELINE cells=524288 coldRemaps=174603 allocationMs=9968.416 sections=unchanged VM=closed aliases=verified gameCalls=0\n",
+    "stderr": "",
+    "exitStatus": 0
+  },
+  {
+    "argv": [
+      "C:\\Users\\Administrator\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "F:\\vam1.22.0.12\\\u5de5\u4f5c\u533a\\mono_warm_pages_20261006\\warm_pages.py",
+      "BASELINE"
+    ],
+    "input": {
+      "mode": "BASELINE",
+      "repeat": 3
+    },
+    "stdout": "WARM_PAGES_PASS mode=BASELINE cells=524288 coldRemaps=174731 allocationMs=10174.093 sections=unchanged VM=closed aliases=verified gameCalls=0\n",
+    "stderr": "",
+    "exitStatus": 0
+  },
+  {
+    "argv": [
+      "C:\\Users\\Administrator\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "F:\\vam1.22.0.12\\\u5de5\u4f5c\u533a\\mono_warm_pages_20261006\\warm_pages.py",
+      "MODIFIED"
+    ],
+    "input": {
+      "mode": "MODIFIED",
+      "repeat": 3
+    },
+    "stdout": "WARM_PAGES_PASS mode=MODIFIED cells=524288 coldRemaps=10931 allocationMs=849.629 sections=unchanged VM=closed aliases=verified gameCalls=0\n",
+    "stderr": "",
+    "exitStatus": 0
+  }
+]

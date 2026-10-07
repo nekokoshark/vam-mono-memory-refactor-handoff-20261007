@@ -1,0 +1,344 @@
+[
+  {
+    "command": [
+      "C:\\Users\\Administrator\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "F:\\vam1.22.0.12\\\u5de5\u4f5c\u533a\\mono_exact_reclaim_20261007\\diagnose_roots.py",
+      "D4"
+    ],
+    "input": {
+      "runtime": "D4",
+      "rootControl": "natural",
+      "originalGCs": 3
+    },
+    "stdout": "ROOT_STACK_SCAN weakAlive=False staticNonNull=False stackMatches=0\nROOT_STACK_SCAN weakAlive=False staticNonNull=False stackMatches=0\nROOT_STACK_SCAN weakAlive=False staticNonNull=False stackMatches=0\nLIFECYCLE_PASS mode=MODIFIED cells=1048576 refill=262144 prefix=300MiB inventory=closed pinned=verified gameCalls=0 gameWrites=0\nDIAGNOSTIC_HOOK_RESTORED originalCall=True gameTouched=False\n",
+    "stderr": "",
+    "exitStatus": 0,
+    "rootStatus": [
+      {
+        "stage": "GC1",
+        "staticNonNull": false,
+        "weakAlive": false,
+        "pushCalls": 2,
+        "stackBytes": 8136,
+        "stackMatches": 0,
+        "rejectedRanges": 0,
+        "matches": []
+      },
+      {
+        "stage": "GC2",
+        "staticNonNull": false,
+        "weakAlive": false,
+        "pushCalls": 2,
+        "stackBytes": 8136,
+        "stackMatches": 0,
+        "rejectedRanges": 0,
+        "matches": []
+      },
+      {
+        "stage": "GC3",
+        "staticNonNull": false,
+        "weakAlive": false,
+        "pushCalls": 2,
+        "stackBytes": 8136,
+        "stackMatches": 0,
+        "rejectedRanges": 0,
+        "matches": []
+      }
+    ]
+  },
+  {
+    "command": [
+      "C:\\Users\\Administrator\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "F:\\vam1.22.0.12\\\u5de5\u4f5c\u533a\\mono_exact_reclaim_20261007\\diagnose_roots.py",
+      "D4",
+      "control"
+    ],
+    "input": {
+      "runtime": "D4",
+      "rootControl": "control",
+      "originalGCs": 3
+    },
+    "stdout": "ROOT_STACK_SCAN weakAlive=True staticNonNull=False stackMatches=1\nROOT_STACK_SCAN weakAlive=False staticNonNull=False stackMatches=0\nROOT_STACK_SCAN weakAlive=False staticNonNull=False stackMatches=0\nLIFECYCLE_PASS mode=MODIFIED cells=1048576 refill=262144 prefix=300MiB inventory=closed pinned=verified gameCalls=0 gameWrites=0\nDIAGNOSTIC_HOOK_RESTORED originalCall=True gameTouched=False\n",
+    "stderr": "",
+    "exitStatus": 0,
+    "rootStatus": [
+      {
+        "stage": "GC1",
+        "staticNonNull": false,
+        "weakAlive": true,
+        "pushCalls": 2,
+        "stackBytes": 6744,
+        "stackMatches": 1,
+        "rejectedRanges": 0,
+        "matches": [
+          {
+            "tid": 60932,
+            "slotHidden": 18446743675754057727,
+            "targetOffset": 0,
+            "startHidden": 18446743675754059583
+          }
+        ]
+      },
+      {
+        "stage": "GC2",
+        "staticNonNull": false,
+        "weakAlive": false,
+        "pushCalls": 2,
+        "stackBytes": 6680,
+        "stackMatches": 0,
+        "rejectedRanges": 0,
+        "matches": []
+      },
+      {
+        "stage": "GC3",
+        "staticNonNull": false,
+        "weakAlive": false,
+        "pushCalls": 2,
+        "stackBytes": 6680,
+        "stackMatches": 0,
+        "rejectedRanges": 0,
+        "matches": []
+      }
+    ]
+  },
+  {
+    "command": [
+      "C:\\Users\\Administrator\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "F:\\vam1.22.0.12\\\u5de5\u4f5c\u533a\\mono_exact_reclaim_20261007\\diagnose_roots.py",
+      "D4",
+      "hold"
+    ],
+    "input": {
+      "runtime": "D4",
+      "rootControl": "hold",
+      "originalGCs": 3
+    },
+    "stdout": "ROOT_STACK_SCAN weakAlive=True staticNonNull=False stackMatches=1\nROOT_STACK_SCAN weakAlive=True staticNonNull=False stackMatches=1\nROOT_STACK_SCAN weakAlive=True staticNonNull=False stackMatches=1\nDIAGNOSTIC_HOOK_RESTORED originalCall=True gameTouched=False\n",
+    "stderr": "Traceback (most recent call last):\n  File \"F:\\vam1.22.0.12\\\u5bb8\u30e4\u7d94\u9356\u7bedmono_exact_reclaim_20261007\\diagnose_roots.py\", line 94, in <module>\n    m.main(\"MODIFIED\")\n  File \"F:\\vam1.22.0.12\\\u5bb8\u30e4\u7d94\u9356\u7bedmono_interior_commit_lifecycle_20261007\\lifecycle_test.py\", line 233, in main\nAssertionError: 0\n",
+    "exitStatus": 1,
+    "rootStatus": [
+      {
+        "stage": "GC1",
+        "staticNonNull": false,
+        "weakAlive": true,
+        "pushCalls": 2,
+        "stackBytes": 8024,
+        "stackMatches": 1,
+        "rejectedRanges": 0,
+        "matches": [
+          {
+            "tid": 68136,
+            "slotHidden": 18446743711246258815,
+            "targetOffset": 0,
+            "startHidden": 18446743711246260671
+          }
+        ]
+      },
+      {
+        "stage": "GC2",
+        "staticNonNull": false,
+        "weakAlive": true,
+        "pushCalls": 2,
+        "stackBytes": 8024,
+        "stackMatches": 1,
+        "rejectedRanges": 0,
+        "matches": [
+          {
+            "tid": 68136,
+            "slotHidden": 18446743711246258815,
+            "targetOffset": 0,
+            "startHidden": 18446743711246260671
+          }
+        ]
+      },
+      {
+        "stage": "GC3",
+        "staticNonNull": false,
+        "weakAlive": true,
+        "pushCalls": 2,
+        "stackBytes": 8024,
+        "stackMatches": 1,
+        "rejectedRanges": 0,
+        "matches": [
+          {
+            "tid": 68136,
+            "slotHidden": 18446743711246258815,
+            "targetOffset": 0,
+            "startHidden": 18446743711246260671
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "command": [
+      "C:\\Users\\Administrator\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "F:\\vam1.22.0.12\\\u5de5\u4f5c\u533a\\mono_exact_reclaim_20261007\\diagnose_roots.py",
+      "EXACT"
+    ],
+    "input": {
+      "runtime": "EXACT",
+      "rootControl": "natural",
+      "originalGCs": 3
+    },
+    "stdout": "ROOT_STACK_SCAN weakAlive=False staticNonNull=False stackMatches=0\nROOT_STACK_SCAN weakAlive=False staticNonNull=False stackMatches=0\nROOT_STACK_SCAN weakAlive=False staticNonNull=False stackMatches=0\nLIFECYCLE_PASS mode=MODIFIED cells=1048576 refill=262144 prefix=300MiB inventory=closed pinned=verified gameCalls=0 gameWrites=0\nDIAGNOSTIC_HOOK_RESTORED originalCall=True gameTouched=False\n",
+    "stderr": "",
+    "exitStatus": 0,
+    "rootStatus": [
+      {
+        "stage": "GC1",
+        "staticNonNull": false,
+        "weakAlive": false,
+        "pushCalls": 2,
+        "stackBytes": 9288,
+        "stackMatches": 0,
+        "rejectedRanges": 0,
+        "matches": []
+      },
+      {
+        "stage": "GC2",
+        "staticNonNull": false,
+        "weakAlive": false,
+        "pushCalls": 2,
+        "stackBytes": 9288,
+        "stackMatches": 0,
+        "rejectedRanges": 0,
+        "matches": []
+      },
+      {
+        "stage": "GC3",
+        "staticNonNull": false,
+        "weakAlive": false,
+        "pushCalls": 2,
+        "stackBytes": 9288,
+        "stackMatches": 0,
+        "rejectedRanges": 0,
+        "matches": []
+      }
+    ]
+  },
+  {
+    "command": [
+      "C:\\Users\\Administrator\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "F:\\vam1.22.0.12\\\u5de5\u4f5c\u533a\\mono_exact_reclaim_20261007\\diagnose_roots.py",
+      "EXACT",
+      "control"
+    ],
+    "input": {
+      "runtime": "EXACT",
+      "rootControl": "control",
+      "originalGCs": 3
+    },
+    "stdout": "ROOT_STACK_SCAN weakAlive=True staticNonNull=False stackMatches=1\nROOT_STACK_SCAN weakAlive=False staticNonNull=False stackMatches=0\nROOT_STACK_SCAN weakAlive=False staticNonNull=False stackMatches=0\nLIFECYCLE_PASS mode=MODIFIED cells=1048576 refill=262144 prefix=300MiB inventory=closed pinned=verified gameCalls=0 gameWrites=0\nDIAGNOSTIC_HOOK_RESTORED originalCall=True gameTouched=False\n",
+    "stderr": "",
+    "exitStatus": 0,
+    "rootStatus": [
+      {
+        "stage": "GC1",
+        "staticNonNull": false,
+        "weakAlive": true,
+        "pushCalls": 2,
+        "stackBytes": 6840,
+        "stackMatches": 1,
+        "rejectedRanges": 0,
+        "matches": [
+          {
+            "tid": 65396,
+            "slotHidden": 18446743285524401599,
+            "targetOffset": 0,
+            "startHidden": 18446743285524403455
+          }
+        ]
+      },
+      {
+        "stage": "GC2",
+        "staticNonNull": false,
+        "weakAlive": false,
+        "pushCalls": 2,
+        "stackBytes": 6776,
+        "stackMatches": 0,
+        "rejectedRanges": 0,
+        "matches": []
+      },
+      {
+        "stage": "GC3",
+        "staticNonNull": false,
+        "weakAlive": false,
+        "pushCalls": 2,
+        "stackBytes": 6776,
+        "stackMatches": 0,
+        "rejectedRanges": 0,
+        "matches": []
+      }
+    ]
+  },
+  {
+    "command": [
+      "C:\\Users\\Administrator\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "F:\\vam1.22.0.12\\\u5de5\u4f5c\u533a\\mono_exact_reclaim_20261007\\diagnose_roots.py",
+      "EXACT",
+      "hold"
+    ],
+    "input": {
+      "runtime": "EXACT",
+      "rootControl": "hold",
+      "originalGCs": 3
+    },
+    "stdout": "ROOT_STACK_SCAN weakAlive=True staticNonNull=False stackMatches=1\nROOT_STACK_SCAN weakAlive=True staticNonNull=False stackMatches=1\nROOT_STACK_SCAN weakAlive=True staticNonNull=False stackMatches=1\nDIAGNOSTIC_HOOK_RESTORED originalCall=True gameTouched=False\n",
+    "stderr": "Traceback (most recent call last):\n  File \"F:\\vam1.22.0.12\\\u5bb8\u30e4\u7d94\u9356\u7bedmono_exact_reclaim_20261007\\diagnose_roots.py\", line 94, in <module>\n    m.main(\"MODIFIED\")\n  File \"F:\\vam1.22.0.12\\\u5bb8\u30e4\u7d94\u9356\u7bedmono_interior_commit_lifecycle_20261007\\lifecycle_test.py\", line 233, in main\nAssertionError: 0\n",
+    "exitStatus": 1,
+    "rootStatus": [
+      {
+        "stage": "GC1",
+        "staticNonNull": false,
+        "weakAlive": true,
+        "pushCalls": 2,
+        "stackBytes": 6104,
+        "stackMatches": 1,
+        "rejectedRanges": 0,
+        "matches": [
+          {
+            "tid": 61244,
+            "slotHidden": 18446743224799268159,
+            "targetOffset": 0,
+            "startHidden": 18446743224799270015
+          }
+        ]
+      },
+      {
+        "stage": "GC2",
+        "staticNonNull": false,
+        "weakAlive": true,
+        "pushCalls": 2,
+        "stackBytes": 6104,
+        "stackMatches": 1,
+        "rejectedRanges": 0,
+        "matches": [
+          {
+            "tid": 61244,
+            "slotHidden": 18446743224799268159,
+            "targetOffset": 0,
+            "startHidden": 18446743224799270015
+          }
+        ]
+      },
+      {
+        "stage": "GC3",
+        "staticNonNull": false,
+        "weakAlive": true,
+        "pushCalls": 2,
+        "stackBytes": 6104,
+        "stackMatches": 1,
+        "rejectedRanges": 0,
+        "matches": [
+          {
+            "tid": 61244,
+            "slotHidden": 18446743224799268159,
+            "targetOffset": 0,
+            "startHidden": 18446743224799270015
+          }
+        ]
+      }
+    ]
+  }
+]

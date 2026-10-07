@@ -1,0 +1,55 @@
+Changed branch: accepted interior split: whole-span remap -> cold metadata split + common demand commit
+Changed fields: native cold bit on both free spans; first51 state words preserved; append5 interior counters
+BASELINE_SHA256=b7c1f56dd38fb70b6ee7e66f3dd65dd86f7a10e832006a5e5a2c3837928974b2
+MODIFIED_SHA256=a1a8f07d43aab8542247b18d0109a49508ff1489c0aba6b9c9ce1133f4392496
+MODIFIED_FILE=F:\vam1.22.0.12\工作区\mono_interior_commit_lifecycle_20261007\MODIFIED_FILE.dll
+DIFF_FILE=F:\vam1.22.0.12\工作区\mono_interior_commit_lifecycle_20261007\DIFF_FILE.patch
+VERIFICATION=F:\vam1.22.0.12\工作区\mono_interior_commit_lifecycle_20261007\VERIFICATION.txt
+ROLLBACK=F:\vam1.22.0.12\工作区\mono_interior_commit_lifecycle_20261007\ROLLBACK.sh
+
+BASELINE
+cwd=F:\vam1.22.0.12\工作区\mono_interior_commit_lifecycle_20261007
+command=powershell -NoProfile -File CERTIFY.ps1 -Mode BASELINE
+input={"cases": 12, "runtime": "isolated-original-Mono"}
+stdout(literal)=BASELINE_PASS cases=12
+exitStatus=0
+
+MODIFIED
+cwd=F:\vam1.22.0.12\工作区\mono_interior_commit_lifecycle_20261007
+command=powershell -NoProfile -File CERTIFY.ps1 -Mode MODIFIED
+input={"cases": 12, "runtime": "isolated-original-Mono"}
+stdout(literal)=MODIFIED_PASS cases=12
+exitStatus=0
+
+ROLLBACK
+cwd=F:\vam1.22.0.12\工作区\mono_interior_commit_lifecycle_20261007
+command=powershell -NoProfile -File CERTIFY.ps1 -Mode ROLLBACK
+input={"cases": 12, "runtime": "isolated-original-Mono"}
+stdout(literal)=ROLLBACK_PASS cases=12
+exitStatus=0
+
+Restored: independent copy restores B7 and original full interior remap; candidate retained
+Preserved: original blacklist/placement, object identity/content, marking/TLS/locks, OOM, growth batches, 4096 sections, warm64KiB, reserve256MiB
+Fixture ordinary cumulative commitment: {"BASELINE": 4831838208, "MODIFIED": 6684672, "ROLLBACK": 4831838208}
+27 interior cases: small/large/nine-page lead/exact-right/mapped/noninterior/atomic bypass/header failure/context fallback x3.
+27 coalescing cases remain unchanged in all arms; existing concurrency/OOM/section/pending/VM suites retained.
+Windows loader + RtlVirtualUnwind restore stack/return at thunk entry/body/epilogue; new thunk carries arg5/base/state as args5/6/7.
+Isolated fault: native FirstPart can unlink its free header before returning NULL; fixture repairs only its own list after recording the same failure.
+Original blacklists, IAT and InstallHeader entry restored before managed runtime resumes; game not written.
+Initial regression observation: one initial large-prefix avoidedBytes assertion saw0; unchanged assertion passed full rerun and three additional candidate runs; cause not established
+Full literal nested command outputs/status: BASELINE_COMMANDS.json / MODIFIED_COMMANDS.json / ROLLBACK_COMMANDS.json.
+No game resident benefit or persistent-growth cause is established. Do not attribute avoided cumulative flow to physical RAM.
+Deployment=cold-installed; next natural start
+Atomic install/restore on another copy passed; ROLLBACK.sh does not replace the game.
+Production install after normal exit: powershell -NoProfile -File install.ps1 -Mode Install
+Cold restore B7 after normal exit: powershell -NoProfile -File install.ps1 -Mode Restore
+
+COLD_INSTALL
+command=["powershell", "-NoProfile", "-Command", "[Console]::OutputEncoding=[Text.UTF8Encoding]::new($false); & 'F:\\vam1.22.0.12\\工作区\\mono_interior_commit_lifecycle_20261007\\install.ps1' -Mode Install"]
+input={"Mode": "Install", "TestCopy": false}
+stdout(literal):
+SNAPSHOT PASS: 81 files copied and hash-verified; game files read-only
+INSTALL_PASS mode=Install testCopy=False sha256=a1a8f07d43aab8542247b18d0109a49508ff1489c0aba6b9c9ce1133f4392496 runtimeModified=False
+exitStatus=0
+installedSHA256=a1a8f07d43aab8542247b18d0109a49508ff1489c0aba6b9c9ce1133f4392496
+81 snapshot files verified; only Mono changed; game not started.

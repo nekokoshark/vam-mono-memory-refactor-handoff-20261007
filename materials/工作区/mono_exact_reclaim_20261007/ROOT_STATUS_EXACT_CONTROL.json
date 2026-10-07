@@ -1,0 +1,39 @@
+[
+  {
+    "stage": "GC1",
+    "staticNonNull": false,
+    "weakAlive": true,
+    "pushCalls": 2,
+    "stackBytes": 6840,
+    "stackMatches": 1,
+    "rejectedRanges": 0,
+    "matches": [
+      {
+        "tid": 65396,
+        "slotHidden": 18446743285524401599,
+        "targetOffset": 0,
+        "startHidden": 18446743285524403455
+      }
+    ]
+  },
+  {
+    "stage": "GC2",
+    "staticNonNull": false,
+    "weakAlive": false,
+    "pushCalls": 2,
+    "stackBytes": 6776,
+    "stackMatches": 0,
+    "rejectedRanges": 0,
+    "matches": []
+  },
+  {
+    "stage": "GC3",
+    "staticNonNull": false,
+    "weakAlive": false,
+    "pushCalls": 2,
+    "stackBytes": 6776,
+    "stackMatches": 0,
+    "rejectedRanges": 0,
+    "matches": []
+  }
+]

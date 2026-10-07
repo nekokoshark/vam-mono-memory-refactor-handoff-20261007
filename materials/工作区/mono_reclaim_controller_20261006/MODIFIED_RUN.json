@@ -1,0 +1,104 @@
+[
+  {
+    "argv": [
+      "C:\\Users\\Administrator\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "F:\\vam1.22.0.12\\\u5de5\u4f5c\u533a\\mono_reclaim_controller_20261006\\sample.py",
+      "MODIFIED",
+      "idle",
+      "F:\\vam1.22.0.12\\\u5de5\u4f5c\u533a\\mono_reclaim_controller_20261006\\MODIFIED_idle_1.json"
+    ],
+    "input": {
+      "mode": "MODIFIED",
+      "scenario": "idle",
+      "repeat": 1
+    },
+    "stdout": "ISOLATED_PASS mode=MODIFIED scenario=idle livePinnedAliasReuse=verified gameCalls=0 gameWrites=0\n",
+    "stderr": "",
+    "exitStatus": 0
+  },
+  {
+    "argv": [
+      "C:\\Users\\Administrator\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "F:\\vam1.22.0.12\\\u5de5\u4f5c\u533a\\mono_reclaim_controller_20261006\\sample.py",
+      "MODIFIED",
+      "quick",
+      "F:\\vam1.22.0.12\\\u5de5\u4f5c\u533a\\mono_reclaim_controller_20261006\\MODIFIED_quick_1.json"
+    ],
+    "input": {
+      "mode": "MODIFIED",
+      "scenario": "quick",
+      "repeat": 1
+    },
+    "stdout": "ISOLATED_PASS mode=MODIFIED scenario=quick livePinnedAliasReuse=verified gameCalls=0 gameWrites=0\n",
+    "stderr": "",
+    "exitStatus": 0
+  },
+  {
+    "argv": [
+      "C:\\Users\\Administrator\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "F:\\vam1.22.0.12\\\u5de5\u4f5c\u533a\\mono_reclaim_controller_20261006\\sample.py",
+      "MODIFIED",
+      "stress",
+      "F:\\vam1.22.0.12\\\u5de5\u4f5c\u533a\\mono_reclaim_controller_20261006\\MODIFIED_stress_1.json"
+    ],
+    "input": {
+      "mode": "MODIFIED",
+      "scenario": "stress",
+      "repeat": 1
+    },
+    "stdout": "ISOLATED_PASS mode=MODIFIED scenario=stress livePinnedAliasReuse=verified gameCalls=0 gameWrites=0\n",
+    "stderr": "",
+    "exitStatus": 0
+  },
+  {
+    "argv": [
+      "C:\\Users\\Administrator\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "F:\\vam1.22.0.12\\\u5de5\u4f5c\u533a\\mono_reclaim_controller_20261006\\sample.py",
+      "MODIFIED",
+      "idle",
+      "F:\\vam1.22.0.12\\\u5de5\u4f5c\u533a\\mono_reclaim_controller_20261006\\MODIFIED_idle_2.json"
+    ],
+    "input": {
+      "mode": "MODIFIED",
+      "scenario": "idle",
+      "repeat": 2
+    },
+    "stdout": "ISOLATED_PASS mode=MODIFIED scenario=idle livePinnedAliasReuse=verified gameCalls=0 gameWrites=0\n",
+    "stderr": "",
+    "exitStatus": 0
+  },
+  {
+    "argv": [
+      "C:\\Users\\Administrator\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "F:\\vam1.22.0.12\\\u5de5\u4f5c\u533a\\mono_reclaim_controller_20261006\\sample.py",
+      "MODIFIED",
+      "quick",
+      "F:\\vam1.22.0.12\\\u5de5\u4f5c\u533a\\mono_reclaim_controller_20261006\\MODIFIED_quick_2.json"
+    ],
+    "input": {
+      "mode": "MODIFIED",
+      "scenario": "quick",
+      "repeat": 2
+    },
+    "stdout": "ISOLATED_PASS mode=MODIFIED scenario=quick livePinnedAliasReuse=verified gameCalls=0 gameWrites=0\n",
+    "stderr": "",
+    "exitStatus": 0
+  },
+  {
+    "argv": [
+      "C:\\Users\\Administrator\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "F:\\vam1.22.0.12\\\u5de5\u4f5c\u533a\\mono_reclaim_controller_20261006\\sample.py",
+      "MODIFIED",
+      "stress",
+      "F:\\vam1.22.0.12\\\u5de5\u4f5c\u533a\\mono_reclaim_controller_20261006\\MODIFIED_stress_2.json"
+    ],
+    "input": {
+      "mode": "MODIFIED",
+      "scenario": "stress",
+      "repeat": 2
+    },
+    "stdout": "ISOLATED_PASS mode=MODIFIED scenario=stress livePinnedAliasReuse=verified gameCalls=0 gameWrites=0\n",
+    "stderr": "",
+    "exitStatus": 0
+  }
+]

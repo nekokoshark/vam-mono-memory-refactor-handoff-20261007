@@ -1,0 +1,11 @@
+﻿{
+    "command":  "powershell -NoProfile -File install.ps1 -Mode Install",
+    "workingDirectory":  "F:\\vam1.22.0.12\\工作区\\mono_reuse_lifecycle_20261007",
+    "input":  {
+                  "testCopy":  false,
+                  "gameExited":  true,
+                  "mode":  "Install"
+              },
+    "literalOutput":  "SNAPSHOT PASS: 81 files copied and hash-verified; game files read-only\nINSTALL_PASS mode=Install testCopy=False sha256=d4685c71704ef7f222feebfb93851d7f3b6d354998c2e6bc8347268e047c7b3d runtimeModified=False",
+    "exitStatus":  0
+}

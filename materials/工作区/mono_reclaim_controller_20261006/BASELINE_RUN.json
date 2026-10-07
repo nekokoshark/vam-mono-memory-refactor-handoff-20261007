@@ -1,0 +1,104 @@
+[
+  {
+    "argv": [
+      "C:\\Users\\Administrator\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "F:\\vam1.22.0.12\\\u5de5\u4f5c\u533a\\mono_reclaim_controller_20261006\\sample.py",
+      "BASELINE",
+      "idle",
+      "F:\\vam1.22.0.12\\\u5de5\u4f5c\u533a\\mono_reclaim_controller_20261006\\BASELINE_idle_1.json"
+    ],
+    "input": {
+      "mode": "BASELINE",
+      "scenario": "idle",
+      "repeat": 1
+    },
+    "stdout": "ISOLATED_PASS mode=BASELINE scenario=idle livePinnedAliasReuse=verified gameCalls=0 gameWrites=0\n",
+    "stderr": "",
+    "exitStatus": 0
+  },
+  {
+    "argv": [
+      "C:\\Users\\Administrator\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "F:\\vam1.22.0.12\\\u5de5\u4f5c\u533a\\mono_reclaim_controller_20261006\\sample.py",
+      "BASELINE",
+      "quick",
+      "F:\\vam1.22.0.12\\\u5de5\u4f5c\u533a\\mono_reclaim_controller_20261006\\BASELINE_quick_1.json"
+    ],
+    "input": {
+      "mode": "BASELINE",
+      "scenario": "quick",
+      "repeat": 1
+    },
+    "stdout": "ISOLATED_PASS mode=BASELINE scenario=quick livePinnedAliasReuse=verified gameCalls=0 gameWrites=0\n",
+    "stderr": "",
+    "exitStatus": 0
+  },
+  {
+    "argv": [
+      "C:\\Users\\Administrator\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "F:\\vam1.22.0.12\\\u5de5\u4f5c\u533a\\mono_reclaim_controller_20261006\\sample.py",
+      "BASELINE",
+      "stress",
+      "F:\\vam1.22.0.12\\\u5de5\u4f5c\u533a\\mono_reclaim_controller_20261006\\BASELINE_stress_1.json"
+    ],
+    "input": {
+      "mode": "BASELINE",
+      "scenario": "stress",
+      "repeat": 1
+    },
+    "stdout": "ISOLATED_PASS mode=BASELINE scenario=stress livePinnedAliasReuse=verified gameCalls=0 gameWrites=0\n",
+    "stderr": "",
+    "exitStatus": 0
+  },
+  {
+    "argv": [
+      "C:\\Users\\Administrator\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "F:\\vam1.22.0.12\\\u5de5\u4f5c\u533a\\mono_reclaim_controller_20261006\\sample.py",
+      "BASELINE",
+      "idle",
+      "F:\\vam1.22.0.12\\\u5de5\u4f5c\u533a\\mono_reclaim_controller_20261006\\BASELINE_idle_2.json"
+    ],
+    "input": {
+      "mode": "BASELINE",
+      "scenario": "idle",
+      "repeat": 2
+    },
+    "stdout": "ISOLATED_PASS mode=BASELINE scenario=idle livePinnedAliasReuse=verified gameCalls=0 gameWrites=0\n",
+    "stderr": "",
+    "exitStatus": 0
+  },
+  {
+    "argv": [
+      "C:\\Users\\Administrator\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "F:\\vam1.22.0.12\\\u5de5\u4f5c\u533a\\mono_reclaim_controller_20261006\\sample.py",
+      "BASELINE",
+      "quick",
+      "F:\\vam1.22.0.12\\\u5de5\u4f5c\u533a\\mono_reclaim_controller_20261006\\BASELINE_quick_2.json"
+    ],
+    "input": {
+      "mode": "BASELINE",
+      "scenario": "quick",
+      "repeat": 2
+    },
+    "stdout": "ISOLATED_PASS mode=BASELINE scenario=quick livePinnedAliasReuse=verified gameCalls=0 gameWrites=0\n",
+    "stderr": "",
+    "exitStatus": 0
+  },
+  {
+    "argv": [
+      "C:\\Users\\Administrator\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "F:\\vam1.22.0.12\\\u5de5\u4f5c\u533a\\mono_reclaim_controller_20261006\\sample.py",
+      "BASELINE",
+      "stress",
+      "F:\\vam1.22.0.12\\\u5de5\u4f5c\u533a\\mono_reclaim_controller_20261006\\BASELINE_stress_2.json"
+    ],
+    "input": {
+      "mode": "BASELINE",
+      "scenario": "stress",
+      "repeat": 2
+    },
+    "stdout": "ISOLATED_PASS mode=BASELINE scenario=stress livePinnedAliasReuse=verified gameCalls=0 gameWrites=0\n",
+    "stderr": "",
+    "exitStatus": 0
+  }
+]

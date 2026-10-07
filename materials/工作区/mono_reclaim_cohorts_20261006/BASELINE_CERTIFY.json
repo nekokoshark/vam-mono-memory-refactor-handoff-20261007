@@ -1,0 +1,12 @@
+﻿{
+    "mode":  "BASELINE",
+    "command":  "powershell -NoProfile -File CERTIFY.ps1 -Mode BASELINE",
+    "workingDirectory":  "F:\\vam1.22.0.12\\工作区\\mono_reclaim_cohorts_20261006",
+    "input":  {
+                  "cases":  9,
+                  "runtime":  "isolated-original-Mono"
+              },
+    "stdout":  "BASELINE_PASS cases=9",
+    "nestedOutput":  "ISOLATED_PASS mode=BASELINE scenario=idle livePinnedAliasReuse=verified gameCalls=0 gameWrites=0\nISOLATED_PASS mode=BASELINE scenario=quick livePinnedAliasReuse=verified gameCalls=0 gameWrites=0\nISOLATED_PASS mode=BASELINE scenario=stress livePinnedAliasReuse=verified gameCalls=0 gameWrites=0\nLIFECYCLE_PASS mode=BASELINE cells=1048576 refill=262144 prefix=300MiB inventory=closed pinned=verified gameCalls=0 gameWrites=0\nFAILURE_PASS mode=BASELINE originalOOM=caught limit=restored recovery=verified gameCalls=0 gameWrites=0\nSECTIONS_PASS mode=BASELINE retained=50000 limit=4096 data=verified growth=original\nWARM_PAGES_PASS mode=BASELINE cells=524288 coldRemaps=10931 allocationMs=789.862 sections=unchanged VM=closed aliases=verified gameCalls=0\nCOHORT_PASS mode=BASELINE pendingPages=1108240 independentInversions=6142 globalRejects=1 rootedAliases=verified gameCalls=0 gameWrites=0\nISOLATION_PASS mode=BASELINE faults=size+marks+cycle invalidChain=unchanged unrelatedChain=native-fallback nativeState=restored gameCalls=0 gameWrites=0\nVALIDATION_PASS mode=BASELINE runtime=3 lifecycle=1 OOM=1 sections=1 warm=1 oversized=1 isolation=1 gameModified=False",
+    "exitStatus":  0
+}

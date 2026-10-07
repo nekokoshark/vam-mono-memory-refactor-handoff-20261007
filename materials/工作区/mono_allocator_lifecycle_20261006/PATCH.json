@@ -1,0 +1,78 @@
+{
+  "baselineSHA256": "cd7ab354a43faf18479c3a2d1f57d2d068769b8a490338942f6c510e8b02242d",
+  "modifiedSHA256": "d89ccf26fd75b354244f7225b978667c215d54681a2565df624ac59fb6ac323e",
+  "callsiteRVA": 1408708,
+  "baselineCall": "e8c77d0000",
+  "stubRVA": 3116016,
+  "controllerRVA": 3114464,
+  "stateRVA": 3125760,
+  "stateBytes": 232,
+  "reserveBytes": 268435456,
+  "exceptionTableRVA": 3126000,
+  "newUnwindEntries": 15,
+  "chainedUnwindRecords": 8,
+  "sections": [
+    {
+      "name": ".gcrtext",
+      "rva": 3112960,
+      "rawOffset": 2725888,
+      "bytes": 3216
+    },
+    {
+      "name": ".gcrdat",
+      "rva": 3117056,
+      "rawOffset": 2729472,
+      "bytes": 66916
+    }
+  ],
+  "collectorABI": "unchanged nonmoving Boehm",
+  "callSites": [
+    {
+      "rva": 1408708,
+      "originalTarget": 1440912,
+      "stubRVA": 3116016,
+      "name": "reclaim_controller"
+    },
+    {
+      "rva": 1442742,
+      "originalTarget": 1436752,
+      "stubRVA": 3116080,
+      "name": "remember_remap"
+    },
+    {
+      "rva": 1442763,
+      "originalTarget": 1441484,
+      "stubRVA": 3116128,
+      "name": "take_prefix"
+    },
+    {
+      "rva": 1411216,
+      "originalTarget": 1409256,
+      "stubRVA": 3116048,
+      "name": "grow_on_demand"
+    },
+    {
+      "rva": 1411228,
+      "originalTarget": 1409256,
+      "stubRVA": 3116048,
+      "name": "grow_on_demand"
+    }
+  ],
+  "exports": {
+    "grow_on_demand": 3112960,
+    "reclaim_controller": 3114464,
+    "remember_remap": 3115488,
+    "take_prefix": 3115664
+  },
+  "stubs": {
+    "reclaim_controller": 3116016,
+    "grow_on_demand": 3116048,
+    "remember_remap": 3116080,
+    "take_prefix": 3116128
+  },
+  "thunkUnwindRVA": 3125992,
+  "gameCalls": 0,
+  "deploymentRecord": "DEPLOYMENT.json",
+  "growthPolicy": "original speculative/fallback batch arguments unchanged",
+  "replacesRejectedSHA256": "f3f46bba95a099cf6a20971aa6da0eded497f7b5c71b48653ec35b76bebb310a"
+}

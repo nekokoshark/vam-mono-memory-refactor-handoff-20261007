@@ -1,0 +1,82 @@
+{
+  "baselineSHA256": "d89ccf26fd75b354244f7225b978667c215d54681a2565df624ac59fb6ac323e",
+  "modifiedSHA256": "1c023c2516d002f5762bb5bd9636cbaa4b46ab421bfa396b874539ed9f668fa1",
+  "callsiteRVA": 1408708,
+  "baselineCall": "e8c77d0000",
+  "stubRVA": 3116208,
+  "controllerRVA": 3114464,
+  "stateRVA": 3125760,
+  "stateBytes": 256,
+  "reserveBytes": 268435456,
+  "exceptionTableRVA": 3126024,
+  "newUnwindEntries": 15,
+  "chainedUnwindRecords": 8,
+  "sections": [
+    {
+      "name": ".gcrtext",
+      "rva": 3112960,
+      "rawOffset": 2725888,
+      "bytes": 3584
+    },
+    {
+      "name": ".gcrdat",
+      "rva": 3117056,
+      "rawOffset": 2729472,
+      "bytes": 66940
+    }
+  ],
+  "collectorABI": "unchanged nonmoving Boehm",
+  "callSites": [
+    {
+      "rva": 1408708,
+      "originalTarget": 1440912,
+      "stubRVA": 3116208,
+      "name": "reclaim_controller"
+    },
+    {
+      "rva": 1442742,
+      "originalTarget": 1436752,
+      "stubRVA": 3116272,
+      "name": "remember_remap"
+    },
+    {
+      "rva": 1442763,
+      "originalTarget": 1441484,
+      "stubRVA": 3116320,
+      "name": "take_prefix"
+    },
+    {
+      "rva": 1411216,
+      "originalTarget": 1409256,
+      "stubRVA": 3116240,
+      "name": "grow_on_demand"
+    },
+    {
+      "rva": 1411228,
+      "originalTarget": 1409256,
+      "stubRVA": 3116240,
+      "name": "grow_on_demand"
+    }
+  ],
+  "exports": {
+    "grow_on_demand": 3112960,
+    "reclaim_controller": 3114464,
+    "remember_remap": 3115488,
+    "take_prefix": 3115664
+  },
+  "stubs": {
+    "reclaim_controller": 3116208,
+    "grow_on_demand": 3116240,
+    "remember_remap": 3116272,
+    "take_prefix": 3116320
+  },
+  "thunkUnwindRVA": 3126016,
+  "gameCalls": 0,
+  "deploymentRecord": "DEPLOYMENT.json",
+  "growthPolicy": "original speculative/fallback batch arguments unchanged",
+  "replacesRejectedSHA256": null,
+  "canonicalBaselineSHA256": "cd7ab354a43faf18479c3a2d1f57d2d068769b8a490338942f6c510e8b02242d",
+  "baselineStateRVA": 3125760,
+  "warmQuantumBytes": 65536,
+  "deployed": true
+}

@@ -1,0 +1,10 @@
+﻿{
+    "command":  "powershell -NoProfile -File F:\\vam1.22.0.12\\工作区\\mono_reclaim_cohorts_20261006\\install.ps1 -Mode Install",
+    "input":  {
+                  "userNormalExit":  true,
+                  "TestCopy":  false,
+                  "Mode":  "Install"
+              },
+    "stdout":  "SNAPSHOT PASS: 81 files copied and hash-verified; game files read-only\nINSTALL_PASS mode=Install testCopy=False sha256=16aaf4bdf3fa0eaf8a02347ff5304ef0d6bcad5ce7d4e265674c1d4da31de808 runtimeModified=False",
+    "exitStatus":  0
+}

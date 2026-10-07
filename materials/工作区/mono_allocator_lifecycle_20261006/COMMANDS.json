@@ -1,0 +1,52 @@
+[
+  {
+    "mode": "STRUCTURE",
+    "command": "C:\\Users\\Administrator\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe verify.py",
+    "cwd": "F:\\vam1.22.0.12\\\u5de5\u4f5c\u533a\\mono_allocator_lifecycle_20261006",
+    "input": "32MiB pinned + 512MiB temporary; concurrency 4x32; mixed/fragmented/25000 Dispose; 1048576 cells + 262144 refill; 768MiB->300MiB; original OOM; 8192x8KiB holes -> 50000x16KiB retained (4096 section cap)",
+    "stdin": "",
+    "stdout": "STRUCTURE_PASS exports=unchanged imports=unchanged WX=none callsites=5 unwind=15 chains=8\n",
+    "stderr": "",
+    "exitStatus": 0
+  },
+  {
+    "mode": "REJECTED",
+    "command": "C:\\Users\\Administrator\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe sections.py REJECTED",
+    "cwd": "F:\\vam1.22.0.12\\\u5de5\u4f5c\u533a\\mono_allocator_lifecycle_20261006",
+    "input": "32MiB pinned + 512MiB temporary; concurrency 4x32; mixed/fragmented/25000 Dispose; 1048576 cells + 262144 refill; 768MiB->300MiB; original OOM; 8192x8KiB holes -> 50000x16KiB retained (4096 section cap)",
+    "stdin": "",
+    "stdout": "REGRESSION_REPRODUCED mode=REJECTED retained=46336 sections=3914 limit=4096 stoppedBeforeFatal=True data=verified\n",
+    "stderr": "",
+    "exitStatus": 0
+  },
+  {
+    "mode": "BASELINE",
+    "command": "powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\\validate.ps1 BASELINE",
+    "cwd": "F:\\vam1.22.0.12\\\u5de5\u4f5c\u533a\\mono_allocator_lifecycle_20261006",
+    "input": "32MiB pinned + 512MiB temporary; concurrency 4x32; mixed/fragmented/25000 Dispose; 1048576 cells + 262144 refill; 768MiB->300MiB; original OOM; 8192x8KiB holes -> 50000x16KiB retained (4096 section cap)",
+    "stdin": "",
+    "stdout": "VALIDATION_PASS mode=BASELINE runtime=3x2 lifecycle=1 OOM=1 sections=1\n",
+    "stderr": "",
+    "exitStatus": 0
+  },
+  {
+    "mode": "MODIFIED",
+    "command": "powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\\validate.ps1 MODIFIED",
+    "cwd": "F:\\vam1.22.0.12\\\u5de5\u4f5c\u533a\\mono_allocator_lifecycle_20261006",
+    "input": "32MiB pinned + 512MiB temporary; concurrency 4x32; mixed/fragmented/25000 Dispose; 1048576 cells + 262144 refill; 768MiB->300MiB; original OOM; 8192x8KiB holes -> 50000x16KiB retained (4096 section cap)",
+    "stdin": "",
+    "stdout": "VALIDATION_PASS mode=MODIFIED runtime=3x2 lifecycle=1 OOM=1 sections=1\n",
+    "stderr": "",
+    "exitStatus": 0
+  },
+  {
+    "mode": "ROLLBACK",
+    "command": "\"C:\\Program Files\\Git\\bin\\bash.exe\" ./ROLLBACK.sh",
+    "cwd": "F:\\vam1.22.0.12\\\u5de5\u4f5c\u533a\\mono_allocator_lifecycle_20261006",
+    "input": "32MiB pinned + 512MiB temporary; concurrency 4x32; mixed/fragmented/25000 Dispose; 1048576 cells + 262144 refill; 768MiB->300MiB; original OOM; 8192x8KiB holes -> 50000x16KiB retained (4096 section cap)",
+    "stdin": "",
+    "stdout": "ROLLBACK_HASH_PASS baseline=restored candidate=retained gameModified=False\nVALIDATION_PASS mode=ROLLBACK runtime=3x1 lifecycle=1 OOM=1 sections=1\n",
+    "stderr": "",
+    "exitStatus": 0
+  }
+]

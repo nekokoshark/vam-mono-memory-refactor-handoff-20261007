@@ -1,0 +1,14 @@
+{
+  "installedSHA256": "d4685c71704ef7f222feebfb93851d7f3b6d354998c2e6bc8347268e047c7b3d",
+  "baselineSHA256": "a1a8f07d43aab8542247b18d0109a49508ff1489c0aba6b9c9ce1133f4392496",
+  "snapshotFilesVerified": 81,
+  "snapshotBaselineCommit": "2354aa4239315abbca1d118ddea7f917566c21c1",
+  "changedSnapshotMembers": [
+    "Mono/EmbedRuntime/mono.dll"
+  ],
+  "memorySHA256": "300d8335a2faedd473a09a0cb27c28df519413ffadf6c4e555f6a3b673278da8",
+  "gameRunning": false,
+  "gameStarted": false,
+  "rollbackCopyRestored": true,
+  "candidateRetained": true
+}

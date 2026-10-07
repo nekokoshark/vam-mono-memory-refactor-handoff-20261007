@@ -1,0 +1,78 @@
+{
+  "BASELINE": {
+    "quickReuseMedianMs": 108.65535004995763,
+    "prefixOSCommitIncreaseBytes": 315637760,
+    "prefixHeapIncreaseBytes": 315101184,
+    "pendingOrder": {
+      "pages": 8240,
+      "lists": 47,
+      "inversions": 6142
+    },
+    "controller": null,
+    "sparseGCMilliseconds": 1.240300014615059,
+    "refillMilliseconds": 8.05860001128167,
+    "retainedSectionTestPayloads": 50000,
+    "sectionTestFinalCount": 82
+  },
+  "MODIFIED": {
+    "quickReuseMedianMs": 88.26914994278923,
+    "prefixOSCommitIncreaseBytes": 314576896,
+    "prefixHeapIncreaseBytes": 0,
+    "pendingOrder": {
+      "pages": 8240,
+      "lists": 47,
+      "inversions": 0
+    },
+    "controller": {
+      "magic": 3553986980739171143,
+      "reserveBytes": 268435456,
+      "collections": 14,
+      "scannedBlocks": 90,
+      "freeBefore": 65642496,
+      "freeAfter": 65642496,
+      "decommittedBytes": 805896192,
+      "decommittedBlocks": 2,
+      "rejected": 0,
+      "lastGC": 14,
+      "lastReturned": 314576896,
+      "lastScanned": 12,
+      "sortRuns": 14,
+      "sortPages": 12831,
+      "sortLists": 16,
+      "sortChangedLists": 10,
+      "mergeCalls": 14,
+      "mergedBlocks": 1,
+      "remapCalls": 1,
+      "remapFullBytes": 805834752,
+      "remapPrefixBytes": 314576896,
+      "remapAvoidedBytes": 491257856,
+      "splitPrefixes": 1,
+      "growthCalls": 9,
+      "growthOriginalBlocks": 212768,
+      "growthActualBlocks": 212768,
+      "pendingBlock": 0,
+      "pendingFull": 0,
+      "pendingBytes": 0
+    },
+    "sparseGCMilliseconds": 1.4862999087199569,
+    "refillMilliseconds": 8.105700020678341,
+    "retainedSectionTestPayloads": 50000,
+    "sectionTestFinalCount": 82
+  },
+  "ROLLBACK": {
+    "quickReuseMedianMs": 110.31530000036582,
+    "prefixOSCommitIncreaseBytes": 805834752,
+    "prefixHeapIncreaseBytes": 0,
+    "pendingOrder": {
+      "pages": 8240,
+      "lists": 47,
+      "inversions": 6142
+    },
+    "controller": null,
+    "sparseGCMilliseconds": 1.0227999882772565,
+    "refillMilliseconds": 7.405600044876337,
+    "retainedSectionTestPayloads": 50000,
+    "sectionTestFinalCount": 82
+  },
+  "measuredVaMSavingsBytes": null
+}

@@ -1,0 +1,32 @@
+[
+  {
+    "stage": "GC1",
+    "staticNonNull": false,
+    "weakAlive": false,
+    "pushCalls": 2,
+    "stackBytes": 9288,
+    "stackMatches": 0,
+    "rejectedRanges": 0,
+    "matches": []
+  },
+  {
+    "stage": "GC2",
+    "staticNonNull": false,
+    "weakAlive": false,
+    "pushCalls": 2,
+    "stackBytes": 9288,
+    "stackMatches": 0,
+    "rejectedRanges": 0,
+    "matches": []
+  },
+  {
+    "stage": "GC3",
+    "staticNonNull": false,
+    "weakAlive": false,
+    "pushCalls": 2,
+    "stackBytes": 9288,
+    "stackMatches": 0,
+    "rejectedRanges": 0,
+    "matches": []
+  }
+]

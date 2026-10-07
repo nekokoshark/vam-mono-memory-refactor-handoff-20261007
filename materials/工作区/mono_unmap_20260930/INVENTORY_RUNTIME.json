@@ -1,0 +1,169 @@
+{
+  "pid": 17352,
+  "module": "F:\\vam1.22.0.12\\Mono\\EmbedRuntime\\mono.dll",
+  "moduleBase": "0x7ffb74ac0000",
+  "binary": {
+    "sha256": "160f224ead92dac4f33e91a584fdc1c7ef82ed1ced2feac9a903afa31a7e2738",
+    "checks": 16,
+    "nativeAgeThreshold": 6,
+    "rva": {
+      "heap": "0x27c7e0",
+      "free": "0x27c808",
+      "unmapped": "0x27ea88",
+      "gc_count": "0x269b90",
+      "page_size": "0x26c5c8",
+      "free_lists": "0x269d70",
+      "header_index": "0x2bdcd0",
+      "zero_index": "0x2bdcc8",
+      "free_marker": "0x269f70"
+    }
+  },
+  "remoteWrites": 0,
+  "callsIntoGame": 0,
+  "samples": [
+    {
+      "counters": {
+        "gc_count": 460,
+        "heap": 31780732928,
+        "free": 8712478720,
+        "unmapped": 6983852032,
+        "allocatedEstimateBytes": 23068254208,
+        "committedHeapEstimateBytes": 24796880896,
+        "committedLargeFreeBytes": 1728626688
+      },
+      "inventory": {
+        "blocks": 52979,
+        "freeBytes": 8384770048,
+        "unmappedPageBytes": 6983852032,
+        "committedFreeBytes": 1400918016,
+        "eligiblePageBytesAt6": 0,
+        "eligiblePageBytesAt2": 30629888,
+        "age16Bytes": {
+          "0": 1356328960,
+          "1": 9560064,
+          "4": 7528448,
+          "2": 4399104,
+          "5": 7376896,
+          "3": 5242880,
+          "6": 10481664
+        },
+        "complete": false,
+        "stop": "free-list node reallocated during walk: 0x2f02e26e000",
+        "partialMeaning": "observed nodes only; byte totals and eligibility are not a complete allocator inventory",
+        "headsUnchanged": false
+      },
+      "consistent": false,
+      "countersConsistent": false,
+      "consistencyMeaning": "endpoint counters/heads and byte totals agree; not an allocator-locked snapshot",
+      "pageSize": 4096,
+      "afterCounters": {
+        "gc_count": 460,
+        "heap": 31780732928,
+        "free": 8705564672,
+        "unmapped": 6983852032
+      },
+      "process": {
+        "privateUsageBytes": 42628853760,
+        "workingSetBytes": 11650588672
+      },
+      "timeUTC": "2026-09-30T14:09:40Z",
+      "elapsedMs": 1343.0
+    },
+    {
+      "counters": {
+        "gc_count": 460,
+        "heap": 31780732928,
+        "free": 8703246336,
+        "unmapped": 6983852032,
+        "allocatedEstimateBytes": 23077486592,
+        "committedHeapEstimateBytes": 24796880896,
+        "committedLargeFreeBytes": 1719394304
+      },
+      "inventory": {
+        "blocks": 52935,
+        "freeBytes": 8378355712,
+        "unmappedPageBytes": 6983852032,
+        "committedFreeBytes": 1394503680,
+        "eligiblePageBytesAt6": 0,
+        "eligiblePageBytesAt2": 30629888,
+        "age16Bytes": {
+          "0": 1349914624,
+          "1": 9560064,
+          "4": 7528448,
+          "2": 4399104,
+          "5": 7376896,
+          "3": 5242880,
+          "6": 10481664
+        },
+        "complete": false,
+        "stop": "free-list node reallocated during walk: 0x2f02df50000",
+        "partialMeaning": "observed nodes only; byte totals and eligibility are not a complete allocator inventory",
+        "headsUnchanged": false
+      },
+      "consistent": false,
+      "countersConsistent": false,
+      "consistencyMeaning": "endpoint counters/heads and byte totals agree; not an allocator-locked snapshot",
+      "pageSize": 4096,
+      "afterCounters": {
+        "gc_count": 460,
+        "heap": 31780732928,
+        "free": 8698073088,
+        "unmapped": 6983852032
+      },
+      "process": {
+        "privateUsageBytes": 42626162688,
+        "workingSetBytes": 11650584576
+      },
+      "timeUTC": "2026-09-30T14:09:42Z",
+      "elapsedMs": 1407.0
+    },
+    {
+      "counters": {
+        "gc_count": 460,
+        "heap": 31780732928,
+        "free": 8695762944,
+        "unmapped": 6983852032,
+        "allocatedEstimateBytes": 23084969984,
+        "committedHeapEstimateBytes": 24796880896,
+        "committedLargeFreeBytes": 1711910912
+      },
+      "inventory": {
+        "blocks": 52900,
+        "freeBytes": 8373551104,
+        "unmappedPageBytes": 6983852032,
+        "committedFreeBytes": 1389699072,
+        "eligiblePageBytesAt6": 0,
+        "eligiblePageBytesAt2": 30629888,
+        "age16Bytes": {
+          "0": 1345110016,
+          "1": 9560064,
+          "4": 7528448,
+          "2": 4399104,
+          "5": 7376896,
+          "3": 5242880,
+          "6": 10481664
+        },
+        "complete": false,
+        "stop": "free-list node reallocated during walk: 0x2f02b7f1000",
+        "partialMeaning": "observed nodes only; byte totals and eligibility are not a complete allocator inventory",
+        "headsUnchanged": false
+      },
+      "consistent": false,
+      "countersConsistent": false,
+      "consistencyMeaning": "endpoint counters/heads and byte totals agree; not an allocator-locked snapshot",
+      "pageSize": 4096,
+      "afterCounters": {
+        "gc_count": 460,
+        "heap": 31780732928,
+        "free": 8689156096,
+        "unmapped": 6983852032
+      },
+      "process": {
+        "privateUsageBytes": 42626162688,
+        "workingSetBytes": 11650588672
+      },
+      "timeUTC": "2026-09-30T14:09:44Z",
+      "elapsedMs": 1437.0
+    }
+  ]
+}

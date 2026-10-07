@@ -1,0 +1,10 @@
+{
+  "nativeChangedBytes": 19,
+  "nativeCallsite": "0x157ec4",
+  "exportsUnchanged": true,
+  "importsUnchanged": true,
+  "collectorAndOSAllocatorsUnchanged": true,
+  "newUnwindEntries": 14,
+  "chainedUnwindRebased": 7,
+  "wxAdded": false
+}
